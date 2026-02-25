@@ -477,66 +477,70 @@ def detect_patterns(insider_df, institutional_df, prices_df):
     
     if 'ticker' in insider_df.columns and 'trader_name' in insider_df.columns and 'transaction_date' in insider_df.columns:
         df_sorted = insider_df.dropna(subset=['ticker', 'trader_name', 'transaction_date']).sort_values('transaction_date')
-        
-        for idx, row in df_sorted.iterrows():
-            window_start = row['transaction_date']
-            window_end = window_start + timedelta(days=3)
-            
-            sector_trades = insider_df[
-                (insider_df['sector'] == row['sector']) &
-                (insider_df['ticker'] == row['ticker']) &
-                (insider_df['transaction_date'] >= window_start) &
-                (insider_df['transaction_date'] <= window_end)
-            ]
-            
-            unique_traders = sector_trades['trader_name'].nunique()
-            
-            if unique_traders >= 3:
-                cluster_id = f"{row['ticker']}_{window_start.date()}"
-                
-                if cluster_id not in detected_clusters:
-                    event_status, event_desc = check_event_relationship(row['ticker'], window_start, events_lookup)
-                    
-                    if event_status == 'exclude':
-                        clusters_filtered += 1
-                        continue
-                    
-                    detected_clusters.add(cluster_id)
-                    
-                    coordinated_list = []
-                    for trader in sector_trades['trader_name'].unique():
-                        if pd.isna(trader):
+
+        # Pre-group by ticker to avoid O(n²) full-DataFrame scans per row
+        ticker_groups_p1 = {t: grp for t, grp in df_sorted.groupby('ticker')}
+
+        for ticker, ticker_df in ticker_groups_p1.items():
+            sector = ticker_df['sector'].iloc[0]
+
+            for idx, row in ticker_df.iterrows():
+                window_start = row['transaction_date']
+                window_end = window_start + timedelta(days=3)
+
+                sector_trades = ticker_df[
+                    (ticker_df['transaction_date'] >= window_start) &
+                    (ticker_df['transaction_date'] <= window_end)
+                ]
+
+                unique_traders = sector_trades['trader_name'].nunique()
+
+                if unique_traders >= 3:
+                    cluster_id = f"{ticker}_{window_start.date()}"
+
+                    if cluster_id not in detected_clusters:
+                        event_status, event_desc = check_event_relationship(ticker, window_start, events_lookup)
+
+                        if event_status == 'exclude':
+                            clusters_filtered += 1
                             continue
-                        info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                        coordinated_list.append(f"{trader} ({info['role']}, {info['company']})")
-                    
-                    for trader in sector_trades['trader_name'].unique():
-                        if pd.isna(trader):
-                            continue
-                        info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                        
-                        other_traders = [t for t in coordinated_list if str(trader) not in t]
-                        
-                        patterns[trader]['patterns'].append(
-                            f"Sector cluster: {row['ticker']} ({row['sector']}) - {unique_traders} traders on {window_start.date()}\n      Coordinated with: {', '.join(other_traders)}"
+
+                        detected_clusters.add(cluster_id)
+
+                        coordinated_list = []
+                        for trader in sector_trades['trader_name'].unique():
+                            if pd.isna(trader):
+                                continue
+                            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                            coordinated_list.append(f"{trader} ({info['role']}, {info['company']})")
+
+                        for trader in sector_trades['trader_name'].unique():
+                            if pd.isna(trader):
+                                continue
+                            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+
+                            other_traders = [t for t in coordinated_list if str(trader) not in t]
+
+                            patterns[trader]['patterns'].append(
+                                f"Sector cluster: {ticker} ({sector}) - {unique_traders} traders on {window_start.date()} | Coordinated with: {', '.join(other_traders)}"
+                            )
+                            patterns[trader]['base_score'] += 5
+                            patterns[trader]['pattern_count'] += 1
+                            patterns[trader]['role'] = info['role']
+                            patterns[trader]['company'] = info['company']
+
+                            if 'role' in sector_trades.columns:
+                                trader_rows = sector_trades[sector_trades['trader_name'] == trader]
+                                if len(trader_rows) > 0:
+                                    trader_role = trader_rows['role'].iloc[0]
+                                    role_mult = get_role_multiplier(trader_role)
+                                    patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
+
+                        ticker_patterns[ticker]['patterns'].append(
+                            f"Cluster: {unique_traders} traders ({sector} sector, {window_start.date()})"
                         )
-                        patterns[trader]['base_score'] += 5
-                        patterns[trader]['pattern_count'] += 1
-                        patterns[trader]['role'] = info['role']
-                        patterns[trader]['company'] = info['company']
-                        
-                        if 'role' in sector_trades.columns:
-                            trader_rows = sector_trades[sector_trades['trader_name'] == trader]
-                            if len(trader_rows) > 0:
-                                trader_role = trader_rows['role'].iloc[0]
-                                role_mult = get_role_multiplier(trader_role)
-                                patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
-                    
-                    ticker_patterns[row['ticker']]['patterns'].append(
-                        f"Cluster: {unique_traders} traders ({row['sector']} sector, {window_start.date()})"
-                    )
-                    ticker_patterns[row['ticker']]['score'] += 5
-    
+                        ticker_patterns[ticker]['score'] += 5
+
     print(f"    Found {len(detected_clusters)} clusters ({clusters_filtered} filtered by public events)")
     
     # PATTERN 1.5: SAME-COMPANY CLUSTERING (Multiple insiders from SAME company)
@@ -546,92 +550,94 @@ def detect_patterns(insider_df, institutional_df, prices_df):
     
     if 'ticker' in insider_df.columns and 'trader_name' in insider_df.columns and 'transaction_date' in insider_df.columns:
         df_sorted = insider_df.dropna(subset=['ticker', 'trader_name', 'transaction_date']).sort_values('transaction_date')
-        
-        for idx, row in df_sorted.iterrows():
-            window_start = row['transaction_date']
-            window_end = window_start + timedelta(days=7)
-            
-            # Look for trades in SAME COMPANY (not just sector)
-            company_trades = insider_df[
-                (insider_df['ticker'] == row['ticker']) &
-                (insider_df['transaction_date'] >= window_start) &
-                (insider_df['transaction_date'] <= window_end)
-            ]
-            
-            unique_traders = company_trades['trader_name'].nunique()
-            
-            if unique_traders >= 3:
-                cluster_id = f"{row['ticker']}_company_{window_start.date()}"
-                
-                if cluster_id not in company_clusters_detected:
-                    event_status, event_desc = check_event_relationship(row['ticker'], window_start, events_lookup)
-                    
-                    if event_status == 'exclude':
-                        company_clusters_filtered += 1
-                        continue
-                    
-                    company_clusters_detected.add(cluster_id)
-                    
-                    # Build list of insiders with roles
-                    insider_list = []
-                    role_diversity = set()
-                    for trader in company_trades['trader_name'].unique():
-                        if pd.isna(trader):
+
+        # Pre-group by ticker to avoid O(n²) full-DataFrame scans per row
+        ticker_groups_p15 = {t: grp for t, grp in df_sorted.groupby('ticker')}
+
+        for ticker, ticker_df in ticker_groups_p15.items():
+            for idx, row in ticker_df.iterrows():
+                window_start = row['transaction_date']
+                window_end = window_start + timedelta(days=7)
+
+                # Only search within the pre-filtered ticker group
+                company_trades = ticker_df[
+                    (ticker_df['transaction_date'] >= window_start) &
+                    (ticker_df['transaction_date'] <= window_end)
+                ]
+
+                unique_traders = company_trades['trader_name'].nunique()
+
+                if unique_traders >= 3:
+                    cluster_id = f"{ticker}_company_{window_start.date()}"
+
+                    if cluster_id not in company_clusters_detected:
+                        event_status, event_desc = check_event_relationship(ticker, window_start, events_lookup)
+
+                        if event_status == 'exclude':
+                            company_clusters_filtered += 1
                             continue
-                        info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                        insider_list.append(f"{trader} ({info['role']})")
-                        
-                        # Track role diversity
-                        role_lower = str(info['role']).lower()
-                        if any(x in role_lower for x in ['ceo', 'chief executive']):
-                            role_diversity.add('CEO')
-                        elif any(x in role_lower for x in ['cfo', 'chief financial']):
-                            role_diversity.add('CFO')
-                        elif any(x in role_lower for x in ['director', 'board']):
-                            role_diversity.add('Director')
-                        elif any(x in role_lower for x in ['officer', 'vp', 'president']):
-                            role_diversity.add('Officer')
-                    
-                    # Calculate bonus for role diversity
-                    diversity_bonus = 0
-                    if len(role_diversity) >= 3:
-                        diversity_bonus = 5  # CEO + CFO + Director/Officer = strong signal
-                    elif len(role_diversity) == 2:
-                        diversity_bonus = 3
-                    
-                    base_score = 10 + diversity_bonus
-                    
-                    for trader in company_trades['trader_name'].unique():
-                        if pd.isna(trader):
-                            continue
-                        info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                        
-                        # Filter out current trader from list
-                        other_insiders = [t for t in insider_list if str(trader) not in t]
-                        
-                        diversity_note = f" (Role diversity: {', '.join(role_diversity)})" if len(role_diversity) >= 2 else ""
-                        
-                        patterns[trader]['patterns'].append(
-                            f"Same-company cluster: {row['ticker']} - {unique_traders} insiders within 7 days{diversity_note}\n      " +
-                            f"Coordinated with: {', '.join(other_insiders)}"
+
+                        company_clusters_detected.add(cluster_id)
+
+                        # Build list of insiders with roles
+                        insider_list = []
+                        role_diversity = set()
+                        for trader in company_trades['trader_name'].unique():
+                            if pd.isna(trader):
+                                continue
+                            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                            insider_list.append(f"{trader} ({info['role']})")
+
+                            # Track role diversity
+                            role_lower = str(info['role']).lower()
+                            if any(x in role_lower for x in ['ceo', 'chief executive']):
+                                role_diversity.add('CEO')
+                            elif any(x in role_lower for x in ['cfo', 'chief financial']):
+                                role_diversity.add('CFO')
+                            elif any(x in role_lower for x in ['director', 'board']):
+                                role_diversity.add('Director')
+                            elif any(x in role_lower for x in ['officer', 'vp', 'president']):
+                                role_diversity.add('Officer')
+
+                        # Calculate bonus for role diversity
+                        diversity_bonus = 0
+                        if len(role_diversity) >= 3:
+                            diversity_bonus = 5  # CEO + CFO + Director/Officer = strong signal
+                        elif len(role_diversity) == 2:
+                            diversity_bonus = 3
+
+                        base_score = 10 + diversity_bonus
+
+                        for trader in company_trades['trader_name'].unique():
+                            if pd.isna(trader):
+                                continue
+                            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+
+                            # Filter out current trader from list
+                            other_insiders = [t for t in insider_list if str(trader) not in t]
+
+                            diversity_note = f" (Role diversity: {', '.join(role_diversity)})" if len(role_diversity) >= 2 else ""
+
+                            patterns[trader]['patterns'].append(
+                                f"Same-company cluster: {ticker} - {unique_traders} insiders within 7 days{diversity_note} | Coordinated with: {', '.join(other_insiders)}"
+                            )
+                            patterns[trader]['base_score'] += base_score
+                            patterns[trader]['pattern_count'] += 1
+                            patterns[trader]['role'] = info['role']
+                            patterns[trader]['company'] = info['company']
+
+                            if 'role' in company_trades.columns:
+                                trader_rows = company_trades[company_trades['trader_name'] == trader]
+                                if len(trader_rows) > 0:
+                                    trader_role = trader_rows['role'].iloc[0]
+                                    role_mult = get_role_multiplier(trader_role)
+                                    patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
+
+                        ticker_patterns[ticker]['patterns'].append(
+                            f"Same-company cluster: {unique_traders} insiders ({window_start.date()}){diversity_note}"
                         )
-                        patterns[trader]['base_score'] += base_score
-                        patterns[trader]['pattern_count'] += 1
-                        patterns[trader]['role'] = info['role']
-                        patterns[trader]['company'] = info['company']
-                        
-                        if 'role' in company_trades.columns:
-                            trader_rows = company_trades[company_trades['trader_name'] == trader]
-                            if len(trader_rows) > 0:
-                                trader_role = trader_rows['role'].iloc[0]
-                                role_mult = get_role_multiplier(trader_role)
-                                patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
-                    
-                    ticker_patterns[row['ticker']]['patterns'].append(
-                        f"Same-company cluster: {unique_traders} insiders ({window_start.date()}){diversity_note}"
-                    )
-                    ticker_patterns[row['ticker']]['score'] += base_score
-    
+                        ticker_patterns[ticker]['score'] += base_score
+
     print(f"    Found {len(company_clusters_detected)} same-company clusters ({company_clusters_filtered} filtered by public events)")
     
     # PATTERN 1.75: LARGE TRADES (3x+ historical average)
@@ -654,31 +660,28 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                 ticker_prices = ticker_prices.sort_values('date')
                 trade_price_lookup[ticker] = ticker_prices.set_index('date')['close'].to_dict()
         
-        # Calculate trade values
-        recent_trades['trade_value'] = 0.0
-        for idx, row in recent_trades.iterrows():
-            if pd.isna(row.get('shares')) or row.get('shares') == 0:
-                continue
-            
-            ticker = row.get('ticker')
-            trade_date = row.get('transaction_date')
-            shares = float(row['shares'])
-            
-            # Try to get price
+        # Calculate trade values using vectorized apply (avoids slow row-by-row .at[] mutation)
+        def _calc_trade_value(row):
+            shares = row.get('shares')
+            if pd.isna(shares) or shares == 0:
+                return 0.0
+            shares = float(shares)
             price = None
-            if 'price' in row and pd.notna(row.get('price')):
+            if 'price' in row.index and pd.notna(row.get('price')):
                 try:
                     price = float(row['price'])
                     if price <= 0:
                         price = None
                 except (ValueError, TypeError):
                     price = None
-            elif ticker in trade_price_lookup and trade_date:
-                price = trade_price_lookup[ticker].get(pd.Timestamp(trade_date))
-            
-            if price:
-                trade_value = abs(shares * price)
-                recent_trades.at[idx, 'trade_value'] = trade_value
+            if price is None:
+                tkr = row.get('ticker')
+                td = row.get('transaction_date')
+                if tkr in trade_price_lookup and pd.notna(td):
+                    price = trade_price_lookup[tkr].get(pd.Timestamp(td))
+            return abs(shares * price) if price else 0.0
+
+        recent_trades = recent_trades.assign(trade_value=recent_trades.apply(_calc_trade_value, axis=1))
         
         # Calculate historical average per trader
         for trader in recent_trades['trader_name'].unique():
@@ -794,73 +797,76 @@ def detect_patterns(insider_df, institutional_df, prices_df):
             ticker = row['ticker']
             trade_date = row['transaction_date']
             trader = row['trader_name']
-            
+
             if ticker not in price_lookup:
                 continue
-            
+
             ticker_prices = price_lookup[ticker]
             trade_price = ticker_prices.get(pd.Timestamp(trade_date))
             if not trade_price:
                 continue
-            
-            best_window = None
-            best_gain = 0
-            best_score = 0
-            
+
+            # Check event relationship once per trade (applies equally to all windows)
+            event_status, event_desc = check_event_relationship(ticker, trade_date, events_lookup)
+            if event_status == 'exclude':
+                timing_filtered += 1
+                continue
+
+            # Score ALL qualifying windows, not just the single best-gain window
+            is_bonused = False
             for start_day, end_day, min_gain, score in windows:
                 check_date = trade_date + timedelta(days=end_day)
-                
+
                 future_price = None
                 for offset in range(6):
                     future_price = ticker_prices.get(pd.Timestamp(check_date + timedelta(days=offset)))
                     if future_price:
                         break
-                
-                if future_price:
-                    gain = ((future_price - trade_price) / trade_price) * 100
-                    
-                    if gain >= min_gain and gain > best_gain:
-                        best_gain = gain
-                        best_score = score
-                        best_window = f"{start_day}-{end_day}"
-            
-            if best_window:
-                event_status, event_desc = check_event_relationship(ticker, trade_date, events_lookup)
-                
-                if event_status == 'exclude':
-                    timing_filtered += 1
+
+                if not future_price:
                     continue
-                
-                final_score = best_score
-                if event_status == 'bonus':
-                    final_score += 15
-                    timing_bonused += 1
-                
-                patterns[trader]['patterns'].append(
-                    f"Perfect timing: {ticker} (+{best_gain:.1f}% in {best_window} days)"
-                )
-                patterns[trader]['base_score'] += final_score
-                patterns[trader]['pattern_count'] += 1
-                
-                # Store trade price and movement
-                patterns[trader]['trade_prices'][ticker] = trade_price
-                patterns[trader]['price_movements'][ticker] = f"+{best_gain:.1f}%"
-                
-                info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                patterns[trader]['role'] = info['role']
-                patterns[trader]['company'] = info['company']
-                
-                if 'role' in timing_df.columns and pd.notna(row.get('role')):
-                    trader_role = row.get('role')
-                    role_mult = get_role_multiplier(trader_role)
-                    patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
-                
-                ticker_patterns[ticker]['patterns'].append(
-                    f"Timed trade by {trader} (+{best_gain:.1f}%)"
-                )
-                ticker_patterns[ticker]['score'] += 3
-                timing_count += 1
-        
+
+                gain = ((future_price - trade_price) / trade_price) * 100
+
+                if gain >= min_gain:
+                    final_score = score
+                    if event_status == 'bonus':
+                        final_score += 15
+                        if not is_bonused:
+                            timing_bonused += 1
+                            is_bonused = True
+
+                    patterns[trader]['patterns'].append(
+                        f"Perfect timing: {ticker} (+{gain:.1f}% in {start_day}-{end_day} days)"
+                    )
+                    patterns[trader]['base_score'] += final_score
+                    patterns[trader]['pattern_count'] += 1
+
+                    # Store trade price; keep the highest gain seen for this ticker
+                    patterns[trader]['trade_prices'][ticker] = trade_price
+                    existing = patterns[trader]['price_movements'].get(ticker, '')
+                    try:
+                        existing_pct = float(existing.replace('+', '').replace('%', '')) if existing else 0
+                    except ValueError:
+                        existing_pct = 0
+                    if gain > existing_pct:
+                        patterns[trader]['price_movements'][ticker] = f"+{gain:.1f}%"
+
+                    info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                    patterns[trader]['role'] = info['role']
+                    patterns[trader]['company'] = info['company']
+
+                    if 'role' in timing_df.columns and pd.notna(row.get('role')):
+                        trader_role = row.get('role')
+                        role_mult = get_role_multiplier(trader_role)
+                        patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
+
+                    ticker_patterns[ticker]['patterns'].append(
+                        f"Timed trade by {trader} (+{gain:.1f}% in {start_day}-{end_day}d)"
+                    )
+                    ticker_patterns[ticker]['score'] += 3
+                    timing_count += 1
+
         print(f"    Found {timing_count} timing patterns ({timing_filtered} filtered, {timing_bonused} bonused for pre-event)")
     
     # PATTERN 3: LATE FILING
@@ -913,7 +919,7 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                     for trader in traders:
                         info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
                         patterns[trader]['patterns'].append(
-                            f"Coordinated: {date} ({sector} sector, {len(traders)} traders)\n      Coordinated with: {', '.join([t for t in coordinated_list if trader not in t])}"
+                            f"Coordinated: {date} ({sector} sector, {len(traders)} traders) | Coordinated with: {', '.join([t for t in coordinated_list if trader not in t])}"
                         )
                         patterns[trader]['base_score'] += 3
                         patterns[trader]['pattern_count'] += 1
@@ -995,12 +1001,14 @@ def detect_patterns(insider_df, institutional_df, prices_df):
             is_repeat = True
         
         final_score = int(base * pattern_mult * role_mult * repeat_mult)
-        
+
         # Consolidate patterns
         consolidated_patterns = consolidate_patterns(data['patterns'])
-        
+
         trader_scores[trader] = {
             'score': final_score,
+            'base_score': base,
+            'pattern_mult': pattern_mult,
             'patterns': consolidated_patterns,
             'role_multiplier': role_mult,
             'role': data['role'],
@@ -1079,17 +1087,25 @@ def generate_report(trader_scores, ticker_scores, company_scores, insider_df):
         f.write(f"Total Records Analyzed: {len(insider_df)}\n")
         f.write("="*120 + "\n\n")
         
-        f.write("DETECTION RULES:\n")
-        f.write("  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans\n")
-        f.write("  • Sector Clustering: 3+ traders in same sector/ticker within 3 days\n")
-        f.write("  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)\n")
-        f.write("  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)\n")
-        f.write("  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K\n")
-        f.write("  • Late Filing: 7+ days late (only scores if combined with other patterns)\n")
-        f.write("  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)\n")
-        f.write("  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)\n")
-        f.write("  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)\n")
-        f.write("  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings\n\n")
+        f.write("DETECTION RULES (7 pattern types):\n")
+        f.write("  [1] Transaction Filtering : Excluded awards, grants, option exercises, 10b5-1 plans\n")
+        f.write("  [2] Sector Clustering     : 3+ traders in same sector/ticker within 3 days (+5pts)\n")
+        f.write("  [3] Same-Company Cluster  : 3+ insiders from SAME company within 7 days (+10-15pts)\n")
+        f.write("  [4] Large Trade           : Volume 3x+ trader's 12-month average (+8pts)\n")
+        f.write("  [5] Perfect Timing        : ALL qualifying windows scored independently\n")
+        f.write("                              7-14d(+8pts, ≥15%)  15-30d(+5pts, ≥15%)\n")
+        f.write("                              31-60d(+4pts, ≥18%) 61-90d(+3pts, ≥20%)\n")
+        f.write("  [6] Late Filing           : 7+ days late, only counted alongside other patterns (+2pts)\n")
+        f.write("  [7] Coordinated Activity  : 5+ traders in same sector on the same day (+3pts)\n")
+        f.write("\n")
+        f.write("  Score Multipliers:\n")
+        f.write("    Pre-Event Bonus    : +15pts for trades 1-7 days BEFORE earnings/8-K\n")
+        f.write("    Role Weighting     : CEO/CFO(2.0x)  COO(1.8x)  Director(1.5x)  Officer(1.25x)\n")
+        f.write("    Pattern Multiplier : 1 pattern(1.0x)  2 patterns(1.5x)  3+ patterns(2.5x)\n")
+        f.write("    Repeat Offender    : 2nd appearance(1.5x)  3rd(2.0x)  4th+(2.5x)\n")
+        f.write("    Event Filtering    : Excludes trades within 3 days AFTER an earnings/8-K filing\n")
+        f.write("\n")
+        f.write("  Formula: Score = base_pts × pattern_mult × role_mult × repeat_mult\n\n")
         
         f.write("="*120 + "\n")
         f.write("TOP 10 MOST SUSPICIOUS TRADERS\n")
@@ -1102,11 +1118,13 @@ def generate_report(trader_scores, ticker_scores, company_scores, insider_df):
             
             f.write(f"#{rank} - {trader} ({role}, {company})\n")
             
-            score_breakdown = f"Risk Score: {data['score']} (Role: {role_mult}x"
+            base = data.get('base_score', '?')
+            p_mult = data.get('pattern_mult', '?')
+            r_mult = data.get('repeat_mult') or 1.0
+            score_formula = f"{base} (base) × {p_mult}x (patterns) × {role_mult}x (role)"
             if data.get('is_repeat'):
-                score_breakdown += f", Repeat Offender: {data['repeat_mult']}x ⚠️"
-            score_breakdown += ")\n"
-            f.write(score_breakdown)
+                score_formula += f" × {r_mult}x (repeat ⚠️)"
+            f.write(f"Risk Score: {data['score']}  [{score_formula}]\n")
             
             # Price information
             if data['trade_prices']:
@@ -1121,7 +1139,11 @@ def generate_report(trader_scores, ticker_scores, company_scores, insider_df):
             
             f.write(f"Patterns Detected ({len(data['patterns'])}):\n")
             for pattern in data['patterns']:
-                f.write(f"  • {pattern}\n")
+                if ' | ' in pattern:
+                    main, detail = pattern.split(' | ', 1)
+                    f.write(f"  • {main}\n    └─ {detail}\n")
+                else:
+                    f.write(f"  • {pattern}\n")
             f.write("\n" + "-"*120 + "\n\n")
         
         f.write("\n" + "="*120 + "\n")
