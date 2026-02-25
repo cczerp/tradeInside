@@ -1,0 +1,141 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2025-10-14 12:02:50
+Total Records Analyzed: 1211
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)
+  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 487 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • BCDA: Traded at $1.16 → Now $1.58 (+17.2%)
+Patterns Detected (3):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Same-company cluster: BCDA - 3 insiders within 7 days
+      Coordinated with: Stertzer Simon H (Dir), Blank Andrew Scott (Dir)
+  • Perfect timing: BCDA (+17.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 425 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NRGV: Traded at $2.26 → Now $4.10 (+31.4%)
+Patterns Detected (2):
+  • Repeat: NRGV (6x)
+  • Perfect timing: NRGV (+31.4-36.0%) x4
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • SAVA: Traded at $2.29 → Now $4.32 (+49.8%)
+Patterns Detected (1):
+  • Perfect timing: SAVA (+49.8%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NXXT: Traded at $1.77 → Now $2.42 (+19.2%)
+Patterns Detected (1):
+  • Perfect timing: NXXT (+19.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Lettmann Jason (CEO, ALXO)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • ALXO: Traded at $1.08 → Now $1.71 (+69.4%)
+Patterns Detected (1):
+  • Perfect timing: ALXO (+69.4%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 287 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Patterns Detected (3):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Bluth Jeri Ruth (Chief Compliance Officer), Patterson Charles E. II (GC, Secretary)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Fuller Glen W (TREASURER, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Sherpa Angche (CFO, MKZR)
+Risk Score: 287 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Patterns Detected (3):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Bluth Jeri Ruth (Chief Compliance Officer), Patterson Charles E. II (GC, Secretary)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 275 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • AARD: Traded at $8.00 → Now $14.95 (+52.1%)
+Patterns Detected (3):
+  • Perfect timing: AARD (+37.5-52.1%) x2
+  • Coordinated: 2025-09-10 (Other sector, 6 traders)
+      Coordinated with: Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Duggan Robert W (Co-CEO, 10%, SMMT), Sprott Eric (10%, HYMC), Zanganeh Mahkam (Co-CEO, 10%, SMMT), Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW)
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+      Coordinated with: Zegarelli Christopher John (CFO, SVCO), Williams Gregg (Dir, 10%, VANI), Shao Wei-Ming (EVP, GC, MSTR), Weinstein Adam B. (EVP, CAO, Dir, NMFC)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Foran Joseph Wm (COB, CEO, MTDR)
+Risk Score: 270 (Role: 2.0x, Repeat Offender: 1.5x ⚠️)
+Patterns Detected (4):
+  • Sector cluster: MTDR (Energy) - 5 traders on 2025-09-11
+      Coordinated with: Calvert Christopher P (EVP, COO, MTDR), Elsener William Thomas (EVP, Reservoir Engineering, MTDR), Stetson Glenn W (EVP-Production, MTDR), Erman Bryan A (Co-Pres,CLO, Head of M, A, MTDR)
+  • Sector cluster: MTDR (Energy) - 4 traders on 2025-09-12
+      Coordinated with: Calvert Christopher P (EVP, COO, MTDR), Stetson Glenn W (EVP-Production, MTDR), Erman Bryan A (Co-Pres,CLO, Head of M, A, MTDR)
+  • Same-company cluster: MTDR - 5 insiders within 7 days (Role diversity: Officer, CEO)
+      Coordinated with: Calvert Christopher P (EVP, COO), Elsener William Thomas (EVP, Reservoir Engineering), Stetson Glenn W (EVP-Production), Erman Bryan A (Co-Pres,CLO, Head of M, A)
+  • Same-company cluster: MTDR - 4 insiders within 7 days (Role diversity: Officer, CEO)
+      Coordinated with: Calvert Christopher P (EVP, COO), Stetson Glenn W (EVP-Production), Erman Bryan A (Co-Pres,CLO, Head of M, A)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Calvert Christopher P (EVP, COO, MTDR)
+Risk Score: 243 (Role: 1.8x, Repeat Offender: 1.5x ⚠️)
+Patterns Detected (4):
+  • Sector cluster: MTDR (Energy) - 5 traders on 2025-09-11
+      Coordinated with: Foran Joseph Wm (COB, CEO, MTDR), Elsener William Thomas (EVP, Reservoir Engineering, MTDR), Stetson Glenn W (EVP-Production, MTDR), Erman Bryan A (Co-Pres,CLO, Head of M, A, MTDR)
+  • Sector cluster: MTDR (Energy) - 4 traders on 2025-09-12
+      Coordinated with: Foran Joseph Wm (COB, CEO, MTDR), Stetson Glenn W (EVP-Production, MTDR), Erman Bryan A (Co-Pres,CLO, Head of M, A, MTDR)
+  • Same-company cluster: MTDR - 5 insiders within 7 days (Role diversity: Officer, CEO)
+      Coordinated with: Foran Joseph Wm (COB, CEO), Elsener William Thomas (EVP, Reservoir Engineering), Stetson Glenn W (EVP-Production), Erman Bryan A (Co-Pres,CLO, Head of M, A)
+  • Same-company cluster: MTDR - 4 insiders within 7 days (Role diversity: Officer, CEO)
+      Coordinated with: Foran Joseph Wm (COB, CEO), Stetson Glenn W (EVP-Production), Erman Bryan A (Co-Pres,CLO, Head of M, A)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

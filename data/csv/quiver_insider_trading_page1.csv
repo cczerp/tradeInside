@@ -1,0 +1,101 @@
+trader_name,ticker,transaction_type,transaction_date,shares,price,filing_date,source,section,page,scraped_at
+Osaka Glenn,-,Purchase,"Oct 10, 2025",13,$14.88,"Oct. 14, 2025, 12:35 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",AFB,Sale,"Oct 09, 2025",2509,$10.9,"Oct. 14, 2025, 12:29 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",NQP,Sale,"Oct 13, 2025",40105,$12.12,"Oct. 14, 2025, 12:23 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Horn Howard  Chief Financial Officer,RARE,Sale,"Oct 13, 2025",7942,$31.51,"Oct. 14, 2025, 12:15 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ASA,Purchase,"Oct 10, 2025",25883,$47.06,"Oct. 14, 2025, 11:55 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ASA,Purchase,"Oct 13, 2025",8437,$49.02,"Oct. 14, 2025, 11:55 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ASA,Purchase,"Oct 09, 2025",40943,$47.39,"Oct. 14, 2025, 11:55 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Vahedi Vahid  Senior Vice President,LRCX,Sale,"Oct 13, 2025",52190,$138.9,"Oct. 14, 2025, 11:40 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Staloch Alison  Treasurer,-,Purchase,"Oct 10, 2025",7,$11.86,"Oct. 14, 2025, 11:38 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Wren Chris  VP of Operations,PLNH,Sale,"Oct 09, 2025",30000,$0.24,"Oct. 14, 2025, 11:31 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Agdern Robert D,EMO,Purchase,"Oct 13, 2025",385,$42.11,"Oct. 14, 2025, 11:21 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+HENNESSY DANIEL J,INV,Sale,"Oct 09, 2025",10828,$5.21,"Oct. 14, 2025, 11:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ECAT,Sale,"Oct 10, 2025",26858,$16.59,"Oct. 14, 2025, 11:02 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ECAT,Sale,"Oct 13, 2025",19408,$16.58,"Oct. 14, 2025, 11:02 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+"Saba Capital Management, L.P.",ECAT,Sale,"Oct 09, 2025",13647,$16.62,"Oct. 14, 2025, 11:02 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Schremser Christopher L.  Chief Technology Officer,WAY,Sale,"Oct 10, 2025",8623,$36.21,"Oct. 14, 2025, 10:40 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+HORIZON KINETICS ASSET MANAGEMENT LLC,TPL,Purchase,"Oct 13, 2025",1,$898.51,"Oct. 14, 2025, 10:32 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+HORIZON KINETICS ASSET MANAGEMENT LLC,TPL,Purchase,"Oct 10, 2025",1,$887.41,"Oct. 14, 2025, 10:32 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",180,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",296,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",18,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",82,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",18,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",84,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",314,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",180,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",360,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 10, 2025",180,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",180,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",364,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",18,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+STAHL MURRAY  President/Co-Portfolio Manager,RCG,Purchase,"Oct 13, 2025",18,$2.62,"Oct. 14, 2025, 10:13 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+KADLEC THOMAS R,FMY,Purchase,"Oct 10, 2025",242,$12.2,"Oct. 14, 2025, 9:32 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Booth Richard Whitaker,-,Purchase,"Oct 10, 2025",12,$11.86,"Oct. 14, 2025, 9:24 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Booth Richard Whitaker,-,Purchase,"Oct 10, 2025",1,$10.01,"Oct. 14, 2025, 9:14 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Sale,"May 28, 2025",109750,$nan,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"May 16, 2025",12000,$5.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"May 28, 2025",113095,$nan,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Sale,"Feb 03, 2025",7500,$3.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Sale,"Aug 08, 2025",23300,$2.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"Apr 22, 2025",10000,$5.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"May 22, 2025",6000,$5.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"May 28, 2025",49953,$nan,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Sale,"Feb 03, 2025",54223,$4.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"Feb 03, 2025",11528,$4.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"May 02, 2025",21000,$5.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Purchase,"Jun 16, 2025",7000,$4.44,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+GK Partners ApS,NORD,Sale,"Feb 19, 2025",49165,$4.0,"Oct. 14, 2025, 9 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+ENRIGHT PATRICK G,ZBIO,Purchase,"Oct 09, 2025",11990,$20.85,"Oct. 14, 2025, 8:59 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+ENRIGHT PATRICK G,ZBIO,Purchase,"Oct 09, 2025",105265,$19.0,"Oct. 14, 2025, 8:59 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Monte Mark David,-,Purchase,"Oct 10, 2025",40,$10.01,"Oct. 14, 2025, 8:51 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+FOWKE BENJAMIN G S III,AEP,Sale,"Oct 10, 2025",5000,$117.52,"Oct. 14, 2025, 8:49 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+O'Dowd William IV  Chief Executive Officer,DLPN,Purchase,"Oct 13, 2025",3400,$1.44,"Oct. 14, 2025, 8:30 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Monte Mark David,-,Purchase,"Oct 10, 2025",3,$11.86,"Oct. 14, 2025, 8:06 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Lu James Fu Bin,GRND,Sale,"Oct 09, 2025",1000000,$13.15,"Oct. 14, 2025, 8 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Zage George Raymond III,GRND,Purchase,"Oct 09, 2025",1000000,$13.15,"Oct. 14, 2025, 8 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Albers Jeffrey W.,KYMR,Sale,"Oct 13, 2025",5000,$59.19,"Oct. 14, 2025, 7:55 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Trowbridge Stephen A  EVP and CFO,ANGO,Purchase,"Oct 13, 2025",890,$11.16,"Oct. 14, 2025, 6:11 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",3994,$151.29,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",22078,$150.36,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",2204,$146.65,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",3567,$144.55,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",5610,$150.3,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",136,$147.84,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",38694,$148.5,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",11104,$150.36,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",275,$147.4,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",1801,$144.55,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",6230,$144.39,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",491,$145.9,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",16560,$151.31,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",1112,$146.65,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",834,$145.87,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",1650,$145.87,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",80,$142.02,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",87103,$148.5,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",139,$147.4,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",588,$146.61,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",173192,$148.5,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",288,$146.65,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",8329,$151.31,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",22709,$148.5,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",36,$147.4,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",2171,$151.31,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",461,$144.55,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",216,$145.87,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",2895,$150.36,"Oct. 14, 2025, 6 a.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",30,$146.65,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",24,$145.87,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",50619,$148.5,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",6454,$150.36,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",1038,$144.55,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",2350,$148.5,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",4840,$151.31,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",224,$151.31,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",646,$146.65,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",81,$147.4,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",4,$147.4,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",6644,$151.31,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z
+Magnetar Financial LLC,CRWV,Sale,"Oct 10, 2025",111,$147.4,"Oct. 10, 2025, 9:59 p.m.",quiver,insider_trading,1,2025-10-14T11-57-42Z

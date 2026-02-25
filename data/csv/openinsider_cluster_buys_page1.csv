@@ -1,0 +1,101 @@
+ticker,transaction_type,transaction_date,shares,value,price,company,filing_date,source,section,x,industry,ins,owned,δown,1d,1w,1m,6m,page,scraped_at
+ZBIO,P - Purchase,2025-10-09,470402,"+$9,028,137",$19.19,"Zenas Biopharma, Inc.",2025-10-14 08:59:40,openinsider,cluster_buys,,Pharmaceutical Preparations,3,6803336,+7%,,,,,1,2025-10-14T11-58-10Z
+LAW,P - Purchase,2025-10-07,84668,"+$478,979",$5.66,"Cs Disco, Inc.",2025-10-09 16:54:04,openinsider,cluster_buys,M,Prepackaged Software,3,1506977,+6%,,,,,1,2025-10-14T11-58-10Z
+CBK,P - Purchase,2025-10-03,8332,"+$199,968",$24.00,"Commercial Bancgroup, Inc.",2025-10-09 16:14:26,openinsider,cluster_buys,,State Commercial Banks,2,29895,+39%,,,,,1,2025-10-14T11-58-10Z
+ADC,P - Purchase,2025-10-03,34642,"+$2,450,338",$70.73,Agree Realty Corp,2025-10-09 16:05:06,openinsider,cluster_buys,,Real Estate Investment Trusts,4,1281155,+3%,,,,,1,2025-10-14T11-58-10Z
+CPSH,P - Purchase,2025-10-08,59833,"+$179,499",$3.00,Cps Technologies Corp/De/,2025-10-09 15:26:54,openinsider,cluster_buys,,Pottery & Related Products,3,523694,+13%,,,,,1,2025-10-14T11-58-10Z
+FDS,P - Purchase,2025-10-06,708,"+$201,929",$285.21,Factset Research Systems Inc,2025-10-08 16:28:08,openinsider,cluster_buys,,"Computer Programming, Data Processing, Etc.",2,12730,+6%,,,,,1,2025-10-14T11-58-10Z
+MSDL,P - Purchase,2025-10-06,80987,"+$1,423,940",$17.58,Morgan Stanley Direct Lending Fund,2025-10-08 14:34:03,openinsider,cluster_buys,,Closed-End Funds,7,233019,+53%,,,,,1,2025-10-14T11-58-10Z
+YCY,P - Purchase,2025-10-02,668000,"+$6,680,000",$10.00,Aa Mission Acquisition Corp. II,2025-10-06 19:23:58,openinsider,cluster_buys,D,Blank Checks,2,6418000,+12%,,,,,1,2025-10-14T11-58-10Z
+MKZR,P - Purchase,2025-10-02,707603,"+$3,298,283",$4.66,"Mackenzie Realty Capital, Inc.",2025-10-06 15:56:22,openinsider,cluster_buys,M,Real Estate Investment Trusts,6,845368,+514%,,,,,1,2025-10-14T11-58-10Z
+KYN,P - Purchase,2025-09-22,62500,"+$765,553",$12.25,"Kayne Anderson Energy Infrastructure Fund, Inc.",2025-10-06 15:37:20,openinsider,cluster_buys,,Closed-End Funds,3,855207,+8%,,,,,1,2025-10-14T11-58-10Z
+EPSN,P - Purchase,2025-09-30,37500,"+$203,260",$5.42,Epsilon Energy Ltd.,2025-10-02 12:34:34,openinsider,cluster_buys,M,Crude Petroleum & Natural Gas,2,926285,+4%,,,,,1,2025-10-14T11-58-10Z
+PHXE.,P - Purchase,2025-09-29,18000,"+$360,000",$20.00,"Phoenix Energy One, LLC",2025-10-01 16:10:12,openinsider,cluster_buys,,Crude Petroleum & Natural Gas,4,18000,%,,,,,1,2025-10-14T11-58-10Z
+MSIF,P - Purchase,2025-09-25,18935,"+$258,124",$13.63,"Msc Income Fund, Inc.",2025-09-30 16:30:09,openinsider,cluster_buys,M,Closed-End Funds,5,160150,+13%,,,,,1,2025-10-14T11-58-10Z
+OPEN,P - Purchase,2025-09-26,781879,"+$5,128,336",$6.56,Opendoor Technologies Inc.,2025-09-30 16:06:59,openinsider,cluster_buys,,Real Estate Agents & Managers (For Others),2,6230636,+14%,,,,,1,2025-10-14T11-58-10Z
+COO,P - Purchase,2025-09-05,17975,"+$1,216,346",$67.67,"Cooper Companies, Inc.",2025-09-29 20:36:52,openinsider,cluster_buys,,Ophthalmic Goods,5,436956,+4%,,,,,1,2025-10-14T11-58-10Z
+DX,P - Purchase,2025-09-26,8460,"+$102,688",$12.14,Dynex Capital Inc,2025-09-29 16:05:25,openinsider,cluster_buys,,Real Estate Investment Trusts,2,528195,+2%,,,,,1,2025-10-14T11-58-10Z
+PGEN,P - Purchase,2025-09-25,26216,"+$109,016",$4.16,"Precigen, Inc.",2025-09-26 17:01:54,openinsider,cluster_buys,M,Pharmaceutical Preparations,2,686467,+4%,,,,,1,2025-10-14T11-58-10Z
+NEXT,P - Purchase,2025-09-18,2254850,"+$15,951,996",$7.07,Nextdecade Corp,2025-09-25 20:00:19,openinsider,cluster_buys,M,Natural Gas Transmission & Distribution,5,52166365,+5%,,,,,1,2025-10-14T11-58-10Z
+STRR,P - Purchase,2025-09-23,64852,"+$684,668",$10.56,"Star Equity Holdings, Inc.",2025-09-25 16:46:37,openinsider,cluster_buys,M,Help Supply Services,2,1822153,+4%,,,,,1,2025-10-14T11-58-10Z
+MRVL,P - Purchase,2025-09-25,27200,"+$2,109,632",$77.56,"Marvell Technology, Inc.",2025-09-25 11:25:59,openinsider,cluster_buys,,Semiconductors & Related Devices,4,579013,+5%,,,,,1,2025-10-14T11-58-10Z
+AVBC,P - Purchase,2025-09-18,170410,"+$2,503,172",$14.69,"Avidia Bancorp, Inc.",2025-09-19 16:28:29,openinsider,cluster_buys,M,"Savings Institutions, Not Federally Chartered",8,192985,+755%,,,,,1,2025-10-14T11-58-10Z
+NMFC,P - Purchase,2025-09-16,182441,"+$1,808,453",$9.91,New Mountain Finance Corp,2025-09-18 16:30:16,openinsider,cluster_buys,,Closed-End Funds,3,10742150,+2%,,,,,1,2025-10-14T11-58-10Z
+WSBC,P - Purchase,2025-09-17,56000,"+$1,400,000",$25.00,Wesbanco Inc,2025-09-18 15:22:34,openinsider,cluster_buys,,National Commercial Banks,11,56000,%,,,,,1,2025-10-14T11-58-10Z
+MBIN,P - Purchase,2025-09-15,24853,"+$753,549",$30.32,Merchants Bancorp,2025-09-18 08:29:56,openinsider,cluster_buys,,State Commercial Banks,3,185334,+15%,,,,,1,2025-10-14T11-58-10Z
+MSTR,P - Purchase,2025-09-15,265355,"+$24,044,920",$90.61,Strategy Inc,2025-09-16 16:30:04,openinsider,cluster_buys,,Finance Services,8,388814,+215%,,,,,1,2025-10-14T11-58-10Z
+BUSE,P - Purchase,2025-08-19,52200,"+$1,301,928",$24.94,First Busey Corp /Nv/,2025-09-16 08:31:45,openinsider,cluster_buys,DM,State Commercial Banks,4,857203,+6%,,,,,1,2025-10-14T11-58-10Z
+SI,P - Purchase,2025-08-01,787932,"+$11,822,807",$15.00,"Shoulder Innovations, Inc.",2025-09-15 16:25:01,openinsider,cluster_buys,DM,Surgical & Medical Instruments & Apparatus,8,11463775,+7%,,,,,1,2025-10-14T11-58-10Z
+MTDR,P - Purchase,2025-09-12,1600,"+$76,846",$48.03,Matador Resources Co,2025-09-15 16:17:21,openinsider,cluster_buys,,Crude Petroleum & Natural Gas,2,235145,+1%,,,,,1,2025-10-14T11-58-10Z
+AARD,P - Purchase,2025-09-10,26000,"+$209,094",$8.04,"Aardvark Therapeutics, Inc.",2025-09-12 20:28:02,openinsider,cluster_buys,M,Pharmaceutical Preparations,2,3112896,+1%,,,,,1,2025-10-14T11-58-10Z
+ENOV,P - Purchase,2025-08-20,22157,"+$663,760",$29.96,Enovis Corp,2025-09-11 17:59:16,openinsider,cluster_buys,,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",4,426043,+5%,,,,,1,2025-10-14T11-58-10Z
+PRGO,P - Purchase,2025-09-08,18953,"+$432,950",$22.84,Perrigo Co Plc,2025-09-10 16:19:48,openinsider,cluster_buys,,Pharmaceutical Preparations,5,242621,+8%,,,,,1,2025-10-14T11-58-10Z
+ACDC,P - Purchase,2025-09-08,5043297,"+$20,164,578",$4.00,Profrac Holding Corp.,2025-09-09 17:00:07,openinsider,cluster_buys,,Oil & Gas Field Services,3,88047430,+6%,,,,,1,2025-10-14T11-58-10Z
+CE,P - Purchase,2025-09-08,8456,"+$354,206",$41.89,Celanese Corp,2025-09-09 16:38:19,openinsider,cluster_buys,,"Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)",5,72183,+13%,,,,,1,2025-10-14T11-58-10Z
+SFD,P - Purchase,2025-09-08,1834253,"+$42,646,382",$23.25,Smithfield Foods Inc,2025-09-09 16:23:44,openinsider,cluster_buys,,Meat Packing Plants,7,5509777,+50%,,,,,1,2025-10-14T11-58-10Z
+AFCG,P - Purchase,2025-09-08,1024683,"+$4,565,554",$4.46,Advanced Flower Capital Inc.,2025-09-08 17:22:15,openinsider,cluster_buys,M,Real Estate,2,5479887,+23%,,,,,1,2025-10-14T11-58-10Z
+NIQ,P - Purchase,2025-09-03,48000,"+$831,560",$17.32,Niq Global Intelligence Plc,2025-09-08 16:31:24,openinsider,cluster_buys,,"Computer Programming, Data Processing, Etc.",4,665067,+8%,,,,,1,2025-10-14T11-58-10Z
+SBH,P - Purchase,2025-09-04,12800,"+$163,129",$12.74,"Sally Beauty Holdings, Inc.",2025-09-08 09:00:05,openinsider,cluster_buys,,Retail Stores,4,380577,+3%,,,,,1,2025-10-14T11-58-10Z
+NVCR,P - Purchase,2025-09-05,101550,"+$1,228,659",$12.10,Novocure Ltd,2025-09-08 07:10:52,openinsider,cluster_buys,,Surgical & Medical Instruments & Apparatus,2,578719,+21%,,,,,1,2025-10-14T11-58-10Z
+TPVG,P - Purchase,2025-09-02,1077383,"+$7,040,539",$6.53,Triplepoint Venture Growth Bdc Corp.,2025-09-04 16:38:59,openinsider,cluster_buys,M,Closed-End Funds,2,1712612,+170%,,,,,1,2025-10-14T11-58-10Z
+SHEN,P - Purchase,2025-09-02,1219358,"+$16,616,659",$13.63,Shenandoah Telecommunications Co/Va/,2025-09-04 16:30:32,openinsider,cluster_buys,M,Telephone Communications (No Radiotelephone),3,8880266,+16%,,,,,1,2025-10-14T11-58-10Z
+BLSK,P - Purchase,2025-09-02,24314,"+$86,291",$3.55,"Bolt Projects Holdings, Inc.",2025-09-03 19:32:35,openinsider,cluster_buys,,Industrial Organic Chemicals,2,66052,+58%,,,,,1,2025-10-14T11-58-10Z
+COTY,P - Purchase,2025-09-03,334900,"+$1,320,909",$3.94,Coty Inc.,2025-09-03 19:00:40,openinsider,cluster_buys,M,"Perfumes, Cosmetics & Other Toilet Preparations",4,33399153,+1%,,,,,1,2025-10-14T11-58-10Z
+SNV,P - Purchase,2025-08-28,16314,"+$804,055",$49.29,Synovus Financial Corp,2025-08-29 17:17:39,openinsider,cluster_buys,,National Commercial Banks,7,358494,+5%,,,,,1,2025-10-14T11-58-10Z
+EMN,P - Purchase,2025-08-27,28418,"+$1,944,932",$68.44,Eastman Chemical Co,2025-08-29 16:01:38,openinsider,cluster_buys,D,"Plastic Materials, Synth Resins & Nonvulcan Elastomers",11,676926,+4%,,,,,1,2025-10-14T11-58-10Z
+LKQ,P - Purchase,2025-08-28,25669,"+$820,104",$31.95,Lkq Corp,2025-08-29 13:25:47,openinsider,cluster_buys,,Motor Vehicles & Motor Vehicle Parts & Supplies,3,341287,+8%,,,,,1,2025-10-14T11-58-10Z
+EBC,P - Purchase,2025-08-27,100149,"+$1,682,711",$16.80,"Eastern Bankshares, Inc.",2025-08-29 10:05:42,openinsider,cluster_buys,,"Savings Institution, Federally Chartered",5,937725,+12%,,,,,1,2025-10-14T11-58-10Z
+ICUI,P - Purchase,2025-08-27,23129,"+$2,626,073",$113.54,Icu Medical Inc/De,2025-08-27 17:51:17,openinsider,cluster_buys,,Surgical & Medical Instruments & Apparatus,2,227307,+11%,,,,,1,2025-10-14T11-58-10Z
+WASH,P - Purchase,2025-08-05,6700,"+$188,785",$28.18,Washington Trust Bancorp Inc,2025-08-27 15:26:17,openinsider,cluster_buys,,State Commercial Banks,2,46258,+17%,,,,,1,2025-10-14T11-58-10Z
+AMRZ,P - Purchase,2025-08-27,1139380,"+$53,949,025",$47.35,Amrize Ltd,2025-08-27 11:21:12,openinsider,cluster_buys,M,"Cement, Hydraulic",8,1971566,+137%,,,,,1,2025-10-14T11-58-10Z
+SINT,P - Purchase,2025-08-26,60475,"+$222,470",$3.68,"Sintx Technologies, Inc.",2025-08-27 08:00:02,openinsider,cluster_buys,,Surgical & Medical Instruments & Apparatus,2,88975,+212%,,,,,1,2025-10-14T11-58-10Z
+STSS,P - Purchase,2025-08-25,760000,"+$5,069,501",$6.67,Sharps Technology Inc.,2025-08-26 21:45:47,openinsider,cluster_buys,D,Surgical & Medical Instruments & Apparatus,7,760218,>999%,,,,,1,2025-10-14T11-58-10Z
+UPS,P - Purchase,2025-08-22,17182,"+$1,477,377",$85.98,United Parcel Service Inc,2025-08-26 16:37:15,openinsider,cluster_buys,,Trucking & Courier Services (No Air),3,202607,+9%,,,,,1,2025-10-14T11-58-10Z
+AEBI,P - Purchase,2025-08-26,11800,"+$142,639",$12.09,Aebi Schmidt Holding AG,2025-08-26 15:26:30,openinsider,cluster_buys,,Construction Machinery & Equip,3,183405,+7%,,,,,1,2025-10-14T11-58-10Z
+INR,P - Purchase,2025-08-22,63000,"+$867,265",$13.77,"Infinity Natural Resources, Inc.",2025-08-25 16:15:05,openinsider,cluster_buys,M,Crude Petroleum & Natural Gas,3,90500,+229%,,,,,1,2025-10-14T11-58-10Z
+WU,P - Purchase,2025-08-21,193970,"+$1,644,354",$8.48,Western Union Co,2025-08-25 16:12:16,openinsider,cluster_buys,,Business Services,2,1138736,+21%,,,,,1,2025-10-14T11-58-10Z
+GBLI,P - Purchase,2025-08-11,9500,"+$278,100",$29.27,"Global Indemnity Group, LLC",2025-08-22 16:02:52,openinsider,cluster_buys,M,"Fire, Marine & Casualty Insurance",2,180004,+6%,,,,,1,2025-10-14T11-58-10Z
+STRZ,P - Purchase,2025-08-19,35796,"+$456,946",$12.77,Starz Entertainment Corp /Cn/,2025-08-21 19:30:44,openinsider,cluster_buys,M,Motion Picture & Video Tape Production,3,222062,+19%,,,,,1,2025-10-14T11-58-10Z
+FVR,P - Purchase,2025-08-21,25239,"+$330,573",$13.10,"Frontview Reit, Inc.",2025-08-21 18:35:47,openinsider,cluster_buys,,Real Estate Investment Trusts,3,139281,+22%,,,,,1,2025-10-14T11-58-10Z
+ELV,P - Purchase,2025-08-19,9700,"+$2,813,531",$290.05,"Elevance Health, Inc.",2025-08-21 16:20:38,openinsider,cluster_buys,,Hospital & Medical Service Plans,2,154582,+7%,,,,,1,2025-10-14T11-58-10Z
+DIN,P - Purchase,2025-08-21,6863,"+$149,364",$21.76,"Dine Brands Global, Inc.",2025-08-21 16:13:59,openinsider,cluster_buys,,Eating Places,2,243693,+3%,,,,,1,2025-10-14T11-58-10Z
+PEW,P - Purchase,2025-08-20,40000,"+$211,066",$5.28,Grabagun Digital Holdings Inc.,2025-08-20 17:30:44,openinsider,cluster_buys,,Miscellaneous Shopping Goods Stores,3,2540000,+2%,,,,,1,2025-10-14T11-58-10Z
+AIOT,P - Purchase,2025-08-18,33157,"+$148,754",$4.49,"Powerfleet, Inc.",2025-08-18 18:04:09,openinsider,cluster_buys,,Communications Equipment,2,2485951,+1%,,,,,1,2025-10-14T11-58-10Z
+NSP,P - Purchase,2025-08-15,21639,"+$1,003,832",$46.39,"Insperity, Inc.",2025-08-18 16:24:31,openinsider,cluster_buys,,Help Supply Services,7,204790,+12%,,,,,1,2025-10-14T11-58-10Z
+PRMB,P - Purchase,2025-08-14,24685,"+$595,779",$24.14,Primo Brands Corp,2025-08-18 12:00:04,openinsider,cluster_buys,,Beverages,3,724136,+4%,,,,,1,2025-10-14T11-58-10Z
+EXE,P - Purchase,2025-08-18,4500,"+$423,970",$94.22,Expand Energy Corp,2025-08-18 10:12:33,openinsider,cluster_buys,,Crude Petroleum & Natural Gas,2,228391,+2%,,,,,1,2025-10-14T11-58-10Z
+LUMN,P - Purchase,2025-08-14,217870,"+$859,534",$3.95,"Lumen Technologies, Inc.",2025-08-15 18:14:20,openinsider,cluster_buys,M,Telephone Communications (No Radiotelephone),2,17687527,+1%,,,,,1,2025-10-14T11-58-10Z
+BRBR,P - Purchase,2025-08-14,9279,"+$345,101",$37.19,"Bellring Brands, Inc.",2025-08-15 17:08:56,openinsider,cluster_buys,E,Food & Kindred Products,3,115313,+9%,,,,,1,2025-10-14T11-58-10Z
+MIAX,P - Purchase,2025-08-13,27500,"+$632,500",$23.00,"Miami International Holdings, Inc.",2025-08-15 16:49:37,openinsider,cluster_buys,,"Security Brokers, Dealers & Flotation Companies",5,33669,+446%,,,,,1,2025-10-14T11-58-10Z
+AAOI,P - Purchase,2025-08-14,48709,"+$1,100,677",$22.60,"Applied Optoelectronics, Inc.",2025-08-15 16:19:30,openinsider,cluster_buys,M,Semiconductors & Related Devices,4,4014740,+1%,,,,,1,2025-10-14T11-58-10Z
+CLAR,P - Purchase,2025-08-13,324000,"+$1,050,435",$3.24,Clarus Corp,2025-08-15 16:15:12,openinsider,cluster_buys,M,Sporting & Athletic Goods,3,11419234,+3%,,,,,1,2025-10-14T11-58-10Z
+LLY,P - Purchase,2025-08-15,4355,"+$2,850,633",$654.57,Eli Lilly & Co,2025-08-15 16:13:02,openinsider,cluster_buys,,Pharmaceutical Preparations,6,186327,+2%,,,,,1,2025-10-14T11-58-10Z
+PNFP,P - Purchase,2025-08-15,34652,"+$3,073,460",$88.70,Pinnacle Financial Partners Inc,2025-08-15 15:43:36,openinsider,cluster_buys,,National Commercial Banks,5,486239,+8%,,,,,1,2025-10-14T11-58-10Z
+RHP,P - Purchase,2025-08-14,10611,"+$1,010,493",$95.23,"Ryman Hospitality Properties, Inc.",2025-08-15 11:27:19,openinsider,cluster_buys,,Real Estate Investment Trusts,2,1440306,+1%,,,,,1,2025-10-14T11-58-10Z
+AMPY,P - Purchase,2025-08-11,425000,"+$1,603,489",$3.77,Amplify Energy Corp.,2025-08-14 20:01:01,openinsider,cluster_buys,M,Crude Petroleum & Natural Gas,2,3718979,+13%,,,,,1,2025-10-14T11-58-10Z
+CROX,P - Purchase,2025-08-12,5261,"+$403,204",$76.64,"Crocs, Inc.",2025-08-14 18:39:34,openinsider,cluster_buys,,Rubber & Plastics Footwear,2,65495,+9%,,,,,1,2025-10-14T11-58-10Z
+FINS,P - Purchase,2025-08-05,9505,"+$124,908",$13.14,Angel Oak Financial Strategies Income Term Trust,2025-08-14 15:12:02,openinsider,cluster_buys,,Closed-End Funds,2,10525,+932%,,,,,1,2025-10-14T11-58-10Z
+TROX,P - Purchase,2025-08-12,208750,"+$662,797",$3.18,Tronox Holdings Plc,2025-08-13 09:22:01,openinsider,cluster_buys,,Industrial Inorganic Chemicals,6,2828193,+8%,,,,,1,2025-10-14T11-58-10Z
+PRGS,P - Purchase,2025-08-12,8935,"+$428,158",$47.92,Progress Software Corp /Ma,2025-08-13 07:00:25,openinsider,cluster_buys,,Prepackaged Software,3,388030,+2%,,,,,1,2025-10-14T11-58-10Z
+CBZ,P - Purchase,2025-08-08,3593,"+$224,874",$62.59,"Cbiz, Inc.",2025-08-12 16:45:44,openinsider,cluster_buys,,Business Services,2,46834,+8%,,,,,1,2025-10-14T11-58-10Z
+CTEV,P - Purchase,2025-08-08,9903,"+$549,192",$55.46,Claritev Corp,2025-08-12 16:19:12,openinsider,cluster_buys,M,Business Services,2,94305,+12%,,,,,1,2025-10-14T11-58-10Z
+AKAM,P - Purchase,2025-08-11,53000,"+$3,829,944",$72.26,Akamai Technologies Inc,2025-08-12 16:15:56,openinsider,cluster_buys,,Business Services,2,2688003,+2%,,,,,1,2025-10-14T11-58-10Z
+CHD,P - Purchase,2025-08-12,12879,"+$1,177,675",$91.44,Church & Dwight Co Inc /De/,2025-08-12 12:17:16,openinsider,cluster_buys,,"Soap, Detergents, Cleaning, Perfumes, Cosmetics",3,76546,+20%,,,,,1,2025-10-14T11-58-10Z
+SONO,P - Purchase,2025-08-08,1897465,"+$21,136,748",$11.14,Sonos Inc,2025-08-11 18:54:34,openinsider,cluster_buys,M,Household Audio & Video Equipment,5,30329186,+7%,,,,,1,2025-10-14T11-58-10Z
+TNDM,P - Purchase,2025-08-11,23720,"+$251,722",$10.61,Tandem Diabetes Care Inc,2025-08-11 18:15:44,openinsider,cluster_buys,,Surgical & Medical Instruments & Apparatus,2,165705,+17%,,,,,1,2025-10-14T11-58-10Z
+AVBH,P - Purchase,2025-08-08,145000,"+$3,335,000",$23.00,"Avidbank Holdings, Inc.",2025-08-11 18:00:07,openinsider,cluster_buys,,State Commercial Banks,6,1623421,+10%,,,,,1,2025-10-14T11-58-10Z
+SFNC,P - Purchase,2025-08-07,108925,"+$2,016,477",$18.51,Simmons First National Corp,2025-08-11 17:58:46,openinsider,cluster_buys,,National Commercial Banks,8,1220173,+10%,,,,,1,2025-10-14T11-58-10Z
+PTLO,P - Purchase,2025-08-08,210570,"+$1,614,474",$7.67,Portillo'S Inc.,2025-08-11 17:47:19,openinsider,cluster_buys,M,Eating Places,4,447173,+89%,,,,,1,2025-10-14T11-58-10Z
+CNC,P - Purchase,2025-08-08,28230,"+$738,945",$26.18,Centene Corp,2025-08-11 17:28:22,openinsider,cluster_buys,D,Hospital & Medical Service Plans,2,895770,+3%,,,,,1,2025-10-14T11-58-10Z
+PINE,P - Purchase,2025-08-06,119581,"+$1,702,990",$14.24,"Alpine Income Property Trust, Inc.",2025-08-11 16:30:13,openinsider,cluster_buys,M,Real Estate Investment Trusts,4,1278202,+10%,,,,,1,2025-10-14T11-58-10Z
+CSR,P - Purchase,2025-08-08,1750,"+$95,325",$54.47,Centerspace,2025-08-11 15:53:06,openinsider,cluster_buys,,Real Estate Investment Trusts,3,37627,+5%,,,,,1,2025-10-14T11-58-10Z
+IFF,P - Purchase,2025-08-07,30750,"+$1,994,897",$64.87,International Flavors & Fragrances Inc,2025-08-08 18:49:19,openinsider,cluster_buys,,Industrial Organic Chemicals,2,2384840,+1%,,,,,1,2025-10-14T11-58-10Z
+AUB,P - Purchase,2025-08-08,23941,"+$765,452",$31.97,Atlantic Union Bankshares Corp,2025-08-08 11:56:23,openinsider,cluster_buys,M,State Commercial Banks,2,349233,+7%,,,,,1,2025-10-14T11-58-10Z
+TFX,P - Purchase,2025-08-05,5500,"+$633,590",$115.20,Teleflex Inc,2025-08-07 18:02:01,openinsider,cluster_buys,,Surgical & Medical Instruments & Apparatus,5,89355,+7%,,,,,1,2025-10-14T11-58-10Z
+OI,P - Purchase,2025-08-05,11828,"+$154,757",$13.08,"O-I Glass, Inc. /De/",2025-08-07 16:59:46,openinsider,cluster_buys,,Glass Containers,2,711406,+2%,,,,,1,2025-10-14T11-58-10Z
+KMPR,P - Purchase,2025-08-07,8000,"+$394,425",$49.30,Kemper Corp,2025-08-07 16:59:04,openinsider,cluster_buys,,"Fire, Marine & Casualty Insurance",4,85425,+10%,,,,,1,2025-10-14T11-58-10Z
+VRTX,P - Purchase,2025-08-06,15000,"+$5,844,184",$389.61,Vertex Pharmaceuticals Inc / Ma,2025-08-07 16:23:31,openinsider,cluster_buys,,Pharmaceutical Preparations,2,160968,+10%,,,,,1,2025-10-14T11-58-10Z
+PRLB,P - Purchase,2025-08-05,3440,"+$150,160",$43.65,Proto Labs Inc,2025-08-07 16:09:01,openinsider,cluster_buys,,Fabricated Structural Metal Products,2,61904,+6%,,,,,1,2025-10-14T11-58-10Z
+NEO,P - Purchase,2025-08-06,37900,"+$212,276",$5.60,Neogenomics Inc,2025-08-06 16:07:57,openinsider,cluster_buys,D,Testing Laboratories,2,245298,+18%,,,,,1,2025-10-14T11-58-10Z
+CIVB,P - Purchase,2025-08-05,4500,"+$87,914",$19.54,"Civista Bancshares, Inc.",2025-08-05 16:26:03,openinsider,cluster_buys,M,State Commercial Banks,2,25659,+21%,,,,,1,2025-10-14T11-58-10Z
+CHMG,P - Purchase,2025-08-05,18458,"+$968,372",$52.46,Chemung Financial Corp,2025-08-05 13:33:01,openinsider,cluster_buys,,State Commercial Banks,3,57785,+47%,,,,,1,2025-10-14T11-58-10Z

@@ -1,0 +1,16 @@
+ticker,source,section,holdings (shares),holdings (usd),% of portfolio,change (shares),change (usd),% change,page,scraped_at
+RVMD,quiver,institutional_13f,7601087,"$279,643,991",46.19%,-,-,-,2,2025-10-14T11-57-52Z
+MRSN,quiver,institutional_13f,12067246,"$89,297,620",14.75%,+11584556,"+$85,725,714","+2,400.00%",2,2025-10-14T11-57-52Z
+ORIC,quiver,institutional_13f,7162637,"$72,700,766",12.01%,+1876923,"+$19,050,768",+35.51%,2,2025-10-14T11-57-52Z
+TYRA,quiver,institutional_13f,4055861,"$38,814,590",6.41%,-,-,-,2,2025-10-14T11-57-52Z
+TNGX,quiver,institutional_13f,5533980,"$28,333,978",4.68%,-,-,-,2,2025-10-14T11-57-52Z
+KYMR,quiver,institutional_13f,340909,"$14,877,269",2.46%,+340909,"+$14,877,269",Open,2,2025-10-14T11-57-52Z
+ZYME,quiver,institutional_13f,1113946,"$13,980,022",2.31%,-,-,-,2,2025-10-14T11-57-52Z
+RLAY,quiver,institutional_13f,3846409,"$13,308,575",2.20%,-,-,-,2,2025-10-14T11-57-52Z
+SPRY,quiver,institutional_13f,741729,"$12,943,171",2.14%,-195000,"-$3,402,750",-20.82%,2,2025-10-14T11-57-52Z
+CRGX,quiver,institutional_13f,2642502,"$10,887,108",1.80%,-,-,-,2,2025-10-14T11-57-52Z
+ARVN,quiver,institutional_13f,1408394,"$10,365,780",1.71%,-,-,-,2,2025-10-14T11-57-52Z
+CGEM,quiver,institutional_13f,1141145,"$8,592,822",1.42%,-,-,-,2,2025-10-14T11-57-52Z
+SLN,quiver,institutional_13f,952400,"$5,523,920",0.91%,-,-,-,2,2025-10-14T11-57-52Z
+CNTX,quiver,institutional_13f,7419355,"$4,861,161",0.80%,-,-,-,2,2025-10-14T11-57-52Z
+BOLD,quiver,institutional_13f,1228069,"$1,240,350",0.20%,-,-,-,2,2025-10-14T11-57-52Z

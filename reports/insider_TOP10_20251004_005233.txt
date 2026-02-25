@@ -1,0 +1,139 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2025-10-04 00:52:33
+Total Records Analyzed: 1239
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Event Filtering: Excludes patterns within ±7 days of earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 170 (Role Multiplier: 2.0x)
+Patterns Detected (5):
+  • Perfect timing: NRGV (+36.0% in 7-14 days)
+  • Perfect timing: NRGV (+31.4% in 7-14 days)
+  • Perfect timing: NRGV (+36.0% in 7-14 days)
+  • Perfect timing: NRGV (+31.4% in 7-14 days)
+  • Repeat: NRGV (6x)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Davy Joseph P. (CEO, COB, 10%, BNZI)
+Risk Score: 165 (Role Multiplier: 2.0x)
+Patterns Detected (7):
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Coordinated: 2025-09-11 (Other sector, 5 traders)
+      Coordinated with: Gorli Eric (Pres, US Refreshment Bev., KDP), McDonald Damien (CEO, ENOV), Simon Ronald I (Dir, EFC), Carter Thomas L Jr (CEO, Pres,, COB, BSM)
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 150 (Role Multiplier: 2.0x)
+Patterns Detected (5):
+  • Perfect timing: AARD (+37.5% in 7-14 days)
+  • Perfect timing: AARD (+52.1% in 7-14 days)
+  • Perfect timing: AARD (+52.1% in 7-14 days)
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+      Coordinated with: Shao Wei-Ming (EVP, GC, MSTR), Williams Gregg (Dir, 10%, VANI), Wider Todd (Dir, ASPI), Weinstein Adam B. (EVP, CAO, Dir, NMFC)
+  • Coordinated: 2025-09-10 (Other sector, 7 traders)
+      Coordinated with: Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Sprott Eric (10%, HYMC), Zanganeh Mahkam (Co-CEO, 10%, SMMT), Duggan Robert W (Co-CEO, 10%, SMMT), Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW), Smiley Joshua L (See Remarks, ZLAB)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 145 (Role Multiplier: 2.0x)
+Patterns Detected (4):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Sherpa Angche (CFO, MKZR)
+Risk Score: 140 (Role Multiplier: 2.0x)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 140 (Role Multiplier: 2.0x)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Lettmann Jason (CEO, ALXO)
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Bauerlein Alison (CFO, SGHT)
+Risk Score: 65 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Sector cluster: SGHT (Other) - 4 traders on 2025-10-01
+      Coordinated with: Badawi Paul (Pres, CEO, 10%, SGHT), Badawi David (CTO, SGHT), Hayden Jeremy B. (GC, SGHT)
+  • Sector cluster: SGHT (Other) - 3 traders on 2025-10-02
+      Coordinated with: Badawi David (CTO, SGHT), Hayden Jeremy B. (GC, SGHT)
+  • Coordinated: 2025-10-02 (Other sector, 42 traders)
+      Coordinated with: Simi Bonny W (Pres of Operations, JOBY), Welch Jamie (See Remarks, KNTK), Goel Amar K. (COB, Chief Innovation Off, 10%, PUBM), Agree Joey (Pres, CEO, ADC), Kumar Mukul (Pres, Engineering, PUBM), Greenstreet Yvonne (CEO, ALNY), Ofman Joshua J. (Pres, GRAL), McRae Matthew Blake (CEO, ARLO), Stone Paul (Pres, CEO, SPWH), Cook Timothy D (CEO, AAPL), Ramaswami Rajiv (Pres, CEO, NTNX), Papadopoulos Didier (Pres of Aircraft OEM, JOBY), Pantelick Steven (CFO, PUBM), McKay Christopher J. (Chief Risk, Analytics Officer, OPFI), Johnson Pamela D. (CFO, OPFI), Gomez Elena (Pres, CFO, TOST), Steenrod Mitchell D (Dir, KMX), Sondergaard Niels (10%, CODA), Pham Quang X (CEO, COB, 10%, CVKD), Garg Pushkal (EVP Chief R, D, ALNY), Meyrath Hugues (Pres, CEO, QMCO), Schaber Christopher J (COB, CEO, Pres, SNGX), Plassche Douglas (EVP Operations, ELTP), Leinwand Robert (EVP: GC, NKE), Tanguler Tolga (EVP, Chief Commercial Officer, ALNY), Bowles Gregory (Chief Policy Officer, JOBY), Woods Andrew (GC, Secretary, PUBM), Poulton Jeffrey V. (EVP, CFO, ALNY), Allison Eric (Chief Product Officer, JOBY), Goel Rajeev K. (CEO, 10%, PUBM), McBee Richard D (Dir, SPWH), O'Brien Deirdre (SVP, AAPL), Aggarwal Sanjeev (Pres, CEO, MRAM), Schwab-Pomerantz Carolyn (Dir, SCHW), Adams Katherine L. (SVP, GC, Secretary, AAPL), Dechant Robert Thomas (CEO, IBEX), Grewal Harpreet (Dir, PEN), Altschuler Randolph (CEO, XMTR), Narang Aman (CEO, TOST), Fitzgerald Kevin Joseph (CSO, EVP, Head of Research, ALNY), Dehoff Kate (See Remarks, JOBY)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

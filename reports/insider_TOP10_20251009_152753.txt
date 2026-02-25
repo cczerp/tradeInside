@@ -1,0 +1,149 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2025-10-09 15:27:55
+Total Records Analyzed: 1228
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)
+  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 487 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • BCDA: Traded at $1.16 → Now $1.39 (+17.2%)
+Patterns Detected (3):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Same-company cluster: BCDA - 3 insiders within 7 days
+      Coordinated with: Stertzer Simon H (Dir), Blank Andrew Scott (Dir)
+  • Perfect timing: BCDA (+17.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Sherpa Angche (CFO, MKZR)
+Risk Score: 437 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.50 (+31.7%)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Repeat: MKZR (5x)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 425 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NRGV: Traded at $2.26 → Now $3.49 (+31.4%)
+Patterns Detected (2):
+  • Repeat: NRGV (6x)
+  • Perfect timing: NRGV (+31.4-36.0%) x4
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 375 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • AARD: Traded at $8.00 → Now $16.59 (+52.1%)
+Patterns Detected (3):
+  • Perfect timing: AARD (+37.5-52.1%) x3
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+      Coordinated with: Zegarelli Christopher John (CFO, SVCO), Williams Gregg (Dir, 10%, VANI), Weinstein Adam B. (EVP, CAO, Dir, NMFC), Shao Wei-Ming (EVP, GC, MSTR)
+  • Coordinated: 2025-09-10 (Other sector, 7 traders)
+      Coordinated with: Duggan Robert W (Co-CEO, 10%, SMMT), Smiley Joshua L (See Remarks, ZLAB), Sprott Eric (10%, HYMC), Zanganeh Mahkam (Co-CEO, 10%, SMMT), Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • SAVA: Traded at $2.29 → Now $4.19 (+49.8%)
+Patterns Detected (1):
+  • Perfect timing: SAVA (+49.8%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NXXT: Traded at $1.77 → Now $2.28 (+19.2%)
+Patterns Detected (1):
+  • Perfect timing: NXXT (+19.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Lettmann Jason (CEO, ALXO)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • ALXO: Traded at $1.08 → Now $1.94 (+69.4%)
+Patterns Detected (1):
+  • Perfect timing: ALXO (+69.4%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 287 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Patterns Detected (3):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Patterson Charles E. II (GC, Secretary, MKZR), Fuller Glen W (TREASURER, MKZR), Sherpa Angche (CFO, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Janac K Charles (Pres, CEO, 10%, AIP)
+Risk Score: 195 (Role: 2.0x)
+Patterns Detected (6):
+  • Sector cluster: AIP (Other) - 4 traders on 2025-10-06
+      Coordinated with: Hawkins Nicholas B. (VP, CFO, AIP), Bayview Legacy, LLC (10%, AIP), Viana Antonio J (Dir, AIP)
+  • Same-company cluster: AIP - 4 insiders within 7 days (Role diversity: CFO, CEO)
+      Coordinated with: Hawkins Nicholas B. (VP, CFO), Bayview Legacy, LLC (10%), Viana Antonio J (Dir)
+  • Same-company cluster: AIP - 4 insiders within 7 days (Role diversity: CFO, CEO)
+      Coordinated with: Hawkins Nicholas B. (VP, CFO), Bayview Legacy, LLC (10%), Viana Antonio J (Dir)
+  • Repeat: AIP (5x)
+  • Coordinated: 2025-10-06 (Other sector, 82 traders)
+      Coordinated with: Hyep Ivan (CFO, BCAX), Ashish Arora (CEO, 10%, CRCT), Yarbrough Timothy G. (EVP, CFO, ZIP), Agrawal Neeraj (Dir, CXM), Kellenberger Paul (CEO, ZSPC), Binstock Joan (Dir, MSDL), Dickson Paul S. (Pres, Chief Revenue Officer, RUN), Subotovsky Santiago (Dir, ZM), Bergman Artur (CTO, FSLY), Powell Mary (CEO, RUN), Hahn Ava (SVP, GC, Corporate Secretary, AMD), Spiegel Reuven (EVP, DKL, DKL), Larson Barbara A (CFO, S), Welihinda Navam (CFO, ESTC), Laponis Adam (CFO, TWST), Chacko Jacob (Pres, CEO, ORIC), Barak Maria (Chief Accounting Officer, RUN), Gates Greg (Group MD, LPLA), Iannone Jamie (Pres, CEO, EBAY), Fields Kimberly A (Pres, CEO, Dir, ATI), Smith Mark Andrew (VP - CFO, CMI), Rodriquez Antonio (CFO, CRNC), Wilson Thomas J (COB, Pres, CEO, ALL), Piscitelli Dominic (CFO, ORIC), Bass Robert J (Trustee, BXSL), Cantor Fitzgerald, L. P. (Dir, 10%, BGC), Mink Brook Asset Management LLC (10%, DLHC), Pinner Jeffrey Tsvi (CTO, HOOD), Harper Michael S (See Remarks, ZSPC), Steele Jeanna (Chief Legal, People Officer, RUN), Goel Rajeev K. (CEO, 10%, PUBM), Taylor Brenton (EVP, Operations, R, D, SGHT), Susi Roger E. (CEO, Pres, COB, 10%, IRMD), Parkman Healthcare Partners LLC (10%, SPRB), Wirth James F (Pres, CEO, 10%, IHT), Daniel Daniel David III (Dir, DOMO), Peterson Adam K (Dir, 10%, OMCC), Howe Elizabeth A. (EVP, CFO, SITM), Bayview Legacy, LLC (10%, AIP), Gong Xunkai (Exec COB, AVPT), Mears Michael N (Dir, KYN), Lee Kang Jyh (Dir, PLAB), Jarrett Jennifer (COO, RCUS), Siegel Ian H. (CEO, 10%, ZIP), Viana Antonio J (Dir, AIP), Cohlhepp Ryan (Pres, COO, BCAX), O'Dowd William IV (CEO, DLPN), Mintz Brandon Taylor (CEO, BTM), Hsiao Sissie L. (Dir, BMBL), Reprogrammed Interchange LLC (10%, VOR), Leproust Emily M. (CEO, TWST), Cantor Ep Holdings I, LLC (COB, CEO, 10%, CEPF), Rotolo Tim (CEO, 10%, RNGTU), Range Capital Acquisition Sponsor Ii, LLC (10%, RNGTU), Olivan Javier (COO, META), Bass Carl (Dir, PL), Hartje Karen (CFO, SEZL), Carestio Daniel A (Pres, CEO, STE), Lutnick Brandon (COB, CEO, 10%, CEPF), Slta IV (Gp), L.L.C. (Dir, 10%, DELL), Chiplock Mark (EVP, CFO, CAO, AMRC), Venker Eric (Pres, Immunovant CEO, ROIV), Cf Group Management Inc (Managing General Partner CFLP, 10%, BGC), Kim Joo Mi (CFO, QLYS), Bueker Kathryn (CFO, HUBS), Spector David (COB, CEO, PFSI), Sinclair Jack (CEO, SFM), Lynch Desmond (SVP, CFO, RMBS), Tabuteau Herriot (CEO, 10%, AXSM), Venturo Brian M (Chief Strategy Officer, CRWV), Weingarten Tomer (Pres, CEO, S), Krasnow Todd (Dir, SYM), Slta V (Gp), L.L.C. (Dir, 10%, DELL), Rangan Yamini (CEO, Pres, HUBS), Shan Helen L. (EVP, CFO, FDS), Daly Joseph Patrick (Dir, 10%, BUKS), Deoliveira Erick (CFO, ZSPC), Hennessy Daniel J (Dir, INV), Kraus Larry (SVP, CIO, OLLI), McDonald Anthony K (Pres, BNC), Abajian Danny (CFO, RUN)
+  • Coordinated: 2025-10-02 (Other sector, 26 traders)
+      Coordinated with: Coombe Gary A (CEO - Grooming, PG), Wimbush Frederick Blair (Dir, AHH), McConnell Rick M (CEO, DT), McBee Richard D (Dir, SPWH), Welch Jamie (See Remarks, KNTK), Armstrong Brian (COB, CEO, 10%, COIN), Spear Catherine Eva (CEO, 10%, FIGS), Davis Jennifer L. (CEO - Health Care, PG), Ahuja Amrita (CFO, COO, XYZ), Lombardo Keira L (Chief Strategy Officer, CALM), Giamatteo John Joseph (CEO, Pres, Cybersecurity, BB), Sun Qing Bill (CEO, 10%, YCY), Keith R. Alexandra (CEO - Beauty, PG), Tighe Brett (CFO, OKTA), Goel Rajeev K. (CEO, 10%, PUBM), Schulten Andre (CFO, PG), Moeller Jon R (COB, Pres, CEO, PG), Agree Joey (Pres, CEO, ADC), Stone Paul (Pres, CEO, SPWH), Oneil Mark F (Dir, KMX), Schaber Christopher J (COB, CEO, Pres, SNGX), Pantelick Steven (CFO, PUBM), Aa Mission Sponsor II (10%, YCY), Steenrod Mitchell D (Dir, KMX), Resch Martin H. (Pres, CEO, CASS)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Hawkins Nicholas B. (VP, CFO, AIP)
+Risk Score: 170 (Role: 2.0x)
+Patterns Detected (4):
+  • Sector cluster: AIP (Other) - 4 traders on 2025-10-06
+      Coordinated with: Janac K Charles (Pres, CEO, 10%, AIP), Bayview Legacy, LLC (10%, AIP), Viana Antonio J (Dir, AIP)
+  • Same-company cluster: AIP - 4 insiders within 7 days (Role diversity: CFO, CEO)
+      Coordinated with: Janac K Charles (Pres, CEO, 10%), Bayview Legacy, LLC (10%), Viana Antonio J (Dir)
+  • Same-company cluster: AIP - 4 insiders within 7 days (Role diversity: CFO, CEO)
+      Coordinated with: Janac K Charles (Pres, CEO, 10%), Bayview Legacy, LLC (10%), Viana Antonio J (Dir)
+  • Coordinated: 2025-10-07 (Other sector, 33 traders)
+      Coordinated with: Slta IV (Gp), L.L.C. (Dir, 10%, DELL), Smith Tricia D (Global CEO Anthropologie Group, URBN), Bitterman Kevin (Dir, IRON), Forbes Alexandria (Pres, CEO, MGTX), Kashani Ali (CEO, SERV), Harrison Robert Gardner (CIO, SERA), Remer Eric Richard (CEO, EVCM), Saba Capital Management, L.P. (10%, ASA), Meurice Eric (Dir, IPGP), Bialecki Andrew (CEO, 10%, KVYO), Fields Randall K (CEO, 10%, TRAK), Rowe Zane (CFO, WDAY), Bentley Sheldon Richard (Founder, 10%, CSAI), Scott Jonathan R (10%, FIBK), Fiore Michael Henry (EVP, CHIEF COMMERCIAL OFFICER, HQY), Korch Angela A (EVP, CFO, MTN), Mellinger Douglas K (Dir, MARA), Howard Justyn Russell (Exec Chair, 10%, SPT), Indelicarto Thomas C (EVP, GC, Secretary, VRSN), Smith Patrick W (CEO, AXON), Mattke Timothy J. (CEO, MTG), Slta V (Gp), L.L.C. (Dir, 10%, DELL), Berkovitch Eli (VP Chief Acct Ofr, Controller, BOX), Fairmount Funds Management LLC (Dir, ZBIO), Shlomi Ben Haim (CEO, FROG), Rakolta John Jr (Dir, ADC), Healy Brian C. (Dir, MWA), Farrell Michael J. (CEO, RMD), Del Preto Joseph (CFO, Treasurer, SPT), Zuppas Eleni Nitsa (Pres, Chief of Staff, VEEV), Wirth James F (Pres, CEO, 10%, IHT), Hansen Paula (Chief Revenue Officer, DOCU)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

@@ -1,0 +1,101 @@
+trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
+Musk Elon,TSLA,P - Purchase,2025-09-12,2568732,"+$999,959,042",$389.28,"Tesla, Inc.","CEO, 10%",2025-09-15 06:01:19,openinsider,top_officer_month,,509362808,+1%,,,,,1,2025-10-14T11-58-24Z
+Ryan Patrick G,RYAN,P - Purchase,2025-09-12,276634,"+$14,340,264",$51.84,"Ryan Specialty Holdings, Inc.","Exec COB, 10%",2025-09-15 08:17:42,openinsider,top_officer_month,,13755434,+2%,,,,,1,2025-10-14T11-58-24Z
+Sun Qing Bill,YCY,P - Purchase,2025-10-02,334000,"+$3,340,000",$10.00,Aa Mission Acquisition Corp. II,"CEO, 10%",2025-10-06 19:23:58,openinsider,top_officer_month,D,3209000,+12%,,,,,1,2025-10-14T11-58-24Z
+Barry John F,PSEC,P - Purchase,2025-09-25,925000,"+$2,517,758",$2.72,Prospect Capital Corp,"CEO, 10%",2025-09-29 16:00:50,openinsider,top_officer_month,,86439522,+1%,,,,,1,2025-10-14T11-58-24Z
+Schatzman Matthew K,NEXT,P - Purchase,2025-09-12,281500,"+$2,009,629",$7.14,Nextdecade Corp,CEO,2025-09-15 08:27:49,openinsider,top_officer_month,,5246316,+6%,,,,,1,2025-10-14T11-58-24Z
+Barry John F,PSEC,P - Purchase,2025-09-24,741158,"+$1,939,610",$2.62,Prospect Capital Corp,"CEO, 10%",2025-09-26 16:02:19,openinsider,top_officer_month,,85514522,+1%,,,,,1,2025-10-14T11-58-24Z
+Farkas Michael D,NXXT,P - Purchase,2025-09-18,1000000,"+$1,670,000",$1.67,"Nextnrg, Inc.","CEO, Exec COB, 10%",2025-09-19 09:15:12,openinsider,top_officer_month,,75254300,+1%,,,,,1,2025-10-14T11-58-24Z
+Shao Wei-Ming,MSTR,P - Purchase,2025-09-15,12500,"+$1,211,450",$96.92,Strategy Inc,"EVP, GC",2025-09-16 16:30:04,openinsider,top_officer_month,,31753,+65%,,,,,1,2025-10-14T11-58-24Z
+Murphy Matthew J,MRVL,P - Purchase,2025-09-25,13600,"+$1,048,424",$77.09,"Marvell Technology, Inc.","COB, CEO",2025-09-25 11:20:54,openinsider,top_officer_month,,268637,+5%,,,,,1,2025-10-14T11-58-24Z
+Eliasek M Grier,PSEC,P - Purchase,2025-09-25,370000,"+$1,002,700",$2.71,Prospect Capital Corp,COO,2025-09-29 16:01:10,openinsider,top_officer_month,,2501130,+17%,,,,,1,2025-10-14T11-58-24Z
+Lamendola Damien,MRAI,P - Purchase,2025-09-10,896903,"+$950,000",$1.06,"Marpai, Inc.","CEO, 10%",2025-09-26 16:05:04,openinsider,top_officer_month,,8004509,+13%,,,,,1,2025-10-14T11-58-24Z
+Dondero James D,NREF,P - Purchase,2025-09-22,66000,"+$945,780",$14.33,"Nexpoint Real Estate Finance, Inc.","Pres, 10%",2025-09-24 20:00:45,openinsider,top_officer_month,,6569349,+1%,,,,,1,2025-10-14T11-58-24Z
+Moulder Leon O Jr,ZBIO,P - Purchase,2025-10-07,36928,"+$769,949",$20.85,"Zenas Biopharma, Inc.",See Remarks,2025-10-09 17:24:42,openinsider,top_officer_month,,1975122,+2%,,,,,1,2025-10-14T11-58-24Z
+Evans Gary C,UAMY,P - Purchase,2025-09-26,100000,"+$613,200",$6.13,United States Antimony Corp,"COB, CEO",2025-09-30 19:44:25,openinsider,top_officer_month,,2378818,+4%,,,,,1,2025-10-14T11-58-24Z
+Barry Richard,SAVA,P - Purchase,2025-09-18,237941,"+$534,743",$2.25,Cassava Sciences Inc,"Pres, CEO",2025-09-22 16:07:33,openinsider,top_officer_month,M,707503,+51%,,,,,1,2025-10-14T11-58-24Z
+Koopmans Chris,MRVL,P - Purchase,2025-09-25,6800,"+$530,604",$78.03,"Marvell Technology, Inc.","Pres, COO",2025-09-25 11:22:43,openinsider,top_officer_month,,104825,+7%,,,,,1,2025-10-14T11-58-24Z
+Krohn Tracy W,WTI,P - Purchase,2025-10-01,286842,"+$527,259",$1.84,W&T Offshore Inc,"COB, CEO, Pres, 10%",2025-10-03 16:22:43,openinsider,top_officer_month,M,48806592,+1%,,,,,1,2025-10-14T11-58-24Z
+Weinstein Adam B.,NMFC,P - Purchase,2025-09-15,49750,"+$498,828",$10.03,New Mountain Finance Corp,"EVP, CAO, Dir",2025-09-16 16:55:46,openinsider,top_officer_month,,652490,+8%,,,,,1,2025-10-14T11-58-24Z
+Eberwein Jeffrey E.,STRR,P - Purchase,2025-09-15,33797,"+$344,841",$10.20,"Star Equity Holdings, Inc.","CEO, 10%",2025-09-17 18:09:43,openinsider,top_officer_month,M,1802667,+2%,,,,,1,2025-10-14T11-58-24Z
+Bharathi Sandeep,MRVL,P - Purchase,2025-09-25,3400,"+$265,302",$78.03,"Marvell Technology, Inc.","Pres, Data Center Group",2025-09-25 11:24:19,openinsider,top_officer_month,,73392,+5%,,,,,1,2025-10-14T11-58-24Z
+Meintjes Willem A,MRVL,P - Purchase,2025-09-25,3400,"+$265,302",$78.03,"Marvell Technology, Inc.",CFO,2025-09-25 11:25:59,openinsider,top_officer_month,,132159,+3%,,,,,1,2025-10-14T11-58-24Z
+Lombardo Keira L,CALM,P - Purchase,2025-10-02,2800,"+$258,599",$92.36,Cal-Maine Foods Inc,Chief Strategy Officer,2025-10-06 19:46:52,openinsider,top_officer_month,,3738,+299%,,,,,1,2025-10-14T11-58-24Z
+Bantwal Vivek,GSBD,P - Purchase,2025-09-12,22000,"+$250,012",$11.36,"Goldman Sachs Bdc, Inc.",Co-CEO,2025-09-15 16:34:36,openinsider,top_officer_month,,22000,New,,,,,1,2025-10-14T11-58-24Z
+Walker James Francis,ASPJX,P - Purchase,2025-09-24,23428,"+$249,977",$10.67,Adams Street Private Equity Navigator Fund LLC,"Pres, CEO",2025-09-24 21:30:14,openinsider,top_officer_month,,23428,New,,,,,1,2025-10-14T11-58-24Z
+Agree Joey,ADC,P - Purchase,2025-10-02,3528,"+$249,183",$70.63,Agree Realty Corp,"Pres, CEO",2025-10-03 06:30:05,openinsider,top_officer_month,,641622,+1%,,,,,1,2025-10-14T11-58-24Z
+Leblanc Claude,AMBC,P - Purchase,2025-10-01,25000,"+$213,500",$8.54,Ambac Financial Group Inc,CEO,2025-10-01 16:58:02,openinsider,top_officer_month,D,1021777,+3%,,,,,1,2025-10-14T11-58-24Z
+Lamendola Damien,MRAI,P - Purchase,2025-09-30,147058,"+$199,999",$1.36,"Marpai, Inc.","CEO, 10%",2025-10-02 17:03:19,openinsider,top_officer_month,,8151567,+2%,,,,,1,2025-10-14T11-58-24Z
+Zawadzki Alexi Illya,LAC,P - Purchase,2025-10-01,20000,"+$191,516",$9.58,Lithium Americas Corp.,"VP, Resource Development",2025-10-03 17:40:46,openinsider,top_officer_month,,60005,+50%,,,,,1,2025-10-14T11-58-24Z
+Stone Paul,SPWH,P - Purchase,2025-10-02,68279,"+$188,359",$2.76,"Sportsman'S Warehouse Holdings, Inc.","Pres, CEO",2025-10-03 18:10:15,openinsider,top_officer_month,M,1110602,+7%,,,,,1,2025-10-14T11-58-24Z
+Eberwein Jeffrey E.,STRR,P - Purchase,2025-09-18,15642,"+$179,103",$11.45,"Star Equity Holdings, Inc.","CEO, 10%",2025-09-22 21:04:47,openinsider,top_officer_month,M,667237,+2%,,,,,1,2025-10-14T11-58-24Z
+Allen Curtis R.,PHXE.,P - Purchase,2025-09-29,8500,"+$170,000",$20.00,"Phoenix Energy One, LLC",CFO,2025-10-01 16:10:03,openinsider,top_officer_month,,8500,New,,,,,1,2025-10-14T11-58-24Z
+Martell Frank,SMRT,P - Purchase,2025-09-12,100000,"+$148,500",$1.49,"Smartrent, Inc.",CEO,2025-09-15 16:16:26,openinsider,top_officer_month,M,848204,+13%,,,,,1,2025-10-14T11-58-24Z
+Coggins Eileen Mary,MG,P - Purchase,2025-09-15,15000,"+$143,250",$9.55,"Mistras Group, Inc.","EVP, GC",2025-09-25 15:53:59,openinsider,top_officer_month,D,15000,New,,,,,1,2025-10-14T11-58-24Z
+Cox Bryan Alden,AVA,P - Purchase,2025-09-16,3671,"+$130,518",$35.55,Avista Corp,SVP,2025-09-17 11:20:22,openinsider,top_officer_month,,18801,+24%,,,,,1,2025-10-14T11-58-24Z
+Ball Robert Joseph,SI,P - Purchase,2025-09-11,8000,"+$122,755",$15.34,"Shoulder Innovations, Inc.","CEO, Exec COB",2025-09-15 16:15:37,openinsider,top_officer_month,M,111259,+8%,,,,,1,2025-10-14T11-58-24Z
+Lewis Alison,HAIN,P - Purchase,2025-09-18,74895,"+$112,104",$1.50,Hain Celestial Group Inc,"Interim Pres, CEO",2025-09-22 08:30:08,openinsider,top_officer_month,M,97911,+325%,,,,,1,2025-10-14T11-58-24Z
+Clemmer James C,ANGO,P - Purchase,2025-10-09,10000,"+$111,500",$11.15,Angiodynamics Inc,"Pres, CEO",2025-10-09 21:09:24,openinsider,top_officer_month,,882529,+1%,,,,,1,2025-10-14T11-58-24Z
+Shan Helen L.,FDS,P - Purchase,2025-10-06,370,"+$101,928",$275.48,Factset Research Systems Inc,"EVP, CFO",2025-10-08 16:28:08,openinsider,top_officer_month,,9284,+4%,,,,,1,2025-10-14T11-58-24Z
+McLoughlin Christopher,FDS,P - Purchase,2025-09-23,338,"+$100,001",$296.19,Factset Research Systems Inc,GC,2025-09-25 16:20:36,openinsider,top_officer_month,,3446,+11%,,,,,1,2025-10-14T11-58-24Z
+Jackson Jeffrey H,WSBC,P - Purchase,2025-09-17,4000,"+$100,000",$25.00,Wesbanco Inc,"Pres, CEO",2025-09-18 11:25:03,openinsider,top_officer_month,,4000,New,,,,,1,2025-10-14T11-58-24Z
+Daniel K Weiss,WSBC,P - Purchase,2025-09-17,4000,"+$100,000",$25.00,Wesbanco Inc,"SEVP, CFO",2025-09-18 15:22:34,openinsider,top_officer_month,,4000,New,,,,,1,2025-10-14T11-58-24Z
+Ferrari Adam D.,PHXE.,P - Purchase,2025-09-29,5000,"+$100,000",$20.00,"Phoenix Energy One, LLC",CEO,2025-10-01 16:10:10,openinsider,top_officer_month,,5000,New,,,,,1,2025-10-14T11-58-24Z
+"Sprinkle, Jr. Richard C.",CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, Chief Credit Officer",2025-10-09 16:10:15,openinsider,top_officer_month,,25729,+19%,,,,,1,2025-10-14T11-58-24Z
+Metheny Philip J.,CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, CFO",2025-10-09 16:14:26,openinsider,top_officer_month,,4166,New,,,,,1,2025-10-14T11-58-24Z
+Martell Ron,JSPR,P - Purchase,2025-09-22,41000,"+$99,630",$2.43,"Jasper Therapeutics, Inc.","Pres, CEO",2025-09-24 16:01:19,openinsider,top_officer_month,D,74118,+124%,,,,,1,2025-10-14T11-58-24Z
+Lettmann Jason,ALXO,P - Purchase,2025-09-16,92233,"+$99,352",$1.08,Alx Oncology Holdings Inc,CEO,2025-09-18 16:23:19,openinsider,top_officer_month,M,305121,+43%,,,,,1,2025-10-14T11-58-24Z
+Lang Scott A.,ATEX,P - Purchase,2025-09-18,4650,"+$98,952",$21.28,Anterix Inc.,"Pres, CEO",2025-09-19 08:57:12,openinsider,top_officer_month,,4650,New,,,,,1,2025-10-14T11-58-24Z
+Bodenstedt Matthias,MLTX,P - Purchase,2025-10-08,10870,"+$98,808",$9.09,Moonlake Immunotherapeutics,CFO,2025-10-09 09:01:51,openinsider,top_officer_month,,627536,+2%,,,,,1,2025-10-14T11-58-24Z
+Eberwein Jeffrey E.,STRR,P - Purchase,2025-09-23,8600,"+$98,642",$11.47,"Star Equity Holdings, Inc.","CEO, 10%",2025-09-25 16:46:37,openinsider,top_officer_month,,674147,+1%,,,,,1,2025-10-14T11-58-24Z
+Mazarakis John,REFI,P - Purchase,2025-10-01,7500,"+$93,225",$12.43,"Chicago Atlantic Real Estate Finance, Inc.",Exec COB,2025-10-02 09:52:02,openinsider,top_officer_month,,445131,+2%,,,,,1,2025-10-14T11-58-24Z
+Martell Frank,SMRT,P - Purchase,2025-09-16,50000,"+$79,115",$1.58,"Smartrent, Inc.",CEO,2025-09-16 17:11:32,openinsider,top_officer_month,,898204,+6%,,,,,1,2025-10-14T11-58-24Z
+Portnoy David,CCEL,P - Purchase,2025-09-16,17175,"+$76,486",$4.45,Cryo Cell International Inc,"COB, Co-CEO, 10%",2025-09-18 16:53:49,openinsider,top_officer_month,DM,1679847,+1%,,,,,1,2025-10-14T11-58-24Z
+Bluth Jeri Ruth,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",Chief Compliance Officer,2025-10-06 14:02:48,openinsider,top_officer_month,M,92424,+19%,,,,,1,2025-10-14T11-58-24Z
+Patterson Charles E. II,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.","GC, Secretary",2025-10-06 14:36:07,openinsider,top_officer_month,M,92424,+19%,,,,,1,2025-10-14T11-58-24Z
+Fuller Glen W,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",TREASURER,2025-10-06 14:43:44,openinsider,top_officer_month,M,92424,+19%,,,,,1,2025-10-14T11-58-24Z
+Simpson Christine Elizabeth,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",Chief Portfolio Manager,2025-10-06 14:54:42,openinsider,top_officer_month,M,92674,+19%,,,,,1,2025-10-14T11-58-24Z
+Sherpa Angche,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",CFO,2025-10-06 15:48:46,openinsider,top_officer_month,M,92584,+19%,,,,,1,2025-10-14T11-58-24Z
+Dixon Robert E,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.","CEO, Pres",2025-10-06 15:56:22,openinsider,top_officer_month,M,124719,+14%,,,,,1,2025-10-14T11-58-24Z
+Sievers Sean A.,MBIN,P - Purchase,2025-09-15,3000,"+$74,610",$24.87,Merchants Bancorp,CFO,2025-09-18 08:29:56,openinsider,top_officer_month,,11207,+37%,,,,,1,2025-10-14T11-58-24Z
+Vichness Shaul,NCDL,P - Purchase,2025-09-16,5000,"+$74,250",$14.85,Nuveen Churchill Direct Lending Corp.,"CFO, Treasurer",2025-09-16 16:47:35,openinsider,top_officer_month,,28675,+21%,,,,,1,2025-10-14T11-58-24Z
+Williamson Andrew,EPSN,P - Purchase,2025-09-30,12500,"+$61,750",$4.94,Epsilon Energy Ltd.,CFO,2025-10-02 12:34:34,openinsider,top_officer_month,,169275,+8%,,,,,1,2025-10-14T11-58-24Z
+Altman Peter,BCDA,P - Purchase,2025-09-19,48000,"+$60,000",$1.25,"Biocardia, Inc.","Pres, CEO",2025-09-23 09:00:09,openinsider,top_officer_month,D,216762,+28%,,,,,1,2025-10-14T11-58-24Z
+Popenoe Smriti Laxman,DX,P - Purchase,2025-09-26,4260,"+$51,784",$12.16,Dynex Capital Inc,"Co-CEO, Pres",2025-09-29 16:05:25,openinsider,top_officer_month,,407338,+1%,,,,,1,2025-10-14T11-58-24Z
+Colligan Robert S,DX,P - Purchase,2025-09-26,4200,"+$50,904",$12.12,Dynex Capital Inc,"CFO, COO",2025-09-29 16:05:19,openinsider,top_officer_month,,120857,+4%,,,,,1,2025-10-14T11-58-24Z
+Umair Muhammad,PLCE,P - Purchase,2025-10-08,7143,"+$50,001",$7.00,"Childrens Place, Inc.","Pres, INTERIM CEO",2025-10-09 16:30:15,openinsider,top_officer_month,,277667,+3%,,,,,1,2025-10-14T11-58-24Z
+Cozzone Robert D,AVBC,P - Purchase,2025-09-11,3224,"+$50,000",$15.51,"Avidia Bancorp, Inc.","Pres, CEO",2025-09-15 15:00:27,openinsider,top_officer_month,,41017,+9%,,,,,1,2025-10-14T11-58-24Z
+Allen Brandon K.,PHXE.,P - Purchase,2025-09-29,2500,"+$50,000",$20.00,"Phoenix Energy One, LLC",COO,2025-10-01 16:10:07,openinsider,top_officer_month,,2500,New,,,,,1,2025-10-14T11-58-24Z
+McDonald Anthony K,BNC,P - Purchase,2025-10-06,5848,"+$49,999",$8.55,Cea Industries Inc.,Pres,2025-10-07 07:00:20,openinsider,top_officer_month,D,15025,+64%,,,,,1,2025-10-14T11-58-24Z
+Mongeau Luc,CGC,P - Purchase,2025-09-22,27469,"+$49,994",$1.82,Canopy Growth Corp,CEO,2025-09-23 16:15:11,openinsider,top_officer_month,,812368,+3%,,,,,1,2025-10-14T11-58-24Z
+Cozzone Robert D,AVBC,P - Purchase,2025-09-18,3130,"+$49,987",$15.97,"Avidia Bancorp, Inc.","Pres, CEO",2025-09-19 16:28:29,openinsider,top_officer_month,,44147,+8%,,,,,1,2025-10-14T11-58-24Z
+Hyzak Dwayne L.,MSIF,P - Purchase,2025-09-29,3695,"+$49,846",$13.49,"Msc Income Fund, Inc.","CEO, SMD",2025-09-29 16:30:10,openinsider,top_officer_month,,55727,+7%,,,,,1,2025-10-14T11-58-24Z
+Mackey Brian T,CPSH,P - Purchase,2025-10-08,16500,"+$49,500",$3.00,Cps Technologies Corp/De/,"Pres, CEO",2025-10-09 15:05:01,openinsider,top_officer_month,,36500,+83%,,,,,1,2025-10-14T11-58-24Z
+Calvert Christopher P,MTDR,P - Purchase,2025-09-12,1000,"+$47,770",$47.77,Matador Resources Co,"EVP, COO",2025-09-15 16:17:21,openinsider,top_officer_month,,123076,+1%,,,,,1,2025-10-14T11-58-24Z
+Magdol David L.,MSIF,P - Purchase,2025-09-30,3500,"+$46,375",$13.25,"Msc Income Fund, Inc.","Pres, CIO, SMD",2025-09-30 16:30:09,openinsider,top_officer_month,,45625,+8%,,,,,1,2025-10-14T11-58-24Z
+Thomasian Harry Jr.,PGEN,P - Purchase,2025-09-25,11216,"+$40,016",$3.57,"Precigen, Inc.",CFO,2025-09-26 17:01:54,openinsider,top_officer_month,M,468626,+2%,,,,,1,2025-10-14T11-58-24Z
+Kovler Benjamin,RYM,P - Purchase,2025-09-19,1000,"+$39,990",$39.99,"Rythm, Inc.",Interim CEO,2025-09-22 17:27:05,openinsider,top_officer_month,,18840,+6%,,,,,1,2025-10-14T11-58-24Z
+Cook Robert Christopher,SAVA,P - Purchase,2025-09-30,13725,"+$39,940",$2.91,Cassava Sciences Inc,"COO, Legal Office",2025-10-02 16:44:48,openinsider,top_officer_month,,13725,New,,,,,1,2025-10-14T11-58-24Z
+Jensen Barry H,AVBC,P - Purchase,2025-09-18,2500,"+$39,625",$15.85,"Avidia Bancorp, Inc.","EVP, Chief Admin Officer",2025-09-19 11:06:52,openinsider,top_officer_month,,20100,+14%,,,,,1,2025-10-14T11-58-24Z
+Kovler Benjamin,RYM,P - Purchase,2025-09-25,1000,"+$37,084",$37.08,"Rythm, Inc.",Interim CEO,2025-09-29 06:00:15,openinsider,top_officer_month,,19840,+5%,,,,,1,2025-10-14T11-58-24Z
+Agrawal Heena,DLTH,P - Purchase,2025-09-26,10000,"+$34,989",$3.50,Duluth Holdings Inc.,"SVP, CFO",2025-09-29 16:46:51,openinsider,top_officer_month,,248093,+4%,,,,,1,2025-10-14T11-58-24Z
+Shaub Matthew,AAON,P - Purchase,2025-09-12,428,"+$34,968",$81.70,"Aaon, Inc.",EVP,2025-09-15 15:17:24,openinsider,top_officer_month,,2291,+23%,,,,,1,2025-10-14T11-58-24Z
+Culp Robert George IV,CULP,P - Purchase,2025-09-22,7428,"+$32,832",$4.42,Culp Inc,"Pres, CEO",2025-09-23 18:09:34,openinsider,top_officer_month,,410648,+2%,,,,,1,2025-10-14T11-58-24Z
+Korch Angela A,MTN,P - Purchase,2025-10-07,210,"+$32,550",$155.00,Vail Resorts Inc,"EVP, CFO",2025-10-07 18:55:45,openinsider,top_officer_month,,4905,+4%,,,,,1,2025-10-14T11-58-24Z
+Parker Austin Colby,KYN,P - Purchase,2025-09-22,2500,"+$30,438",$12.18,"Kayne Anderson Energy Infrastructure Fund, Inc.","CFO, Treasurer",2025-09-22 16:26:22,openinsider,top_officer_month,,9167,+37%,,,,,1,2025-10-14T11-58-24Z
+Elsener William Thomas,MTDR,P - Purchase,2025-09-11,600,"+$29,076",$48.46,Matador Resources Co,"EVP, Reservoir Engineering",2025-09-15 07:30:40,openinsider,top_officer_month,,112069,+1%,,,,,1,2025-10-14T11-58-24Z
+Bedrick Todd,ABSI,P - Purchase,2025-09-22,10000,"+$27,000",$2.70,Absci Corp,"SVP, CAO",2025-09-24 16:03:16,openinsider,top_officer_month,,180428,+6%,,,,,1,2025-10-14T11-58-24Z
+Zegarelli Christopher John,SVCO,P - Purchase,2025-09-15,5100,"+$25,653",$5.03,"Silvaco Group, Inc.",CFO,2025-10-08 18:50:32,openinsider,top_officer_month,,424407,+1%,,,,,1,2025-10-14T11-58-24Z
+Erlich Craig,ADC,P - Purchase,2025-10-03,360,"+$25,504",$70.85,Agree Realty Corp,CHIEF GROWTH OFFICER,2025-10-06 06:30:04,openinsider,top_officer_month,,58149,+1%,,,,,1,2025-10-14T11-58-24Z
+Points Jeffrey S.,SI,P - Purchase,2025-09-12,1600,"+$25,072",$15.67,"Shoulder Innovations, Inc.",CFO,2025-09-15 16:25:01,openinsider,top_officer_month,D,52495,+3%,,,,,1,2025-10-14T11-58-24Z
+Love Scott A,WSBC,P - Purchase,2025-09-17,1000,"+$25,000",$25.00,Wesbanco Inc,EVP - Wealth Management,2025-09-18 11:51:16,openinsider,top_officer_month,,1000,New,,,,,1,2025-10-14T11-58-24Z
+Stetson Glenn W,MTDR,P - Purchase,2025-09-12,500,"+$24,260",$48.52,Matador Resources Co,EVP-Production,2025-09-16 07:30:55,openinsider,top_officer_month,,93952,+1%,,,,,1,2025-10-14T11-58-24Z
+Erman Bryan A,MTDR,P - Purchase,2025-09-12,500,"+$23,995",$47.99,Matador Resources Co,"Co-Pres,CLO, Head of M, A",2025-09-16 07:29:31,openinsider,top_officer_month,,83168,+1%,,,,,1,2025-10-14T11-58-24Z
+Bruno Thomas,CULP,P - Purchase,2025-09-22,5372,"+$23,372",$4.35,Culp Inc,Chief Commercial Officer,2025-09-23 16:50:18,openinsider,top_officer_month,,80000,+7%,,,,,1,2025-10-14T11-58-24Z
+Murphy Brian Daniel,AOUT,P - Purchase,2025-09-23,2500,"+$22,075",$8.83,"American Outdoor Brands, Inc.","Pres, CEO",2025-09-23 16:28:15,openinsider,top_officer_month,,345220,+1%,,,,,1,2025-10-14T11-58-24Z
+Fulmer Hugh Andrew,AOUT,P - Purchase,2025-09-23,2500,"+$21,925",$8.77,"American Outdoor Brands, Inc.","EVP, CFO, Treasurer",2025-09-23 16:27:17,openinsider,top_officer_month,,145358,+2%,,,,,1,2025-10-14T11-58-24Z
+Tennant Phil,PGEN,P - Purchase,2025-09-29,6000,"+$21,480",$3.58,"Precigen, Inc.",Chief Commercial Officer,2025-09-30 16:04:51,openinsider,top_officer_month,,65031,+10%,,,,,1,2025-10-14T11-58-24Z
+Bates Shiloh R,FROPX,P - Purchase,2025-09-24,1235,"+$21,213",$17.18,Flat Rock Opportunity Fund,Chief Investment Officer,2025-09-25 16:32:12,openinsider,top_officer_month,,32982,+4%,,,,,1,2025-10-14T11-58-24Z
+Friend Robert H,WSBC,P - Purchase,2025-09-17,800,"+$20,000",$25.00,Wesbanco Inc,"EVP, CCO",2025-09-18 11:15:12,openinsider,top_officer_month,,800,New,,,,,1,2025-10-14T11-58-24Z
+Wheeler David Mark,PHXE.,P - Purchase,2025-09-29,1000,"+$20,000",$20.00,"Phoenix Energy One, LLC",GC,2025-10-01 16:10:04,openinsider,top_officer_month,,1000,New,,,,,1,2025-10-14T11-58-24Z
+Schaber Christopher J,SNGX,P - Purchase,2025-10-02,15132,"+$20,000",$1.32,"Soligenix, Inc.","COB, CEO, Pres",2025-10-03 13:18:09,openinsider,top_officer_month,,15511,>999%,,,,,1,2025-10-14T11-58-24Z

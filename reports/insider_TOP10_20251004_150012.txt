@@ -1,0 +1,153 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2025-10-04 15:00:15
+Total Records Analyzed: 1239
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)
+  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Sherpa Angche (CFO, MKZR)
+Risk Score: 430 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.20 (+31.7%)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CEO, CFO, Officer)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%) x2
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Patterson Charles E. II (GC, Secretary, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 430 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.20 (+31.7%)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CEO, CFO, Officer)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%) x2
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Patterson Charles E. II (GC, Secretary, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Sherpa Angche (CFO, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 390 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • BCDA: Traded at $1.16 → Now $1.36 (+17.2%)
+Patterns Detected (3):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Same-company cluster: BCDA - 3 insiders within 7 days
+      Coordinated with: Stertzer Simon H (Dir), Blank Andrew Scott (Dir)
+  • Perfect timing: BCDA (+17.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Bauerlein Alison (CFO, SGHT)
+Risk Score: 360 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Patterns Detected (5):
+  • Sector cluster: SGHT (Other) - 4 traders on 2025-10-01
+      Coordinated with: Badawi Paul (Pres, CEO, 10%, SGHT), Badawi David (CTO, SGHT), Hayden Jeremy B. (GC, SGHT)
+  • Sector cluster: SGHT (Other) - 3 traders on 2025-10-02
+      Coordinated with: Badawi David (CTO, SGHT), Hayden Jeremy B. (GC, SGHT)
+  • Same-company cluster: SGHT - 4 insiders within 7 days (Role diversity: CEO, CFO)
+      Coordinated with: Badawi Paul (Pres, CEO, 10%), Badawi David (CTO), Hayden Jeremy B. (GC)
+  • Same-company cluster: SGHT - 3 insiders within 7 days
+      Coordinated with: Badawi David (CTO), Hayden Jeremy B. (GC)
+  • Coordinated: 2025-10-02 (Other sector, 42 traders)
+      Coordinated with: Schaber Christopher J (COB, CEO, Pres, SNGX), Narang Aman (CEO, TOST), Allison Eric (Chief Product Officer, JOBY), Papadopoulos Didier (Pres of Aircraft OEM, JOBY), Goel Amar K. (COB, Chief Innovation Off, 10%, PUBM), Adams Katherine L. (SVP, GC, Secretary, AAPL), Fitzgerald Kevin Joseph (CSO, EVP, Head of Research, ALNY), Greenstreet Yvonne (CEO, ALNY), Agree Joey (Pres, CEO, ADC), O'Brien Deirdre (SVP, AAPL), Stone Paul (Pres, CEO, SPWH), Goel Rajeev K. (CEO, 10%, PUBM), Schwab-Pomerantz Carolyn (Dir, SCHW), Gomez Elena (Pres, CFO, TOST), McBee Richard D (Dir, SPWH), Leinwand Robert (EVP: GC, NKE), Pantelick Steven (CFO, PUBM), Plassche Douglas (EVP Operations, ELTP), Woods Andrew (GC, Secretary, PUBM), Welch Jamie (See Remarks, KNTK), Bowles Gregory (Chief Policy Officer, JOBY), Tanguler Tolga (EVP, Chief Commercial Officer, ALNY), Ofman Joshua J. (Pres, GRAL), Cook Timothy D (CEO, AAPL), Dechant Robert Thomas (CEO, IBEX), Kumar Mukul (Pres, Engineering, PUBM), Aggarwal Sanjeev (Pres, CEO, MRAM), Garg Pushkal (EVP Chief R, D, ALNY), Pham Quang X (CEO, COB, 10%, CVKD), Meyrath Hugues (Pres, CEO, QMCO), Ramaswami Rajiv (Pres, CEO, NTNX), Grewal Harpreet (Dir, PEN), McKay Christopher J. (Chief Risk, Analytics Officer, OPFI), Altschuler Randolph (CEO, XMTR), Steenrod Mitchell D (Dir, KMX), Poulton Jeffrey V. (EVP, CFO, ALNY), Johnson Pamela D. (CFO, OPFI), Sondergaard Niels (10%, CODA), McRae Matthew Blake (CEO, ARLO), Dehoff Kate (See Remarks, JOBY), Simi Bonny W (Pres of Operations, JOBY)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 340 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • NRGV: Traded at $2.26 → Now $3.34 (+31.4%)
+Patterns Detected (2):
+  • Repeat: NRGV (6x)
+  • Perfect timing: NRGV (+31.4-36.0%) x4
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Davy Joseph P. (CEO, COB, 10%, BNZI)
+Risk Score: 330 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • BNZI: Traded at $2.61 → Now $3.05 (+15.7%)
+Patterns Detected (5):
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+  • Perfect timing: BNZI (+15.7%) x3
+  • Coordinated: 2025-09-11 (Other sector, 5 traders)
+      Coordinated with: Carter Thomas L Jr (CEO, Pres,, COB, BSM), Simon Ronald I (Dir, EFC), McDonald Damien (CEO, ENOV), Gorli Eric (Pres, US Refreshment Bev., KDP)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • AARD: Traded at $8.00 → Now $16.08 (+52.1%)
+Patterns Detected (3):
+  • Perfect timing: AARD (+37.5-52.1%) x3
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+      Coordinated with: Shao Wei-Ming (EVP, GC, MSTR), Williams Gregg (Dir, 10%, VANI), Weinstein Adam B. (EVP, CAO, Dir, NMFC), Wider Todd (Dir, ASPI)
+  • Coordinated: 2025-09-10 (Other sector, 7 traders)
+      Coordinated with: Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Sprott Eric (10%, HYMC), Smiley Joshua L (See Remarks, ZLAB), Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW), Duggan Robert W (Co-CEO, 10%, SMMT), Zanganeh Mahkam (Co-CEO, 10%, SMMT)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 240 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • SAVA: Traded at $2.29 → Now $3.63 (+49.8%)
+Patterns Detected (1):
+  • Perfect timing: SAVA (+49.8%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 240 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • NXXT: Traded at $1.77 → Now $1.99 (+19.2%)
+Patterns Detected (1):
+  • Perfect timing: NXXT (+19.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Lettmann Jason (CEO, ALXO)
+Risk Score: 240 (Role: 2.0x, Repeat Offender: 2.0x ⚠️)
+Trade Prices & Current Values:
+  • ALXO: Traded at $1.08 → Now $2.18 (+69.4%)
+Patterns Detected (1):
+  • Perfect timing: ALXO (+69.4%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

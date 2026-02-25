@@ -1,0 +1,38 @@
+Enhanced Program Structure (with Quiver + Free Sources)
+
+1.  Config (config.py or config.json):
+    - Define sources: quiver_api, house_clerk_html, senate_html (or any other free data source like SEC EDGAR, but that's more complex).
+    - For each source, specify:
+        - url: Endpoint or base URL.
+        - fields_to_extract: e.g., ["person", "ticker", "transaction_type", "amount", "date"]
+        - headers: If API, like {"Authorization": f"Bearer {API_KEY}"} for Quiver.
+    - Use environment variables for API keys (config.json0 file, never commit it to Git).
+
+2.  Scraper Modules (one per source, all normalizing to common schema):
+    - quiver_scraper.py: Uses Quiver API (free tier has limited calls; use for recent trades and metadata).
+    - house_clerk_scraper.py: Parses HTML from House Clerk site (more complex, needs BeautifulSoup/Regex).
+    - senate_scraper.py: Similarly for Senate.
+    - Each outputs the same schema: {"person": str, "stock": str, "transaction": str, ...}
+
+3.  Data Storage:
+    - Each day, run scrapers and save raw data to ./data/raw/scrape_YYYYMMDD.json.
+    - Also, save normalized data (after processing) to ./data/normalized/scrape_YYYYMMDD.json.
+    - Use incremental saving so you don't lose data.
+
+4.  Analyzer/Sorter:
+    - Read latest normalized data.
+    - Group by person or by stock.
+    - Compute additional stats: e.g., "number of distinct officials trading this stock", "average holding period".
+    - Output to report_YYYYMMDD.json and report_YYYYMMDD.csv.
+
+5.  Enrichment (later, but plan now):
+    - Use yfinance or requests to get stock price at transaction date (if not provided).
+    - Use simple heuristics: e.g., if many officials trade a stock, flag it.
+    - Use free financial APIs: e.g., Alpha Vantage for sector info, but they have limits.
+
+6.  Cross-source correlation:
+    - Combine data from Quiver, House, Senate into one dataset.
+    - Use simple database (SQLite) for history: trades.db with table trades (person, stock, type, date, amount, source).
+    - This allows SQL queries like: "Which stocks are most traded by officials in the last 30 days?"
+
+Immediate Steps to Enhance Your Existing Code

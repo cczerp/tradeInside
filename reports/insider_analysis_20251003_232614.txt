@@ -1,0 +1,675 @@
+========================================================================================================================
+REFINED INSIDER TRADING PATTERN DETECTION REPORT
+Generated: 2025-10-03 23:26:14
+Total Records Analyzed: 1239
+Total Patterns Detected: 487
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Event Filtering: Excludes patterns within ±7 days of earnings/8-K filings
+
+========================================================================================================================
+TOP 20 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Piconi Robert
+Risk Score: 170 (Role Multiplier: 2.0x)
+Patterns Detected (5):
+  • Perfect timing: NRGV (+36.0% in 7-14 days)
+  • Perfect timing: NRGV (+31.4% in 7-14 days)
+  • Perfect timing: NRGV (+36.0% in 7-14 days)
+  • Perfect timing: NRGV (+31.4% in 7-14 days)
+  • Repeat: NRGV (6x)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Davy Joseph P.
+Risk Score: 165 (Role Multiplier: 2.0x)
+Patterns Detected (7):
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Perfect timing: BNZI (+15.7% in 7-14 days)
+  • Coordinated: 2025-09-11 (Other sector, 5 traders)
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+  • Late filing: BNZI (22 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Lee Tien-Li
+Risk Score: 150 (Role Multiplier: 2.0x)
+Patterns Detected (5):
+  • Perfect timing: AARD (+37.5% in 7-14 days)
+  • Perfect timing: AARD (+52.1% in 7-14 days)
+  • Perfect timing: AARD (+52.1% in 7-14 days)
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+  • Coordinated: 2025-09-10 (Other sector, 7 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Altman Peter
+Risk Score: 145 (Role Multiplier: 2.0x)
+Patterns Detected (4):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+  • Perfect timing: BCDA (+17.2% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Sherpa Angche
+Risk Score: 140 (Role Multiplier: 2.0x)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Dixon Robert E
+Risk Score: 140 (Role Multiplier: 2.0x)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Barry Richard
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+  • Perfect timing: SAVA (+49.8% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Farkas Michael D
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+  • Perfect timing: NXXT (+19.2% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Lettmann Jason
+Risk Score: 120 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+  • Perfect timing: ALXO (+69.4% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Bauerlein Alison
+Risk Score: 65 (Role Multiplier: 2.0x)
+Patterns Detected (3):
+  • Sector cluster: SGHT (Other) - 4 traders on 2025-10-01
+  • Sector cluster: SGHT (Other) - 3 traders on 2025-10-02
+  • Coordinated: 2025-10-02 (Other sector, 42 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#11 - Bluth Jeri Ruth
+Risk Score: 56 (Role Multiplier: 1.25x)
+Patterns Detected (4):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#12 - Sun Nelson
+Risk Score: 48 (Role Multiplier: 2.0x)
+Patterns Detected (2):
+  • Perfect timing: AARD (+44.6% in 7-14 days)
+  • Perfect timing: AARD (+44.6% in 7-14 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#13 - Simpson Christine Elizabeth
+Risk Score: 45 (Role Multiplier: 1.0x)
+Patterns Detected (4):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#14 - Fuller Glen W
+Risk Score: 45 (Role Multiplier: 1.0x)
+Patterns Detected (4):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#15 - Patterson Charles E. II
+Risk Score: 45 (Role Multiplier: 1.0x)
+Patterns Detected (4):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+  • Perfect timing: MKZR (+31.7% in 7-14 days)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+  • Late filing: MKZR (25 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#16 - Morales Mallory
+Risk Score: 40 (Role Multiplier: 1.25x)
+Patterns Detected (3):
+  • Sector cluster: IMRX (Other) - 4 traders on 2025-09-30
+  • Sector cluster: IMRX (Other) - 3 traders on 2025-10-01
+  • Coordinated: 2025-10-01 (Other sector, 107 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#17 - Neufeld Leah R
+Risk Score: 40 (Role Multiplier: 1.25x)
+Patterns Detected (3):
+  • Sector cluster: IMRX (Other) - 4 traders on 2025-09-30
+  • Sector cluster: IMRX (Other) - 3 traders on 2025-10-01
+  • Coordinated: 2025-10-01 (Other sector, 107 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#18 - Allison Eric
+Risk Score: 40 (Role Multiplier: 1.25x)
+Patterns Detected (3):
+  • Sector cluster: JOBY (Other) - 6 traders on 2025-10-01
+  • Sector cluster: JOBY (Other) - 5 traders on 2025-10-02
+  • Coordinated: 2025-10-02 (Other sector, 42 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#19 - Bowles Gregory
+Risk Score: 40 (Role Multiplier: 1.25x)
+Patterns Detected (3):
+  • Sector cluster: JOBY (Other) - 6 traders on 2025-10-01
+  • Sector cluster: JOBY (Other) - 5 traders on 2025-10-02
+  • Coordinated: 2025-10-02 (Other sector, 42 traders)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#20 - nan
+Risk Score: 37 (Role Multiplier: 1.0x)
+Patterns Detected (3):
+  • Sector cluster: SFD (Utilities) - 5 traders on 2025-09-08
+  • Sector cluster: MRVL (Tech) - 4 traders on 2025-09-25
+  • Sector cluster: PHXE. (Other) - 9 traders on 2025-09-29
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TICKERS
+========================================================================================================================
+
+#1 - MKZR
+Risk Score: 37
+Patterns Detected (17):
+  • Cluster: 6 traders (Biotech sector, 2025-08-14)
+  • Timed trade by Sherpa Angche (+31.7%)
+  • Timed trade by Dixon Robert E (+31.7%)
+  • Timed trade by Simpson Christine Elizabeth (+31.7%)
+  • Timed trade by Sherpa Angche (+31.7%)
+  • Timed trade by Fuller Glen W (+31.7%)
+  • Timed trade by Dixon Robert E (+31.7%)
+  • Timed trade by Patterson Charles E. II (+31.7%)
+  • Timed trade by Bluth Jeri Ruth (+31.7%)
+  • Late filing by Sherpa Angche
+  • Late filing by Sherpa Angche
+  • Late filing by Dixon Robert E
+  • Late filing by Dixon Robert E
+  • Late filing by Simpson Christine Elizabeth
+  • Late filing by Fuller Glen W
+  • Late filing by Patterson Charles E. II
+  • Late filing by Bluth Jeri Ruth
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - BCDA
+Risk Score: 20
+Patterns Detected (6):
+  • Cluster: 3 traders (Finance sector, 2025-09-19)
+  • Timed trade by Altman Peter (+17.2%)
+  • Timed trade by Stertzer Simon H (+17.2%)
+  • Timed trade by Blank Andrew Scott (+17.2%)
+  • Timed trade by Altman Peter (+17.2%)
+  • Timed trade by Altman Peter (+17.2%)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - NRGV
+Risk Score: 16
+Patterns Detected (6):
+  • Timed trade by Piconi Robert (+36.0%)
+  • Timed trade by Piconi Robert (+31.4%)
+  • Timed trade by Paulson Larry (+21.6%)
+  • Timed trade by Piconi Robert (+36.0%)
+  • Timed trade by Piconi Robert (+31.4%)
+  • Repeatedly by Piconi Robert (6x)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - AARD
+Risk Score: 15
+Patterns Detected (5):
+  • Timed trade by Lee Tien-Li (+37.5%)
+  • Timed trade by Lee Tien-Li (+52.1%)
+  • Timed trade by Sun Nelson (+44.6%)
+  • Timed trade by Lee Tien-Li (+52.1%)
+  • Timed trade by Sun Nelson (+44.6%)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - BNZI
+Risk Score: 12
+Patterns Detected (6):
+  • Timed trade by Davy Joseph P. (+15.7%)
+  • Timed trade by Davy Joseph P. (+15.7%)
+  • Timed trade by Davy Joseph P. (+15.7%)
+  • Late filing by Davy Joseph P.
+  • Late filing by Davy Joseph P.
+  • Late filing by Davy Joseph P.
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - NXXT
+Risk Score: 12
+Patterns Detected (4):
+  • Timed trade by Farkas Michael D (+19.2%)
+  • Timed trade by Oppen Sean Matthew (+19.2%)
+  • Timed trade by Farkas Michael D (+19.2%)
+  • Timed trade by Farkas Michael D (+19.2%)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - IMRX
+Risk Score: 10
+Patterns Detected (2):
+  • Cluster: 4 traders (Other sector, 2025-09-30)
+  • Cluster: 3 traders (Other sector, 2025-10-01)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - JOBY
+Risk Score: 10
+Patterns Detected (2):
+  • Cluster: 6 traders (Other sector, 2025-10-01)
+  • Cluster: 5 traders (Other sector, 2025-10-02)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - SGHT
+Risk Score: 10
+Patterns Detected (2):
+  • Cluster: 4 traders (Other sector, 2025-10-01)
+  • Cluster: 3 traders (Other sector, 2025-10-02)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - SAVA
+Risk Score: 9
+Patterns Detected (3):
+  • Timed trade by Barry Richard (+49.8%)
+  • Timed trade by Barry Richard (+49.8%)
+  • Timed trade by Barry Richard (+49.8%)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+COMPLETE TRADER LIST (330 total)
+========================================================================================================================
+
+Piconi Robert: Score 170 (5 patterns)
+Davy Joseph P.: Score 165 (7 patterns)
+Lee Tien-Li: Score 150 (5 patterns)
+Altman Peter: Score 145 (4 patterns)
+Sherpa Angche: Score 140 (6 patterns)
+Dixon Robert E: Score 140 (6 patterns)
+Barry Richard: Score 120 (3 patterns)
+Farkas Michael D: Score 120 (3 patterns)
+Lettmann Jason: Score 120 (3 patterns)
+Bauerlein Alison: Score 65 (3 patterns)
+Bluth Jeri Ruth: Score 56 (4 patterns)
+Sun Nelson: Score 48 (2 patterns)
+Simpson Christine Elizabeth: Score 45 (4 patterns)
+Fuller Glen W: Score 45 (4 patterns)
+Patterson Charles E. II: Score 45 (4 patterns)
+Morales Mallory: Score 40 (3 patterns)
+Neufeld Leah R: Score 40 (3 patterns)
+Allison Eric: Score 40 (3 patterns)
+Bowles Gregory: Score 40 (3 patterns)
+nan: Score 37 (3 patterns)
+Zanganeh Mahkam: Score 33 (2 patterns)
+Duggan Robert W: Score 33 (2 patterns)
+Risher John David: Score 33 (2 patterns)
+Voorhees Anthony Gene: Score 33 (2 patterns)
+Bookman Michael: Score 32 (3 patterns)
+Papadopoulos Didier: Score 32 (3 patterns)
+Simi Bonny W: Score 32 (3 patterns)
+Dehoff Kate: Score 32 (3 patterns)
+Badawi David: Score 32 (3 patterns)
+Hayden Jeremy B.: Score 32 (3 patterns)
+Jurich Lynn Michelle: Score 27 (5 patterns)
+Hall Mark L.: Score 24 (2 patterns)
+Ferrari Adam D.: Score 24 (2 patterns)
+Allen Curtis R.: Score 24 (2 patterns)
+Klee Justin B.: Score 24 (2 patterns)
+Frates James M: Score 24 (2 patterns)
+Cohen Joshua B: Score 24 (2 patterns)
+Bevirt Joeben: Score 24 (2 patterns)
+Badawi Paul: Score 24 (2 patterns)
+Hettrich Kevin: Score 24 (2 patterns)
+Belanoff Joseph K: Score 24 (2 patterns)
+Poulton Jeffrey V.: Score 24 (2 patterns)
+Greenstreet Yvonne: Score 24 (2 patterns)
+Cook Timothy D: Score 24 (2 patterns)
+Pantelick Steven: Score 24 (2 patterns)
+Goel Rajeev K.: Score 24 (2 patterns)
+Wider Todd: Score 22 (4 patterns)
+Hwang Tim: Score 22 (4 patterns)
+Allen Brandon K.: Score 21 (2 patterns)
+Lamendola Damien: Score 20 (4 patterns)
+Stertzer Simon H: Score 19 (2 patterns)
+Blank Andrew Scott: Score 19 (2 patterns)
+Simon Ronald I: Score 17 (3 patterns)
+Zartler William A: Score 16 (1 patterns)
+Ramachandran Kyle S.: Score 16 (1 patterns)
+Daly Joseph Patrick: Score 16 (2 patterns)
+Alford Tony L: Score 16 (2 patterns)
+Sutton Doug: Score 15 (2 patterns)
+Watts Keller D.: Score 15 (2 patterns)
+Wilson Lindsey B.: Score 15 (2 patterns)
+Goodnight Sean M.: Score 15 (2 patterns)
+Arn Justin L.: Score 15 (2 patterns)
+Roberts Johanna: Score 15 (2 patterns)
+Furcron Thomas Patrick: Score 15 (2 patterns)
+Miles Christen Brooke: Score 15 (2 patterns)
+Oliver Lawrence T.: Score 15 (2 patterns)
+Tanguler Tolga: Score 15 (2 patterns)
+Fitzgerald Kevin Joseph: Score 15 (2 patterns)
+Garg Pushkal: Score 15 (2 patterns)
+O'Brien Deirdre: Score 15 (2 patterns)
+Adams Katherine L.: Score 15 (2 patterns)
+Owens Donovan: Score 12 (2 patterns)
+France Steven: Score 12 (2 patterns)
+Wagner Jason Montgomery: Score 12 (2 patterns)
+Pangracs Jason Allan: Score 12 (2 patterns)
+Wheeler David Mark: Score 12 (2 patterns)
+Mowery Theodore W: Score 12 (2 patterns)
+Frank Joel L.: Score 12 (2 patterns)
+Brumbaugh Kimberly J: Score 12 (2 patterns)
+Evans Albert J.: Score 12 (2 patterns)
+De Soto Matthew G: Score 12 (2 patterns)
+Abel Robert A: Score 12 (2 patterns)
+Feinberg Peter: Score 12 (2 patterns)
+Stewart Marta R: Score 12 (2 patterns)
+Roe Peggy: Score 12 (2 patterns)
+Leibowitz Reuben S: Score 12 (2 patterns)
+Smith Daniel C.: Score 12 (2 patterns)
+Selig Stefan M: Score 12 (2 patterns)
+Rodkin Gary M: Score 12 (2 patterns)
+Lewis Randall J: Score 12 (2 patterns)
+Jones Nina P: Score 12 (2 patterns)
+Glasscock Larry C: Score 12 (2 patterns)
+Aeppel Glyn: Score 12 (2 patterns)
+Reynolds Marshall T: Score 12 (2 patterns)
+Smith Edgar R. III: Score 12 (2 patterns)
+McAnally Bruce: Score 12 (2 patterns)
+Holme Timothy: Score 12 (2 patterns)
+Straubel Jeffrey B: Score 12 (2 patterns)
+Lyon Joseph Douglas: Score 12 (2 patterns)
+Maduck Sean: Score 12 (2 patterns)
+Grewal Harpreet: Score 12 (2 patterns)
+Wilder Thomas: Score 12 (2 patterns)
+Goel Amar K.: Score 12 (2 patterns)
+Woods Andrew: Score 12 (2 patterns)
+Kumar Mukul: Score 12 (2 patterns)
+Yoresh Eliyahu: Score 12 (2 patterns)
+O'Donnell Kevin J: Score 10 (1 patterns)
+Trotter Mitchell: Score 10 (1 patterns)
+Martell Ron: Score 10 (1 patterns)
+Cavanaugh Michael R.: Score 10 (1 patterns)
+Meintjes Willem A: Score 10 (1 patterns)
+Murphy Matthew J: Score 10 (1 patterns)
+Hyzak Dwayne L.: Score 10 (1 patterns)
+Gilbert Cory: Score 10 (1 patterns)
+Koopmans Chris: Score 9 (1 patterns)
+Giustra Frank: Score 9 (2 patterns)
+Carter Thomas L Jr: Score 9 (2 patterns)
+Oppen Sean Matthew: Score 8 (1 patterns)
+Schuler Jack W: Score 8 (1 patterns)
+Cohen Jeffrey K: Score 8 (1 patterns)
+Paulson Larry: Score 8 (1 patterns)
+Stone Paul: Score 7 (2 patterns)
+Ault Milton C III: Score 7 (2 patterns)
+Krohn Tracy W: Score 7 (2 patterns)
+Reprogrammed Interchange LLC: Score 7 (2 patterns)
+Moore Alexander D.: Score 7 (2 patterns)
+Zawadzki Alexi Illya: Score 7 (2 patterns)
+Williamson Andrew: Score 7 (2 patterns)
+Jennings Frank D: Score 5 (1 patterns)
+Caiano Nicola Paul: Score 5 (1 patterns)
+5Am Partners Vi, LLC: Score 5 (1 patterns)
+Polaris Management Co. Vii, L.L.C.: Score 5 (1 patterns)
+Nashat Amir: Score 5 (1 patterns)
+Salvucci Joseph V Sr: Score 5 (1 patterns)
+Salvucci Joseph V Jr: Score 5 (1 patterns)
+Wiggans Thomas G: Score 5 (1 patterns)
+Lucas Svetlana: Score 5 (1 patterns)
+Shizuru Judith Anne: Score 5 (1 patterns)
+Loconti Joseph E.: Score 5 (1 patterns)
+Feighan Edward F: Score 5 (1 patterns)
+Bharathi Sandeep: Score 5 (1 patterns)
+Perestroika (Cyprus) Ltd: Score 5 (1 patterns)
+Perestroika: Score 5 (1 patterns)
+Mohn Frederik Wilhelm: Score 5 (1 patterns)
+Magdol David L.: Score 5 (1 patterns)
+Aggarwal Sanjeev: Score 3 (1 patterns)
+Johnson Pamela D.: Score 3 (1 patterns)
+Pham Quang X: Score 3 (1 patterns)
+Plassche Douglas: Score 3 (1 patterns)
+Meyrath Hugues: Score 3 (1 patterns)
+McRae Matthew Blake: Score 3 (1 patterns)
+Schaber Christopher J: Score 3 (1 patterns)
+Dechant Robert Thomas: Score 3 (1 patterns)
+Gomez Elena: Score 3 (1 patterns)
+Ofman Joshua J.: Score 3 (1 patterns)
+McBee Richard D: Score 3 (1 patterns)
+Welch Jamie: Score 3 (1 patterns)
+Altschuler Randolph: Score 3 (1 patterns)
+McKay Christopher J.: Score 3 (1 patterns)
+Sondergaard Niels: Score 3 (1 patterns)
+Agree Joey: Score 3 (1 patterns)
+Narang Aman: Score 3 (1 patterns)
+Schwab-Pomerantz Carolyn: Score 3 (1 patterns)
+Steenrod Mitchell D: Score 3 (1 patterns)
+Leinwand Robert: Score 3 (1 patterns)
+Ramaswami Rajiv: Score 3 (1 patterns)
+Zuraitis Marita: Score 3 (1 patterns)
+McInerney Ryan: Score 3 (1 patterns)
+Willis Austin Chandler: Score 3 (1 patterns)
+Fauber Robert: Score 3 (1 patterns)
+Evans John M.: Score 3 (1 patterns)
+Chiplock Mark: Score 3 (1 patterns)
+Smith Gary B: Score 3 (1 patterns)
+Mintz Brandon Taylor: Score 3 (1 patterns)
+Miles Patrick: Score 3 (1 patterns)
+Amon Cristiano R: Score 3 (1 patterns)
+Cafaro Debra A: Score 3 (1 patterns)
+Margolis Joseph D: Score 3 (1 patterns)
+Hamilton James C: Score 3 (1 patterns)
+Perros Evangelos: Score 3 (1 patterns)
+Rock Stacey G: Score 3 (1 patterns)
+Chaouki Steven M: Score 3 (1 patterns)
+Amin Tarang: Score 3 (1 patterns)
+McDonald Anthony K: Score 3 (1 patterns)
+Dambkowski Carl: Score 3 (1 patterns)
+Beery Robin C: Score 3 (1 patterns)
+Watanabe Todd: Score 3 (1 patterns)
+Sentonas Michael: Score 3 (1 patterns)
+Locoh-Donou Francois: Score 3 (1 patterns)
+Giancarlo Charles H: Score 3 (1 patterns)
+Bsiv Hold 101, LP: Score 3 (1 patterns)
+Venturo Brian M: Score 3 (1 patterns)
+Majalya Sidney A.: Score 3 (1 patterns)
+Kelsey Todd P.: Score 3 (1 patterns)
+Jagdfeld Aaron: Score 3 (1 patterns)
+Dube Michael P: Score 3 (1 patterns)
+Welgus Howard G.: Score 3 (1 patterns)
+Herrington Douglas J: Score 3 (1 patterns)
+Holleran Kevin: Score 3 (1 patterns)
+Choudary Kiran Kumar: Score 3 (1 patterns)
+Rogers-Windsor Ramona Lynn: Score 3 (1 patterns)
+Haley Mark T: Score 3 (1 patterns)
+Robinson Jill L.: Score 3 (1 patterns)
+Eddy Robert W.: Score 3 (1 patterns)
+Xu Tony: Score 3 (1 patterns)
+Mondello Mark T: Score 3 (1 patterns)
+Sandercock Brett: Score 3 (1 patterns)
+Mazarakis John: Score 3 (1 patterns)
+Vashist Rajesh: Score 3 (1 patterns)
+Kelleher Eric Robert: Score 3 (1 patterns)
+Webb Daniel S.: Score 3 (1 patterns)
+Mosley William D: Score 3 (1 patterns)
+Coen Steven P.: Score 3 (1 patterns)
+Johnson Glenn Harold: Score 3 (1 patterns)
+Steele Jeanna: Score 3 (1 patterns)
+Smith Stan: Score 3 (1 patterns)
+Roche Vincent: Score 3 (1 patterns)
+Feider Stephen: Score 3 (1 patterns)
+Hardie David C: Score 3 (1 patterns)
+Sagati Aghili Naseem: Score 3 (1 patterns)
+Houston Andrew: Score 3 (1 patterns)
+Silverman Josh: Score 3 (1 patterns)
+Gilboa David Abraham: Score 3 (1 patterns)
+Thygesen Allan C.: Score 3 (1 patterns)
+Tenev Vladimir: Score 3 (1 patterns)
+Lund Deanna H: Score 3 (1 patterns)
+Peter E. Haas Jr. Family Fund: Score 3 (1 patterns)
+Meaney William L: Score 3 (1 patterns)
+Dickson Paul S.: Score 3 (1 patterns)
+Zalupski Patrick O.: Score 3 (1 patterns)
+Sharples Brian: Score 3 (1 patterns)
+Huang Zhenwu: Score 3 (1 patterns)
+Klichinsky Michael: Score 3 (1 patterns)
+Grayson Blake Jeffrey: Score 3 (1 patterns)
+Eschenbach Carl M.: Score 3 (1 patterns)
+Cozadd Bruce C: Score 3 (1 patterns)
+Zheng Phil: Score 3 (1 patterns)
+Dale Ajmere: Score 3 (1 patterns)
+Haas Margaret E.: Score 3 (1 patterns)
+Borenstein Gregory Morris: Score 3 (1 patterns)
+Partners Group (Usa) Inc.: Score 3 (1 patterns)
+Neumann Spencer Adam: Score 3 (1 patterns)
+Ghodoosi Arash: Score 3 (1 patterns)
+Ftv Vii, L.P.: Score 3 (1 patterns)
+Sine Jared F.: Score 3 (1 patterns)
+Susi Roger E.: Score 3 (1 patterns)
+Miller William John: Score 3 (1 patterns)
+Johnson Chris A: Score 3 (1 patterns)
+Schultes Birgit C: Score 3 (1 patterns)
+Lusk Kirk: Score 3 (1 patterns)
+Mehrotra Sanjay: Score 3 (1 patterns)
+Sassine Victoria: Score 3 (1 patterns)
+Khattar Jack A.: Score 3 (1 patterns)
+Wang Yufan Stephanie: Score 3 (1 patterns)
+Patel Goyal Kruti: Score 3 (1 patterns)
+Folger Anthony: Score 3 (1 patterns)
+Massey Joanna D.: Score 3 (1 patterns)
+Buchanan Christopher Scott: Score 3 (1 patterns)
+Lin Mark: Score 3 (1 patterns)
+Shao Wei-Ming: Score 3 (1 patterns)
+Weinstein Adam B.: Score 3 (1 patterns)
+Williams Gregg: Score 3 (1 patterns)
+Bulgarelli Peter J.: Score 3 (1 patterns)
+Fitzgerald John Taylor Maloney: Score 3 (1 patterns)
+Scaringe Robert J: Score 3 (1 patterns)
+Carson William H.: Score 3 (1 patterns)
+He Junli: Score 3 (1 patterns)
+Bialecki Andrew: Score 3 (1 patterns)
+Arvia Anne L: Score 3 (1 patterns)
+Huffman Steve Ladd: Score 3 (1 patterns)
+Wall John M: Score 3 (1 patterns)
+Yaldoo Laith L: Score 3 (1 patterns)
+Intrator Michael N: Score 3 (1 patterns)
+Regan Timothy: Score 3 (1 patterns)
+Chacko Jacob: Score 3 (1 patterns)
+Viggiano Aidan: Score 3 (1 patterns)
+A-6684 Ltd.: Score 3 (1 patterns)
+Caldwell Christopher A: Score 3 (1 patterns)
+Dewitte Jacob: Score 3 (1 patterns)
+Hansen Kent A: Score 3 (1 patterns)
+Inglis John C: Score 3 (1 patterns)
+Tiramani Galiano Paolo: Score 3 (1 patterns)
+Shipchandler Khozema: Score 3 (1 patterns)
+Horizon Kinetics Asset Management LLC: Score 3 (1 patterns)
+Vollmer Jason L: Score 3 (1 patterns)
+Wilks Matthew: Score 3 (1 patterns)
+Wilson Troy Edward: Score 3 (1 patterns)
+Lazarus Energy Holdings, LLC: Score 3 (1 patterns)
+McDonald Damien: Score 3 (1 patterns)
+Gorli Eric: Score 3 (1 patterns)
+Young Charles Edwin: Score 3 (1 patterns)
+McCuen Michael P: Score 3 (1 patterns)
+Scheiwer Mark J: Score 3 (1 patterns)
+Casdin Partners Master Fund, L.P.: Score 3 (1 patterns)
+Lorber David A: Score 3 (1 patterns)
+Woods Michael W: Score 3 (1 patterns)
+George W Whitney: Score 3 (1 patterns)
+O'Dowd William IV: Score 3 (1 patterns)
+Sittema Thomas Kent: Score 3 (1 patterns)
+Ivanov Penko Krassimir: Score 3 (1 patterns)
+Campbell Gregor Alasdair: Score 3 (1 patterns)
+Sprott Eric: Score 3 (1 patterns)
+Smiley Joshua L: Score 3 (1 patterns)
+Parker Austin Colby: Score 3 (1 patterns)
+Aiello Stephen: Score 3 (1 patterns)
+Pangalos Menelas N: Score 3 (1 patterns)
+Mongeau Luc: Score 3 (1 patterns)
+Culp Robert George IV: Score 3 (1 patterns)
+Bedrick Todd: Score 3 (1 patterns)
+Dondero James D: Score 3 (1 patterns)
+Barry John F: Score 2 (1 patterns)
+Benioff Marc: Score 2 (1 patterns)
+Cozzone Robert D: Score 2 (1 patterns)
+Eberwein Jeffrey E.: Score 2 (1 patterns)
+Kovler Benjamin: Score 2 (1 patterns)
+MONDELLO MARK T  Executive Chairman: Score 2 (1 patterns)
+Martell Frank: Score 2 (1 patterns)
+Portnoy David: Score 2 (1 patterns)
+Roberts Johanna  EVP, Gen. Counsel & Secretary: Score 2 (1 patterns)
+Sagati Aghili Naseem  General Counsel: Score 2 (1 patterns)
+Rillo Troy: Score 0 (0 patterns)
+Robinson Eric Brandon: Score 0 (0 patterns)
+Brody Paul Jonathan: Score 0 (0 patterns)
+Gilead Sciences, Inc.: Score 0 (0 patterns)
+Hurst Edwin Leon: Score 0 (0 patterns)
+Robinson Scott L: Score 0 (0 patterns)
+Brown Bruce Alan: Score 0 (0 patterns)
+Ac Nordic Aps: Score 0 (0 patterns)
+Black Robert R.: Score 0 (0 patterns)
+Coggins Eileen Mary: Score 0 (0 patterns)
+
+========================================================================================================================
+END OF REPORT
+========================================================================================================================

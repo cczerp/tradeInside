@@ -1,0 +1,179 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2025-10-07 20:30:55
+Total Records Analyzed: 1239
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)
+  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Sherpa Angche (CFO, MKZR)
+Risk Score: 850 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.45 (+31.7%)
+Patterns Detected (10):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Repeat: MKZR (6x)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%) x2
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 850 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.45 (+31.7%)
+Patterns Detected (10):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Repeat: MKZR (6x)
+  • Late filing: MKZR (25 days)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%) x2
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 487 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • BCDA: Traded at $1.16 → Now $1.32 (+17.2%)
+Patterns Detected (3):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Same-company cluster: BCDA - 3 insiders within 7 days
+      Coordinated with: Stertzer Simon H (Dir), Blank Andrew Scott (Dir)
+  • Perfect timing: BCDA (+17.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 425 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NRGV: Traded at $2.26 → Now $3.31 (+31.4%)
+Patterns Detected (2):
+  • Repeat: NRGV (6x)
+  • Perfect timing: NRGV (+31.4-36.0%) x4
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 337 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • AARD: Traded at $8.00 → Now $17.41 (+52.1%)
+Patterns Detected (2):
+  • Perfect timing: AARD (+37.5-52.1%) x3
+  • Coordinated: 2025-09-10 (Other sector, 7 traders)
+      Coordinated with: Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW), Sprott Eric (10%, HYMC), Duggan Robert W (Co-CEO, 10%, SMMT), Smiley Joshua L (See Remarks, ZLAB), Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Zanganeh Mahkam (Co-CEO, 10%, SMMT)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • SAVA: Traded at $2.29 → Current price unavailable
+Patterns Detected (1):
+  • Perfect timing: SAVA (+49.8%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NXXT: Traded at $1.77 → Now $2.82 (+19.2%)
+Patterns Detected (1):
+  • Perfect timing: NXXT (+19.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Lettmann Jason (CEO, ALXO)
+Risk Score: 300 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • ALXO: Traded at $1.08 → Now $1.83 (+69.4%)
+Patterns Detected (1):
+  • Perfect timing: ALXO (+69.4%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+Risk Score: 262 (Role: 1.25x, Repeat Offender: 1.5x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.45 (+31.7%)
+Patterns Detected (8):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Sherpa Angche (CFO, MKZR), Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+Risk Score: 210 (Role: 1.0x, Repeat Offender: 1.5x ⚠️)
+Trade Prices & Current Values:
+  • MKZR: Traded at $4.70 → Now $5.45 (+31.7%)
+Patterns Detected (8):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-08-14
+      Coordinated with: Sherpa Angche (CFO, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Sherpa Angche (CFO, MKZR), Fuller Glen W (TREASURER, MKZR), Patterson Charles E. II (GC, Secretary, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Sherpa Angche (CFO), Dixon Robert E (CEO, Pres), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, Officer, CEO)
+      Coordinated with: Dixon Robert E (CEO, Pres), Sherpa Angche (CFO), Fuller Glen W (TREASURER), Patterson Charles E. II (GC, Secretary), Bluth Jeri Ruth (Chief Compliance Officer)
+  • Late filing: MKZR (25 days)
+  • Perfect timing: MKZR (+31.7%)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Coordinated: 2025-08-14 (Biotech sector, 6 traders)
+      Coordinated with: Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Dixon Robert E (CEO, Pres, MKZR), Fuller Glen W (TREASURER, MKZR), Sherpa Angche (CFO, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

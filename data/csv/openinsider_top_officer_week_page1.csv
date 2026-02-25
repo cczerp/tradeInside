@@ -1,0 +1,12 @@
+trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
+Moulder Leon O Jr,ZBIO,P - Purchase,2025-10-07,36928,"+$769,949",$20.85,"Zenas Biopharma, Inc.",See Remarks,2025-10-09 17:24:42,openinsider,top_officer_week,,1975122,+2%,,,,,1,2025-10-14T11-58-21Z
+Clemmer James C,ANGO,P - Purchase,2025-10-09,10000,"+$111,500",$11.15,Angiodynamics Inc,"Pres, CEO",2025-10-09 21:09:24,openinsider,top_officer_week,,882529,+1%,,,,,1,2025-10-14T11-58-21Z
+Shan Helen L.,FDS,P - Purchase,2025-10-06,370,"+$101,928",$275.48,Factset Research Systems Inc,"EVP, CFO",2025-10-08 16:28:08,openinsider,top_officer_week,,9284,+4%,,,,,1,2025-10-14T11-58-21Z
+"Sprinkle, Jr. Richard C.",CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, Chief Credit Officer",2025-10-09 16:10:15,openinsider,top_officer_week,,25729,+19%,,,,,1,2025-10-14T11-58-21Z
+Metheny Philip J.,CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, CFO",2025-10-09 16:14:26,openinsider,top_officer_week,,4166,New,,,,,1,2025-10-14T11-58-21Z
+Bodenstedt Matthias,MLTX,P - Purchase,2025-10-08,10870,"+$98,808",$9.09,Moonlake Immunotherapeutics,CFO,2025-10-09 09:01:51,openinsider,top_officer_week,,627536,+2%,,,,,1,2025-10-14T11-58-21Z
+Umair Muhammad,PLCE,P - Purchase,2025-10-08,7143,"+$50,001",$7.00,"Childrens Place, Inc.","Pres, INTERIM CEO",2025-10-09 16:30:15,openinsider,top_officer_week,,277667,+3%,,,,,1,2025-10-14T11-58-21Z
+Mackey Brian T,CPSH,P - Purchase,2025-10-08,16500,"+$49,500",$3.00,Cps Technologies Corp/De/,"Pres, CEO",2025-10-09 15:05:01,openinsider,top_officer_week,,36500,+83%,,,,,1,2025-10-14T11-58-21Z
+Griffith Charles Kellogg Jr,CPSH,P - Purchase,2025-10-08,4000,"+$12,000",$3.00,Cps Technologies Corp/De/,CFO,2025-10-09 13:17:50,openinsider,top_officer_week,,41792,+11%,,,,,1,2025-10-14T11-58-21Z
+O'Dowd William IV,DLPN,P - Purchase,2025-10-13,3400,"+$4,896",$1.44,"Dolphin Entertainment, Inc.",CEO,2025-10-14 08:30:01,openinsider,top_officer_week,,501129,+1%,,,,,1,2025-10-14T11-58-21Z
+O'Donnell Shannon,AUBN,P - Purchase,2025-10-08,25,+$686,$27.46,"Auburn National Bancorporation, Inc",SVP,2025-10-09 11:17:32,openinsider,top_officer_week,,1537,+2%,,,,,1,2025-10-14T11-58-21Z
