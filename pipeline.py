@@ -8,8 +8,12 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from dotenv import load_dotenv
 
+from logging_config import get_logger
+
 # Load environment variables
 load_dotenv()
+
+log = get_logger(__name__)
 
 # ============================================================================
 # CONFIGURATION
@@ -58,6 +62,7 @@ def send_email_alert(subject, body):
         print(f"[✓] Email alert sent to {len(recipients)} recipient(s): {subject}")
         return True
     except Exception as e:
+        log.exception("failed to send email alert")
         print(f"[✗] Failed to send email: {e}")
         return False
 
@@ -97,7 +102,8 @@ def check_for_alerts(report_path):
         elif line.startswith('Risk Score:'):
             try:
                 current_score = int(line.split(':')[1].split('(')[0].strip())
-            except:
+            except (ValueError, IndexError) as e:
+                log.debug("could not parse risk score from line %r: %s", line, e)
                 current_score = 0
         
         elif line.strip().startswith('•'):

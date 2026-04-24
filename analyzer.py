@@ -10,6 +10,10 @@ from collections import defaultdict
 import sys
 import io
 
+from logging_config import get_logger
+
+log = get_logger(__name__)
+
 # Fix Windows encoding issues
 if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -255,7 +259,8 @@ def update_prices_if_stale(conn):
                 
                 conn.commit()
                 print(f"  ✓ Updated {ticker}")
-        except:
+        except Exception as e:
+            log.warning("price refresh failed for %s: %s", ticker, e)
             print(f"  ✗ Failed {ticker}")
 
 # ============================================================================
@@ -383,7 +388,7 @@ def consolidate_patterns(patterns_list):
                 try:
                     pct = float(pct_part)
                     pattern_groups[('timing', ticker_part)].append(pct)
-                except:
+                except ValueError:
                     consolidated.append(pattern)
             else:
                 consolidated.append(pattern)
