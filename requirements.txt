@@ -3,3 +3,5 @@ yfinance>=0.2.40
 python-dotenv>=1.0
 playwright>=1.40
 requests>=2.31
+fastapi>=0.110
+uvicorn[standard]>=0.27

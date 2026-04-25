@@ -1,0 +1,25 @@
+services:
+  api:
+    build: .
+    image: tradeinside-api:latest
+    container_name: tradeinside-api
+    ports:
+      - "8000:8000"
+    environment:
+      TRADEINSIDE_DB: /data/tradeinsider.db
+      # Set this in .env or your shell to require X-API-Key on gated endpoints.
+      TRADEINSIDE_API_KEY: ${TRADEINSIDE_API_KEY:-}
+      CORS_ALLOW_ORIGINS: ${CORS_ALLOW_ORIGINS:-*}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      LOG_FILE: /logs/insider_trading.log
+    volumes:
+      # Mount the existing DB read-only — the API never writes to trades.
+      - ./tradeinsider.db:/data/tradeinsider.db:ro
+      - ./logs:/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request,sys; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,33 @@
+.git
+.gitignore
+.github
+.env
+.env.*
+!.env.example
+
+# Python artifacts
+__pycache__
+*.py[cod]
+.venv
+venv
+.pytest_cache
+.coverage
+htmlcov
+
+# Local data the container shouldn't bake in (mounted instead)
+*.db
+*.db-journal
+logs/
+reports/
+data/html/
+data/json/
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+
+# Drivers (Linux containers don't need windows/mac browser binaries)
+chromedriver-win64/
+drivers/
+node_modules/
