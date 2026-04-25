@@ -465,6 +465,11 @@ def main(argv: Optional[list[str]] = None) -> int:
              "`python fetch_data.py benchmark` after editing benchmarks.DEFAULT_BENCHMARKS)",
     )
     parser.add_argument(
+        "--by-pattern", action="store_true",
+        help="label each trade with which analyzer rules fire and segment "
+             "the report by individual rules and by pattern-count bucket",
+    )
+    parser.add_argument(
         "--out", default=None,
         help="optional path to write a JSON dump of segment rows",
     )
@@ -526,6 +531,25 @@ def main(argv: Optional[list[str]] = None) -> int:
             market_adjust(trades, spy_prices, horizons)
         if args.sector_adjust and sector_benchmarks:
             sector_adjust(trades, sector_benchmarks, benchmark_for_row, horizons)
+
+        if args.by_pattern:
+            from analyzer import SECTOR_MAP
+            from pattern_labeler import apply_all_labels
+            import pandas as pd
+
+            events_df = pd.read_sql_query(
+                "SELECT ticker, event_date FROM corporate_events", conn,
+                parse_dates=["event_date"],
+            )
+            log.info("loaded %d corporate events for pre-event labelling", len(events_df))
+            apply_all_labels(trades, sector_map=SECTOR_MAP, events_df=events_df)
+            log.info(
+                "pattern label counts: large=%d same_company=%d sector=%d pre_event=%d",
+                int(trades["pat_large_trade"].sum()),
+                int(trades["pat_same_company"].sum()),
+                int(trades["pat_sector_cluster"].sum()),
+                int(trades["pat_pre_event"].sum()),
+            )
     finally:
         conn.close()
 
@@ -590,6 +614,51 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(render_text_report(
             by_source_sec,
             "BY SOURCE — SECTOR-ADJUSTED  (excess return over sector-SPDR ETF)",
+        ))
+
+    if args.by_pattern:
+        # Pick the best benchmark prefix available so per-pattern numbers
+        # are comparable to the headline alpha (sector > spy > raw).
+        if args.sector_adjust and sector_benchmarks:
+            prefix = "sector_excess_"
+            label = "SECTOR-ADJUSTED"
+        elif spy_prices:
+            prefix = "excess_"
+            label = "SPY-ADJUSTED"
+        else:
+            prefix = "ret_"
+            label = "RAW"
+
+        by_count = segment_report(trades, "pattern_count_bucket", horizons, prefix=prefix)
+        by_set = segment_report(trades, "pattern_set", horizons, prefix=prefix)
+        all_rows += by_count + by_set
+
+        # Per-rule isolation: bucket trades into "rule X fired" vs "did not"
+        # so we can read precision rule-by-rule.
+        from pattern_labeler import PATTERN_COLUMNS
+        per_rule_rows = []
+        for rule_col in PATTERN_COLUMNS:
+            rule_name = rule_col.replace("pat_", "")
+            tag_col = f"_tag_{rule_name}"
+            trades[tag_col] = trades[rule_col].map({True: f"{rule_name}=on", False: f"{rule_name}=off"})
+            per_rule_rows += segment_report(trades, tag_col, horizons, prefix=prefix)
+            trades.drop(columns=[tag_col], inplace=True)
+        all_rows += per_rule_rows
+
+        print()
+        print(render_text_report(
+            by_count,
+            f"BY PATTERN-COUNT BUCKET — {label}  (does stacking rules raise alpha?)",
+        ))
+        print()
+        print(render_text_report(
+            per_rule_rows,
+            f"PER-RULE ON/OFF — {label}  (which individual rules carry the signal?)",
+        ))
+        print()
+        print(render_text_report(
+            by_set,
+            f"BY EXACT PATTERN SET — {label}  (combinations actually present)",
         ))
 
     if args.out:
