@@ -315,6 +315,45 @@ def market_adjust(returns_df, spy_prices: list[tuple[date, float]], horizons: It
     return returns_df
 
 
+def sector_adjust(
+    returns_df,
+    benchmark_prices_by_symbol: dict[str, list[tuple[date, float]]],
+    benchmark_for_row: list[str],
+    horizons: Iterable[int],
+):
+    """Subtract a per-trade benchmark's same-window return.
+
+    ``benchmark_prices_by_symbol``: {etf: sorted [(date, close), ...]}
+    ``benchmark_for_row``: same length as returns_df, the chosen ETF symbol
+    per row (e.g. 'XLK' for an AAPL trade, 'XBI' for a biotech trade,
+    falling back to 'SPY').
+
+    Produces sector_excess_<H>d columns. Rows whose benchmark has no
+    coverage at the trade date land as None and are dropped from
+    summarise() downstream.
+    """
+    if not benchmark_prices_by_symbol or not benchmark_for_row:
+        return returns_df
+
+    n = len(returns_df)
+    if len(benchmark_for_row) != n:
+        raise ValueError("benchmark_for_row length must match returns_df")
+
+    txn_dates = list(returns_df["txn_date"])
+    for h in horizons:
+        ret_col = f"ret_{h}d"
+        excess_col = f"sector_excess_{h}d"
+        bench_returns = []
+        for d, sym in zip(txn_dates, benchmark_for_row):
+            series = benchmark_prices_by_symbol.get(sym, [])
+            bench_returns.append(forward_return(series, d, h) if d is not None else None)
+        returns_df[excess_col] = [
+            (r - s) if (r is not None and s is not None) else None
+            for r, s in zip(returns_df[ret_col], bench_returns)
+        ]
+    return returns_df
+
+
 # ---------------------------------------------------------------------------
 # Reporting
 # ---------------------------------------------------------------------------
@@ -332,15 +371,24 @@ def _flip_sign_for_sells(returns_df, return_col: str):
 
 
 def segment_report(returns_df, segment_col: str, horizons: Iterable[int],
-                   adjusted: bool = False) -> list[dict]:
+                   adjusted: bool = False, prefix: Optional[str] = None) -> list[dict]:
     """Per-segment summary table for each horizon.
 
-    Reports both raw returns and 'insider perspective' returns (flipped sign
-    for sells) so the hit-rate column is interpretable: hit = the trade went
-    the way the insider was positioned.
+    Reports 'insider perspective' returns (sign-flipped for sells) so the
+    hit-rate column is interpretable: hit = the trade went the way the
+    insider was positioned.
+
+    ``prefix`` overrides the default column prefix and lets callers ask for
+    sector-adjusted ('sector_excess_') alongside raw ('ret_') and SPY-adjusted
+    ('excess_'). When omitted, ``adjusted`` toggles between 'ret_' and
+    'excess_' for backwards compatibility.
     """
     out = []
-    prefix = "excess_" if adjusted else "ret_"
+    if prefix is None:
+        prefix = "excess_" if adjusted else "ret_"
+    label = {"ret_": "raw", "excess_": "spy_adj", "sector_excess_": "sector_adj"}.get(
+        prefix, prefix.rstrip("_")
+    )
     for seg, group in returns_df.groupby(segment_col, dropna=False):
         for h in horizons:
             col = f"{prefix}{h}d"
@@ -352,7 +400,7 @@ def segment_report(returns_df, segment_col: str, horizons: Iterable[int],
                 "segment_field": segment_col,
                 "segment_value": "" if seg is None else str(seg),
                 "horizon_days": h,
-                "adjusted": adjusted,
+                "adjusted": label,
             })
             out.append(stats)
     return out
@@ -411,6 +459,12 @@ def main(argv: Optional[list[str]] = None) -> int:
         help="subtract SPY's same-window return (requires SPY in stock_prices)",
     )
     parser.add_argument(
+        "--sector-adjust", action="store_true",
+        help="subtract per-trade sector-ETF return using analyzer.SECTOR_MAP "
+             "(requires the sector ETFs to be loaded; run "
+             "`python fetch_data.py benchmark` after editing benchmarks.DEFAULT_BENCHMARKS)",
+    )
+    parser.add_argument(
         "--out", default=None,
         help="optional path to write a JSON dump of segment rows",
     )
@@ -438,17 +492,40 @@ def main(argv: Optional[list[str]] = None) -> int:
         log.info("loaded prices for %d tickers", len([t for t, p in prices.items() if p]))
 
         spy_prices: list[tuple[date, float]] = []
-        if args.market_adjust:
+        if args.market_adjust or args.sector_adjust:
             spy = load_prices(conn, ["SPY"]).get("SPY", [])
             if not spy:
-                log.warning("--market-adjust requested but no SPY rows in stock_prices; skipping")
+                log.warning("benchmark requested but no SPY rows in stock_prices; skipping")
             else:
                 spy_prices = spy
+
+        sector_benchmarks: dict[str, list[tuple[date, float]]] = {}
+        benchmark_for_row: list[str] = []
+        if args.sector_adjust:
+            from analyzer import SECTOR_MAP  # lazy: pulls yfinance + makes ./reports
+            from benchmarks import benchmark_for_ticker, all_benchmark_symbols
+
+            needed = all_benchmark_symbols(SECTOR_MAP)
+            sector_benchmarks = load_prices(conn, needed)
+            covered = [s for s, p in sector_benchmarks.items() if p]
+            log.info("sector benchmarks loaded: %s", covered)
+            missing = [s for s in needed if not sector_benchmarks.get(s)]
+            if missing:
+                log.warning(
+                    "missing benchmark data for %s; those rows will fall back to "
+                    "the row's chosen ETF being uncovered (None excess return). "
+                    "Run `python fetch_data.py benchmark` to populate.", missing,
+                )
+            benchmark_for_row = [
+                benchmark_for_ticker(t, SECTOR_MAP) for t in trades["ticker"]
+            ]
 
         compute_returns_table(trades, prices, horizons)
         add_segmentation_columns(trades)
         if spy_prices:
             market_adjust(trades, spy_prices, horizons)
+        if args.sector_adjust and sector_benchmarks:
+            sector_adjust(trades, sector_benchmarks, benchmark_for_row, horizons)
     finally:
         conn.close()
 
@@ -468,9 +545,6 @@ def main(argv: Optional[list[str]] = None) -> int:
     all_rows: list[dict] = (
         list(overall) + by_side + by_source + by_trader_freq + by_trade_size
     )
-    if spy_prices:
-        all_rows += segment_report(trades, "side", horizons, adjusted=True)
-        all_rows += segment_report(trades, "source", horizons, adjusted=True)
 
     print(render_text_report(overall, "OVERALL  (insider perspective; sells inverted)"))
     print()
@@ -491,6 +565,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     if spy_prices:
         by_side_adj = segment_report(trades, "side", horizons, adjusted=True)
         by_source_adj = segment_report(trades, "source", horizons, adjusted=True)
+        all_rows += by_side_adj + by_source_adj
         print()
         print(render_text_report(
             by_side_adj,
@@ -500,6 +575,21 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(render_text_report(
             by_source_adj,
             "BY SOURCE — SPY-ADJUSTED  (excess return over SPY in same window)",
+        ))
+
+    if args.sector_adjust and sector_benchmarks:
+        by_side_sec = segment_report(trades, "side", horizons, prefix="sector_excess_")
+        by_source_sec = segment_report(trades, "source", horizons, prefix="sector_excess_")
+        all_rows += by_side_sec + by_source_sec
+        print()
+        print(render_text_report(
+            by_side_sec,
+            "BY SIDE — SECTOR-ADJUSTED  (excess return over sector-SPDR ETF)",
+        ))
+        print()
+        print(render_text_report(
+            by_source_sec,
+            "BY SOURCE — SECTOR-ADJUSTED  (excess return over sector-SPDR ETF)",
         ))
 
     if args.out:
