@@ -6,6 +6,13 @@ from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 from database import Database
+from logging_config import get_logger
+
+log = get_logger(__name__)
+
+DEFAULT_BENCHMARK_SYMBOLS = ("SPY",)
+BENCHMARK_BUFFER_DAYS = 30  # extend window past earliest trade so 30/90d
+                            # forward-return windows always have a SPY anchor
 
 def fetch_prices_for_all_tickers(days_back=730):
     """Fetch stock prices for all tickers in database"""
@@ -205,21 +212,113 @@ def fetch_events_for_all_tickers():
     print(f"{'='*60}")
 
 
+def _earliest_trade_date(db):
+    """Return the earliest parseable transaction_date as a datetime.date,
+    or None if the trades table is empty / unparseable."""
+    from backtest import parse_trade_date
+
+    db.cursor.execute("SELECT transaction_date FROM trades")
+    earliest = None
+    for (raw,) in db.cursor.fetchall():
+        d = parse_trade_date(raw)
+        if d is None:
+            continue
+        if earliest is None or d < earliest:
+            earliest = d
+    return earliest
+
+
+def fetch_benchmark(symbols=DEFAULT_BENCHMARK_SYMBOLS, start=None, end=None):
+    """Pull benchmark price history (SPY by default) into stock_prices.
+
+    Window defaults to (earliest trade date - BENCHMARK_BUFFER_DAYS) through
+    today + 1 day. Existing rows are preserved via INSERT OR IGNORE on
+    (ticker, date), so this is idempotent and safe to re-run.
+    """
+    print("\n" + "=" * 60)
+    print("FETCHING BENCHMARK PRICES")
+    print("=" * 60)
+
+    db = Database()
+    if not db.connect():
+        log.error("could not open DB; aborting benchmark fetch")
+        return
+
+    try:
+        if start is None:
+            earliest = _earliest_trade_date(db)
+            if earliest is None:
+                # No trades yet — fall back to a generous default window.
+                earliest = (datetime.now() - timedelta(days=730)).date()
+            start = earliest - timedelta(days=BENCHMARK_BUFFER_DAYS)
+        if end is None:
+            end = datetime.now().date() + timedelta(days=1)
+
+        log.info("benchmark window: %s -> %s for symbols=%s", start, end, list(symbols))
+
+        total_inserted = 0
+        for symbol in symbols:
+            try:
+                stock = yf.Ticker(symbol)
+                hist = stock.history(start=start.isoformat(), end=end.isoformat())
+            except Exception as e:
+                log.exception("yfinance fetch failed for %s: %s", symbol, e)
+                print(f"  ✗ {symbol}: fetch error")
+                continue
+
+            if hist.empty:
+                log.warning("no benchmark data returned for %s", symbol)
+                print(f"  ✗ {symbol}: no data")
+                continue
+
+            inserted = 0
+            for idx, row in hist.iterrows():
+                try:
+                    db.cursor.execute(
+                        "INSERT OR IGNORE INTO stock_prices "
+                        "(ticker, date, open, high, low, close, volume) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?)",
+                        (
+                            symbol,
+                            idx.strftime("%Y-%m-%d"),
+                            float(row["Open"]),
+                            float(row["High"]),
+                            float(row["Low"]),
+                            float(row["Close"]),
+                            int(row["Volume"]),
+                        ),
+                    )
+                    inserted += db.cursor.rowcount
+                except (KeyError, ValueError, TypeError) as e:
+                    log.warning("skipping malformed %s row at %s: %s", symbol, idx, e)
+
+            db.conn.commit()
+            total_inserted += inserted
+            print(f"  ✓ {symbol}: {inserted} new rows ({len(hist)} fetched)")
+
+        print(f"\n[✓] benchmark fetch complete: {total_inserted} new rows")
+    finally:
+        db.close()
+
+
 if __name__ == "__main__":
     import sys
-    
+
     if len(sys.argv) < 2:
-        print("Usage: python fetch_data.py [prices|events|all]")
+        print("Usage: python fetch_data.py [prices|events|benchmark|all]")
         sys.exit(1)
-    
+
     command = sys.argv[1].lower()
-    
+
     if command == "prices":
         fetch_prices_for_all_tickers()
     elif command == "events":
         fetch_events_for_all_tickers()
+    elif command == "benchmark":
+        fetch_benchmark()
     elif command == "all":
         fetch_prices_for_all_tickers()
         fetch_events_for_all_tickers()
+        fetch_benchmark()
     else:
-        print("Unknown command. Use: prices, events, or all")
+        print("Unknown command. Use: prices, events, benchmark, or all")

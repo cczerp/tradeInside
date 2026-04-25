@@ -488,6 +488,20 @@ def main(argv: Optional[list[str]] = None) -> int:
         "BY TRADE SIZE QUARTILE  (does the 'large trade' rule have edge?)",
     ))
 
+    if spy_prices:
+        by_side_adj = segment_report(trades, "side", horizons, adjusted=True)
+        by_source_adj = segment_report(trades, "source", horizons, adjusted=True)
+        print()
+        print(render_text_report(
+            by_side_adj,
+            "BY SIDE — SPY-ADJUSTED  (excess return over SPY in same window)",
+        ))
+        print()
+        print(render_text_report(
+            by_source_adj,
+            "BY SOURCE — SPY-ADJUSTED  (excess return over SPY in same window)",
+        ))
+
     if args.out:
         os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
         with open(args.out, "w") as f:
