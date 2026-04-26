@@ -205,7 +205,13 @@ def run_pipeline():
     steps = [
         ("python scrape.py --auto", "Scrape Latest Insider Trades"),
         ("python fetch_data.py all", "Fetch Stock Prices & Events"),
-        ("python analyzer.py", "Analyze Trading Patterns")
+        ("python analyzer.py", "Analyze Trading Patterns"),
+        # Persists a fresh backtest snapshot to the backtest_runs table so
+        # the API's /backtest/latest can serve it without recomputing.
+        # Uses --sector-adjust (the most credible benchmark) and the same
+        # rule labelling we report in --by-pattern.
+        ("python backtest.py --sector-adjust --by-pattern --persist",
+         "Run + Persist Backtest Snapshot"),
     ]
     
     # Execute steps

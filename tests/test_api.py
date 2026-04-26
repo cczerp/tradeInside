@@ -150,3 +150,69 @@ def test_trader_profile_requires_key_when_set(gated_client):
 def test_backtest_summary_validates_horizons(client):
     r = client.get("/backtest/summary", params={"horizons": "abc,xyz"})
     assert r.status_code == 400
+
+
+# --- /backtest/latest -----------------------------------------------------
+
+def test_backtest_latest_returns_404_when_no_snapshot(client):
+    r = client.get("/backtest/latest")
+    assert r.status_code == 404
+
+
+def test_backtest_latest_serves_most_recent_run(client, tmp_path, monkeypatch):
+    """Seed two runs; the endpoint should return only the newer one."""
+    import sqlite3
+    from datetime import datetime
+    from backtest import persist_backtest_run
+
+    # The TestClient fixture already pointed env at a tmp DB; reuse it.
+    db_path = os.environ["TRADEINSIDE_DB"]
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        old_row = {
+            "horizon_days": 7, "segment_field": "side", "segment_value": "buy",
+            "adjusted": "sector_adj", "count": 1, "mean": 0.01, "median": 0.0,
+            "std": 0.05, "hit_rate": 0.5, "sharpe": 0.2,
+        }
+        new_row = {**old_row, "count": 999, "mean": 0.99}
+        persist_backtest_run(conn, [old_row], run_id="old",
+                            run_at=datetime(2025, 1, 1))
+        persist_backtest_run(conn, [new_row], run_id="new",
+                            run_at=datetime(2026, 1, 1))
+    finally:
+        conn.close()
+
+    r = client.get("/backtest/latest")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["run_id"] == "new"
+    assert body["segment_count"] == 1
+    assert body["segments"][0]["n"] == 999
+
+
+def test_backtest_latest_filters_by_segment_field(client):
+    import sqlite3
+    from backtest import persist_backtest_run
+
+    db_path = os.environ["TRADEINSIDE_DB"]
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = [
+            {"horizon_days": 7, "segment_field": "side", "segment_value": "buy",
+             "adjusted": "raw", "count": 10, "mean": 0.0, "median": 0.0,
+             "std": 0.0, "hit_rate": 0.5, "sharpe": None},
+            {"horizon_days": 7, "segment_field": "source", "segment_value": "openinsider",
+             "adjusted": "raw", "count": 20, "mean": 0.0, "median": 0.0,
+             "std": 0.0, "hit_rate": 0.5, "sharpe": None},
+        ]
+        persist_backtest_run(conn, rows, run_id="filtered")
+    finally:
+        conn.close()
+
+    r = client.get("/backtest/latest", params={"segment_field": "side"})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["segment_count"] == 1
+    assert body["segments"][0]["segment_field"] == "side"

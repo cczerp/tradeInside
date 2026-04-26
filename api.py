@@ -173,6 +173,58 @@ def trader_profile(name: str, limit: int = Query(50, ge=1, le=500)):
     }
 
 
+@app.get("/backtest/latest")
+def backtest_latest(
+    segment_field: Optional[str] = Query(
+        None, description="filter to one segmentation, e.g. 'side' or 'pattern_set'"
+    ),
+    adjusted: Optional[str] = Query(
+        None, description="filter to one adjustment level: raw / spy_adj / sector_adj"
+    ),
+):
+    """Most recent persisted backtest snapshot.
+
+    The pipeline writes one snapshot per run into the backtest_runs table;
+    this endpoint serves the latest run_id without recomputing — fast,
+    cacheable, and stable across the day. If no snapshot has been written
+    yet, returns 404.
+    """
+    conn = _connect()
+    try:
+        latest = conn.execute(
+            "SELECT run_id, run_at, since_filter FROM backtest_runs "
+            "ORDER BY run_at DESC LIMIT 1"
+        ).fetchone()
+        if latest is None:
+            raise HTTPException(
+                status_code=404,
+                detail="no backtest snapshot persisted yet "
+                       "(run `python backtest.py --persist` or the full pipeline)",
+            )
+
+        sql = "SELECT * FROM backtest_runs WHERE run_id = ?"
+        params: list = [latest["run_id"]]
+        if segment_field:
+            sql += " AND segment_field = ?"
+            params.append(segment_field)
+        if adjusted:
+            sql += " AND adjusted = ?"
+            params.append(adjusted)
+        sql += " ORDER BY segment_field, segment_value, horizon_days"
+
+        rows = [dict(r) for r in conn.execute(sql, params).fetchall()]
+    finally:
+        conn.close()
+
+    return {
+        "run_id": latest["run_id"],
+        "run_at": latest["run_at"],
+        "since_filter": latest["since_filter"],
+        "segment_count": len(rows),
+        "segments": rows,
+    }
+
+
 @app.get("/backtest/summary", dependencies=[Depends(require_api_key)])
 def backtest_summary(
     since: Optional[str] = Query(None, description="ISO date filter"),

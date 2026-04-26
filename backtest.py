@@ -406,6 +406,53 @@ def segment_report(returns_df, segment_col: str, horizons: Iterable[int],
     return out
 
 
+def persist_backtest_run(
+    conn: sqlite3.Connection,
+    rows: list[dict],
+    run_id: str,
+    since_filter: Optional[date] = None,
+    run_at: Optional[datetime] = None,
+) -> int:
+    """Insert a batch of segment_report rows into backtest_runs.
+
+    All rows are tagged with the same ``run_id`` so a consumer can pull a
+    consistent snapshot back out (the API's /backtest/latest does this).
+    Returns the number of rows inserted.
+    """
+    if not rows:
+        return 0
+    run_at = run_at or datetime.utcnow()
+
+    sql = (
+        "INSERT INTO backtest_runs ("
+        "  run_id, run_at, since_filter, horizon_days, segment_field, segment_value, "
+        "  adjusted, n, mean_return, median_return, std_return, hit_rate, sharpe"
+        ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+    )
+
+    payload = []
+    for r in rows:
+        payload.append((
+            run_id,
+            run_at.isoformat(timespec="seconds"),
+            since_filter.isoformat() if since_filter else None,
+            int(r["horizon_days"]),
+            str(r["segment_field"]),
+            str(r["segment_value"]),
+            str(r.get("adjusted", "raw")),
+            int(r["count"]),
+            r["mean"],
+            r["median"],
+            r["std"],
+            r["hit_rate"],
+            r["sharpe"],
+        ))
+
+    conn.executemany(sql, payload)
+    conn.commit()
+    return len(payload)
+
+
 def render_text_report(rows: list[dict], title: str) -> str:
     lines = []
     lines.append("=" * 90)
@@ -468,6 +515,11 @@ def main(argv: Optional[list[str]] = None) -> int:
         "--by-pattern", action="store_true",
         help="label each trade with which analyzer rules fire and segment "
              "the report by individual rules and by pattern-count bucket",
+    )
+    parser.add_argument(
+        "--persist", action="store_true",
+        help="write the resulting segment rows to the backtest_runs table "
+             "in the DB so the API can serve them via /backtest/latest",
     )
     parser.add_argument(
         "--out", default=None,
@@ -666,6 +718,17 @@ def main(argv: Optional[list[str]] = None) -> int:
         with open(args.out, "w") as f:
             json.dump(all_rows, f, indent=2, default=str)
         log.info("wrote %d rows to %s", len(all_rows), args.out)
+
+    if args.persist:
+        run_id = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+        persist_conn = _connect(args.db)
+        try:
+            inserted = persist_backtest_run(
+                persist_conn, all_rows, run_id=run_id, since_filter=since,
+            )
+        finally:
+            persist_conn.close()
+        log.info("persisted %d rows to backtest_runs (run_id=%s)", inserted, run_id)
 
     return 0
 

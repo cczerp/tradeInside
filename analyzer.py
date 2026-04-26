@@ -81,6 +81,53 @@ def get_sector(ticker):
     return SECTOR_MAP.get(ticker, 'Other')
 
 # ============================================================================
+# SCORING CONSTANTS  (data-driven, see backtest.py findings)
+# ============================================================================
+#
+# Backtest findings on the live data (sector-adjusted, 7-day horizon):
+#
+#   large_trade rule:
+#     on  → mean -1.57%, hit 57.8%, Sharpe -0.16  (n=102)
+#     off → mean +3.76%, hit 65.7%, Sharpe +0.28  (n=1175)
+#   The rule has *negative* alpha, so it should not contribute positively
+#   to the risk score. We still let it fire as a label (the trade still
+#   shows up in the report's pattern list) but its score contribution is
+#   set to 0. Override via env var if you want to A/B against legacy.
+#
+#   Pattern stacking multiplier (was 1.0× / 1.5× / 2.5× for 1 / 2 / 3+ rules):
+#     0 patterns  → Sharpe 0.40
+#     1 pattern   → Sharpe 0.35
+#     2 patterns  → Sharpe 0.02
+#     3+ patterns → Sharpe negative
+#   Stacking monotonically destroys signal — the multiplier was anti-
+#   selecting for alpha. Flatten to 1.0× across the board so multi-pattern
+#   traders are still ranked higher (they accumulate more base_score from
+#   each rule that fires) but not exponentially.
+#
+# Set ANALYZER_USE_LEGACY_SCORING=1 in the environment to revert to the
+# pre-data-driven values for comparison runs.
+
+LARGE_TRADE_SCORE = 8 if os.getenv("ANALYZER_USE_LEGACY_SCORING") == "1" else 0
+
+if os.getenv("ANALYZER_USE_LEGACY_SCORING") == "1":
+    PATTERN_STACK_MULTIPLIER = {0: 0.0, 1: 1.0, 2: 1.5, 3: 2.5}  # legacy
+else:
+    PATTERN_STACK_MULTIPLIER = {0: 0.0, 1: 1.0, 2: 1.0, 3: 1.0}  # data-driven
+
+
+def get_pattern_multiplier(count):
+    """Multiplicative factor applied to base_score based on number of rules
+    that fired for a trader. See PATTERN_STACK_MULTIPLIER comment above."""
+    if count <= 0:
+        return 0.0
+    if count == 1:
+        return PATTERN_STACK_MULTIPLIER[1]
+    if count == 2:
+        return PATTERN_STACK_MULTIPLIER[2]
+    return PATTERN_STACK_MULTIPLIER[3]
+
+
+# ============================================================================
 # ROLE WEIGHTING
 # ============================================================================
 
@@ -767,7 +814,10 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                             patterns[trader]['patterns'].append(
                                 f"Large trade: {ticker} (${total_value:,.0f} = {multiplier:.1f}x avg, {int(total_shares):,} shares)"
                             )
-                            patterns[trader]['base_score'] += 8
+                            # See LARGE_TRADE_SCORE comment in scoring constants —
+                            # backtest shows this rule has negative alpha, so
+                            # default contribution is 0 (label only).
+                            patterns[trader]['base_score'] += LARGE_TRADE_SCORE
                             patterns[trader]['pattern_count'] += 1
                             patterns[trader]['role'] = info['role']
                             patterns[trader]['company'] = info['company']
@@ -988,14 +1038,8 @@ def detect_patterns(insider_df, institutional_df, prices_df):
         count = data['pattern_count']
         role_mult = data['role_multiplier']
         
-        if count == 0:
-            pattern_mult = 0
-        elif count == 1:
-            pattern_mult = 1.0
-        elif count == 2:
-            pattern_mult = 1.5
-        else:
-            pattern_mult = 2.5
+        # Data-driven flat multiplier (see scoring constants block at top).
+        pattern_mult = get_pattern_multiplier(count)
         
         # Check repeat offender status
         repeat_mult = 1.0
