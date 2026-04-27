@@ -1,0 +1,233 @@
+{
+  "name": "tradeInside — Daily Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## tradeInside daily pipeline\n\nSchedule fires once a day → POST /pipeline/run kicks off the pipeline → wait → GET /pipeline/runs picks up the latest record → IF branches on success vs failure.\n\nRequired n8n credentials/values:\n- **HTTP Header Auth** credential named `tradeinside-api` with header name `X-API-Key` and value matching your `TRADEINSIDE_API_KEY` env var on the API.\n- The two HTTP Request nodes target `{{ $env.TRADEINSIDE_API_URL || 'http://api:8000' }}` — override `TRADEINSIDE_API_URL` in n8n's env to point at your deployment.\n\nAdjust the cron expression in the **Daily 06:00 UTC** node and the wait duration to match how long your pipeline takes (default: 25 minutes).",
+        "height": 360,
+        "width": 480
+      },
+      "id": "note-1",
+      "name": "Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-200, -100]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      },
+      "id": "trigger-1",
+      "name": "Daily 06:00 UTC",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [400, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.TRADEINSIDE_API_URL || 'http://api:8000' }}/pipeline/run",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "triggered_by",
+              "value": "n8n"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "trigger-pipeline",
+      "name": "POST /pipeline/run",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [640, 200],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE-WITH-CRED-ID",
+          "name": "tradeinside-api"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 25,
+        "unit": "minutes"
+      },
+      "id": "wait-1",
+      "name": "Wait for completion",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [880, 200],
+      "webhookId": "pipeline-wait"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.TRADEINSIDE_API_URL || 'http://api:8000' }}/pipeline/runs",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "limit",
+              "value": "1"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "get-latest-run",
+      "name": "GET /pipeline/runs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json['rows'][0]['status'] }}",
+              "rightValue": "success",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-success",
+      "name": "IF status=success",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1360, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.TRADEINSIDE_API_URL || 'http://api:8000' }}/backtest/latest",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "segment_field",
+              "value": "side"
+            },
+            {
+              "name": "adjusted",
+              "value": "sector_adj"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "get-backtest",
+      "name": "GET /backtest/latest",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1600, 100]
+    },
+    {
+      "parameters": {
+        "content": "Pipeline finished but didn't reach 'success' — check /pipeline/runs/{{ $json['rows'][0]['run_id'] }} and the API logs.\n\nstatus = {{ $json['rows'][0]['status'] }}\nfailed_step = {{ $json['rows'][0]['failed_step'] }}\nduration_secs = {{ $json['rows'][0]['duration_secs'] }}",
+        "height": 220,
+        "width": 360
+      },
+      "id": "note-2",
+      "name": "Failure branch — wire your channel",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [1600, 320]
+    }
+  ],
+  "connections": {
+    "Daily 06:00 UTC": {
+      "main": [
+        [
+          {
+            "node": "POST /pipeline/run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST /pipeline/run": {
+      "main": [
+        [
+          {
+            "node": "Wait for completion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for completion": {
+      "main": [
+        [
+          {
+            "node": "GET /pipeline/runs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET /pipeline/runs": {
+      "main": [
+        [
+          {
+            "node": "IF status=success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF status=success": {
+      "main": [
+        [
+          {
+            "node": "GET /backtest/latest",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "versionId": "1",
+  "meta": {
+    "instanceId": "tradeinside-daily"
+  }
+}

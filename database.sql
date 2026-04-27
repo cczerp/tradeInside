@@ -52,6 +52,26 @@ CREATE TABLE IF NOT EXISTS backtest_runs (
 CREATE INDEX IF NOT EXISTS idx_backtest_runs_run_at ON backtest_runs(run_at DESC);
 CREATE INDEX IF NOT EXISTS idx_backtest_runs_run_id ON backtest_runs(run_id);
 
+-- Pipeline run history. One row per pipeline invocation; status flips
+-- from 'running' → 'success' / 'failed' / 'aborted' as steps complete.
+-- Daily automation (n8n / cron / systemd) writes here so we can detect
+-- silent failures and the API can serve a recent-runs feed.
+CREATE TABLE IF NOT EXISTS pipeline_runs (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id          TEXT NOT NULL UNIQUE,           -- UTC timestamp string
+    started_at      TIMESTAMP NOT NULL,
+    finished_at     TIMESTAMP,
+    status          TEXT NOT NULL DEFAULT 'running',
+    triggered_by    TEXT,                           -- 'cli' | 'api' | 'n8n' | 'cron'
+    duration_secs   REAL,
+    failed_step     TEXT,                           -- step name on failure
+    step_results    TEXT,                           -- JSON: per-step success/duration
+    notes           TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_pipeline_runs_started_at ON pipeline_runs(started_at DESC);
+CREATE INDEX IF NOT EXISTS idx_pipeline_runs_status     ON pipeline_runs(status);
+
 -- Performance indexes.
 -- The analyzer repeatedly filters trades by ticker, by trader name, and by
 -- transaction_date; without these every report scan is a full table scan.

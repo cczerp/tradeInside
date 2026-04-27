@@ -191,6 +191,70 @@ def test_backtest_latest_serves_most_recent_run(client, tmp_path, monkeypatch):
     assert body["segments"][0]["n"] == 999
 
 
+def test_pipeline_runs_list_empty(client):
+    r = client.get("/pipeline/runs")
+    assert r.status_code == 200
+    assert r.json() == {"count": 0, "rows": []}
+
+
+def test_pipeline_runs_list_returns_records_in_descending_order(client):
+    import sqlite3
+    db_path = os.environ["TRADEINSIDE_DB"]
+    conn = sqlite3.connect(db_path)
+    try:
+        conn.executemany(
+            "INSERT INTO pipeline_runs (run_id, started_at, status, triggered_by) "
+            "VALUES (?, ?, ?, ?)",
+            [
+                ("old", "2025-01-01T00:00:00", "success", "cli"),
+                ("new", "2026-01-01T00:00:00", "success", "n8n"),
+            ],
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    r = client.get("/pipeline/runs", params={"limit": 5})
+    body = r.json()
+    assert body["count"] == 2
+    assert body["rows"][0]["run_id"] == "new"
+    assert body["rows"][1]["run_id"] == "old"
+
+
+def test_pipeline_run_get_returns_404_for_unknown(client):
+    r = client.get("/pipeline/runs/does-not-exist")
+    assert r.status_code == 404
+
+
+def test_pipeline_run_get_decodes_step_results_json(client):
+    import json
+    import sqlite3
+    db_path = os.environ["TRADEINSIDE_DB"]
+    conn = sqlite3.connect(db_path)
+    try:
+        steps = [{"step": "scrape", "ok": True, "attempts": 1, "duration_secs": 12.5}]
+        conn.execute(
+            "INSERT INTO pipeline_runs (run_id, started_at, status, triggered_by, "
+            "                            duration_secs, step_results) "
+            "VALUES (?, ?, ?, ?, ?, ?)",
+            ("r-decode", "2026-01-01T00:00:00", "success", "cli", 12.5, json.dumps(steps)),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    r = client.get("/pipeline/runs/r-decode")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["status"] == "success"
+    assert body["step_results"] == steps  # already parsed back to list
+
+
+def test_pipeline_run_trigger_requires_key_when_set(gated_client):
+    r = gated_client.post("/pipeline/run")
+    assert r.status_code == 401
+
+
 def test_backtest_latest_filters_by_segment_field(client):
     import sqlite3
     from backtest import persist_backtest_run

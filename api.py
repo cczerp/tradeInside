@@ -25,7 +25,7 @@ import sqlite3
 from datetime import datetime
 from typing import Optional
 
-from fastapi import Depends, FastAPI, Header, HTTPException, Query
+from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from logging_config import get_logger
@@ -170,6 +170,74 @@ def trader_profile(name: str, limit: int = Query(50, ge=1, le=500)):
         "first_trade": min(dates) if dates else None,
         "last_trade": max(dates) if dates else None,
         "recent_trades": rows_d[: min(10, len(rows_d))],
+    }
+
+
+@app.get("/pipeline/runs")
+def pipeline_runs_list(limit: int = Query(20, ge=1, le=200)):
+    """Recent pipeline run history. Public so n8n / health checks can poll."""
+    conn = _connect()
+    try:
+        rows = [
+            dict(r) for r in conn.execute(
+                "SELECT id, run_id, started_at, finished_at, status, "
+                "       triggered_by, duration_secs, failed_step "
+                "FROM pipeline_runs ORDER BY started_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        ]
+    finally:
+        conn.close()
+    return {"count": len(rows), "rows": rows}
+
+
+@app.get("/pipeline/runs/{run_id}")
+def pipeline_run_get(run_id: str):
+    """Full record for one run, including the JSON step_results blob."""
+    conn = _connect()
+    try:
+        row = conn.execute(
+            "SELECT * FROM pipeline_runs WHERE run_id = ?", (run_id,)
+        ).fetchone()
+    finally:
+        conn.close()
+    if row is None:
+        raise HTTPException(status_code=404, detail=f"no pipeline run with id={run_id}")
+    body = dict(row)
+    if body.get("step_results"):
+        try:
+            import json as _json
+            body["step_results"] = _json.loads(body["step_results"])
+        except (TypeError, ValueError):
+            pass
+    return body
+
+
+@app.post("/pipeline/run", dependencies=[Depends(require_api_key)])
+def pipeline_run_trigger(
+    background_tasks: BackgroundTasks,
+    triggered_by: str = Query("api", description="who/what triggered this run"),
+):
+    """Kick off a pipeline run in a background thread. Returns immediately;
+    poll /pipeline/runs to see when it finishes.
+
+    Auth-gated because pipeline runs are heavy (network scraping, yfinance
+    calls, ~minutes of work) and shouldn't be triggerable by anonymous
+    callers. Set TRADEINSIDE_API_KEY to enforce.
+    """
+    from pipeline import run_pipeline
+
+    def _go(_tb: str):
+        try:
+            run_pipeline(triggered_by=_tb)
+        except Exception:
+            log.exception("background pipeline run crashed")
+
+    background_tasks.add_task(_go, triggered_by)
+    return {
+        "status": "accepted",
+        "triggered_by": triggered_by,
+        "note": "poll GET /pipeline/runs to see the run record",
     }
 
 
