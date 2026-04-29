@@ -27,3 +27,14 @@ CREATE TABLE IF NOT EXISTS stock_prices (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(ticker, date)                -- avoid duplicate rows
 );
+
+-- Performance indexes
+CREATE INDEX IF NOT EXISTS idx_trades_ticker ON trades(ticker);
+CREATE INDEX IF NOT EXISTS idx_trades_transaction_date ON trades(transaction_date);
+CREATE INDEX IF NOT EXISTS idx_trades_insider_name ON trades(insider_name);
+CREATE INDEX IF NOT EXISTS idx_trades_ticker_date ON trades(ticker, transaction_date);
+CREATE INDEX IF NOT EXISTS idx_trades_transaction_type ON trades(transaction_type);
+
+CREATE INDEX IF NOT EXISTS idx_prices_ticker ON stock_prices(ticker);
+CREATE INDEX IF NOT EXISTS idx_prices_date ON stock_prices(date);
+CREATE INDEX IF NOT EXISTS idx_prices_ticker_date ON stock_prices(ticker, date);

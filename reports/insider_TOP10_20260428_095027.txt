@@ -1,0 +1,188 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2026-04-28 09:50:28
+Total Records Analyzed: 1211
+========================================================================================================================
+
+DETECTION RULES:
+  • Transaction Filtering: Excluded awards, grants, option exercises, 10b5-1 plans
+  • Sector Clustering: 3+ traders in same sector/ticker within 3 days
+  • Same-Company Clustering: 3+ insiders from SAME company within 7 days (10-15pts)
+  • Perfect Timing: 7-14d(8pts), 15-30d(5pts), 31-60d(4pts), 61-90d(3pts)
+  • Pre-Event Bonus: +15 points for trades 1-7 days BEFORE earnings/8-K
+  • Late Filing: 7+ days late (only scores if combined with other patterns)
+  • Role Weighting: CEO/CFO(2.0x), Director(1.5x), Officer(1.25x)
+  • Pattern Multiplier: 1 pattern(1.0x), 2 patterns(1.5x), 3+ patterns(2.5x)
+  • Repeat Offender: 2nd(1.5x), 3rd(2.0x), 4th+(2.5x)
+  • Event Filtering: Excludes patterns within 3 days AFTER earnings/8-K filings
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Piconi Robert (CEO, 10%, NRGV)
+Risk Score: 2387 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NRGV: Traded at $2.36 → Now $4.12 (+36.0%)
+Patterns Detected (11):
+  • Repeat: NRGV (6x)
+  • Recurring buys: NRGV (6 buys in 1 month, 185,000 shares)
+  • Recurring buys: NRGV (6 buys in 2 months, 185,000 shares)
+  • Recurring buys: NRGV (6 buys in 3 months, 185,000 shares)
+  • Volume spike: NRGV (bought 4d before 105% volume surge)
+  • Volume spike: NRGV (bought 1d before 175% volume surge)
+  • Volume spike: NRGV (bought 2d before 175% volume surge)
+  • Volume spike: NRGV (bought 4d before 105% volume surge)
+  • Volume spike: NRGV (bought 1d before 175% volume surge)
+  • Volume spike: NRGV (bought 2d before 175% volume surge)
+  • Perfect timing: NRGV (+31.4-36.0%) x4
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Altman Peter (Pres, CEO, BCDA)
+Risk Score: 1700 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • BCDA: Traded at $1.16 → Now $1.15 (+17.2%)
+Patterns Detected (9):
+  • Sector cluster: BCDA (Finance) - 3 traders on 2025-09-19
+      Coordinated with: Stertzer Simon H (Dir, BCDA), Blank Andrew Scott (Dir, BCDA)
+  • Same-company cluster: BCDA - 3 insiders within 7 days
+      Coordinated with: Stertzer Simon H (Dir), Blank Andrew Scott (Dir)
+  • Recurring buys: BCDA (3 buys in 1 month, 144,000 shares)
+  • Recurring buys: BCDA (3 buys in 2 months, 144,000 shares)
+  • Recurring buys: BCDA (3 buys in 3 months, 144,000 shares)
+  • Volume spike: BCDA (bought 4d before 162% volume surge)
+  • Volume spike: BCDA (bought 4d before 162% volume surge)
+  • Volume spike: BCDA (bought 4d before 162% volume surge)
+  • Perfect timing: BCDA (+17.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Lettmann Jason (CEO, ALXO)
+Risk Score: 1512 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • ALXO: Traded at $1.08 → Now $1.59 (+69.4%)
+Patterns Detected (7):
+  • Recurring buys: ALXO (3 buys in 1 month, 276,699 shares)
+  • Recurring buys: ALXO (3 buys in 2 months, 276,699 shares)
+  • Recurring buys: ALXO (3 buys in 3 months, 276,699 shares)
+  • Volume spike: ALXO (bought 3d before 391% volume surge)
+  • Volume spike: ALXO (bought 3d before 391% volume surge)
+  • Volume spike: ALXO (bought 3d before 391% volume surge)
+  • Perfect timing: ALXO (+69.4%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Farkas Michael D (CEO, Exec COB, 10%, NXXT)
+Risk Score: 1512 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • NXXT: Traded at $1.77 → Now $0.42 (+19.2%)
+Patterns Detected (7):
+  • Recurring buys: NXXT (3 buys in 1 month, 3,000,000 shares)
+  • Recurring buys: NXXT (3 buys in 2 months, 3,000,000 shares)
+  • Recurring buys: NXXT (3 buys in 3 months, 3,000,000 shares)
+  • Volume spike: NXXT (bought 1d before 461% volume surge)
+  • Volume spike: NXXT (bought 1d before 461% volume surge)
+  • Volume spike: NXXT (bought 1d before 461% volume surge)
+  • Perfect timing: NXXT (+19.2%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Barry Richard (Pres, CEO, SAVA)
+Risk Score: 1512 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • SAVA: Traded at $2.29 → Current price unavailable
+Patterns Detected (7):
+  • Recurring buys: SAVA (3 buys in 1 month, 713,823 shares)
+  • Recurring buys: SAVA (3 buys in 2 months, 713,823 shares)
+  • Recurring buys: SAVA (3 buys in 3 months, 713,823 shares)
+  • Volume spike: SAVA (bought 1d before 108% volume surge)
+  • Volume spike: SAVA (bought 1d before 108% volume surge)
+  • Volume spike: SAVA (bought 1d before 108% volume surge)
+  • Perfect timing: SAVA (+49.8%) x3
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Dixon Robert E (CEO, Pres, MKZR)
+Risk Score: 750 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, CEO, Officer)
+      Coordinated with: Sherpa Angche (CFO), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Bluth Jeri Ruth (Chief Compliance Officer), Patterson Charles E. II (GC, Secretary)
+  • Recurring buys: MKZR (3 buys in 1 month, 45,000 shares)
+  • Recurring buys: MKZR (3 buys in 2 months, 45,000 shares)
+  • Recurring buys: MKZR (3 buys in 3 months, 45,000 shares)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Patterson Charles E. II (GC, Secretary, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Sherpa Angche (CFO, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Sherpa Angche (CFO, MKZR)
+Risk Score: 750 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Patterns Detected (6):
+  • Sector cluster: MKZR (Biotech) - 6 traders on 2025-10-02
+      Coordinated with: Dixon Robert E (CEO, Pres, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Patterson Charles E. II (GC, Secretary, MKZR)
+  • Same-company cluster: MKZR - 6 insiders within 7 days (Role diversity: CFO, CEO, Officer)
+      Coordinated with: Dixon Robert E (CEO, Pres), Simpson Christine Elizabeth (Chief Portfolio Manager), Fuller Glen W (TREASURER), Bluth Jeri Ruth (Chief Compliance Officer), Patterson Charles E. II (GC, Secretary)
+  • Recurring buys: MKZR (3 buys in 1 month, 45,000 shares)
+  • Recurring buys: MKZR (3 buys in 2 months, 45,000 shares)
+  • Recurring buys: MKZR (3 buys in 3 months, 45,000 shares)
+  • Coordinated: 2025-10-02 (Biotech sector, 6 traders)
+      Coordinated with: Patterson Charles E. II (GC, Secretary, MKZR), Fuller Glen W (TREASURER, MKZR), Bluth Jeri Ruth (Chief Compliance Officer, MKZR), Simpson Christine Elizabeth (Chief Portfolio Manager, MKZR), Dixon Robert E (CEO, Pres, MKZR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Martell Ron (Pres, CEO, JSPR)
+Risk Score: 560 (Role: 2.0x)
+Patterns Detected (8):
+  • Sector cluster: JSPR (Semiconductor) - 4 traders on 2025-09-22
+      Coordinated with: Wiggans Thomas G (Dir, JSPR), Lucas Svetlana (Dir, JSPR), Shizuru Judith Anne (Dir, JSPR)
+  • Same-company cluster: JSPR - 4 insiders within 7 days
+      Coordinated with: Wiggans Thomas G (Dir), Lucas Svetlana (Dir), Shizuru Judith Anne (Dir)
+  • Recurring buys: JSPR (3 buys in 1 month, 123,000 shares)
+  • Recurring buys: JSPR (3 buys in 2 months, 123,000 shares)
+  • Recurring buys: JSPR (3 buys in 3 months, 123,000 shares)
+  • Volume spike: JSPR (bought 3d before 194% volume surge)
+  • Volume spike: JSPR (bought 3d before 194% volume surge)
+  • Volume spike: JSPR (bought 3d before 194% volume surge)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Lee Tien-Li (CEO, 10%, AARD)
+Risk Score: 525 (Role: 2.0x, Repeat Offender: 2.5x ⚠️)
+Trade Prices & Current Values:
+  • AARD: Traded at $9.95 → Now $5.58 (+37.5%)
+Patterns Detected (4):
+  • Volume spike: AARD (bought 1d before 255% volume surge)
+  • Perfect timing: AARD (+37.5-52.1%) x2
+  • Coordinated: 2025-09-10 (Other sector, 6 traders)
+      Coordinated with: Campbell Gregor Alasdair (Exec COB, CEO, NWTG), Ivanov Penko Krassimir (SEVP, Treasurer, CFO, AROW), Sprott Eric (10%, HYMC), Zanganeh Mahkam (Co-CEO, 10%, SMMT), Duggan Robert W (Co-CEO, 10%, SMMT)
+  • Coordinated: 2025-09-15 (Other sector, 5 traders)
+      Coordinated with: Weinstein Adam B. (EVP, CAO, Dir, NMFC), Shao Wei-Ming (EVP, GC, MSTR), Zegarelli Christopher John (CFO, SVCO), Williams Gregg (Dir, 10%, VANI)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Lamendola Damien (CEO, 10%, MRAI)
+Risk Score: 412 (Role: 1.0x)
+Patterns Detected (13):
+  • Repeat: MRAI (6x)
+  • Recurring buys: MRAI (6 buys in 1 month, 3,131,883 shares)
+  • Recurring buys: MRAI (6 buys in 2 months, 3,131,883 shares)
+  • Recurring buys: MRAI (6 buys in 3 months, 3,131,883 shares)
+  • Volume spike: MRAI (bought 3d before 191% volume surge)
+  • Volume spike: MRAI (bought 19d before 218% volume surge)
+  • Volume spike: MRAI (bought 3d before 191% volume surge)
+  • Volume spike: MRAI (bought 19d before 218% volume surge)
+  • Volume spike: MRAI (bought 19d before 218% volume surge)
+  • Volume spike: MRAI (bought 3d before 191% volume surge)
+  • Late filing: MRAI (16 days)
+  • Late filing: MRAI (16 days)
+  • Late filing: MRAI (16 days)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

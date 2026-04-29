@@ -9,6 +9,9 @@ from datetime import datetime, timedelta
 from collections import defaultdict
 import sys
 import io
+import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import multiprocessing
 
 # Fix Windows encoding issues
 if sys.platform == 'win32':
@@ -348,17 +351,415 @@ def check_event_relationship(ticker, trade_date, events_lookup):
 
 def load_price_data():
     conn = sqlite3.connect(DB_FILE)
-    
+
     # Update if stale
     update_prices_if_stale(conn)
-    
+
     df = pd.read_sql("SELECT * FROM stock_prices", conn)
     conn.close()
-    
+
     if not df.empty:
         df['date'] = pd.to_datetime(df['date'])
-    
+
     return df
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - RECURRING BUYS
+# ============================================================================
+
+def detect_recurring_buys(insider_df, trader_info, patterns):
+    """Detect recurring buy patterns - 3+ buys in 30/60/90 days"""
+    print("  [ENHANCED] Detecting recurring buy patterns...")
+
+    if 'transaction_type' not in insider_df.columns or 'trader_name' not in insider_df.columns:
+        print("    Skipped - missing required columns")
+        return 0
+
+    # Filter for purchases only
+    buy_df = insider_df[
+        insider_df['transaction_type'].str.contains('Purchase|Buy', case=False, na=False)
+    ].copy()
+
+    if buy_df.empty:
+        print("    No buy transactions found")
+        return 0
+
+    buy_df = buy_df.dropna(subset=['trader_name', 'ticker', 'transaction_date'])
+
+    detected = 0
+    windows = [
+        (30, 15, "1 month"),
+        (60, 12, "2 months"),
+        (90, 10, "3 months")
+    ]
+
+    for trader in buy_df['trader_name'].unique():
+        trader_buys = buy_df[buy_df['trader_name'] == trader]
+
+        for ticker in trader_buys['ticker'].unique():
+            ticker_buys = trader_buys[trader_buys['ticker'] == ticker].sort_values('transaction_date')
+
+            for days, score, label in windows:
+                # Count buys in rolling windows
+                for idx, row in ticker_buys.iterrows():
+                    window_start = row['transaction_date']
+                    window_end = window_start + timedelta(days=days)
+
+                    window_trades = ticker_buys[
+                        (ticker_buys['transaction_date'] >= window_start) &
+                        (ticker_buys['transaction_date'] <= window_end)
+                    ]
+
+                    if len(window_trades) >= 3:
+                        # Calculate buy velocity
+                        total_shares = window_trades['shares'].sum() if 'shares' in window_trades.columns else 0
+
+                        info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                        patterns[trader]['patterns'].append(
+                            f"Recurring buys: {ticker} ({len(window_trades)} buys in {label}, {int(total_shares):,} shares)"
+                        )
+                        patterns[trader]['base_score'] += score
+                        patterns[trader]['pattern_count'] += 1
+                        patterns[trader]['role'] = info['role']
+                        patterns[trader]['company'] = info['company']
+
+                        detected += 1
+                        break  # Only count once per window type per ticker
+
+    print(f"    Found {detected} recurring buy patterns")
+    return detected
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - SUSTAINED ACCUMULATION
+# ============================================================================
+
+def detect_sustained_accumulation(insider_df, trader_info, patterns):
+    """Detect buys across 2+ months with NO sells"""
+    print("  [ENHANCED] Detecting sustained accumulation (buy-only periods)...")
+
+    if 'transaction_type' not in insider_df.columns:
+        print("    Skipped - missing transaction_type")
+        return 0
+
+    df = insider_df.dropna(subset=['trader_name', 'ticker', 'transaction_date', 'transaction_type']).copy()
+
+    detected = 0
+
+    for trader in df['trader_name'].unique():
+        trader_trades = df[df['trader_name'] == trader]
+
+        for ticker in trader_trades['ticker'].unique():
+            ticker_trades = trader_trades[trader_trades['ticker'] == ticker].sort_values('transaction_date')
+
+            if len(ticker_trades) < 2:
+                continue
+
+            # Find longest buy-only streak
+            current_streak_start = None
+            current_streak_trades = []
+
+            for idx, row in ticker_trades.iterrows():
+                is_buy = 'purchase' in str(row['transaction_type']).lower() or 'buy' in str(row['transaction_type']).lower()
+
+                if is_buy:
+                    if current_streak_start is None:
+                        current_streak_start = row['transaction_date']
+                    current_streak_trades.append(row)
+                else:
+                    # Sell detected - check if we had a streak
+                    if current_streak_trades and current_streak_start:
+                        days = (current_streak_trades[-1]['transaction_date'] - current_streak_start).days
+
+                        if days >= 60 and len(current_streak_trades) >= 2:
+                            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                            patterns[trader]['patterns'].append(
+                                f"Sustained accumulation: {ticker} ({len(current_streak_trades)} buys over {days} days, NO sells)"
+                            )
+                            patterns[trader]['base_score'] += 15
+                            patterns[trader]['pattern_count'] += 1
+                            patterns[trader]['role'] = info['role']
+                            patterns[trader]['company'] = info['company']
+                            detected += 1
+
+                    # Reset streak
+                    current_streak_start = None
+                    current_streak_trades = []
+
+            # Check final streak
+            if current_streak_trades and current_streak_start:
+                days = (current_streak_trades[-1]['transaction_date'] - current_streak_start).days
+
+                if days >= 60 and len(current_streak_trades) >= 2:
+                    info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                    patterns[trader]['patterns'].append(
+                        f"Sustained accumulation: {ticker} ({len(current_streak_trades)} buys over {days} days, NO sells)"
+                    )
+                    patterns[trader]['base_score'] += 15
+                    patterns[trader]['pattern_count'] += 1
+                    patterns[trader]['role'] = info['role']
+                    patterns[trader]['company'] = info['company']
+                    detected += 1
+
+    print(f"    Found {detected} sustained accumulation patterns")
+    return detected
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - VOLUME SPIKE CORRELATION
+# ============================================================================
+
+def detect_volume_spikes(insider_df, prices_df, trader_info, patterns):
+    """Detect buys before 200%+ volume spikes"""
+    print("  [ENHANCED] Detecting volume spike correlation...")
+
+    if prices_df.empty:
+        print("    Skipped - no price data")
+        return 0
+
+    # Build volume lookup
+    volume_lookup = {}
+    for ticker in prices_df['ticker'].unique():
+        ticker_prices = prices_df[prices_df['ticker'] == ticker].copy()
+        ticker_prices = ticker_prices.sort_values('date')
+
+        # Calculate 20-day average volume
+        ticker_prices['avg_volume_20d'] = ticker_prices['volume'].rolling(window=20, min_periods=5).mean()
+        volume_lookup[ticker] = ticker_prices.set_index('date')[['volume', 'avg_volume_20d']].to_dict('index')
+
+    detected = 0
+    buy_df = insider_df[
+        insider_df['transaction_type'].str.contains('Purchase|Buy', case=False, na=False)
+    ].copy()
+
+    buy_df = buy_df.dropna(subset=['ticker', 'transaction_date', 'trader_name'])
+
+    for idx, row in buy_df.iterrows():
+        ticker = row['ticker']
+        trade_date = row['transaction_date']
+        trader = row['trader_name']
+
+        if ticker not in volume_lookup:
+            continue
+
+        # Look for volume spike in next 30 days
+        for days_ahead in range(1, 31):
+            check_date = trade_date + timedelta(days=days_ahead)
+
+            vol_data = volume_lookup[ticker].get(pd.Timestamp(check_date))
+            if vol_data and vol_data.get('avg_volume_20d'):
+                volume = vol_data.get('volume', 0)
+                avg_volume = vol_data['avg_volume_20d']
+
+                if volume > avg_volume * 2:  # 200%+ spike
+                    spike_pct = ((volume / avg_volume) - 1) * 100
+
+                    info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                    patterns[trader]['patterns'].append(
+                        f"Volume spike: {ticker} (bought {days_ahead}d before {spike_pct:.0f}% volume surge)"
+                    )
+                    patterns[trader]['base_score'] += 20
+                    patterns[trader]['pattern_count'] += 1
+                    patterns[trader]['role'] = info['role']
+                    patterns[trader]['company'] = info['company']
+                    detected += 1
+                    break
+
+    print(f"    Found {detected} volume spike correlations")
+    return detected
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - AFTER-HOURS & WEEKEND FILINGS
+# ============================================================================
+
+def detect_suspicious_filing_times(insider_df, trader_info, patterns):
+    """Detect after-hours and weekend/holiday filings"""
+    print("  [ENHANCED] Detecting suspicious filing times...")
+
+    if 'filing_date' not in insider_df.columns:
+        print("    Skipped - no filing_date column")
+        return 0
+
+    df = insider_df.dropna(subset=['filing_date', 'trader_name']).copy()
+
+    detected = 0
+
+    for idx, row in df.iterrows():
+        filing_date = row['filing_date']
+        trader = row['trader_name']
+        ticker = row.get('ticker', 'Unknown')
+
+        # Check if weekend
+        if filing_date.weekday() in [5, 6]:  # Saturday or Sunday
+            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+            patterns[trader]['patterns'].append(
+                f"Weekend filing: {ticker} (filed on {filing_date.strftime('%A, %Y-%m-%d')})"
+            )
+            patterns[trader]['base_score'] += 8
+            patterns[trader]['pattern_count'] += 1
+            patterns[trader]['role'] = info['role']
+            patterns[trader]['company'] = info['company']
+            detected += 1
+
+        # Check if holiday (simplified - just check major US holidays)
+        month_day = (filing_date.month, filing_date.day)
+        holidays = [(1, 1), (7, 4), (12, 25)]  # New Year, July 4th, Christmas
+
+        if month_day in holidays:
+            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+            patterns[trader]['patterns'].append(
+                f"Holiday filing: {ticker} (filed on {filing_date.strftime('%Y-%m-%d')})"
+            )
+            patterns[trader]['base_score'] += 8
+            patterns[trader]['pattern_count'] += 1
+            patterns[trader]['role'] = info['role']
+            patterns[trader]['company'] = info['company']
+            detected += 1
+
+    print(f"    Found {detected} suspicious filing times")
+    return detected
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - STATISTICAL OUTLIERS (Z-SCORE)
+# ============================================================================
+
+def detect_statistical_outliers(insider_df, trader_info, patterns):
+    """Detect trades >2 standard deviations from trader's norm"""
+    print("  [ENHANCED] Detecting statistical outliers (Z-score analysis)...")
+
+    if 'shares' not in insider_df.columns or 'trader_name' not in insider_df.columns:
+        print("    Skipped - missing required columns")
+        return 0
+
+    df = insider_df.dropna(subset=['trader_name', 'shares']).copy()
+    df = df[df['shares'] > 0]
+
+    detected = 0
+
+    for trader in df['trader_name'].unique():
+        trader_trades = df[df['trader_name'] == trader]
+
+        if len(trader_trades) < 5:
+            continue
+
+        shares_list = trader_trades['shares'].values
+        mean_shares = np.mean(shares_list)
+        std_shares = np.std(shares_list)
+
+        if std_shares == 0:
+            continue
+
+        for idx, row in trader_trades.iterrows():
+            z_score = (row['shares'] - mean_shares) / std_shares
+
+            if abs(z_score) > 2.0:  # More than 2 standard deviations
+                ticker = row.get('ticker', 'Unknown')
+                info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+
+                patterns[trader]['patterns'].append(
+                    f"Statistical outlier: {ticker} ({int(row['shares']):,} shares, {z_score:.1f}σ from norm)"
+                )
+                patterns[trader]['base_score'] += 7
+                patterns[trader]['pattern_count'] += 1
+                patterns[trader]['role'] = info['role']
+                patterns[trader]['company'] = info['company']
+                detected += 1
+
+    print(f"    Found {detected} statistical outliers")
+    return detected
+
+# ============================================================================
+# ENHANCED PATTERN DETECTION - MULTI-TICKER ACCUMULATION
+# ============================================================================
+
+def detect_multi_ticker_accumulation(insider_df, trader_info, patterns):
+    """Detect traders buying multiple stocks in same sector"""
+    print("  [ENHANCED] Detecting multi-ticker accumulation (sector plays)...")
+
+    if 'ticker' not in insider_df.columns or 'trader_name' not in insider_df.columns:
+        print("    Skipped - missing required columns")
+        return 0
+
+    buy_df = insider_df[
+        insider_df['transaction_type'].str.contains('Purchase|Buy', case=False, na=False)
+    ].copy()
+
+    buy_df = buy_df.dropna(subset=['trader_name', 'ticker', 'transaction_date', 'sector'])
+
+    detected = 0
+
+    for trader in buy_df['trader_name'].unique():
+        trader_buys = buy_df[buy_df['trader_name'] == trader]
+
+        # Group by sector and 30-day windows
+        for sector in trader_buys['sector'].unique():
+            if sector == 'Other':
+                continue
+
+            sector_buys = trader_buys[trader_buys['sector'] == sector].sort_values('transaction_date')
+
+            if len(sector_buys) < 1:
+                continue
+
+            # Check for multiple tickers in 30 days
+            for idx, row in sector_buys.iterrows():
+                window_start = row['transaction_date']
+                window_end = window_start + timedelta(days=30)
+
+                window_trades = sector_buys[
+                    (sector_buys['transaction_date'] >= window_start) &
+                    (sector_buys['transaction_date'] <= window_end)
+                ]
+
+                unique_tickers = window_trades['ticker'].nunique()
+
+                if unique_tickers >= 3:
+                    ticker_list = ', '.join(window_trades['ticker'].unique()[:5])
+
+                    info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+                    patterns[trader]['patterns'].append(
+                        f"Multi-ticker accumulation: {sector} sector ({unique_tickers} stocks: {ticker_list})"
+                    )
+                    patterns[trader]['base_score'] += 12
+                    patterns[trader]['pattern_count'] += 1
+                    patterns[trader]['role'] = info['role']
+                    patterns[trader]['company'] = info['company']
+                    detected += 1
+                    break
+
+    print(f"    Found {detected} multi-ticker accumulation patterns")
+    return detected
+
+# ============================================================================
+# ENHANCED FILTERING - NOISE REDUCTION
+# ============================================================================
+
+def filter_small_trades(insider_df, min_value=5000):
+    """Filter out trades worth less than $5K"""
+    print(f"  [FILTER] Removing trades < ${min_value:,}...")
+
+    if 'shares' not in insider_df.columns or 'price' not in insider_df.columns:
+        print("    Skipped - missing shares or price columns")
+        return insider_df
+
+    original_count = len(insider_df)
+
+    # Calculate trade value
+    insider_df = insider_df.copy()
+
+    # Convert to numeric, handling strings and NaN
+    insider_df['shares_numeric'] = pd.to_numeric(insider_df['shares'], errors='coerce')
+    insider_df['price_numeric'] = pd.to_numeric(insider_df['price'], errors='coerce')
+
+    insider_df['trade_value'] = insider_df['shares_numeric'].abs() * insider_df['price_numeric'].abs()
+
+    # Filter
+    insider_df = insider_df[
+        (insider_df['trade_value'].isna()) | (insider_df['trade_value'] >= min_value)
+    ]
+
+    filtered_count = original_count - len(insider_df)
+    print(f"    Filtered {filtered_count} small trades (< ${min_value:,})")
+
+    return insider_df
 
 # ============================================================================
 # PATTERN CONSOLIDATION
@@ -415,7 +816,7 @@ def consolidate_patterns(patterns_list):
 # ============================================================================
 
 def detect_patterns(insider_df, institutional_df, prices_df):
-    
+
     # Filter out non-suspicious transactions
     print("\n[*] Filtering transaction types...")
     original_count = len(insider_df)
@@ -423,6 +824,9 @@ def detect_patterns(insider_df, institutional_df, prices_df):
     filtered_count = original_count - len(insider_df)
     print(f"  Filtered out {filtered_count} non-suspicious transactions (awards, grants, etc.)")
     print(f"  Analyzing {len(insider_df)} suspicious transactions")
+
+    # Filter small trades (noise reduction)
+    insider_df = filter_small_trades(insider_df, min_value=5000)
     
     # Normalize dates
     if 'transaction_date' in insider_df.columns:
@@ -771,39 +1175,44 @@ def detect_patterns(insider_df, institutional_df, prices_df):
     
     print(f"    Found {large_trades_detected} large trades (3x+ historical average)")
     
-    # PATTERN 2: TIMING
-    print("  [2/6] Sliding scale profitable timing...")
+    # PATTERN 2: TIMING (OPTIMIZED WITH PARALLEL PROCESSING)
+    print("  [2/6] Sliding scale profitable timing (parallel processing)...")
     timing_filtered = 0
     timing_bonused = 0
-    
+
     if not prices_df.empty and 'ticker' in insider_df.columns and 'transaction_date' in insider_df.columns:
         price_lookup = {}
         for ticker in prices_df['ticker'].unique():
             ticker_prices = prices_df[prices_df['ticker'] == ticker].copy()
             ticker_prices = ticker_prices.sort_values('date')
             price_lookup[ticker] = ticker_prices.set_index('date')['close'].to_dict()
-        
+
         timing_df = insider_df.dropna(subset=['ticker', 'transaction_date', 'trader_name']).copy()
-        
+
         windows = [
             (7, 14, 15, 8),
             (15, 30, 15, 5),
             (31, 60, 18, 4),
             (61, 90, 20, 3),
         ]
-        
-        timing_count = 0
-        for _, row in timing_df.iterrows():
+
+        # Process in batches using parallel processing
+        def process_timing_row(row):
             ticker = row['ticker']
             trade_date = row['transaction_date']
             trader = row['trader_name']
 
             if ticker not in price_lookup:
+<<<<<<< Updated upstream
                 continue
+=======
+                return None
+>>>>>>> Stashed changes
 
             ticker_prices = price_lookup[ticker]
             trade_price = ticker_prices.get(pd.Timestamp(trade_date))
             if not trade_price:
+<<<<<<< Updated upstream
                 continue
 
             # Check event relationship once per trade (applies equally to all windows)
@@ -814,6 +1223,14 @@ def detect_patterns(insider_df, institutional_df, prices_df):
 
             # Score ALL qualifying windows, not just the single best-gain window
             is_bonused = False
+=======
+                return None
+
+            best_window = None
+            best_gain = 0
+            best_score = 0
+
+>>>>>>> Stashed changes
             for start_day, end_day, min_gain, score in windows:
                 check_date = trade_date + timedelta(days=end_day)
 
@@ -823,6 +1240,7 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                     if future_price:
                         break
 
+<<<<<<< Updated upstream
                 if not future_price:
                     continue
 
@@ -866,6 +1284,82 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                     )
                     ticker_patterns[ticker]['score'] += 3
                     timing_count += 1
+=======
+                if future_price:
+                    gain = ((future_price - trade_price) / trade_price) * 100
+
+                    if gain >= min_gain and gain > best_gain:
+                        best_gain = gain
+                        best_score = score
+                        best_window = f"{start_day}-{end_day}"
+
+            if best_window:
+                event_status, event_desc = check_event_relationship(ticker, trade_date, events_lookup)
+
+                return {
+                    'trader': trader,
+                    'ticker': ticker,
+                    'best_gain': best_gain,
+                    'best_window': best_window,
+                    'best_score': best_score,
+                    'trade_price': trade_price,
+                    'event_status': event_status,
+                    'role': row.get('role')
+                }
+
+            return None
+
+        # Use parallel processing with thread pool
+        timing_results = []
+        max_workers = min(4, multiprocessing.cpu_count())
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = [executor.submit(process_timing_row, row) for _, row in timing_df.iterrows()]
+
+            for future in as_completed(futures):
+                result = future.result()
+                if result:
+                    timing_results.append(result)
+
+        # Process results
+        timing_count = 0
+        for result in timing_results:
+            trader = result['trader']
+            ticker = result['ticker']
+
+            if result['event_status'] == 'exclude':
+                timing_filtered += 1
+                continue
+
+            final_score = result['best_score']
+            if result['event_status'] == 'bonus':
+                final_score += 15
+                timing_bonused += 1
+
+            patterns[trader]['patterns'].append(
+                f"Perfect timing: {ticker} (+{result['best_gain']:.1f}% in {result['best_window']} days)"
+            )
+            patterns[trader]['base_score'] += final_score
+            patterns[trader]['pattern_count'] += 1
+
+            # Store trade price and movement
+            patterns[trader]['trade_prices'][ticker] = result['trade_price']
+            patterns[trader]['price_movements'][ticker] = f"+{result['best_gain']:.1f}%"
+
+            info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
+            patterns[trader]['role'] = info['role']
+            patterns[trader]['company'] = info['company']
+
+            if result.get('role') and pd.notna(result.get('role')):
+                role_mult = get_role_multiplier(result['role'])
+                patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
+
+            ticker_patterns[ticker]['patterns'].append(
+                f"Timed trade by {trader} (+{result['best_gain']:.1f}%)"
+            )
+            ticker_patterns[ticker]['score'] += 3
+            timing_count += 1
+>>>>>>> Stashed changes
 
         print(f"    Found {timing_count} timing patterns ({timing_filtered} filtered, {timing_bonused} bonused for pre-event)")
     
@@ -956,7 +1450,30 @@ def detect_patterns(insider_df, institutional_df, prices_df):
     print("  [6/6] Insider + Institution coordination...")
     if not institutional_df.empty:
         print(f"    Found {len(institutional_df)} institutional records (full analysis needs ticker mapping)")
-    
+
+    # ========================================================================
+    # ENHANCED PATTERNS
+    # ========================================================================
+    print("\n[*] Running enhanced pattern detection...")
+
+    # PATTERN 7: RECURRING BUYS
+    detect_recurring_buys(insider_df, trader_info, patterns)
+
+    # PATTERN 8: SUSTAINED ACCUMULATION
+    detect_sustained_accumulation(insider_df, trader_info, patterns)
+
+    # PATTERN 9: VOLUME SPIKE CORRELATION
+    detect_volume_spikes(insider_df, prices_df, trader_info, patterns)
+
+    # PATTERN 10: SUSPICIOUS FILING TIMES
+    detect_suspicious_filing_times(insider_df, trader_info, patterns)
+
+    # PATTERN 11: STATISTICAL OUTLIERS
+    detect_statistical_outliers(insider_df, trader_info, patterns)
+
+    # PATTERN 12: MULTI-TICKER ACCUMULATION
+    detect_multi_ticker_accumulation(insider_df, trader_info, patterns)
+
     # CONDITIONAL LATE FILING
     print("\n  [SCORING] Applying conditional late filing...")
     late_filing_added = 0

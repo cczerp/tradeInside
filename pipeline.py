@@ -28,8 +28,8 @@ ALERT_ON_REPEAT_OFFENDER = True
 ALERT_ON_LARGE_TRADE = True
 ALERT_ON_PRE_EVENT_TIMING = True
 
-# Minimum risk score to alert (prevents spam)
-MIN_RISK_SCORE_FOR_ALERT = 150
+# Minimum risk score to alert (lowered for enhanced detection)
+MIN_RISK_SCORE_FOR_ALERT = 100
 
 # ============================================================================
 # EMAIL FUNCTIONS
