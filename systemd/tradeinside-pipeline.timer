@@ -1,0 +1,24 @@
+[Unit]
+Description=Daily trigger for tradeInside pipeline (weekdays 07:00 local)
+
+[Timer]
+# Mon-Fri at 07:00 local time. SEC doesn't accept new filings on weekends,
+# so weekday-only saves yfinance quota and avoids no-op runs.
+OnCalendar=Mon..Fri 07:00
+
+# If the desktop was off / asleep at 07:00, run as soon as it boots up.
+# This is the killer feature versus plain cron: missed schedules catch up.
+Persistent=true
+
+# Add up to 5 minutes of jitter so multiple machines on the same network
+# don't all hit OpenInsider at the exact same instant. Harmless on a single
+# desktop but free defensive depth.
+RandomizedDelaySec=5m
+
+# Use wall-clock time, not boot-time-relative.
+AccuracySec=1m
+
+Unit=tradeinside-pipeline.service
+
+[Install]
+WantedBy=timers.target

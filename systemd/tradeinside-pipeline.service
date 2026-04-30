@@ -1,0 +1,22 @@
+[Unit]
+Description=tradeInside daily pipeline run
+# Don't start until the network is up (Playwright + yfinance need it).
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# %h is "$HOME" for user units.
+WorkingDirectory=%h/tradeInside
+ExecStart=%h/tradeInside/run_daily.sh
+
+# If the pipeline takes longer than this, kill it. 1h is generous —
+# typical run is well under 10 minutes.
+TimeoutStartSec=1h
+
+# Standard output goes to journald (view with `journalctl --user -u tradeinside-pipeline`).
+StandardOutput=journal
+StandardError=journal
+
+# Don't restart automatically — the timer fires again tomorrow.
+Restart=no
