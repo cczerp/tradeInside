@@ -111,8 +111,8 @@ async def paginate_and_scrape(page, category, sub, url, db):
         print(f"\n{category} -> {sub} | Page {page_idx}: {url}")
         
         try:
-            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
-            await page.wait_for_timeout(2000)
+            await page.goto(url, timeout=30000, wait_until="domcontentloaded")
+            await page.wait_for_timeout(1500)
         except Exception as e:
             print(f"   Failed to load page: {e}")
             break
@@ -160,7 +160,7 @@ async def paginate_and_scrape(page, category, sub, url, db):
             break
 
 
-async def scrape_site(site, subs):
+async def scrape_site(site, subs, headless=False):
     """Main scraper entry point"""
     targets = SITES[site]
     db = Database()
@@ -169,7 +169,7 @@ async def scrape_site(site, subs):
 
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(
-            headless=False, 
+            headless=headless,
             args=["--disable-blink-features=AutomationControlled"]
         )
         context = await browser.new_context(
@@ -267,9 +267,9 @@ if __name__ == "__main__":
             print(f"\n{'='*60}")
             print(f"SCRAPING: {site_name.upper()}")
             print('='*60)
-            
+
             all_subs = list(SITES[site_name].keys())
-            asyncio.run(scrape_site(site_name, all_subs))
+            asyncio.run(scrape_site(site_name, all_subs, headless=True))
         
         print(f"\n{'='*60}")
         print("ALL SITES SCRAPED")

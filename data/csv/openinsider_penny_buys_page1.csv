@@ -1,101 +1,101 @@
 trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
-Gk Partners Aps,NORD,P - Purchase,2025-02-03,230576,"+$322,192",$1.40,Nordicus Partners Corp,10%,2025-10-14 09:00:24,openinsider,penny_buys,M,3259025,+8%,,,,,1,2025-10-14T11-58-07Z
-Orbimed Advisors LLC,ACET,P - Purchase,2025-10-08,5000000,"+$5,000,000",$1.00,"Adicet Bio, Inc.",10%,2025-10-10 20:06:01,openinsider,penny_buys,,7420781,+207%,,,,,1,2025-10-14T11-58-07Z
-Schimmel Paul,ATYR,P - Purchase,2025-10-08,1000000,"+$911,801",$0.91,Atyr Pharma Inc,Dir,2025-10-09 18:30:21,openinsider,penny_buys,M,2101056,+91%,,,,,1,2025-10-14T11-58-07Z
-Hughes Francis J Jr,CPSH,P - Purchase,2025-10-08,18333,"+$54,999",$3.00,Cps Technologies Corp/De/,Dir,2025-10-09 15:26:54,openinsider,penny_buys,,438009,+4%,,,,,1,2025-10-14T11-58-07Z
-Cavoli Ivo James,CPSH,P - Purchase,2025-10-08,25000,"+$75,000",$3.00,Cps Technologies Corp/De/,Dir,2025-10-09 15:19:48,openinsider,penny_buys,,49185,+103%,,,,,1,2025-10-14T11-58-07Z
-Mackey Brian T,CPSH,P - Purchase,2025-10-08,16500,"+$49,500",$3.00,Cps Technologies Corp/De/,"Pres, CEO",2025-10-09 15:05:01,openinsider,penny_buys,,36500,+83%,,,,,1,2025-10-14T11-58-07Z
-Billingsley Chester,MNTR,P - Purchase,2025-10-07,29379,"+$28,907",$0.98,"Mentor Capital, Inc.","CEO, 10%",2025-10-09 12:57:34,openinsider,penny_buys,DM,2996320,+1%,,,,,1,2025-10-14T11-58-07Z
-Shaw Thomas J,RVP,P - Purchase,2025-10-08,30000,"+$27,699",$0.92,Retractable Technologies Inc,"Pres, CEO, 10%",2025-10-09 11:05:37,openinsider,penny_buys,,16540425,0%,,,,,1,2025-10-14T11-58-07Z
-Tucci Michael D,SPWH,P - Purchase,2025-10-03,50000,"+$140,500",$2.81,"Sportsman'S Warehouse Holdings, Inc.",Dir,2025-10-06 18:58:04,openinsider,penny_buys,,73113,+216%,,,,,1,2025-10-14T11-58-07Z
-Lutnick Brandon,BGC,P - Purchase,2025-10-06,109833809,"+$82,631,818",$0.75,"Bgc Group, Inc.","Dir, 10%",2025-10-06 17:57:02,openinsider,penny_buys,,111393287,>999%,,,,,1,2025-10-14T11-58-07Z
-Ault Milton C III,UUU,P - Purchase,2025-10-02,14697,"+$69,282",$4.71,"Universal Safety Products, Inc.",Dir,2025-10-03 21:33:50,openinsider,penny_buys,M,75407,+24%,,,,,1,2025-10-14T11-58-07Z
-Stone Paul,SPWH,P - Purchase,2025-10-02,68279,"+$188,359",$2.76,"Sportsman'S Warehouse Holdings, Inc.","Pres, CEO",2025-10-03 18:10:15,openinsider,penny_buys,M,1110602,+7%,,,,,1,2025-10-14T11-58-07Z
-Krohn Tracy W,WTI,P - Purchase,2025-10-01,286842,"+$527,259",$1.84,W&T Offshore Inc,"COB, CEO, Pres, 10%",2025-10-03 16:22:43,openinsider,penny_buys,M,48806592,+1%,,,,,1,2025-10-14T11-58-07Z
-Johnson Glenn Harold,GGROU,P - Purchase,2025-10-01,45000,"+$225,000",$5.00,Golden Growers Cooperative,Dir,2025-10-03 16:05:17,openinsider,penny_buys,,95703,+89%,,,,,1,2025-10-14T11-58-07Z
-Johnson Chris A,GGROU,P - Purchase,2025-10-01,16000,"+$80,000",$5.00,Golden Growers Cooperative,Dir,2025-10-03 16:04:27,openinsider,penny_buys,,61000,+36%,,,,,1,2025-10-14T11-58-07Z
-Hurst Edwin Leon,CLOQ,P - Purchase,2025-09-19,175637,"+$38,336",$0.22,"Cyberloq Technologies, Inc.",Dir,2025-10-03 12:47:22,openinsider,penny_buys,M,5424000,+3%,,,,,1,2025-10-14T11-58-07Z
-McBee Richard D,SPWH,P - Purchase,2025-10-02,25000,"+$61,750",$2.47,"Sportsman'S Warehouse Holdings, Inc.",Dir,2025-10-02 19:23:15,openinsider,penny_buys,,364886,+7%,,,,,1,2025-10-14T11-58-07Z
-Lamendola Damien,MRAI,P - Purchase,2025-09-30,147058,"+$199,999",$1.36,"Marpai, Inc.","CEO, 10%",2025-10-02 17:03:19,openinsider,penny_buys,,8151567,+2%,,,,,1,2025-10-14T11-58-07Z
-Cook Robert Christopher,SAVA,P - Purchase,2025-09-30,13725,"+$39,940",$2.91,Cassava Sciences Inc,"COO, Legal Office",2025-10-02 16:44:48,openinsider,penny_buys,,13725,New,,,,,1,2025-10-14T11-58-07Z
-Williamson Andrew,EPSN,P - Purchase,2025-09-30,12500,"+$61,750",$4.94,Epsilon Energy Ltd.,CFO,2025-10-02 12:34:34,openinsider,penny_buys,,169275,+8%,,,,,1,2025-10-14T11-58-07Z
-Oxford Science Enterprises Plc,PEPG,P - Purchase,2025-09-30,200000,"+$640,000",$3.20,Pepgen Inc.,Former 10% Owner,2025-10-01 13:07:57,openinsider,penny_buys,,4955388,+4%,,,,,1,2025-10-14T11-58-07Z
-Perestroika (Cyprus) Ltd,RIG,P - Purchase,2025-09-26,4000000,"+$12,200,000",$3.05,Transocean Ltd.,"Dir, 10%",2025-09-30 21:44:15,openinsider,penny_buys,,95074894,+4%,,,,,1,2025-10-14T11-58-07Z
-Perestroika,RIG,P - Purchase,2025-09-26,4000000,"+$12,200,000",$3.05,Transocean Ltd.,"Dir, 10%",2025-09-30 21:42:49,openinsider,penny_buys,,95074894,+4%,,,,,1,2025-10-14T11-58-07Z
-Mohn Frederik Wilhelm,RIG,P - Purchase,2025-09-26,4000000,"+$12,200,000",$3.05,Transocean Ltd.,"Dir, 10%",2025-09-30 21:41:09,openinsider,penny_buys,,95097042,+4%,,,,,1,2025-10-14T11-58-07Z
-Ault Milton C III,UUU,P - Purchase,2025-09-26,25010,"+$107,024",$4.28,"Universal Safety Products, Inc.",Dir,2025-09-30 19:15:05,openinsider,penny_buys,M,56710,+79%,,,,,1,2025-10-14T11-58-07Z
-"Ra Capital Management, L.P.",PEPG,P - Purchase,2025-09-26,9375000,"+$30,000,000",$3.20,Pepgen Inc.,"Dir, 10%",2025-09-30 16:35:57,openinsider,penny_buys,,20064545,+88%,,,,,1,2025-10-14T11-58-07Z
-Freedman Joseph David,BLNE,P - Purchase,2025-09-25,10000,"+$42,193",$4.22,"Beeline Holdings, Inc.",Dir,2025-09-29 21:45:01,openinsider,penny_buys,,165920,+6%,,,,,1,2025-10-14T11-58-07Z
-Ac Nordic Aps,NORD,P - Purchase,2025-02-18,206482,"+$485,791",$2.35,Nordicus Partners Corp,10%,2025-09-29 21:43:00,openinsider,penny_buys,M,3119335,+7%,,,,,1,2025-10-14T11-58-07Z
-Agrawal Heena,DLTH,P - Purchase,2025-09-26,10000,"+$34,989",$3.50,Duluth Holdings Inc.,"SVP, CFO",2025-09-29 16:46:51,openinsider,penny_buys,,248093,+4%,,,,,1,2025-10-14T11-58-07Z
-Eliasek M Grier,PSEC,P - Purchase,2025-09-25,370000,"+$1,002,700",$2.71,Prospect Capital Corp,COO,2025-09-29 16:01:10,openinsider,penny_buys,,2501130,+17%,,,,,1,2025-10-14T11-58-07Z
-Barry John F,PSEC,P - Purchase,2025-09-25,925000,"+$2,517,758",$2.72,Prospect Capital Corp,"CEO, 10%",2025-09-29 16:00:50,openinsider,penny_buys,,86439522,+1%,,,,,1,2025-10-14T11-58-07Z
-Thomasian Harry Jr.,PGEN,P - Purchase,2025-09-25,11216,"+$40,016",$3.57,"Precigen, Inc.",CFO,2025-09-26 17:01:54,openinsider,penny_buys,M,468626,+2%,,,,,1,2025-10-14T11-58-07Z
-Lamendola Damien,MRAI,P - Purchase,2025-09-10,896903,"+$950,000",$1.06,"Marpai, Inc.","CEO, 10%",2025-09-26 16:05:04,openinsider,penny_buys,,8004509,+13%,,,,,1,2025-10-14T11-58-07Z
-Barry John F,PSEC,P - Purchase,2025-09-24,741158,"+$1,939,610",$2.62,Prospect Capital Corp,"CEO, 10%",2025-09-26 16:02:19,openinsider,penny_buys,,85514522,+1%,,,,,1,2025-10-14T11-58-07Z
-Daly Joseph Patrick,BUKS,P - Purchase,2025-09-24,18261,"+$32,870",$1.80,Butler National Corp,"Dir, 10%",2025-09-25 16:24:48,openinsider,penny_buys,M,8828261,0%,,,,,1,2025-10-14T11-58-07Z
-Loconti Joseph E.,RNGE,P - Purchase,2025-09-23,2333333,"+$350,000",$0.15,"Range Impact, Inc.",10%,2025-09-25 16:11:50,openinsider,penny_buys,,26645789,+10%,,,,,1,2025-10-14T11-58-07Z
-Feighan Edward F,RNGE,P - Purchase,2025-09-23,666667,"+$100,000",$0.15,"Range Impact, Inc.",Dir,2025-09-25 16:10:18,openinsider,penny_buys,,4417584,+18%,,,,,1,2025-10-14T11-58-07Z
-Cavanaugh Michael R.,RNGE,P - Purchase,2025-09-23,666667,"+$100,000",$0.15,"Range Impact, Inc.",CEO,2025-09-25 16:07:18,openinsider,penny_buys,,2546458,+35%,,,,,1,2025-10-14T11-58-07Z
-Barry John F,PSEC,P - Purchase,2025-09-23,384000,"+$1,021,478",$2.66,Prospect Capital Corp,"CEO, 10%",2025-09-25 16:02:56,openinsider,penny_buys,,84773364,0%,,,,,1,2025-10-14T11-58-07Z
-Pangalos Menelas N,ABSI,P - Purchase,2025-09-22,95785,"+$254,788",$2.66,Absci Corp,Dir,2025-09-24 16:03:44,openinsider,penny_buys,,113960,+527%,,,,,1,2025-10-14T11-58-07Z
-Bedrick Todd,ABSI,P - Purchase,2025-09-22,10000,"+$27,000",$2.70,Absci Corp,"SVP, CAO",2025-09-24 16:03:16,openinsider,penny_buys,,180428,+6%,,,,,1,2025-10-14T11-58-07Z
-Barry John F,PSEC,P - Purchase,2025-09-22,374500,"+$997,219",$2.66,Prospect Capital Corp,"CEO, 10%",2025-09-24 16:02:09,openinsider,penny_buys,,84389364,0%,,,,,1,2025-10-14T11-58-07Z
-Wiggans Thomas G,JSPR,P - Purchase,2025-09-22,41000,"+$99,630",$2.43,"Jasper Therapeutics, Inc.",Dir,2025-09-24 16:01:57,openinsider,penny_buys,D,46000,+820%,,,,,1,2025-10-14T11-58-07Z
-Lucas Svetlana,JSPR,P - Purchase,2025-09-22,20000,"+$48,600",$2.43,"Jasper Therapeutics, Inc.",Dir,2025-09-24 16:01:38,openinsider,penny_buys,D,20000,New,,,,,1,2025-10-14T11-58-07Z
-Martell Ron,JSPR,P - Purchase,2025-09-22,41000,"+$99,630",$2.43,"Jasper Therapeutics, Inc.","Pres, CEO",2025-09-24 16:01:19,openinsider,penny_buys,D,74118,+124%,,,,,1,2025-10-14T11-58-07Z
-Shizuru Judith Anne,JSPR,P - Purchase,2025-09-22,41000,"+$99,630",$2.43,"Jasper Therapeutics, Inc.",Dir,2025-09-24 16:01:03,openinsider,penny_buys,D,156901,+35%,,,,,1,2025-10-14T11-58-07Z
-Johnson Marc,ADMQ,P - Purchase,2025-09-19,467000,"+$109,950",$0.24,"Adm Endeavors, Inc.",CEO,2025-09-24 12:41:39,openinsider,penny_buys,M,61847838,+1%,,,,,1,2025-10-14T11-58-07Z
-Culp Robert George IV,CULP,P - Purchase,2025-09-22,7428,"+$32,832",$4.42,Culp Inc,"Pres, CEO",2025-09-23 18:09:34,openinsider,penny_buys,,410648,+2%,,,,,1,2025-10-14T11-58-07Z
-Mongeau Luc,CGC,P - Purchase,2025-09-22,27469,"+$49,994",$1.82,Canopy Growth Corp,CEO,2025-09-23 16:15:11,openinsider,penny_buys,,812368,+3%,,,,,1,2025-10-14T11-58-07Z
-Aiello Stephen,GRWG,P - Purchase,2025-09-22,133334,"+$221,334",$1.66,Growgeneration Corp.,Dir,2025-09-23 16:00:54,openinsider,penny_buys,,829397,+19%,,,,,1,2025-10-14T11-58-07Z
-Daly Joseph Patrick,BUKS,P - Purchase,2025-09-22,47425,"+$85,092",$1.79,Butler National Corp,"Dir, 10%",2025-09-23 15:33:44,openinsider,penny_buys,M,8810000,+1%,,,,,1,2025-10-14T11-58-07Z
-Stertzer Simon H,BCDA,P - Purchase,2025-09-19,398400,"+$498,000",$1.25,"Biocardia, Inc.",Dir,2025-09-23 09:00:48,openinsider,penny_buys,D,714275,+126%,,,,,1,2025-10-14T11-58-07Z
-Blank Andrew Scott,BCDA,P - Purchase,2025-09-19,288000,"+$360,000",$1.25,"Biocardia, Inc.",Dir,2025-09-23 09:00:29,openinsider,penny_buys,D,636058,+83%,,,,,1,2025-10-14T11-58-07Z
-Altman Peter,BCDA,P - Purchase,2025-09-19,48000,"+$60,000",$1.25,"Biocardia, Inc.","Pres, CEO",2025-09-23 09:00:09,openinsider,penny_buys,D,216762,+28%,,,,,1,2025-10-14T11-58-07Z
-Oppen Sean Matthew,NXXT,P - Purchase,2025-09-18,35000,"+$59,700",$1.71,"Nextnrg, Inc.",Dir,2025-09-22 17:52:18,openinsider,penny_buys,M,263976,+15%,,,,,1,2025-10-14T11-58-07Z
-Barry Richard,SAVA,P - Purchase,2025-09-18,237941,"+$534,743",$2.25,Cassava Sciences Inc,"Pres, CEO",2025-09-22 16:07:33,openinsider,penny_buys,M,707503,+51%,,,,,1,2025-10-14T11-58-07Z
-Campbell Neil,HAIN,P - Purchase,2025-09-19,62640,"+$95,307",$1.52,Hain Celestial Group Inc,Dir,2025-09-22 08:33:12,openinsider,penny_buys,,125569,+100%,,,,,1,2025-10-14T11-58-07Z
-Lewis Alison,HAIN,P - Purchase,2025-09-18,74895,"+$112,104",$1.50,Hain Celestial Group Inc,"Interim Pres, CEO",2025-09-22 08:30:08,openinsider,penny_buys,M,97911,+325%,,,,,1,2025-10-14T11-58-07Z
-Schuler Jack W,AWHL,P - Purchase,2025-09-17,1111111,"+$500,000",$0.45,Aspira Women'S Health Inc.,10%,2025-09-19 17:26:10,openinsider,penny_buys,D,3830365,+41%,,,,,1,2025-10-14T11-58-07Z
-Cohen Jeffrey K,AWHL,P - Purchase,2025-09-17,55556,"+$25,000",$0.45,Aspira Women'S Health Inc.,Dir,2025-09-19 17:26:04,openinsider,penny_buys,D,436610,+15%,,,,,1,2025-10-14T11-58-07Z
-Daly Joseph Patrick,BUKS,P - Purchase,2025-09-18,20000,"+$33,200",$1.66,Butler National Corp,"Dir, 10%",2025-09-19 15:40:36,openinsider,penny_buys,,8755000,0%,,,,,1,2025-10-14T11-58-07Z
-Piconi Robert,NRGV,P - Purchase,2025-09-19,17500,"+$52,875",$3.02,"Energy Vault Holdings, Inc.","CEO, 10%",2025-09-19 12:35:39,openinsider,penny_buys,,28815776,0%,,,,,1,2025-10-14T11-58-07Z
-Farkas Michael D,NXXT,P - Purchase,2025-09-18,1000000,"+$1,670,000",$1.67,"Nextnrg, Inc.","CEO, Exec COB, 10%",2025-09-19 09:15:12,openinsider,penny_buys,,75254300,+1%,,,,,1,2025-10-14T11-58-07Z
-Portnoy David,CCEL,P - Purchase,2025-09-16,17175,"+$76,486",$4.45,Cryo Cell International Inc,"COB, Co-CEO, 10%",2025-09-18 16:53:49,openinsider,penny_buys,DM,1679847,+1%,,,,,1,2025-10-14T11-58-07Z
-Lettmann Jason,ALXO,P - Purchase,2025-09-16,92233,"+$99,352",$1.08,Alx Oncology Holdings Inc,CEO,2025-09-18 16:23:19,openinsider,penny_buys,M,305121,+43%,,,,,1,2025-10-14T11-58-07Z
-Paulson Larry,NRGV,P - Purchase,2025-09-18,20000,"+$47,998",$2.40,"Energy Vault Holdings, Inc.",Dir,2025-09-18 10:29:50,openinsider,penny_buys,,944892,+2%,,,,,1,2025-10-14T11-58-07Z
-Mulacek Phil E,EP,P - Purchase,2025-09-15,36946,"+$148,657",$4.02,Empire Petroleum Corp,"Dir, 10%",2025-09-17 18:43:19,openinsider,penny_buys,M,7234422,+1%,,,,,1,2025-10-14T11-58-07Z
-Salvucci Joseph V Sr,EONR,P - Purchase,2025-09-15,100000,"+$37,530",$0.38,Eon Resources Inc.,Dir,2025-09-17 13:04:54,openinsider,penny_buys,,1929121,+5%,,,,,1,2025-10-14T11-58-07Z
-Salvucci Joseph V Jr,EONR,P - Purchase,2025-09-15,156000,"+$59,576",$0.38,Eon Resources Inc.,Dir,2025-09-17 13:03:37,openinsider,penny_buys,,317784,+96%,,,,,1,2025-10-14T11-58-07Z
-Trotter Mitchell,EONR,P - Purchase,2025-09-15,120000,"+$43,764",$0.36,Eon Resources Inc.,CFO,2025-09-17 10:51:03,openinsider,penny_buys,,274398,+78%,,,,,1,2025-10-14T11-58-07Z
-Piconi Robert,NRGV,P - Purchase,2025-09-17,50000,"+$115,120",$2.30,"Energy Vault Holdings, Inc.","CEO, 10%",2025-09-17 10:36:50,openinsider,penny_buys,,28798276,0%,,,,,1,2025-10-14T11-58-07Z
-Williams Gregg,VANI,P - Purchase,2025-09-15,2068453,"+$2,400,001",$1.16,"Vivani Medical, Inc.","Dir, 10%",2025-09-17 09:48:49,openinsider,penny_buys,,20708548,+11%,,,,,1,2025-10-14T11-58-07Z
-Martell Frank,SMRT,P - Purchase,2025-09-16,50000,"+$79,115",$1.58,"Smartrent, Inc.",CEO,2025-09-16 17:11:32,openinsider,penny_buys,,898204,+6%,,,,,1,2025-10-14T11-58-07Z
-Shin Hyunsoo,GCTS,P - Purchase,2025-09-12,44067,"+$66,541",$1.51,"Gct Semiconductor Holding, Inc.",Class II Director,2025-09-16 16:16:09,openinsider,penny_buys,,694321,+7%,,,,,1,2025-10-14T11-58-07Z
-Schechter Jonathan,OBLG,P - Purchase,2025-09-16,10000,"+$27,321",$2.73,"Oblong, Inc.",Dir,2025-09-16 15:59:19,openinsider,penny_buys,D,10000,New,,,,,1,2025-10-14T11-58-07Z
-Piconi Robert,NRGV,P - Purchase,2025-09-16,25000,"+$55,285",$2.21,"Energy Vault Holdings, Inc.","CEO, 10%",2025-09-16 14:19:40,openinsider,penny_buys,,28748276,0%,,,,,1,2025-10-14T11-58-07Z
-Giustra Frank,STEX,P - Purchase,2025-07-25,178205,"+$734,725",$4.12,Streamex Corp.,10%,2025-09-15 20:19:20,openinsider,penny_buys,M,178205,New,,,,,1,2025-10-14T11-58-07Z
-"5Am Partners Vi, LLC",CAMP,P - Purchase,2025-09-11,2941176,"+$4,499,999",$1.53,Camp4 Therapeutics Corp,10%,2025-09-15 20:12:20,openinsider,penny_buys,,5869091,+100%,,,,,1,2025-10-14T11-58-07Z
-Mulacek Phil E,EP,P - Purchase,2025-09-10,15983,"+$65,354",$4.09,Empire Petroleum Corp,"Dir, 10%",2025-09-15 18:49:48,openinsider,penny_buys,M,7197476,0%,,,,,1,2025-10-14T11-58-07Z
-Martell Frank,SMRT,P - Purchase,2025-09-12,100000,"+$148,500",$1.49,"Smartrent, Inc.",CEO,2025-09-15 16:16:26,openinsider,penny_buys,M,848204,+13%,,,,,1,2025-10-14T11-58-07Z
-Campbell Gregor Alasdair,NWTG,P - Purchase,2025-09-10,20000,"+$39,000",$1.95,"Newton Golf Company, Inc.","Exec COB, CEO",2025-09-12 16:05:16,openinsider,penny_buys,,85944,+30%,,,,,1,2025-10-14T11-58-07Z
-Sprott Eric,HYMC,P - Purchase,2025-09-10,9344704,"+$39,995,333",$4.28,Hycroft Mining Holding Corp,10%,2025-09-12 13:51:20,openinsider,penny_buys,D,17535528,+114%,,,,,1,2025-10-14T11-58-07Z
-"Casdin Partners Master Fund, L.P.",LAB,P - Purchase,2025-09-09,100000,"+$128,920",$1.29,Standard Biotools Inc.,"Dir, 10%",2025-09-11 21:03:04,openinsider,penny_buys,,80459918,0%,,,,,1,2025-10-14T11-58-07Z
-"Polaris Management Co. Vii, L.L.C.",CAMP,P - Purchase,2025-09-11,1307189,"+$1,999,999",$1.53,Camp4 Therapeutics Corp,10%,2025-09-11 16:59:09,openinsider,penny_buys,,1106751,-652%,,,,,1,2025-10-14T11-58-07Z
-Nashat Amir,CAMP,P - Purchase,2025-09-11,1307189,"+$1,999,999",$1.53,Camp4 Therapeutics Corp,"Dir, 10%",2025-09-11 16:48:30,openinsider,penny_buys,,1106751,-652%,,,,,1,2025-10-14T11-58-07Z
-O'Donnell Kevin J,OCTO,P - Purchase,2025-09-09,171233,"+$250,000",$1.46,Eightco Holdings Inc.,CEO,2025-09-11 08:07:01,openinsider,penny_buys,,599985,+40%,,,,,1,2025-10-14T11-58-07Z
-Jakota Capital AG,CRSF,P - Purchase,2025-09-05,1000000000,"+$6,000,000",$0.01,Crisp Momentum Inc.,10%,2025-09-10 17:29:51,openinsider,penny_buys,,1238560284,+419%,,,,,1,2025-10-14T11-58-07Z
-Portnoy David,CCEL,P - Purchase,2025-09-08,42900,"+$189,986",$4.43,Cryo Cell International Inc,"COB, Co-CEO, 10%",2025-09-10 17:22:01,openinsider,penny_buys,DM,1479655,+3%,,,,,1,2025-10-14T11-58-07Z
-Rillo Troy,YORK,P - Purchase,2025-08-25,91770,"+$91,770",$1.00,Yorkville Acquisition Corp.,CFO,2025-09-10 16:58:38,openinsider,penny_buys,,91770,New,,,,,1,2025-10-14T11-58-07Z
-"Lazarus Energy Holdings, LLC",BDCO,P - Purchase,2025-09-08,35000,"+$50,430",$1.44,Blue Dolphin Energy Co,10%,2025-09-10 16:50:27,openinsider,penny_buys,M,8475000,0%,,,,,1,2025-10-14T11-58-07Z
-Jennings Frank D,OCTO,P - Purchase,2025-09-09,136986,"+$200,000",$1.46,Eightco Holdings Inc.,Dir,2025-09-10 15:59:46,openinsider,penny_buys,,154189,+796%,,,,,1,2025-10-14T11-58-07Z
-Caiano Nicola Paul,OCTO,P - Purchase,2025-09-09,342466,"+$500,000",$1.46,Eightco Holdings Inc.,Dir,2025-09-10 15:58:39,openinsider,penny_buys,,350288,>999%,,,,,1,2025-10-14T11-58-07Z
-Alford Tony L,LCGMF,P - Purchase,2025-09-08,256065,"+$25,705",$0.10,Lion Copper & Gold Corp.,"Dir, 10%",2025-09-09 20:02:04,openinsider,penny_buys,DM,142975463,0%,,,,,1,2025-10-14T11-58-07Z
-Jia Yueting,FFAI,P - Purchase,2025-09-08,98000,"+$177,223",$1.81,Faraday Future Intelligent Electric Inc.,Global Co-CEO,2025-09-09 19:02:05,openinsider,penny_buys,,531838,+23%,,,,,1,2025-10-14T11-58-07Z
-Black Robert R.,AENT,P - Purchase,2025-02-19,10000,"+$32,875",$3.29,Alliance Entertainment Holding Corp,Chief Compliance Officer,2025-09-09 18:07:57,openinsider,penny_buys,M,20000,+100%,,,,,1,2025-10-14T11-58-07Z
-Wilks Matthew,ACDC,P - Purchase,2025-09-08,43297,"+$164,578",$3.80,Profrac Holding Corp.,Exec COB,2025-09-09 17:00:07,openinsider,penny_buys,,1992641,+2%,,,,,1,2025-10-14T11-58-07Z
-Patel Sujal M,NAUT,P - Purchase,2025-09-05,200000,"+$135,575",$0.68,"Nautilus Biotechnology, Inc.","CEO, Pres,, Secretary, 10%",2025-09-09 16:42:25,openinsider,penny_buys,M,17436232,+1%,,,,,1,2025-10-14T11-58-07Z
-Adelman Jason T,OBLG,P - Purchase,2025-09-04,10000,"+$26,632",$2.66,"Oblong, Inc.",Dir,2025-09-09 13:52:34,openinsider,penny_buys,,10000,New,,,,,1,2025-10-14T11-58-07Z
-Tannenbaum Leonard M,AFCG,P - Purchase,2025-09-05,79665,"+$363,272",$4.56,Advanced Flower Capital Inc.,"Dir, 10%",2025-09-08 17:22:15,openinsider,penny_buys,,5270238,+2%,,,,,1,2025-10-14T11-58-07Z
-Neville Daniel,AFCG,P - Purchase,2025-09-08,12388,"+$55,003",$4.44,Advanced Flower Capital Inc.,CEO,2025-09-08 17:19:51,openinsider,penny_buys,,209649,+6%,,,,,1,2025-10-14T11-58-07Z
+Warnock Jacob Aaron,IBATF,P - Purchase,2026-04-29,34315465,"+$2,745,237",$0.08,International Battery Metals Ltd.,"Dir, 10%",2026-04-30 17:00:04,openinsider,penny_buys,D,143641569,+31%,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,FCHL,P - Purchase,2026-04-28,239692,"+$35,714",$0.15,Fitness Champs Holdings Ltd,10%,2026-04-30 16:26:23,openinsider,penny_buys,,420917,+132%,,,,,1,2026-05-01T08-03-29Z
+Lerner Neil,CMPX,P - Purchase,2026-04-29,15000,"+$28,350",$1.89,"Compass Therapeutics, Inc.",CHIEF ACCOUNTING OFFICER,2026-04-30 16:00:48,openinsider,penny_buys,A,397500,+4%,,,,,1,2026-05-01T08-03-29Z
+Anderman Jonathan,CMPX,P - Purchase,2026-04-29,25000,"+$47,250",$1.89,"Compass Therapeutics, Inc.",GC,2026-04-30 16:00:25,openinsider,penny_buys,A,196000,+15%,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,GMEX,P - Purchase,2026-04-28,135198,"+$47,725",$0.35,Gmex Robotics Corp,10%,2026-04-30 15:29:58,openinsider,penny_buys,,0,-100%,,,,,1,2026-05-01T08-03-29Z
+Lee Chong Kuang,GRNQ,P - Purchase,2026-04-28,107310,"+$250,000",$2.33,Greenpro Capital Corp.,"CEO, 10%",2026-04-30 14:27:10,openinsider,penny_buys,,2012259,+6%,,,,,1,2026-05-01T08-03-29Z
+Arima Anastasios,IPX,P - Purchase,2026-04-28,110000,"+$493,625",$4.49,Iperionx Ltd,CEO,2026-04-30 07:38:30,openinsider,penny_buys,D,13055358,+1%,,,,,1,2026-05-01T08-03-29Z
+Hannigan Todd,IPX,P - Purchase,2026-04-28,480000,"+$2,077,784",$4.33,Iperionx Ltd,Exec COB,2026-04-29 21:51:04,openinsider,penny_buys,DM,26562798,+2%,,,,,1,2026-05-01T08-03-29Z
+Samuel Olivier,NCEL,P - Purchase,2026-04-27,81818,"+$225,000",$2.75,Newcelx Ltd.,Dir,2026-04-29 16:05:32,openinsider,penny_buys,D,81818,New,,,,,1,2026-05-01T08-03-29Z
+Revel Michel,NCEL,P - Purchase,2026-04-27,54545,"+$149,999",$2.75,Newcelx Ltd.,"CSO, Dir, 10%",2026-04-29 16:05:15,openinsider,penny_buys,D,957530,+6%,,,,,1,2026-05-01T08-03-29Z
+Agassi Andre K,AASP,P - Purchase,2026-04-28,50000,"+$250,000",$5.00,Agassi Sports Entertainment Corp.,10%,2026-04-29 15:26:23,openinsider,penny_buys,,2291398,+2%,,,,,1,2026-05-01T08-03-29Z
+Orbimed Advisors LLC,TRAW,P - Purchase,2026-04-16,597729,"+$998,207",$1.67,"Traws Pharma, Inc.",10%,2026-04-28 21:41:49,openinsider,penny_buys,D,1203250,+99%,,,,,1,2026-05-01T08-03-29Z
+Heshmatpour Amir F,NTHI,P - Purchase,2026-04-28,10000,"+$45,180",$4.52,"Neonc Technologies Holdings, Inc.","Pres, 10%",2026-04-28 18:00:05,openinsider,penny_buys,,7582140,0%,,,,,1,2026-05-01T08-03-29Z
+Hong Zhifang,DKI,P - Purchase,2026-04-24,1428571,"+$500,000",$0.35,Darkiris Inc.,"CEO, 10%",2026-04-28 16:30:16,openinsider,penny_buys,,6878171,+26%,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,GMEX,P - Purchase,2026-04-24,182636,"+$96,072",$0.53,Gmex Robotics Corp,10%,2026-04-28 16:10:08,openinsider,penny_buys,M,253917,+256%,,,,,1,2026-05-01T08-03-29Z
+Hagler Mark Arnold,NBP,P - Purchase,2026-04-24,230000,"+$577,300",$2.51,Novabridge Biosciences,See Remarks,2026-04-28 16:05:04,openinsider,penny_buys,,230000,New,,,,,1,2026-05-01T08-03-29Z
+"Blue & Silver Ventures, Ltd.",GAME,P - Purchase,2026-04-22,2234364,"+$1,324,436",$0.59,"Gamesquare Holdings, Inc.",See Footnote (1),2026-04-27 21:56:16,openinsider,penny_buys,M,3861736,+137%,,,,,1,2026-05-01T08-03-29Z
+"Broadwood Partners, L.P.",IMDX,P - Purchase,2026-04-23,570184,"+$2,032,251",$3.56,Insight Molecular Diagnostics Inc.,10%,2026-04-27 19:08:17,openinsider,penny_buys,DM,25369925,+2%,,,,,1,2026-05-01T08-03-29Z
+Purcell Michael J.,HEPA,P - Purchase,2026-04-21,1250000,"+$50,000",$0.04,"Hepion Pharmaceuticals, Inc.",Dir,2026-04-27 17:33:08,openinsider,penny_buys,,1250000,New,,,,,1,2026-05-01T08-03-29Z
+Wenshan Xie,EJH,P - Purchase,2026-04-23,192000,"+$240,000",$1.25,E-Home Household Service Holdings Ltd,"COB, CEO, 10%",2026-04-27 16:30:02,openinsider,penny_buys,,744295,+35%,,,,,1,2026-05-01T08-03-29Z
+Sport City Cadiz S.L.,NOMA,P - Purchase,2025-12-29,38175,"+$152,663",$4.00,Nomadar Corp.,10%,2026-04-27 16:05:34,openinsider,penny_buys,M,7822557,0%,,,,,1,2026-05-01T08-03-29Z
+Sport City Cadiz S.L.,NOMA,P - Purchase,2026-02-17,26000,"+$128,417",$4.94,Nomadar Corp.,10%,2026-04-27 16:05:32,openinsider,penny_buys,M,7848557,0%,,,,,1,2026-05-01T08-03-29Z
+Lopriore Vincent S,HEPA,P - Purchase,2026-04-21,6250000,"+$250,000",$0.04,"Hepion Pharmaceuticals, Inc.","Exec COB, 10%",2026-04-27 06:24:56,openinsider,penny_buys,,11250000,+125%,,,,,1,2026-05-01T08-03-29Z
+Appajosyula Sireesh,HEPA,P - Purchase,2026-04-21,1250000,"+$50,000",$0.04,"Hepion Pharmaceuticals, Inc.",Dir,2026-04-27 06:24:50,openinsider,penny_buys,,1250000,New,,,,,1,2026-05-01T08-03-29Z
+Stetz Gary S.,HEPA,P - Purchase,2026-04-21,1250000,"+$50,000",$0.04,"Hepion Pharmaceuticals, Inc.",Interim CEO,2026-04-27 06:24:44,openinsider,penny_buys,,1250000,New,,,,,1,2026-05-01T08-03-29Z
+Strome Mark E,ZIVO,P - Purchase,2026-04-17,100000,"+$200,000",$2.00,"Zivo Bioscience, Inc.",10%,2026-04-24 18:16:02,openinsider,penny_buys,,572942,+21%,,,,,1,2026-05-01T08-03-29Z
+Gorman Jeremi,GAME,P - Purchase,2025-09-19,65897,"+$50,082",$0.76,"Gamesquare Holdings, Inc.",Dir,2026-04-24 17:22:35,openinsider,penny_buys,D,165897,+66%,,,,,1,2026-05-01T08-03-29Z
+Caraher Scott C.,JQC,P - Purchase,2026-03-30,20000,"+$95,131",$4.76,Nuveen Credit Strategies Income Fund,Portfolio Manager,2026-04-24 16:35:23,openinsider,penny_buys,M,26000,+333%,,,,,1,2026-05-01T08-03-29Z
+Ferrari Richard,BEAT,P - Purchase,2026-04-16,57500,"+$46,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-24 16:05:03,openinsider,penny_buys,A,286636,+25%,,,,,1,2026-05-01T08-03-29Z
+Yu Jeffrey,ONMD,P - Purchase,2026-04-01,903614,"+$750,000",$0.83,Onemednet Corp,"Chief Medical Officer, 10%",2026-04-24 08:40:21,openinsider,penny_buys,,9761236,+10%,,,,,1,2026-05-01T08-03-29Z
+Kosasa Thomas,ONMD,P - Purchase,2026-02-06,876136,"+$749,999",$0.86,Onemednet Corp,"Dir, 10%",2026-04-24 08:40:19,openinsider,penny_buys,M,16661327,+6%,,,,,1,2026-05-01T08-03-29Z
+Heshmatpour Amir F,NTHI,P - Purchase,2026-04-23,10000,"+$49,000",$4.90,"Neonc Technologies Holdings, Inc.","Pres, 10%",2026-04-23 21:34:03,openinsider,penny_buys,,7572140,0%,,,,,1,2026-05-01T08-03-29Z
+Bonita David P,PRLD,P - Purchase,2026-04-21,2815315,"+$12,499,999",$4.44,Prelude Therapeutics Inc,"Dir, 10%",2026-04-23 18:50:38,openinsider,penny_buys,,1652426,-242%,,,,,1,2026-05-01T08-03-29Z
+Orbimed Advisors LLC,PRLD,P - Purchase,2026-04-21,2815315,"+$12,499,999",$4.44,Prelude Therapeutics Inc,"Dir, 10%",2026-04-23 18:48:25,openinsider,penny_buys,,1652426,-242%,,,,,1,2026-05-01T08-03-29Z
+Wagner Daniel Maurice,RZLV,P - Purchase,2026-04-02,812956,"+$3,251,824",$4.00,Rezolve Ai Plc,"CEO, 10%",2026-04-23 16:30:03,openinsider,penny_buys,,52483622,+2%,,,,,1,2026-05-01T08-03-29Z
+Zamboni Alessandro,BURU,P - Purchase,2025-12-31,4332525,"+$1,496,021",$0.35,"Nuburu, Inc.",Co-CEO,2026-04-22 16:53:40,openinsider,penny_buys,,4688036,>999%,,,,,1,2026-05-01T08-03-29Z
+Steel Partners Holdings L.P.,SPRU,P - Purchase,2026-04-20,24335,"+$100,416",$4.13,Spruce Power Holding Corp,10%,2026-04-22 16:47:41,openinsider,penny_buys,,3429380,+1%,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,STIM,P - Purchase,2026-04-20,200000,"+$309,000",$1.55,"Neuronetics, Inc.",10%,2026-04-22 09:39:59,openinsider,penny_buys,M,9978988,+2%,,,,,1,2026-05-01T08-03-29Z
+Sklar Ross Jeffery,STCB,P - Purchase,2026-04-15,1425241,"+$45,657",$0.03,"Starco Brands, Inc.","CEO, 10%",2026-04-22 06:14:18,openinsider,penny_buys,M,95770129,+2%,,,,,1,2026-05-01T08-03-29Z
+Xu Yingkai,MTEN,P - Purchase,2026-04-13,1520000,"+$380,000",$0.25,Mingteng International Corp Inc.,CEO,2026-04-21 16:30:19,openinsider,penny_buys,,1520000,New,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,ONCO,P - Purchase,2026-04-17,34636,"+$25,284",$0.73,"Onconetix, Inc.",10%,2026-04-21 15:41:33,openinsider,penny_buys,,83359,+71%,,,,,1,2026-05-01T08-03-29Z
+Qiu Wenbin,BZUN,P - Purchase,2026-04-17,16000,"+$50,240",$3.14,Baozun Inc.,CEO,2026-04-21 06:15:56,openinsider,penny_buys,,1433872,+1%,,,,,1,2026-05-01T08-03-29Z
+Paulson & Co. Inc.,THM,P - Purchase,2026-04-16,4913665,"+$12,578,982",$2.56,International Tower Hill Mines Ltd,10%,2026-04-20 20:11:17,openinsider,penny_buys,,104486703,+5%,,,,,1,2026-05-01T08-03-29Z
+"Broadwood Partners, L.P.",IMDX,P - Purchase,2026-04-16,182861,"+$652,876",$3.57,Insight Molecular Diagnostics Inc.,10%,2026-04-20 19:24:03,openinsider,penny_buys,DM,24229557,+1%,,,,,1,2026-05-01T08-03-29Z
+"Lazarus Energy Holdings, LLC",BDCO,P - Purchase,2026-04-16,72500,"+$222,675",$3.07,Blue Dolphin Energy Co,10%,2026-04-20 17:04:06,openinsider,penny_buys,M,8547500,+1%,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,AIRS,P - Purchase,2026-04-17,40000,"+$101,600",$2.54,"Airsculpt Technologies, Inc.",10%,2026-04-20 09:16:56,openinsider,penny_buys,D,7053761,+1%,,,,,1,2026-05-01T08-03-29Z
+Kidambi Tridivesh,SST,P - Purchase,2026-04-15,26910,"+$80,730",$3.00,"System1, Inc.",CFO,2026-04-17 20:33:35,openinsider,penny_buys,,146515,+22%,,,,,1,2026-05-01T08-03-29Z
+Steel Partners Holdings L.P.,SPRU,P - Purchase,2026-04-15,14244,"+$58,100",$4.08,Spruce Power Holding Corp,10%,2026-04-17 17:18:51,openinsider,penny_buys,M,3405045,0%,,,,,1,2026-05-01T08-03-29Z
+"Aqr Capital Management Holdings, LLC",ZSPC,P - Purchase,2026-04-15,860716,"+$61,111",$0.07,"Zspace, Inc.",10%,2026-04-17 16:43:22,openinsider,penny_buys,,4756327,+22%,,,,,1,2026-05-01T08-03-29Z
+Gerber Charles,DHY,P - Purchase,2026-04-16,16000,"+$30,080",$1.88,Credit Suisse High Yield Credit Fund,Trustee,2026-04-17 09:15:31,openinsider,penny_buys,,16000,New,,,,,1,2026-05-01T08-03-29Z
+Qiu Wenbin,BZUN,P - Purchase,2026-04-15,28500,"+$79,510",$2.79,Baozun Inc.,CEO,2026-04-17 07:33:04,openinsider,penny_buys,M,1417872,+2%,,,,,1,2026-05-01T08-03-29Z
+Cruickshank Tim,BEAT,P - Purchase,2026-04-16,31250,"+$25,000",$0.80,"Heartbeam, Inc.",CFO,2026-04-16 20:48:21,openinsider,penny_buys,,72230,+76%,,,,,1,2026-05-01T08-03-29Z
+Elfrink Willem,BEAT,P - Purchase,2026-04-16,187500,"+$150,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-16 20:48:07,openinsider,penny_buys,,538667,+53%,,,,,1,2026-05-01T08-03-29Z
+Jaff Michael R,BEAT,P - Purchase,2026-04-16,31250,"+$25,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-16 20:47:53,openinsider,penny_buys,,31250,New,,,,,1,2026-05-01T08-03-29Z
+Vajdic Branislav,BEAT,P - Purchase,2026-04-16,31250,"+$25,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-16 20:47:39,openinsider,penny_buys,,909914,+4%,,,,,1,2026-05-01T08-03-29Z
+Ferrari Richard,BEAT,P - Purchase,2026-04-16,62500,"+$50,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-16 20:47:23,openinsider,penny_buys,,291636,+27%,,,,,1,2026-05-01T08-03-29Z
+Strome Mark E,BEAT,P - Purchase,2026-04-16,750000,"+$600,000",$0.80,"Heartbeam, Inc.",Dir,2026-04-16 20:46:40,openinsider,penny_buys,,3650000,+26%,,,,,1,2026-05-01T08-03-29Z
+Ault Milton C III,ALZN,P - Purchase,2026-04-14,108388,"+$108,897",$1.00,"Alzamend Neuro, Inc.",Dir,2026-04-16 16:30:09,openinsider,penny_buys,,127777,+559%,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,ONCO,P - Purchase,2026-04-14,166904,"+$127,591",$0.76,"Onconetix, Inc.",10%,2026-04-16 14:30:24,openinsider,penny_buys,M,197052,+554%,,,,,1,2026-05-01T08-03-29Z
+Pfeifer Andrea,ACIU,P - Purchase,2026-04-15,10000,"+$31,425",$3.14,Ac Immune Sa,CEO,2026-04-16 11:10:49,openinsider,penny_buys,,3844288,0%,,,,,1,2026-05-01T08-03-29Z
+Rudy Mitchell Austin,BNKK,P - Purchase,2026-04-09,31055,"+$87,575",$2.82,"Bonk, Inc.","Dir, 10%",2026-04-16 09:18:54,openinsider,penny_buys,,1662657,+2%,,,,,1,2026-05-01T08-03-29Z
+Williams Gregg,VANI,P - Purchase,2026-04-15,1587301,"+$1,999,999",$1.26,"Vivani Medical, Inc.","Dir, 10%",2026-04-16 06:30:10,openinsider,penny_buys,,37743684,+4%,,,,,1,2026-05-01T08-03-29Z
+"Visionwave Holdings, Inc.",SVRE,P - Purchase,2026-03-30,2147483647,"+$2,147,483,647",$3.31,Saverone 2014 Ltd.,Dir,2026-04-15 16:08:17,openinsider,penny_buys,M,2147483647,+50%,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,AIRS,P - Purchase,2026-04-14,20000,"+$52,000",$2.60,"Airsculpt Technologies, Inc.",10%,2026-04-15 09:35:08,openinsider,penny_buys,,7013761,0%,,,,,1,2026-05-01T08-03-29Z
+Qiu Wenbin,BZUN,P - Purchase,2026-04-13,23600,"+$60,253",$2.55,Baozun Inc.,CEO,2026-04-15 06:30:18,openinsider,penny_buys,M,1389372,+2%,,,,,1,2026-05-01T08-03-29Z
+Steel Partners Holdings L.P.,SPRU,P - Purchase,2026-04-10,9702,"+$39,059",$4.03,Spruce Power Holding Corp,10%,2026-04-14 18:52:48,openinsider,penny_buys,M,3390801,0%,,,,,1,2026-05-01T08-03-29Z
+Barry Timothy T.,SVBL,P - Purchase,2026-04-08,195800,"+$43,076",$0.22,"Silver Bull Resources, Inc.",CEO,2026-04-14 17:15:12,openinsider,penny_buys,M,1966181,+11%,,,,,1,2026-05-01T08-03-29Z
+Intelligent Fanatics Capital Management LLC,KLNG,P - Purchase,2026-04-13,36322,"+$62,474",$1.72,"Koil Energy Solutions, Inc.",10%,2026-04-14 16:07:17,openinsider,penny_buys,,3134262,+1%,,,,,1,2026-05-01T08-03-29Z
+Rossi Steven F.,WKSP,P - Purchase,2026-04-13,88214,"+$75,000",$0.85,Worksport Ltd,"CEO, Pres",2026-04-14 08:25:41,openinsider,penny_buys,,2614085,+3%,,,,,1,2026-05-01T08-03-29Z
+Wu Junhua,BZUN,P - Purchase,2026-04-10,16456,"+$40,492",$2.46,Baozun Inc.,Chief Strategy Officer,2026-04-14 07:47:08,openinsider,penny_buys,M,138770,+13%,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,TOI,P - Purchase,2026-04-09,20000,"+$62,000",$3.10,"Oncology Institute, Inc.",10%,2026-04-13 09:03:52,openinsider,penny_buys,,10499358,0%,,,,,1,2026-05-01T08-03-29Z
+George Gregory,MESO,P - Purchase,2026-04-04,7910962,"+$11,396,977",$1.44,Mesoblast Ltd,"Dir, 10%",2026-04-13 07:19:39,openinsider,penny_buys,M,33910962,+30%,,,,,1,2026-05-01T08-03-29Z
+George Gregory,MESO,P - Purchase,2026-04-04,8305962,"+$26,135,093",$3.15,Mesoblast Ltd,"Dir, 10%",2026-04-10 19:27:51,openinsider,penny_buys,M,33910962,+32%,,,,,1,2026-05-01T08-03-29Z
+"Forager Fund, L.P.",RPAY,P - Purchase,2026-04-07,913711,"+$2,304,426",$2.52,Repay Holdings Corp,10%,2026-04-10 16:01:14,openinsider,penny_buys,AM,11106648,+9%,,,,,1,2026-05-01T08-03-29Z
+"Forager Fund, L.P.",RPAY,P - Purchase,2026-04-01,950000,"+$2,408,384",$2.54,Repay Holdings Corp,10%,2026-04-10 15:58:53,openinsider,penny_buys,AM,10192937,+10%,,,,,1,2026-05-01T08-03-29Z
+"Forager Fund, L.P.",RPAY,P - Purchase,2026-03-25,642837,"+$1,935,060",$3.01,Repay Holdings Corp,10%,2026-04-10 15:57:49,openinsider,penny_buys,AM,9242937,+7%,,,,,1,2026-05-01T08-03-29Z
+Heshmatpour Amir F,NTHI,P - Purchase,2026-04-10,10000,"+$48,950",$4.90,"Neonc Technologies Holdings, Inc.","Pres, 10%",2026-04-10 15:29:47,openinsider,penny_buys,,7562140,0%,,,,,1,2026-05-01T08-03-29Z
+Wu Junhua,BZUN,P - Purchase,2026-04-08,30886,"+$78,450",$2.54,Baozun Inc.,Chief Strategy Officer,2026-04-10 06:18:23,openinsider,penny_buys,,122314,+34%,,,,,1,2026-05-01T08-03-29Z
+Steel Partners Holdings L.P.,SPRU,P - Purchase,2026-04-07,19532,"+$77,900",$3.99,Spruce Power Holding Corp,10%,2026-04-09 18:41:56,openinsider,penny_buys,M,3381099,+1%,,,,,1,2026-05-01T08-03-29Z
+"Forager Fund, L.P.",RPAY,P - Purchase,2026-04-07,913711,"+$2,304,426",$2.52,Repay Holdings Corp,10%,2026-04-09 18:33:54,openinsider,penny_buys,M,11106648,+9%,,,,,1,2026-05-01T08-03-29Z
+Hrt Financial LP,LGHL,P - Purchase,2026-04-02,56652,"+$48,808",$0.86,Lion Group Holding Ltd,10%,2026-04-09 12:04:19,openinsider,penny_buys,M,41765,-381%,,,,,1,2026-05-01T08-03-29Z
+Qiu Wenbin,BZUN,P - Purchase,2026-04-07,23600,"+$60,048",$2.54,Baozun Inc.,CEO,2026-04-09 06:31:38,openinsider,penny_buys,M,1341722,+2%,,,,,1,2026-05-01T08-03-29Z
+Ajjarapu J. Ram,XAGE,P - Purchase,2026-03-16,689656,"+$200,000",$0.29,"Longevity Health Holdings, Inc.","CEO, 10%",2026-04-08 17:47:11,openinsider,penny_buys,,689656,New,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,AIRS,P - Purchase,2026-04-07,60000,"+$175,800",$2.93,"Airsculpt Technologies, Inc.",10%,2026-04-08 09:09:31,openinsider,penny_buys,,6993761,+1%,,,,,1,2026-05-01T08-03-29Z
+Higuchi John W.,LPCN,P - Purchase,2026-04-07,40000,"+$81,200",$2.03,Lipocine Inc.,Dir,2026-04-07 18:27:25,openinsider,penny_buys,,203797,+24%,,,,,1,2026-05-01T08-03-29Z
+Dixon Robert E,MKZR,P - Purchase,2026-04-06,10000,"+$34,972",$3.50,"Mackenzie Realty Capital, Inc.","CEO, Pres",2026-04-07 15:19:10,openinsider,penny_buys,,146665,+7%,,,,,1,2026-05-01T08-03-29Z
+Jackson Jason Dale,LCFY,P - Purchase,2026-04-02,9285,"+$38,997",$4.20,Locafy Ltd,COO,2026-04-07 12:28:02,openinsider,penny_buys,,11050,+526%,,,,,1,2026-05-01T08-03-29Z
+Ma Cunjun,HUIZ,P - Purchase,2026-03-30,7842032,"+$113,976",$0.01,Huize Holding Ltd,"CEO, 10%",2026-04-07 06:19:04,openinsider,penny_buys,AM,7942232,>999%,,,,,1,2026-05-01T08-03-29Z
+Higuchi John W.,LPCN,P - Purchase,2026-04-06,123000,"+$252,150",$2.05,Lipocine Inc.,Dir,2026-04-06 19:01:22,openinsider,penny_buys,,163797,+301%,,,,,1,2026-05-01T08-03-29Z
+Patel Mahesh V.,LPCN,P - Purchase,2026-04-06,25000,"+$50,750",$2.03,Lipocine Inc.,CEO,2026-04-06 18:33:10,openinsider,penny_buys,,160679,+18%,,,,,1,2026-05-01T08-03-29Z
+Gill John,ALT,P - Purchase,2026-04-06,9200,"+$31,350",$3.41,"Altimmune, Inc.",Dir,2026-04-06 16:05:16,openinsider,penny_buys,,21700,+74%,,,,,1,2026-05-01T08-03-29Z
+Chernett Jorey,AIRS,P - Purchase,2026-04-03,90000,"+$253,800",$2.82,"Airsculpt Technologies, Inc.",10%,2026-04-06 09:34:45,openinsider,penny_buys,,6933761,+1%,,,,,1,2026-05-01T08-03-29Z
+Wu Junhua,BZUN,P - Purchase,2026-04-02,30000,"+$74,019",$2.47,Baozun Inc.,Chief Strategy Officer,2026-04-06 08:47:33,openinsider,penny_buys,,91428,+49%,,,,,1,2026-05-01T08-03-29Z
+Fraiche Donna D.,SVC,P - Purchase,2026-04-02,83333,"+$100,000",$1.20,Service Properties Trust,Dir,2026-04-06 08:19:42,openinsider,penny_buys,,182013,+84%,,,,,1,2026-05-01T08-03-29Z
+Bruno Thomas,CULP,P - Purchase,2026-04-02,10000,"+$27,650",$2.77,Culp Inc,Chief Commercial Officer,2026-04-06 08:11:28,openinsider,penny_buys,,90000,+13%,,,,,1,2026-05-01T08-03-29Z
+Hoffman Michael B,ANVS,P - Purchase,2026-04-02,713800,"+$1,498,980",$2.10,"Annovis Bio, Inc.",Dir,2026-04-03 17:06:28,openinsider,penny_buys,,3511896,+26%,,,,,1,2026-05-01T08-03-29Z
+"Forager Fund, L.P.",RPAY,P - Purchase,2026-04-01,950000,"+$2,408,384",$2.54,Repay Holdings Corp,10%,2026-04-03 14:14:25,openinsider,penny_buys,M,10192937,+10%,,,,,1,2026-05-01T08-03-29Z
+Wenshan Xie,EJH,P - Purchase,2026-04-01,540000,"+$675,000",$1.25,E-Home Household Service Holdings Ltd,"COB, CEO, 10%",2026-04-03 10:56:58,openinsider,penny_buys,,552295,>999%,,,,,1,2026-05-01T08-03-29Z
+Winn Walter Timothy,SLND,P - Purchase,2026-03-31,29177,"+$42,890",$1.47,"Southland Holdings, Inc.","CO-COO, EVP",2026-04-02 20:00:07,openinsider,penny_buys,,1950721,+2%,,,,,1,2026-05-01T08-03-29Z
+Skaff Michael C,VVOS,P - Purchase,2026-03-31,1353625,"+$1,813,858",$1.34,"Vivos Therapeutics, Inc.",10%,2026-04-02 19:34:11,openinsider,penny_buys,D,1353625,New,,,,,1,2026-05-01T08-03-29Z

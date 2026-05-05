@@ -1,83 +1,29 @@
 trader_name,appearances,trade_date,ticker,patterns,risk_score,trade_price,price_movement
-Piconi Robert,10,2025-10-04,NRGV,Perfect Timing,170,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-04,NRGV,Perfect Timing,255,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-04,NRGV,Perfect Timing,340,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-05,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-07,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-07,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-09,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-13,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2025-10-14,NRGV,Perfect Timing,425,2.259999990463257,+31.4%
-Piconi Robert,10,2026-04-28,NRGV,Perfect Timing,2387,2.359999895095825,+36.0%
-Altman Peter,10,2025-10-04,BCDA,"Perfect Timing, Coordinated",195,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-04,BCDA,"Perfect Timing, Coordinated",292,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-04,BCDA,"Perfect Timing, Coordinated",390,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-05,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-07,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-07,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-09,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-13,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2025-10-14,BCDA,"Perfect Timing, Coordinated",487,1.159999966621399,+17.2%
-Altman Peter,10,2026-04-28,BCDA,"Perfect Timing, Coordinated",1700,1.159999966621399,+17.2%
-Lettmann Jason,10,2025-10-04,ALXO,Perfect Timing,120,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-04,ALXO,Perfect Timing,180,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-04,ALXO,Perfect Timing,240,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-05,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-07,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-07,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-09,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-13,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2025-10-14,ALXO,Perfect Timing,300,1.0800000429153442,+69.4%
-Lettmann Jason,10,2026-04-28,ALXO,Perfect Timing,1512,1.0800000429153442,+69.4%
-Farkas Michael D,10,2025-10-04,NXXT,Perfect Timing,120,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-04,NXXT,Perfect Timing,180,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-04,NXXT,Perfect Timing,240,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-05,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-07,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-07,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-09,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-13,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2025-10-14,NXXT,Perfect Timing,300,1.7699999809265137,+19.2%
-Farkas Michael D,10,2026-04-28,NXXT,Perfect Timing,1512,1.7699999809265137,+19.2%
-Barry Richard,10,2025-10-04,SAVA,Perfect Timing,120,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-04,SAVA,Perfect Timing,180,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-04,SAVA,Perfect Timing,240,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-05,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-07,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-07,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-09,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-13,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2025-10-14,SAVA,Perfect Timing,300,2.2899999618530273,+49.8%
-Barry Richard,10,2026-04-28,SAVA,Perfect Timing,1512,2.2899999618530273,+49.8%
-Dixon Robert E,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",215,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",322,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",430,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-05,MKZR,"Perfect Timing, Coordinated",537,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-07,MKZR,"Perfect Timing, Coordinated",850,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-07,MKZR,"Perfect Timing, Coordinated",850,4.699999809265137,+31.7%
-Dixon Robert E,10,2025-10-09,MKZR,Coordinated,287,,
-Dixon Robert E,10,2025-10-13,MKZR,Coordinated,287,,
-Dixon Robert E,10,2025-10-14,MKZR,Coordinated,287,,
-Dixon Robert E,10,2026-04-28,MKZR,Coordinated,750,,
-Sherpa Angche,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",215,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",322,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-04,MKZR,"Perfect Timing, Coordinated",430,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-05,MKZR,"Perfect Timing, Coordinated",537,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-07,MKZR,"Perfect Timing, Coordinated",850,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-07,MKZR,"Perfect Timing, Coordinated",850,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-09,MKZR,"Perfect Timing, Coordinated",437,4.699999809265137,+31.7%
-Sherpa Angche,10,2025-10-13,MKZR,Coordinated,287,,
-Sherpa Angche,10,2025-10-14,MKZR,Coordinated,287,,
-Sherpa Angche,10,2026-04-28,MKZR,Coordinated,750,,
-Martell Ron,1,2026-04-28,JSPR,Coordinated,560,,
-Lee Tien-Li,10,2025-10-04,AARD,"Perfect Timing, Coordinated",150,8.0,+52.1%
-Lee Tien-Li,10,2025-10-04,AARD,"Perfect Timing, Coordinated",225,8.0,+52.1%
-Lee Tien-Li,10,2025-10-04,AARD,"Perfect Timing, Coordinated",300,8.0,+52.1%
-Lee Tien-Li,10,2025-10-05,AARD,"Perfect Timing, Coordinated",375,8.0,+52.1%
-Lee Tien-Li,10,2025-10-07,AARD,"Perfect Timing, Coordinated",337,8.0,+52.1%
-Lee Tien-Li,10,2025-10-07,AARD,"Perfect Timing, Coordinated",337,8.0,+52.1%
-Lee Tien-Li,10,2025-10-09,AARD,"Perfect Timing, Coordinated",375,8.0,+52.1%
-Lee Tien-Li,10,2025-10-13,AARD,"Perfect Timing, Coordinated",275,8.0,+52.1%
-Lee Tien-Li,10,2025-10-14,AARD,"Perfect Timing, Coordinated",275,8.0,+52.1%
-Lee Tien-Li,10,2026-04-28,AARD,"Perfect Timing, Coordinated",525,9.949999809265137,+37.5%
-Lamendola Damien,1,2026-04-28,MRAI,,412,,
+Qiu Wenbin,3,2026-04-29,BZUN,"Perfect Timing, Coordinated",1275,2.4700000286102295,+20.6%
+Qiu Wenbin,3,2026-04-30,BZUN,"Perfect Timing, Coordinated",1912,2.4700000286102295,+20.6%
+Qiu Wenbin,3,2026-05-01,BZUN,"Perfect Timing, Coordinated",2550,2.4700000286102295,+20.6%
+Patel Mahesh V.,3,2026-04-29,LPCN,"Perfect Timing, Coordinated",1065,2.049999952316284,+24.9%
+Patel Mahesh V.,3,2026-04-30,LPCN,"Perfect Timing, Coordinated",1597,2.049999952316284,+24.9%
+Patel Mahesh V.,3,2026-05-01,LPCN,"Perfect Timing, Coordinated",1850,1.940000057220459,+18.6%
+Huang Jack Jiajia,3,2026-04-29,COE,"Perfect Timing, Coordinated",1015,22.299999237060547,+18.2%
+Huang Jack Jiajia,3,2026-04-30,COE,"Perfect Timing, Coordinated",1357,22.299999237060547,+18.2%
+Huang Jack Jiajia,3,2026-05-01,COE,"Perfect Timing, Coordinated",1780,22.299999237060547,+18.2%
+Patel Paresh,3,2026-04-29,XZO,"Perfect Timing, Coordinated",660,14.329999923706055,+17.2%
+Patel Paresh,3,2026-04-30,XZO,"Perfect Timing, Coordinated",990,14.260000228881836,+15.1%
+Patel Paresh,3,2026-05-01,XZO,"Perfect Timing, Coordinated",1320,14.329999923706055,+17.2%
+Kidambi Tridivesh,3,2026-04-29,SST,"Perfect Timing, Coordinated",620,2.109999895095825,+72.5%
+Kidambi Tridivesh,3,2026-04-30,SST,"Perfect Timing, Coordinated",930,2.109999895095825,+72.5%
+Kidambi Tridivesh,3,2026-05-01,SST,"Perfect Timing, Coordinated",1240,2.109999895095825,+72.5%
+Wu Junhua,3,2026-04-29,BZUN,"Perfect Timing, Coordinated",615,2.5199999809265137,+18.7%
+Wu Junhua,3,2026-04-30,BZUN,"Perfect Timing, Coordinated",923,2.5199999809265137,+18.7%
+Wu Junhua,3,2026-05-01,BZUN,"Perfect Timing, Coordinated",1231,2.5199999809265137,+18.7%
+Hanson Theodore S.,3,2026-04-29,EFOR,Coordinated,700,,
+Hanson Theodore S.,3,2026-04-30,EFOR,Coordinated,900,,
+Hanson Theodore S.,3,2026-05-01,EFOR,Coordinated,1200,,
+Perry Marie,3,2026-04-29,EFOR,Coordinated,700,,
+Perry Marie,3,2026-04-30,EFOR,Coordinated,900,,
+Perry Marie,3,2026-05-01,EFOR,Coordinated,1200,,
+Ohsberg Ronald S.,1,2026-05-01,WASH,Coordinated,675,,
+Bilotto Christopher J.,3,2026-04-29,SVC,Coordinated,590,,
+Bilotto Christopher J.,3,2026-04-30,SVC,Coordinated,885,,
+Bilotto Christopher J.,3,2026-05-01,SVC,Coordinated,610,,

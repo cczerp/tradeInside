@@ -3,6 +3,7 @@ import subprocess
 import sys
 import smtplib
 import os
+import argparse
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
@@ -148,7 +149,7 @@ def build_alert_body(alerts):
     body = f"Insider Trading Pattern Detection Alert\n"
     body += f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
     body += "=" * 80 + "\n\n"
-    
+
     for i, alert in enumerate(alerts, 1):
         body += f"#{i} - {alert['trader']}\n"
         body += f"Risk Score: {alert['score']}\n"
@@ -156,11 +157,21 @@ def build_alert_body(alerts):
         for pattern in alert['patterns'][:5]:  # Limit to 5 patterns per trader
             body += f"  {pattern}\n"
         body += "\n" + "-" * 80 + "\n\n"
-    
+
     body += f"\nTotal Alerts: {len(alerts)}\n"
     body += "\nCheck the full report in ./reports/ for complete details.\n"
-    
+
     return body
+
+def send_full_report(report_path):
+    """Email the complete report regardless of score thresholds"""
+    if not os.path.exists(report_path):
+        print(f"[!] Report not found: {report_path}")
+        return
+    with open(report_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    subject = f"Insider Trading Full Report — {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+    send_email_alert(subject, content)
 
 # ============================================================================
 # PIPELINE EXECUTION
@@ -189,41 +200,43 @@ def run_command(command, step_name):
         print(f"Error: {e.stderr}")
         return False
 
-def run_pipeline():
-    """Execute the complete pipeline"""
+def run_pipeline(full_report=False, email_only=False):
+    """Execute the complete pipeline, or just the email step if email_only=True"""
     print("\n" + "="*80)
     print("INSIDER TRADING DETECTION PIPELINE")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*80)
-    
-    steps = [
-        ("python scrape.py --auto", "Scrape Latest Insider Trades"),
-        ("python fetch_data.py all", "Fetch Stock Prices & Events"),
-        ("python analyzer.py", "Analyze Trading Patterns")
-    ]
-    
-    # Execute steps
-    for command, step_name in steps:
-        if not run_command(command, step_name):
-            print(f"\n[✗] Pipeline failed at: {step_name}")
-            send_email_alert(
-                "❌ Pipeline Failure", 
-                f"The insider trading pipeline failed at step: {step_name}\n\nCheck logs for details."
-            )
-            sys.exit(1)
-    
+
+    if not email_only:
+        steps = [
+            ("python3 scrape.py --auto", "Scrape Latest Insider Trades"),
+            ("python3 fetch_data.py all", "Fetch Stock Prices & Events"),
+            ("python3 analyzer.py", "Analyze Trading Patterns")
+        ]
+
+        for command, step_name in steps:
+            if not run_command(command, step_name):
+                print(f"\n[✗] Pipeline failed at: {step_name}")
+                send_email_alert(
+                    "❌ Pipeline Failure",
+                    f"The insider trading pipeline failed at step: {step_name}\n\nCheck logs for details."
+                )
+                sys.exit(1)
+
     # Find most recent report
     import glob
     reports = glob.glob("./reports/insider_TOP10_*.txt")
     if reports:
         latest_report = max(reports, key=os.path.getctime)
         print(f"\n[✓] Latest report: {latest_report}")
-        
-        # Check for alerts
-        check_for_alerts(latest_report)
+
+        if full_report:
+            send_full_report(latest_report)
+        else:
+            check_for_alerts(latest_report)
     else:
         print("\n[!] No reports found")
-    
+
     print("\n" + "="*80)
     print("PIPELINE COMPLETE")
     print(f"Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -234,6 +247,13 @@ def run_pipeline():
 # ============================================================================
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--full-report', action='store_true',
+                        help='Email the complete report regardless of score thresholds')
+    parser.add_argument('--email-only', action='store_true',
+                        help='Skip data collection, just send email from latest report')
+    args = parser.parse_args()
+
     # Validate configuration
     if not GMAIL_USER or not GMAIL_APP_PASSWORD or not ALERT_EMAIL:
         print("\n[✗] ERROR: Email credentials not configured in .env file")
@@ -243,11 +263,13 @@ if __name__ == "__main__":
         print("  EMAIL_TO=your-email@gmail.com")
         print("\nGenerate app password at: https://myaccount.google.com/apppasswords")
         sys.exit(1)
-    
+
     if GMAIL_USER == "your_email@gmail.com":
         print("\n[!] WARNING: Using default/placeholder email in .env file")
         print("Update your .env file with real credentials before production use.\n")
-    
+
     print(f"[✓] Email configured: {GMAIL_USER} -> {ALERT_EMAIL}\n")
-    
-    run_pipeline()
+    if args.full_report:
+        print("[✓] Mode: FULL REPORT (all traders, no score filter)\n")
+
+    run_pipeline(full_report=args.full_report, email_only=args.email_only)

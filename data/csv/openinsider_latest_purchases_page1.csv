@@ -1,101 +1,101 @@
 trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
-Rudolph Jacob T.,TREX,P - Purchase,2025-10-10,59,"+$2,591",$43.92,Trex Co Inc,"SVP, CHRO",2025-10-14 12:54:39,openinsider,latest_purchases,,27652,0%,,,,,1,2025-10-14T11-58-02Z
-"Saba Capital Management, L.P.",ASA,P - Purchase,2025-10-09,75263,"+$3,571,924",$47.46,Asa Gold & Precious Metals Ltd,10%,2025-10-14 11:55:26,openinsider,latest_purchases,M,4802402,+2%,,,,,1,2025-10-14T11-58-02Z
-Agdern Robert D,EMO,P - Purchase,2025-10-13,385,"+$16,212",$42.11,Clearbridge Energy Midstream Opportunity Fund Inc.,Dir,2025-10-14 11:21:16,openinsider,latest_purchases,,1538,+33%,,,,,1,2025-10-14T11-58-02Z
-Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2025-10-10,2,"+$1,786",$892.96,Texas Pacific Land Corp,10%,2025-10-14 10:32:44,openinsider,latest_purchases,M,1162542,0%,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,RCG,P - Purchase,2025-10-10,2292,"+$6,005",$2.62,"Renn Fund, Inc.","Pres, Co-Portfolio Manager, 10%",2025-10-14 10:13:02,openinsider,latest_purchases,M,940582,0%,,,,,1,2025-10-14T11-58-02Z
-Kadlec Thomas R,FMY,P - Purchase,2025-10-10,242,"+$2,952",$12.20,First Trust Mortgage Income Fund,Dir,2025-10-14 09:32:01,openinsider,latest_purchases,,1113,+28%,,,,,1,2025-10-14T11-58-02Z
-Gk Partners Aps,NORD,P - Purchase,2025-02-03,230576,"+$322,192",$1.40,Nordicus Partners Corp,10%,2025-10-14 09:00:24,openinsider,latest_purchases,M,3259025,+8%,,,,,1,2025-10-14T11-58-02Z
-Enright Patrick G,ZBIO,P - Purchase,2025-10-09,117255,"+$2,250,027",$19.19,"Zenas Biopharma, Inc.",Dir,2025-10-14 08:59:40,openinsider,latest_purchases,,2619189,+5%,,,,,1,2025-10-14T11-58-02Z
-O'Dowd William IV,DLPN,P - Purchase,2025-10-13,3400,"+$4,896",$1.44,"Dolphin Entertainment, Inc.",CEO,2025-10-14 08:30:01,openinsider,latest_purchases,,501129,+1%,,,,,1,2025-10-14T11-58-02Z
-Zage George Raymond III,GRND,P - Purchase,2025-10-09,1000000,"+$13,150,000",$13.15,Grindr Inc.,"Dir, 10%",2025-10-14 08:00:05,openinsider,latest_purchases,,94720123,+1%,,,,,1,2025-10-14T11-58-02Z
-Trowbridge Stephen A,ANGO,P - Purchase,2025-10-13,890,"+$9,932",$11.16,Angiodynamics Inc,"EVP, CFO",2025-10-14 06:11:34,openinsider,latest_purchases,,256629,0%,,,,,1,2025-10-14T11-58-02Z
-Orbimed Advisors LLC,ACET,P - Purchase,2025-10-08,5000000,"+$5,000,000",$1.00,"Adicet Bio, Inc.",10%,2025-10-10 20:06:01,openinsider,latest_purchases,,7420781,+207%,,,,,1,2025-10-14T11-58-02Z
-Kotaieva Anastasiia,NUKK,P - Purchase,2025-10-08,1377421,+$0,$0.00,Nukkleus Inc.,"Dir, 10%",2025-10-10 19:05:09,openinsider,latest_purchases,DM,1847373,+293%,,,,,1,2025-10-14T11-58-02Z
-Lynx1 Capital Management LP,CGEM,P - Purchase,2025-10-08,1459641,"+$9,826,941",$6.73,"Cullinan Therapeutics, Inc.",10%,2025-10-10 18:58:38,openinsider,latest_purchases,M,16194827,+10%,,,,,1,2025-10-14T11-58-02Z
-Bank of America Corp /de/,NMZ,P - Purchase,2025-10-09,190,"+$2,018",$10.62,Nuveen Municipal High Income Opportunity Fund,10%,2025-10-10 16:07:42,openinsider,latest_purchases,,0,-100%,,,,,1,2025-10-14T11-58-02Z
-Draguleasa Mihai,RYES,P - Purchase,2025-05-08,121952,"+$10,000",$0.08,Rise Gold Corp.,CFO,2025-10-10 14:57:01,openinsider,latest_purchases,D,121952,New,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,RCG,P - Purchase,2025-10-09,1134,"+$2,971",$2.62,"Renn Fund, Inc.","Pres, Co-Portfolio Manager, 10%",2025-10-10 10:52:39,openinsider,latest_purchases,,938290,0%,,,,,1,2025-10-14T11-58-02Z
-Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2025-10-09,1,+$936,$936.32,Texas Pacific Land Corp,10%,2025-10-10 10:37:40,openinsider,latest_purchases,,1162540,0%,,,,,1,2025-10-14T11-58-02Z
-Clemmer James C,ANGO,P - Purchase,2025-10-09,10000,"+$111,500",$11.15,Angiodynamics Inc,"Pres, CEO",2025-10-09 21:09:24,openinsider,latest_purchases,,882529,+1%,,,,,1,2025-10-14T11-58-02Z
-Opaleye Management Inc.,SNWV,P - Purchase,2025-10-06,1267,"+$38,361",$30.28,"Sanuwave Health, Inc.",10%,2025-10-09 19:09:55,openinsider,latest_purchases,,981267,0%,,,,,1,2025-10-14T11-58-02Z
-Schimmel Paul,ATYR,P - Purchase,2025-10-08,1000000,"+$911,801",$0.91,Atyr Pharma Inc,Dir,2025-10-09 18:30:21,openinsider,latest_purchases,M,2101056,+91%,,,,,1,2025-10-14T11-58-02Z
-Moulder Leon O Jr,ZBIO,P - Purchase,2025-10-07,36928,"+$769,949",$20.85,"Zenas Biopharma, Inc.",See Remarks,2025-10-09 17:24:42,openinsider,latest_purchases,,1975122,+2%,,,,,1,2025-10-14T11-58-02Z
-Bogan Thomas F,LAW,P - Purchase,2025-10-07,13680,"+$81,396",$5.95,"Cs Disco, Inc.",Dir,2025-10-09 16:54:04,openinsider,latest_purchases,,139258,+11%,,,,,1,2025-10-14T11-58-02Z
-Brown Thomas K,CAG,P - Purchase,2025-10-07,10000,"+$187,200",$18.72,Conagra Brands Inc.,Dir,2025-10-09 16:45:52,openinsider,latest_purchases,,60167,+20%,,,,,1,2025-10-14T11-58-02Z
-Umair Muhammad,PLCE,P - Purchase,2025-10-08,7143,"+$50,001",$7.00,"Childrens Place, Inc.","Pres, INTERIM CEO",2025-10-09 16:30:15,openinsider,latest_purchases,,277667,+3%,,,,,1,2025-10-14T11-58-02Z
-Maggiore Christopher D.,ZIVO,P - Purchase,2025-10-08,23682,"+$284,421",$12.01,"Zivo Bioscience, Inc.","Dir, 10%",2025-10-09 16:28:24,openinsider,latest_purchases,,517526,+5%,,,,,1,2025-10-14T11-58-02Z
-Fairmount Funds Management LLC,ZBIO,P - Purchase,2025-10-07,316219,"+$6,008,161",$19.00,"Zenas Biopharma, Inc.",Dir,2025-10-09 16:15:16,openinsider,latest_purchases,,2209025,+17%,,,,,1,2025-10-14T11-58-02Z
-Metheny Philip J.,CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, CFO",2025-10-09 16:14:26,openinsider,latest_purchases,,4166,New,,,,,1,2025-10-14T11-58-02Z
-"Sprinkle, Jr. Richard C.",CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, Chief Credit Officer",2025-10-09 16:10:15,openinsider,latest_purchases,,25729,+19%,,,,,1,2025-10-14T11-58-02Z
-Rakolta John Jr,ADC,P - Purchase,2025-10-07,25154,"+$1,771,093",$70.41,Agree Realty Corp,Dir,2025-10-09 16:05:06,openinsider,latest_purchases,,553700,+5%,,,,,1,2025-10-14T11-58-02Z
-Lu Hongbo,ZBIO,P - Purchase,2024-09-13,321983,"+$6,000,031",$18.63,"Zenas Biopharma, Inc.",Dir,2025-10-09 15:37:06,openinsider,latest_purchases,M,321983,New,,,,,1,2025-10-14T11-58-02Z
-Snow Daniel C,CPSH,P - Purchase,2025-10-08,3333,"+$9,999",$3.00,Cps Technologies Corp/De/,Dir,2025-10-09 15:30:59,openinsider,latest_purchases,,11941,+39%,,,,,1,2025-10-14T11-58-02Z
-Hughes Francis J Jr,CPSH,P - Purchase,2025-10-08,18333,"+$54,999",$3.00,Cps Technologies Corp/De/,Dir,2025-10-09 15:26:54,openinsider,latest_purchases,,438009,+4%,,,,,1,2025-10-14T11-58-02Z
-Cavoli Ivo James,CPSH,P - Purchase,2025-10-08,25000,"+$75,000",$3.00,Cps Technologies Corp/De/,Dir,2025-10-09 15:19:48,openinsider,latest_purchases,,49185,+103%,,,,,1,2025-10-14T11-58-02Z
-Mackey Brian T,CPSH,P - Purchase,2025-10-08,16500,"+$49,500",$3.00,Cps Technologies Corp/De/,"Pres, CEO",2025-10-09 15:05:01,openinsider,latest_purchases,,36500,+83%,,,,,1,2025-10-14T11-58-02Z
-Griffith Charles Kellogg Jr,CPSH,P - Purchase,2025-10-08,4000,"+$12,000",$3.00,Cps Technologies Corp/De/,CFO,2025-10-09 13:17:50,openinsider,latest_purchases,,41792,+11%,,,,,1,2025-10-14T11-58-02Z
-Billingsley Chester,MNTR,P - Purchase,2025-10-07,29379,"+$28,907",$0.98,"Mentor Capital, Inc.","CEO, 10%",2025-10-09 12:57:34,openinsider,latest_purchases,DM,2996320,+1%,,,,,1,2025-10-14T11-58-02Z
-Danziger David C.,ALTS,P - Purchase,2025-08-14,10000,"+$73,000",$7.30,Alt5 Sigma Corp,Dir,2025-10-09 12:28:05,openinsider,latest_purchases,,20000,+100%,,,,,1,2025-10-14T11-58-02Z
-Spagnolo John Jr,IVDN,P - Purchase,2025-05-02,15500,"+$3,560",$0.23,Innovative Designs Inc,Dir,2025-10-09 12:26:18,openinsider,latest_purchases,M,25500,+155%,,,,,1,2025-10-14T11-58-02Z
-Ham William F Jr,AUBN,P - Purchase,2025-10-08,54,"+$1,484",$27.47,"Auburn National Bancorporation, Inc",Dir,2025-10-09 11:48:33,openinsider,latest_purchases,,10127,+1%,,,,,1,2025-10-14T11-58-02Z
-O'Donnell Shannon,AUBN,P - Purchase,2025-10-08,25,+$686,$27.46,"Auburn National Bancorporation, Inc",SVP,2025-10-09 11:17:32,openinsider,latest_purchases,,1537,+2%,,,,,1,2025-10-14T11-58-02Z
-Housel David E,AUBN,P - Purchase,2025-10-08,49,"+$1,346",$27.47,"Auburn National Bancorporation, Inc",Dir,2025-10-09 11:09:44,openinsider,latest_purchases,,8680,+1%,,,,,1,2025-10-14T11-58-02Z
-Shaw Thomas J,RVP,P - Purchase,2025-10-08,30000,"+$27,699",$0.92,Retractable Technologies Inc,"Pres, CEO, 10%",2025-10-09 11:05:37,openinsider,latest_purchases,,16540425,0%,,,,,1,2025-10-14T11-58-02Z
-Barrett J Tutt,AUBN,P - Purchase,2025-10-08,70,"+$1,923",$27.46,"Auburn National Bancorporation, Inc",Dir,2025-10-09 11:05:16,openinsider,latest_purchases,,9044,+1%,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,RCG,P - Purchase,2025-10-08,1134,"+$2,971",$2.62,"Renn Fund, Inc.","Pres, Co-Portfolio Manager, 10%",2025-10-09 10:38:11,openinsider,latest_purchases,,937156,0%,,,,,1,2025-10-14T11-58-02Z
-"Saba Capital Management, L.P.",ASA,P - Purchase,2025-10-08,23813,"+$1,147,072",$48.17,Asa Gold & Precious Metals Ltd,10%,2025-10-09 10:26:40,openinsider,latest_purchases,,4727139,+1%,,,,,1,2025-10-14T11-58-02Z
-Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2025-10-08,1,+$935,$935.09,Texas Pacific Land Corp,10%,2025-10-09 10:20:10,openinsider,latest_purchases,,1162539,0%,,,,,1,2025-10-14T11-58-02Z
-Bodenstedt Matthias,MLTX,P - Purchase,2025-10-08,10870,"+$98,808",$9.09,Moonlake Immunotherapeutics,CFO,2025-10-09 09:01:51,openinsider,latest_purchases,,627536,+2%,,,,,1,2025-10-14T11-58-02Z
-Parkman Healthcare Partners LLC,SPRB,P - Purchase,2025-10-06,256,"+$4,585",$17.91,"Spruce Biosciences, Inc.",10%,2025-10-08 20:55:08,openinsider,latest_purchases,,1050,+32%,,,,,1,2025-10-14T11-58-02Z
-Zegarelli Christopher John,SVCO,P - Purchase,2025-09-15,5100,"+$25,653",$5.03,"Silvaco Group, Inc.",CFO,2025-10-08 18:50:32,openinsider,latest_purchases,,424407,+1%,,,,,1,2025-10-14T11-58-02Z
-Shan Helen L.,FDS,P - Purchase,2025-10-06,370,"+$101,928",$275.48,Factset Research Systems Inc,"EVP, CFO",2025-10-08 16:28:08,openinsider,latest_purchases,,9284,+4%,,,,,1,2025-10-14T11-58-02Z
-Peterson Adam K,OMCC,P - Purchase,2025-10-06,5493,+$0,$0.00,Old Market Capital Corp,"Dir, 10%",2025-10-08 15:18:51,openinsider,latest_purchases,,2543935,0%,,,,,1,2025-10-14T11-58-02Z
-Binstock Joan,MSDL,P - Purchase,2025-10-06,9030,"+$150,229",$16.64,Morgan Stanley Direct Lending Fund,Dir,2025-10-08 14:34:03,openinsider,latest_purchases,,50042,+22%,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,RCG,P - Purchase,2025-10-07,1134,"+$2,971",$2.62,"Renn Fund, Inc.","Pres, Co-Portfolio Manager, 10%",2025-10-08 11:22:57,openinsider,latest_purchases,,936022,0%,,,,,1,2025-10-14T11-58-02Z
-Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2025-10-07,1,+$964,$964.32,Texas Pacific Land Corp,10%,2025-10-08 10:54:26,openinsider,latest_purchases,,1162538,0%,,,,,1,2025-10-14T11-58-02Z
-"Saba Capital Management, L.P.",ASA,P - Purchase,2025-10-07,46649,"+$2,169,179",$46.50,Asa Gold & Precious Metals Ltd,10%,2025-10-08 10:09:20,openinsider,latest_purchases,,4703326,+1%,,,,,1,2025-10-14T11-58-02Z
-Mink Brook Asset Management LLC,DLHC,P - Purchase,2025-10-06,13276,"+$73,018",$5.50,Dlh Holdings Corp.,10%,2025-10-08 08:20:56,openinsider,latest_purchases,M,2579625,+1%,,,,,1,2025-10-14T11-58-02Z
-Akkaraju Srinivas,SRRK,P - Purchase,2025-10-03,500439,"+$18,807,352",$37.58,Scholar Rock Holding Corp,Dir,2025-10-07 20:59:19,openinsider,latest_purchases,M,5824381,+9%,,,,,1,2025-10-14T11-58-02Z
-Korch Angela A,MTN,P - Purchase,2025-10-07,210,"+$32,550",$155.00,Vail Resorts Inc,"EVP, CFO",2025-10-07 18:55:45,openinsider,latest_purchases,,4905,+4%,,,,,1,2025-10-14T11-58-02Z
-Healy Brian C.,MWA,P - Purchase,2025-10-07,1070,"+$27,580",$25.78,"Mueller Water Products, Inc.",Dir,2025-10-07 18:26:57,openinsider,latest_purchases,,16800,+7%,,,,,1,2025-10-14T11-58-02Z
-Bass Robert J,BXSL,P - Purchase,2025-10-06,3760,"+$100,129",$26.63,Blackstone Secured Lending Fund,Trustee,2025-10-07 16:30:32,openinsider,latest_purchases,,21167,+22%,,,,,1,2025-10-14T11-58-02Z
-Bank of America Corp /de/,NZF,P - Purchase,2025-10-03,2250,"+$28,187",$12.53,Nuveen Municipal Credit Income Fund,10%,2025-10-07 15:36:36,openinsider,latest_purchases,,0,-100%,,,,,1,2025-10-14T11-58-02Z
-Clark Todd J.,UMH,P - Purchase,2025-10-07,527,"+$7,502",$14.23,"Umh Properties, Inc.",Dir,2025-10-07 14:41:36,openinsider,latest_purchases,,1770,+42%,,,,,1,2025-10-14T11-58-02Z
-Cohn Andrew M.,GWRS,P - Purchase,2025-09-30,154026,"+$1,586,468",$10.30,"Global Water Resources, Inc.",Dir,2025-10-07 14:04:15,openinsider,latest_purchases,,2583058,+6%,,,,,1,2025-10-14T11-58-02Z
-Levine Jonathan L,GWRS,P - Purchase,2025-09-30,728197,"+$7,500,429",$10.30,"Global Water Resources, Inc.",Dir,2025-10-07 14:04:09,openinsider,latest_purchases,,12178122,+6%,,,,,1,2025-10-14T11-58-02Z
-Winn Charles Brent Jr.,MDRR,P - Purchase,2025-09-05,117,"+$1,580",$13.50,"Medalist Diversified Reit, Inc.",CFO,2025-10-07 12:42:26,openinsider,latest_purchases,,54491,0%,,,,,1,2025-10-14T11-58-02Z
-"Ctt Pharmaceutical Holdings, Inc.",CTTH,P - Purchase,2025-09-23,6815,+$409,$0.06,"Ctt Pharmaceutical Holdings, Inc.",CEO,2025-10-07 11:55:11,openinsider,latest_purchases,,7767756,0%,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,RCG,P - Purchase,2025-10-06,1134,"+$2,971",$2.62,"Renn Fund, Inc.","Pres, Co-Portfolio Manager, 10%",2025-10-07 11:06:22,openinsider,latest_purchases,,934888,0%,,,,,1,2025-10-14T11-58-02Z
-Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2025-10-06,1,+$950,$950.35,Texas Pacific Land Corp,10%,2025-10-07 10:26:25,openinsider,latest_purchases,,1162537,0%,,,,,1,2025-10-14T11-58-02Z
-Marlett Christopher A,MDBH,P - Purchase,2025-10-03,4000,"+$13,504",$3.38,"Mdb Capital Holdings, LLC","Co-Founder, 10%",2025-10-07 09:21:47,openinsider,latest_purchases,M,157933,+3%,,,,,1,2025-10-14T11-58-02Z
-Feinberg Peter,IMRX,P - Purchase,2025-10-03,7500,"+$50,025",$6.67,Immuneering Corp,Dir,2025-10-07 08:56:12,openinsider,latest_purchases,,1141064,+1%,,,,,1,2025-10-14T11-58-02Z
-"Range Capital Acquisition Sponsor Ii, LLC",RNGTU,P - Purchase,2025-10-06,430000,+$0,$0.00,Range Capital Acquisition Corp II,10%,2025-10-07 07:07:33,openinsider,latest_purchases,,430000,New,,,,,1,2025-10-14T11-58-02Z
-Rotolo Tim,RNGTU,P - Purchase,2025-10-06,430000,+$0,$0.00,Range Capital Acquisition Corp II,"CEO, 10%",2025-10-07 07:04:17,openinsider,latest_purchases,,430000,New,,,,,1,2025-10-14T11-58-02Z
-McDonald Anthony K,BNC,P - Purchase,2025-10-06,5848,"+$49,999",$8.55,Cea Industries Inc.,Pres,2025-10-07 07:00:20,openinsider,latest_purchases,D,15025,+64%,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,CEPF,P - Purchase,2025-10-06,900000,+$0,$0.00,"Cantor Equity Partners Iv, Inc.","COB, CEO, 10%",2025-10-06 21:44:19,openinsider,latest_purchases,D,900000,New,,,,,1,2025-10-14T11-58-02Z
-Resch Martin H.,CASS,P - Purchase,2025-10-02,500,"+$19,345",$38.69,Cass Information Systems Inc,"Pres, CEO",2025-10-06 20:25:36,openinsider,latest_purchases,,41920,+1%,,,,,1,2025-10-14T11-58-02Z
-Lombardo Keira L,CALM,P - Purchase,2025-10-02,2800,"+$258,599",$92.36,Cal-Maine Foods Inc,Chief Strategy Officer,2025-10-06 19:46:52,openinsider,latest_purchases,,3738,+299%,,,,,1,2025-10-14T11-58-02Z
-Sun Qing Bill,YCY,P - Purchase,2025-10-02,334000,"+$3,340,000",$10.00,Aa Mission Acquisition Corp. II,"CEO, 10%",2025-10-06 19:23:58,openinsider,latest_purchases,D,3209000,+12%,,,,,1,2025-10-14T11-58-02Z
-Aa Mission Sponsor II,YCY,P - Purchase,2025-10-02,334000,"+$3,340,000",$10.00,Aa Mission Acquisition Corp. II,10%,2025-10-06 19:22:36,openinsider,latest_purchases,D,3209000,+12%,,,,,1,2025-10-14T11-58-02Z
-Tucci Michael D,SPWH,P - Purchase,2025-10-03,50000,"+$140,500",$2.81,"Sportsman'S Warehouse Holdings, Inc.",Dir,2025-10-06 18:58:04,openinsider,latest_purchases,,73113,+216%,,,,,1,2025-10-14T11-58-02Z
-Wimbush Frederick Blair,AHH,P - Purchase,2025-10-02,520,"+$3,627",$6.98,"Armada Hoffler Properties, Inc.",Dir,2025-10-06 18:19:27,openinsider,latest_purchases,D,26344,+2%,,,,,1,2025-10-14T11-58-02Z
-"Cantor Ep Holdings I, LLC",CEPF,P - Purchase,2025-10-06,900000,+$0,$0.00,"Cantor Equity Partners Iv, Inc.","COB, CEO, 10%",2025-10-06 18:14:51,openinsider,latest_purchases,D,900000,New,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,CEPO,P - Purchase,2025-10-06,500000,+$0,$0.00,"Cantor Equity Partners I, Inc.","COB, CEO, 10%",2025-10-06 18:11:27,openinsider,latest_purchases,D,500000,New,,,,,1,2025-10-14T11-58-02Z
-Cf Group Management Inc,BGC,P - Purchase,2025-10-06,8973721,"+$82,631,818",$9.21,"Bgc Group, Inc.","Managing General Partner CFLP, 10%",2025-10-06 18:08:02,openinsider,latest_purchases,,105286722,+9%,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,CEP,P - Purchase,2025-10-06,300000,+$0,$0.00,"Cantor Equity Partners, Inc.","COB, CEO, 10%",2025-10-06 18:07:09,openinsider,latest_purchases,D,300000,New,,,,,1,2025-10-14T11-58-02Z
-"Cantor Fitzgerald, L. P.",BGC,P - Purchase,2025-10-06,8973721,"+$82,631,818",$9.21,"Bgc Group, Inc.","Dir, 10%",2025-10-06 18:05:26,openinsider,latest_purchases,,102314198,+10%,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,CAEP,P - Purchase,2025-10-06,580000,+$0,$0.00,"Cantor Equity Partners Iii, Inc.","COB, CEO, 10%",2025-10-06 18:02:48,openinsider,latest_purchases,D,580000,New,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,CEPT,P - Purchase,2025-10-06,580000,+$0,$0.00,"Cantor Equity Partners Ii, Inc.","COB, CEO, 10%",2025-10-06 17:58:42,openinsider,latest_purchases,D,580000,New,,,,,1,2025-10-14T11-58-02Z
-Lutnick Brandon,BGC,P - Purchase,2025-10-06,109833809,"+$82,631,818",$0.75,"Bgc Group, Inc.","Dir, 10%",2025-10-06 17:57:02,openinsider,latest_purchases,,111393287,>999%,,,,,1,2025-10-14T11-58-02Z
-O'Dowd William IV,DLPN,P - Purchase,2025-10-06,3214,"+$4,982",$1.55,"Dolphin Entertainment, Inc.",CEO,2025-10-06 17:47:59,openinsider,latest_purchases,,497729,+1%,,,,,1,2025-10-14T11-58-02Z
-Shattuck Katherine W,CZNC,P - Purchase,2025-10-03,19,+$374,$19.70,Citizens & Northern Corp,Dir,2025-10-06 16:24:43,openinsider,latest_purchases,,9521,0%,,,,,1,2025-10-14T11-58-02Z
-Pellegrino Frank G,CZNC,P - Purchase,2025-10-03,207,"+$4,078",$19.70,Citizens & Northern Corp,Dir,2025-10-06 16:22:59,openinsider,latest_purchases,,46080,0%,,,,,1,2025-10-14T11-58-02Z
-Stahl Murray,MIAX,P - Purchase,2025-10-03,2,+$84,$41.97,"Miami International Holdings, Inc.",Dir,2025-10-06 16:20:10,openinsider,latest_purchases,D,4557925,0%,,,,,1,2025-10-14T11-58-02Z
-Oneil Mark F,KMX,P - Purchase,2025-10-02,10816,"+$499,807",$46.21,Carmax Inc,Dir,2025-10-06 16:11:10,openinsider,latest_purchases,,24690,+78%,,,,,1,2025-10-14T11-58-02Z
-Dixon Robert E,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.","CEO, Pres",2025-10-06 15:56:22,openinsider,latest_purchases,M,124719,+14%,,,,,1,2025-10-14T11-58-02Z
-Sherpa Angche,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",CFO,2025-10-06 15:48:46,openinsider,latest_purchases,M,92584,+19%,,,,,1,2025-10-14T11-58-02Z
-Mears Michael N,KYN,P - Purchase,2025-10-06,10000,"+$122,365",$12.24,"Kayne Anderson Energy Infrastructure Fund, Inc.",Dir,2025-10-06 15:37:20,openinsider,latest_purchases,,10000,New,,,,,1,2025-10-14T11-58-02Z
-Bank of America Corp /de/,MUNEX,P - Purchase,2025-09-25,4780,"+$60,419",$12.64,"Blackrock Municipal Credit Alpha Portfolio, Inc.",10%,2025-10-06 15:28:30,openinsider,latest_purchases,A,0,-100%,,,,,1,2025-10-14T11-58-02Z
-Simpson Christine Elizabeth,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",Chief Portfolio Manager,2025-10-06 14:54:42,openinsider,latest_purchases,M,92674,+19%,,,,,1,2025-10-14T11-58-02Z
-Fuller Glen W,MKZR,P - Purchase,2025-10-02,15000,"+$75,880",$5.06,"Mackenzie Realty Capital, Inc.",TREASURER,2025-10-06 14:43:44,openinsider,latest_purchases,M,92424,+19%,,,,,1,2025-10-14T11-58-02Z
+Glenbrook Capital Management,SNES,P - Purchase,2026-04-28,3000,"+$4,407",$1.47,"Senestech, Inc.",10%,2026-04-30 19:19:04,openinsider,latest_purchases,,893635,0%,,,,,1,2026-05-01T08-00-32Z
+Assured Guaranty Ltd,BDC,P - Purchase,2026-04-30,242718,"+$6,000,000",$24.72,"Sound Point Meridian Capital, Inc.",10%,2026-04-30 19:15:52,openinsider,latest_purchases,,1002718,+32%,,,,,1,2026-05-01T08-00-32Z
+Griffin Stephen D.,ANIK,P - Purchase,2026-04-30,12200,"+$149,881",$12.29,"Anika Therapeutics, Inc.","Pres, CEO",2026-04-30 17:22:40,openinsider,latest_purchases,,36163,+51%,,,,,1,2026-05-01T08-00-32Z
+Brown Jeffrey J,UPBD,P - Purchase,2026-04-28,2329,"+$45,206",$19.41,"Upbound Group, Inc.",Dir,2026-04-30 17:08:44,openinsider,latest_purchases,D,118239,+2%,,,,,1,2026-05-01T08-00-32Z
+Warnock Jacob Aaron,IBATF,P - Purchase,2026-04-29,34315465,"+$2,745,237",$0.08,International Battery Metals Ltd.,"Dir, 10%",2026-04-30 17:00:04,openinsider,latest_purchases,D,143641569,+31%,,,,,1,2026-05-01T08-00-32Z
+Ng George K,PCSA,P - Purchase,2026-04-15,1843,"+$5,474",$2.97,"Processa Pharmaceuticals, Inc.",CEO,2026-04-30 16:33:51,openinsider,latest_purchases,A,8267,+29%,,,,,1,2026-05-01T08-00-32Z
+Ng George K,PCSA,P - Purchase,2026-03-31,2136,"+$5,415",$2.54,"Processa Pharmaceuticals, Inc.",CEO,2026-04-30 16:32:54,openinsider,latest_purchases,A,6424,+50%,,,,,1,2026-05-01T08-00-32Z
+Hrt Financial LP,FCHL,P - Purchase,2026-04-28,239692,"+$35,714",$0.15,Fitness Champs Holdings Ltd,10%,2026-04-30 16:26:23,openinsider,latest_purchases,,420917,+132%,,,,,1,2026-05-01T08-00-32Z
+Jimenez Frank R,GEHC,P - Purchase,2026-04-30,1750,"+$105,788",$60.45,Ge Healthcare Technologies Inc.,"GC, Corporate Secretary",2026-04-30 16:21:03,openinsider,latest_purchases,,93932,+2%,,,,,1,2026-05-01T08-00-32Z
+Arduini Peter J,GEHC,P - Purchase,2026-04-30,4169,"+$249,827",$59.93,Ge Healthcare Technologies Inc.,"Pres, CEO",2026-04-30 16:20:03,openinsider,latest_purchases,,259424,+2%,,,,,1,2026-05-01T08-00-32Z
+Patel Paresh,XZO,P - Purchase,2026-04-29,2000,"+$32,440",$16.22,"Exzeo Group, Inc.",CEO,2026-04-30 16:15:11,openinsider,latest_purchases,D,1634013,0%,,,,,1,2026-05-01T08-00-32Z
+McCaffery John Martin Jr,NWFL,P - Purchase,2026-04-30,1000,"+$29,440",$29.44,Norwood Financial Corp,"EVP, CFO",2026-04-30 16:13:40,openinsider,latest_purchases,,9504,+12%,,,,,1,2026-05-01T08-00-32Z
+Donnelly James O,NWFL,P - Purchase,2026-04-29,100,"+$2,906",$29.06,Norwood Financial Corp,"Pres, CEO",2026-04-30 16:13:04,openinsider,latest_purchases,,28557,0%,,,,,1,2026-05-01T08-00-32Z
+Tsakos Nikolaos,TEN,P - Purchase,2026-04-28,25000,"+$998,341",$39.93,Tsakos Energy Navigation Ltd,CEO,2026-04-30 16:05:07,openinsider,latest_purchases,M,5073802,0%,,,,,1,2026-05-01T08-00-32Z
+Cassabaum Michelle R,ATLO,P - Purchase,2026-04-30,84,"+$2,359",$28.08,Ames National Corp,Dir,2026-04-30 16:02:48,openinsider,latest_purchases,,9818,+1%,,,,,1,2026-05-01T08-00-32Z
+Chevallier Andres Campos,BWMX,P - Purchase,2026-04-28,10000,"+$168,062",$16.81,"Betterware De Mexico, S.A.P.I. De C.V",CEO,2026-04-30 16:01:12,openinsider,latest_purchases,,230000,+5%,,,,,1,2026-05-01T08-00-32Z
+Lerner Neil,CMPX,P - Purchase,2026-04-29,15000,"+$28,350",$1.89,"Compass Therapeutics, Inc.",CHIEF ACCOUNTING OFFICER,2026-04-30 16:00:48,openinsider,latest_purchases,A,397500,+4%,,,,,1,2026-05-01T08-00-32Z
+Anderman Jonathan,CMPX,P - Purchase,2026-04-29,25000,"+$47,250",$1.89,"Compass Therapeutics, Inc.",GC,2026-04-30 16:00:25,openinsider,latest_purchases,A,196000,+15%,,,,,1,2026-05-01T08-00-32Z
+Pantilione Vito S,PKBK,P - Purchase,2026-04-28,1300,"+$39,486",$30.37,"Parke Bancorp, Inc.","Pres, CEO",2026-04-30 15:43:22,openinsider,latest_purchases,D,317294,0%,,,,,1,2026-05-01T08-00-32Z
+Hrt Financial LP,GMEX,P - Purchase,2026-04-28,135198,"+$47,725",$0.35,Gmex Robotics Corp,10%,2026-04-30 15:29:58,openinsider,latest_purchases,,0,-100%,,,,,1,2026-05-01T08-00-32Z
+Black Wade Newton,SBMT,P - Purchase,2026-04-30,500,"+$5,375",$10.75,Silver Bow Mining Corp.,CFO,2026-04-30 14:50:54,openinsider,latest_purchases,,25000,+2%,,,,,1,2026-05-01T08-00-32Z
+Robinson Joseph R,WSBC,P - Purchase,2026-04-27,1000,"+$34,512",$34.51,Wesbanco Inc,Dir,2026-04-30 14:35:21,openinsider,latest_purchases,A,19068,+6%,,,,,1,2026-05-01T08-00-32Z
+Lee Chong Kuang,GRNQ,P - Purchase,2026-04-28,107310,"+$250,000",$2.33,Greenpro Capital Corp.,"CEO, 10%",2026-04-30 14:27:10,openinsider,latest_purchases,,2012259,+6%,,,,,1,2026-05-01T08-00-32Z
+Warriner Kenneth Thomas,MRBK,P - Purchase,2026-04-30,1000,"+$18,415",$18.42,Meridian Corp,Dir,2026-04-30 14:18:04,openinsider,latest_purchases,,2000,+100%,,,,,1,2026-05-01T08-00-32Z
+Conn Walton T Jr.,AUBN,P - Purchase,2026-04-30,350,"+$8,363",$23.90,"Auburn National Bancorporation, Inc",Dir,2026-04-30 14:02:18,openinsider,latest_purchases,,3181,+12%,,,,,1,2026-05-01T08-00-32Z
+Leonard Daniel J,OVLY,P - Purchase,2026-04-29,375,"+$12,375",$33.00,Oak Valley Bancorp,Dir,2026-04-30 13:57:55,openinsider,latest_purchases,,62598,+1%,,,,,1,2026-05-01T08-00-32Z
+Klingerman Brian D,CCFN,P - Purchase,2026-04-29,1000,"+$73,500",$73.50,Muncy Columbia Financial Corp,Dir,2026-04-30 13:52:05,openinsider,latest_purchases,,10613,+10%,,,,,1,2026-05-01T08-00-32Z
+Lydon Thomas F Jr,GOF,P - Purchase,2026-04-30,8710,"+$99,730",$11.45,Guggenheim Strategic Opportunities Fund,Trustee,2026-04-30 13:39:59,openinsider,latest_purchases,,8710,New,,,,,1,2026-05-01T08-00-32Z
+Karmelek Nicolas,AVBC,P - Purchase,2026-04-28,1220,"+$25,327",$20.76,"Avidia Bancorp, Inc.","EVP, CRO",2026-04-30 13:33:37,openinsider,latest_purchases,,30672,+4%,,,,,1,2026-05-01T08-00-32Z
+Jensen Barry H,AVBC,P - Purchase,2026-04-29,1000,"+$20,300",$20.30,"Avidia Bancorp, Inc.","EVP, Chief Admin Officer",2026-04-30 13:06:02,openinsider,latest_purchases,,41196,+2%,,,,,1,2026-05-01T08-00-32Z
+Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2026-04-29,1,+$436,$435.76,Texas Pacific Land Corp,10%,2026-04-30 10:51:17,openinsider,latest_purchases,,3435507,0%,,,,,1,2026-05-01T08-00-32Z
+Duffey Gregory A,FRAF,P - Purchase,2026-04-29,18,+$996,$55.35,Franklin Financial Services Corp /Pa/,Dir,2026-04-30 09:46:04,openinsider,latest_purchases,,23723,0%,,,,,1,2026-05-01T08-00-32Z
+Arima Anastasios,IPX,P - Purchase,2026-04-28,110000,"+$493,625",$4.49,Iperionx Ltd,CEO,2026-04-30 07:38:30,openinsider,latest_purchases,D,13055358,+1%,,,,,1,2026-05-01T08-00-32Z
+Lu Jiayan,AIJTY,P - Purchase,2026-04-29,4384,"+$3,942",$0.90,Jianpu Technology Inc.,"Dir, 10%",2026-04-30 06:41:55,openinsider,latest_purchases,,29529309,0%,,,,,1,2026-05-01T08-00-32Z
+Hannigan Todd,IPX,P - Purchase,2026-04-28,480000,"+$2,077,784",$4.33,Iperionx Ltd,Exec COB,2026-04-29 21:51:04,openinsider,latest_purchases,DM,26562798,+2%,,,,,1,2026-05-01T08-00-32Z
+Xu Jiandong,ESLA,P - Purchase,2025-09-11,2100,"+$2,594",$1.24,"Estrella Immunopharma, Inc.",CFO,2026-04-29 21:36:42,openinsider,latest_purchases,M,282188,+1%,,,,,1,2026-05-01T08-00-32Z
+Frangou Angeliki,NMM,P - Purchase,2026-04-27,3489,"+$250,303",$71.74,Navios Maritime Partners L.P.,"See Remarks, 10%",2026-04-29 21:10:03,openinsider,latest_purchases,M,5699226,0%,,,,,1,2026-05-01T08-00-32Z
+Altman Peter,BCDA,P - Purchase,2026-04-29,5000,"+$5,550",$1.11,"Biocardia, Inc.","Pres, CEO",2026-04-29 19:40:40,openinsider,latest_purchases,,280766,+2%,,,,,1,2026-05-01T08-00-32Z
+Moulder Leon O Jr,ZBIO,P - Purchase,2026-04-28,60000,"+$1,067,200",$17.79,"Zenas Biopharma, Inc.",CEO,2026-04-29 19:21:02,openinsider,latest_purchases,M,2246122,+3%,,,,,1,2026-05-01T08-00-32Z
+Rollins James D III,HBAN,P - Purchase,2026-04-27,11500,"+$216,335",$18.81,Huntington Bancshares Inc /Md/,Dir,2026-04-29 18:53:11,openinsider,latest_purchases,M,21000,+121%,,,,,1,2026-05-01T08-00-32Z
+Ivascyn Daniel J,PDX,P - Purchase,2026-04-27,28779,"+$592,401",$20.58,Pimco Dynamic Income Strategy Fund,See Remarks,2026-04-29 18:34:24,openinsider,latest_purchases,,2198038,+1%,,,,,1,2026-05-01T08-00-32Z
+Swetman Chevis,PFBX,P - Purchase,2026-04-29,2500,"+$53,750",$21.50,Peoples Financial Corp /Ms/,"CEO, Pres, 10%",2026-04-29 18:19:28,openinsider,latest_purchases,,427713,+1%,,,,,1,2026-05-01T08-00-32Z
+Klein Michael Stuart,CXIIU,P - Purchase,2026-04-29,350000,"+$3,500,000",$10.00,Churchill Capital Corp Xii,"See Remarks, 10%",2026-04-29 16:50:07,openinsider,latest_purchases,,350000,New,,,,,1,2026-05-01T08-00-32Z
+Canup Edward G,CBAN,P - Purchase,2026-04-24,2000,"+$39,770",$19.89,Colony Bankcorp Inc,CHIEF BANKING OFFICER,2026-04-29 16:46:22,openinsider,latest_purchases,M,39461,+5%,,,,,1,2026-05-01T08-00-32Z
+McLaughlin Shawn Patrick,BHRB,P - Purchase,2026-04-29,1000,"+$63,548",$63.55,Burke & Herbert Financial Services Corp.,Dir,2026-04-29 16:38:58,openinsider,latest_purchases,,70000,+1%,,,,,1,2026-05-01T08-00-32Z
+Wallace Michael J Wallace,XE,P - Purchase,2026-04-27,1000,"+$23,000",$23.00,"X-Energy, Inc.",Dir,2026-04-29 16:22:22,openinsider,latest_purchases,,77683,+1%,,,,,1,2026-05-01T08-00-32Z
+Dyer Joseph Wendell,EFOR,P - Purchase,2026-04-29,1112,"+$24,992",$22.47,Everforth Inc,Dir,2026-04-29 16:20:54,openinsider,latest_purchases,,19953,+6%,,,,,1,2026-05-01T08-00-32Z
+Hyle Kathleen W,XE,P - Purchase,2026-04-27,10000,"+$230,000",$23.00,"X-Energy, Inc.",Dir,2026-04-29 16:19:05,openinsider,latest_purchases,,134162,+8%,,,,,1,2026-05-01T08-00-32Z
+Duling Joel,XE,P - Purchase,2026-04-27,100,"+$2,300",$23.00,"X-Energy, Inc.","Pres, TRISO-X",2026-04-29 16:17:02,openinsider,latest_purchases,,552699,0%,,,,,1,2026-05-01T08-00-32Z
+Davis Wade,CHTR,P - Purchase,2026-04-28,5728,"+$995,068",$173.72,"Charter Communications, Inc. /Mo/",Dir,2026-04-29 16:16:24,openinsider,latest_purchases,,6925,+479%,,,,,1,2026-05-01T08-00-32Z
+Garcia Laura,XE,P - Purchase,2026-04-27,1200,"+$27,600",$23.00,"X-Energy, Inc.",Chief Accounting Officer,2026-04-29 16:16:05,openinsider,latest_purchases,,196822,+1%,,,,,1,2026-05-01T08-00-32Z
+Patel Paresh,XZO,P - Purchase,2026-04-28,2000,"+$33,360",$16.68,"Exzeo Group, Inc.",CEO,2026-04-29 16:15:11,openinsider,latest_purchases,D,1632013,0%,,,,,1,2026-05-01T08-00-32Z
+Walker Brian C,HBNC,P - Purchase,2026-04-28,1306,"+$23,978",$18.36,Horizon Bancorp Inc /In/,Dir,2026-04-29 16:10:54,openinsider,latest_purchases,,6830,+24%,,,,,1,2026-05-01T08-00-32Z
+Samuel Olivier,NCEL,P - Purchase,2026-04-27,81818,"+$225,000",$2.75,Newcelx Ltd.,Dir,2026-04-29 16:05:32,openinsider,latest_purchases,D,81818,New,,,,,1,2026-05-01T08-00-32Z
+Revel Michel,NCEL,P - Purchase,2026-04-27,54545,"+$149,999",$2.75,Newcelx Ltd.,"CSO, Dir, 10%",2026-04-29 16:05:15,openinsider,latest_purchases,D,957530,+6%,,,,,1,2026-05-01T08-00-32Z
+Murphy Michael Dennis,AVBC,P - Purchase,2026-04-28,1850,"+$38,739",$20.94,"Avidia Bancorp, Inc.",Chairman of the Board,2026-04-29 15:28:47,openinsider,latest_purchases,,78080,+2%,,,,,1,2026-05-01T08-00-32Z
+Agassi Andre K,AASP,P - Purchase,2026-04-28,50000,"+$250,000",$5.00,Agassi Sports Entertainment Corp.,10%,2026-04-29 15:26:23,openinsider,latest_purchases,,2291398,+2%,,,,,1,2026-05-01T08-00-32Z
+Doane Thomas,AVBC,P - Purchase,2026-04-28,2040,"+$43,166",$21.16,"Avidia Bancorp, Inc.",EVP- HR,2026-04-29 15:25:12,openinsider,latest_purchases,,18732,+12%,,,,,1,2026-05-01T08-00-32Z
+Harrell James A. III,SON,P - Purchase,2026-04-27,6753,"+$340,183",$50.37,Sonoco Products Co,Pres Global Ind. Paper Pkg.,2026-04-29 13:14:14,openinsider,latest_purchases,,70026,+11%,,,,,1,2026-05-01T08-00-32Z
+Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2026-04-28,1,+$436,$435.73,Texas Pacific Land Corp,10%,2026-04-29 11:12:21,openinsider,latest_purchases,,3435506,0%,,,,,1,2026-05-01T08-00-32Z
+Tompkins Bonnie M,CCFN,P - Purchase,2026-04-28,136,"+$9,942",$73.10,Muncy Columbia Financial Corp,Dir,2026-04-29 09:48:39,openinsider,latest_purchases,,23993,+1%,,,,,1,2026-05-01T08-00-32Z
+Ball James N,AVBC,P - Purchase,2026-04-27,5000,"+$103,000",$20.60,"Avidia Bancorp, Inc.",Dir,2026-04-29 09:04:53,openinsider,latest_purchases,,50000,+11%,,,,,1,2026-05-01T08-00-32Z
+Tien Bor-Zen,TSM,P - Purchase,2026-04-28,20,"+$7,760",$388.00,Taiwan Semiconductor Manufacturing Co Ltd,VP,2026-04-29 06:06:39,openinsider,latest_purchases,,9295,0%,,,,,1,2026-05-01T08-00-32Z
+Orbimed Advisors LLC,TRAW,P - Purchase,2026-04-16,597729,"+$998,207",$1.67,"Traws Pharma, Inc.",10%,2026-04-28 21:41:49,openinsider,latest_purchases,D,1203250,+99%,,,,,1,2026-05-01T08-00-32Z
+Starks Daniel J,ABT,P - Purchase,2026-04-27,10000,"+$926,537",$92.65,Abbott Laboratories,Dir,2026-04-28 19:37:56,openinsider,latest_purchases,D,6751361,0%,,,,,1,2026-05-01T08-00-32Z
+Heshmatpour Amir F,NTHI,P - Purchase,2026-04-28,10000,"+$45,180",$4.52,"Neonc Technologies Holdings, Inc.","Pres, 10%",2026-04-28 18:00:05,openinsider,latest_purchases,,7582140,0%,,,,,1,2026-05-01T08-00-32Z
+Handy Edward O. III,WASH,P - Purchase,2026-04-27,3195,"+$100,079",$31.32,Washington Trust Bancorp Inc,"COB, CEO",2026-04-28 17:08:05,openinsider,latest_purchases,,86005,+4%,,,,,1,2026-05-01T08-00-32Z
+Ohsberg Ronald S.,WASH,P - Purchase,2026-04-24,1606,"+$49,786",$31.00,Washington Trust Bancorp Inc,"SEVP, CFO, Treasurer",2026-04-28 17:07:44,openinsider,latest_purchases,,29705,+6%,,,,,1,2026-05-01T08-00-32Z
+Gray James D,LW,P - Purchase,2026-04-27,4556,"+$199,781",$43.85,"Lamb Weston Holdings, Inc.",CFO,2026-04-28 17:01:34,openinsider,latest_purchases,,59741,+8%,,,,,1,2026-05-01T08-00-32Z
+Iafigliola Carlos,AMTB,P - Purchase,2026-04-27,885,"+$20,177",$22.80,Amerant Bancorp Inc.,See remarks,2026-04-28 16:38:36,openinsider,latest_purchases,,21576,+4%,,,,,1,2026-05-01T08-00-32Z
+Hong Zhifang,DKI,P - Purchase,2026-04-24,1428571,"+$500,000",$0.35,Darkiris Inc.,"CEO, 10%",2026-04-28 16:30:16,openinsider,latest_purchases,,6878171,+26%,,,,,1,2026-05-01T08-00-32Z
+Nair Balan,CHTR,P - Purchase,2026-04-28,1000,"+$175,460",$175.46,"Charter Communications, Inc. /Mo/",Dir,2026-04-28 16:19:15,openinsider,latest_purchases,,12029,+9%,,,,,1,2026-05-01T08-00-32Z
+Winfrey Christopher L,CHTR,P - Purchase,2026-04-28,6936,"+$1,194,621",$172.24,"Charter Communications, Inc. /Mo/","Pres, CEO",2026-04-28 16:16:50,openinsider,latest_purchases,,225436,+3%,,,,,1,2026-05-01T08-00-32Z
+Patel Paresh,XZO,P - Purchase,2026-04-27,2000,"+$33,760",$16.88,"Exzeo Group, Inc.",CEO,2026-04-28 16:15:31,openinsider,latest_purchases,D,1630013,0%,,,,,1,2026-05-01T08-00-32Z
+Hrt Financial LP,GMEX,P - Purchase,2026-04-24,182636,"+$96,072",$0.53,Gmex Robotics Corp,10%,2026-04-28 16:10:08,openinsider,latest_purchases,M,253917,+256%,,,,,1,2026-05-01T08-00-32Z
+Cunningham Rose,EFOR,P - Purchase,2026-04-28,1125,"+$25,054",$22.27,Everforth Inc,Chief Accounting Officer,2026-04-28 16:08:26,openinsider,latest_purchases,,15587,+8%,,,,,1,2026-05-01T08-00-32Z
+Iyer Sadasivam,EFOR,P - Purchase,2026-04-28,1110,"+$25,164",$22.67,Everforth Inc,Pres,2026-04-28 16:05:30,openinsider,latest_purchases,,61905,+2%,,,,,1,2026-05-01T08-00-32Z
+Hagler Mark Arnold,NBP,P - Purchase,2026-04-24,230000,"+$577,300",$2.51,Novabridge Biosciences,See Remarks,2026-04-28 16:05:04,openinsider,latest_purchases,,230000,New,,,,,1,2026-05-01T08-00-32Z
+Brust John,GCBC,P - Purchase,2026-04-27,4121,"+$100,039",$24.28,Greene County Bancorp Inc,Dir,2026-04-28 15:34:40,openinsider,latest_purchases,M,6221,+196%,,,,,1,2026-05-01T08-00-32Z
+Caras Matthew L,BHB,P - Purchase,2026-04-28,760,"+$26,357",$34.68,Bar Harbor Bankshares,Dir,2026-04-28 15:32:13,openinsider,latest_purchases,,22894,+3%,,,,,1,2026-05-01T08-00-32Z
+Smith Dwight Eric,PEBO,P - Purchase,2026-04-27,1000,"+$34,510",$34.51,Peoples Bancorp Inc,Dir,2026-04-28 15:14:05,openinsider,latest_purchases,,9256,+12%,,,,,1,2026-05-01T08-00-32Z
+Horizon Kinetics Asset Management LLC,TPL,P - Purchase,2026-04-27,1,+$436,$436.44,Texas Pacific Land Corp,10%,2026-04-28 13:07:56,openinsider,latest_purchases,,3435505,0%,,,,,1,2026-05-01T08-00-32Z
+McLaughlin Shawn Patrick,BHRB,P - Purchase,2026-04-28,1000,"+$64,800",$64.80,Burke & Herbert Financial Services Corp.,Dir,2026-04-28 12:08:58,openinsider,latest_purchases,,69000,+1%,,,,,1,2026-05-01T08-00-32Z
+Tillery Jack Gary Jr.,SKKY,P - Purchase,2026-03-30,35710,"+$9,999",$0.28,"Skkynet Cloud Systems, Inc.",CEO,2026-04-28 11:14:44,openinsider,latest_purchases,M,35710,New,,,,,1,2026-05-01T08-00-32Z
+Robinson Joseph R,WSBC,P - Purchase,2026-04-27,1000,"+$34,544",$34.54,Wesbanco Inc,Dir,2026-04-28 11:03:07,openinsider,latest_purchases,,19068,+6%,,,,,1,2026-05-01T08-00-32Z
+Silverman Frank B,TRST,P - Purchase,2026-04-24,105,"+$4,849",$46.18,Trustco Bank Corp N Y,Dir,2026-04-28 09:25:52,openinsider,latest_purchases,,4892,+2%,,,,,1,2026-05-01T08-00-32Z
+"Blue & Silver Ventures, Ltd.",GAME,P - Purchase,2026-04-22,2234364,"+$1,324,436",$0.59,"Gamesquare Holdings, Inc.",See Footnote (1),2026-04-27 21:56:16,openinsider,latest_purchases,M,3861736,+137%,,,,,1,2026-05-01T08-00-32Z
+Silva Gil Todd,CLIR,P - Purchase,2026-04-23,2000,"+$10,569",$5.28,Clearsign Technologies Corp,Dir,2026-04-27 20:00:12,openinsider,latest_purchases,,6000,+50%,,,,,1,2026-05-01T08-00-32Z
+"Broadwood Partners, L.P.",IMDX,P - Purchase,2026-04-23,570184,"+$2,032,251",$3.56,Insight Molecular Diagnostics Inc.,10%,2026-04-27 19:08:17,openinsider,latest_purchases,DM,25369925,+2%,,,,,1,2026-05-01T08-00-32Z
+Simon Andrea Helen,GGG,P - Purchase,2026-04-27,1240,"+$99,857",$80.53,Graco Inc,Dir,2026-04-27 18:34:52,openinsider,latest_purchases,,1240,New,,,,,1,2026-05-01T08-00-32Z
+Shaw Steven A,MHH,P - Purchase,2026-04-27,1000,"+$7,040",$7.04,"Mastech Digital, Inc.",10%,2026-04-27 17:50:19,openinsider,latest_purchases,,1360100,0%,,,,,1,2026-05-01T08-00-32Z
+Boudreau Philip P,ABT,P - Purchase,2026-04-23,2200,"+$201,300",$91.50,Abbott Laboratories,"EVP, CFO",2026-04-27 17:34:47,openinsider,latest_purchases,,82648,+3%,,,,,1,2026-05-01T08-00-32Z
+Purcell Michael J.,HEPA,P - Purchase,2026-04-21,1250000,"+$50,000",$0.04,"Hepion Pharmaceuticals, Inc.",Dir,2026-04-27 17:33:08,openinsider,latest_purchases,,1250000,New,,,,,1,2026-05-01T08-00-32Z
+Pm Alpha Dac,AB.LE,P - Purchase,2026-01-02,56701,"+$1,428,875",$25.20,Ab Private Lending Fund,10%,2026-04-27 17:11:39,openinsider,latest_purchases,,1085327,+6%,,,,,1,2026-05-01T08-00-32Z
+Jordan Robert Chris,ISTR,P - Purchase,2026-04-23,2000,"+$54,720",$27.36,Investar Holding Corp,Dir,2026-04-27 16:56:24,openinsider,latest_purchases,,60798,+3%,,,,,1,2026-05-01T08-00-32Z
+O'Dowd William IV,DLPN,P - Purchase,2026-04-27,3400,"+$4,950",$1.46,"Dolphin Entertainment, Inc.",CEO,2026-04-27 16:45:53,openinsider,latest_purchases,,585881,+1%,,,,,1,2026-05-01T08-00-32Z
+Sprott Eric,HYMC,P - Purchase,2026-04-24,100000,"+$3,784,000",$37.84,Hycroft Mining Holding Corp,10%,2026-04-27 16:35:39,openinsider,latest_purchases,,37403704,0%,,,,,1,2026-05-01T08-00-32Z
+Obermaier Patricia L,EFOR,P - Purchase,2026-04-27,2500,"+$51,513",$20.61,Everforth Inc,Dir,2026-04-27 16:32:51,openinsider,latest_purchases,,9548,+35%,,,,,1,2026-05-01T08-00-32Z
+Salem Matthew A,KREF,P - Purchase,2026-04-24,60000,"+$362,472",$6.04,Kkr Real Estate Finance Trust Inc.,CEO,2026-04-27 16:30:42,openinsider,latest_purchases,,703075,+9%,,,,,1,2026-05-01T08-00-32Z
+Mattson W Patrick,KREF,P - Purchase,2026-04-24,40000,"+$241,072",$6.03,Kkr Real Estate Finance Trust Inc.,"Pres, COO, Secretary",2026-04-27 16:30:41,openinsider,latest_purchases,,500287,+9%,,,,,1,2026-05-01T08-00-32Z

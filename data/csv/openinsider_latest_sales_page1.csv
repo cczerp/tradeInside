@@ -1,101 +1,101 @@
 trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
-Umpleby III Donald J,CAT,S - Sale,2025-10-10,-17166,"-$8,673,808",$505.29,Caterpillar Inc,Exec COB,2025-10-14 12:47:31,openinsider,latest_sales,,544242,-3%,,,,,1,2025-10-14T11-58-05Z
-"Saba Capital Management, L.P.",AFB,S - Sale,2025-10-09,-2509,"-$27,348",$10.90,Alliancebernstein National Municipal Income Fund,10%,2025-10-14 12:29:54,openinsider,latest_sales,,3019242,0%,,,,,1,2025-10-14T11-58-05Z
-"Saba Capital Management, L.P.",NQP,S - Sale,2025-10-13,-40105,"-$486,073",$12.12,Nuveen Pennsylvania Quality Municipal Income Fund,10%,2025-10-14 12:23:09,openinsider,latest_sales,,4678761,-1%,,,,,1,2025-10-14T11-58-05Z
-Horn Howard,RARE,S - Sale,2025-10-13,-7942,"-$250,252",$31.51,Ultragenyx Pharmaceutical Inc.,CFO,2025-10-14 12:15:06,openinsider,latest_sales,,98227,-7%,,,,,1,2025-10-14T11-58-05Z
-Vahedi Vahid,LRCX,S - Sale,2025-10-13,-52190,"-$7,249,191",$138.90,Lam Research Corp,SVP,2025-10-14 11:40:15,openinsider,latest_sales,,251047,-17%,,,,,1,2025-10-14T11-58-05Z
-Wren Chris,PLNH,S - Sale,2025-10-09,-30000,"-$7,272",$0.24,Planet 13 Holdings Inc.,VP of Operations,2025-10-14 11:31:49,openinsider,latest_sales,,4933311,-1%,,,,,1,2025-10-14T11-58-05Z
-Hennessy Daniel J,INV,S - Sale,2025-10-09,-10828,"-$56,414",$5.21,"Innventure, Inc.",Dir,2025-10-14 11:13:05,openinsider,latest_sales,,1173745,-1%,,,,,1,2025-10-14T11-58-05Z
-"Saba Capital Management, L.P.",ECAT,S - Sale,2025-10-09,-59913,"-$994,172",$16.59,Blackrock Esg Capital Allocation Term Trust,10%,2025-10-14 11:02:22,openinsider,latest_sales,M,27618258,0%,,,,,1,2025-10-14T11-58-05Z
-Schremser Christopher L.,WAY,S - Sale+OE,2025-10-10,-8623,"-$312,215",$36.21,Waystar Holding Corp.,CTO,2025-10-14 10:40:23,openinsider,latest_sales,D,422371,-2%,,,,,1,2025-10-14T11-58-05Z
-Gk Partners Aps,NORD,S - Sale,2025-02-03,-243938,"-$482,652",$1.98,Nordicus Partners Corp,10%,2025-10-14 09:00:24,openinsider,latest_sales,M,3259025,-7%,,,,,1,2025-10-14T11-58-05Z
-Fowke Benjamin G S III,AEP,S - Sale,2025-10-10,-5000,"-$587,600",$117.52,American Electric Power Co Inc,Dir,2025-10-14 08:49:25,openinsider,latest_sales,,38218,-12%,,,,,1,2025-10-14T11-58-05Z
-Lu James Fu Bin,GRND,S - Sale,2025-10-09,-1000000,"-$13,150,000",$13.15,Grindr Inc.,"Dir, 10%",2025-10-14 08:00:07,openinsider,latest_sales,,25598752,-4%,,,,,1,2025-10-14T11-58-05Z
-Albers Jeffrey W.,KYMR,S - Sale+OE,2025-10-13,-5000,"-$295,949",$59.19,"Kymera Therapeutics, Inc.",Dir,2025-10-14 07:55:32,openinsider,latest_sales,D,0,-100%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-10,-414547,"-$61,658,723",$148.74,"Coreweave, Inc.",10%,2025-10-14 06:00:49,openinsider,latest_sales,,1845583,-18%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-10,-180166,"-$26,807,874",$148.80,"Coreweave, Inc.",10%,2025-10-10 21:59:46,openinsider,latest_sales,,1421672,-11%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-10,-208207,"-$30,980,194",$148.80,"Coreweave, Inc.",10%,2025-10-10 21:59:43,openinsider,latest_sales,,10153074,-2%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-09,-372706,"-$52,611,485",$141.16,"Coreweave, Inc.",10%,2025-10-10 21:52:20,openinsider,latest_sales,,10162839,-4%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-09,-907277,"-$128,070,413",$141.16,"Coreweave, Inc.",10%,2025-10-10 21:51:38,openinsider,latest_sales,,7154623,-11%,,,,,1,2025-10-14T11-58-05Z
-Sentonas Michael,CRWD,S - Sale,2025-10-08,-25000,"-$12,725,000",$509.00,"Crowdstrike Holdings, Inc.",Pres,2025-10-10 20:30:06,openinsider,latest_sales,M,354116,-7%,,,,,1,2025-10-14T11-58-05Z
-Magnetar Financial LLC,CRWV,S - Sale,2025-10-08,-691243,"-$96,403,190",$139.46,"Coreweave, Inc.",10%,2025-10-10 20:13:54,openinsider,latest_sales,,10178459,-6%,,,,,1,2025-10-14T11-58-05Z
-Jackman William Richard,RIOT,S - Sale,2025-09-10,-248168,"-$3,916,091",$15.78,"Riot Platforms, Inc.","EVP, GC",2025-10-10 20:06:45,openinsider,latest_sales,A,2261157,-10%,,,,,1,2025-10-14T11-58-05Z
-Burnison Gary D,KFY,S - Sale,2025-10-09,-16864,"-$1,180,635",$70.01,Korn Ferry,CEO,2025-10-10 19:53:14,openinsider,latest_sales,,198442,-8%,,,,,1,2025-10-14T11-58-05Z
-Slowe Christopher Brian,RDDT,S - Sale+OE,2025-10-08,-14000,"-$2,811,331",$200.81,"Reddit, Inc.",CTO,2025-10-10 19:42:49,openinsider,latest_sales,D,226718,-6%,,,,,1,2025-10-14T11-58-05Z
-Kleinerman Christian,SNOW,S - Sale,2025-10-08,-5000,"-$1,250,000",$250.00,Snowflake Inc.,"EVP, Product Management",2025-10-10 19:28:10,openinsider,latest_sales,,781104,-1%,,,,,1,2025-10-14T11-58-05Z
-Werner Ryan D.,RIOT,S - Sale,2025-10-10,-14984,"-$344,632",$23.00,"Riot Platforms, Inc.","SVP, CAO",2025-10-10 19:27:24,openinsider,latest_sales,,822775,-2%,,,,,1,2025-10-14T11-58-05Z
-Ching Meredith J,ALEX,S - Sale,2025-10-10,-700,"-$11,729",$16.76,"Alexander & Baldwin, Inc.","EVP, External Affairs",2025-10-10 19:24:11,openinsider,latest_sales,,147844,0%,,,,,1,2025-10-14T11-58-05Z
-Cherbak Anthony,RGP,S - Sale,2025-10-10,-10000,"-$45,008",$4.50,"Resources Connection, Inc.",Dir,2025-10-10 19:23:33,openinsider,latest_sales,,79808,-11%,,,,,1,2025-10-14T11-58-05Z
-McFarlane Neil F.,ZVRA,S - Sale+OE,2025-10-10,-19500,"-$210,908",$10.82,"Zevra Therapeutics, Inc.","Pres, CEO",2025-10-10 19:17:35,openinsider,latest_sales,D,222016,-8%,,,,,1,2025-10-14T11-58-05Z
-Benioff Marc,CRM,S - Sale+OE,2025-10-09,-2250,"-$547,344",$243.26,"Salesforce, Inc.","Chair, CEO",2025-10-10 19:14:10,openinsider,latest_sales,D,22018571,0%,,,,,1,2025-10-14T11-58-05Z
-Hensley William L. Iggiagruk,TMQ,S - Sale+OE,2025-10-08,-100000,"-$639,000",$6.39,Trilogy Metals Inc.,Dir,2025-10-10 19:01:28,openinsider,latest_sales,D,43638,-70%,,,,,1,2025-10-14T11-58-05Z
-Walters Diana J,TMQ,S - Sale+OE,2025-10-08,-100000,"-$703,000",$7.03,Trilogy Metals Inc.,Dir,2025-10-10 19:00:09,openinsider,latest_sales,D,51302,-66%,,,,,1,2025-10-14T11-58-05Z
-Sanders Elaine,TMQ,S - Sale+OE,2025-10-08,-449599,"-$3,077,243",$6.84,Trilogy Metals Inc.,"VP, CFO",2025-10-10 18:59:09,openinsider,latest_sales,D,3149561,-12%,,,,,1,2025-10-14T11-58-05Z
-Stairs Janice,TMQ,S - Sale+OE,2025-10-09,-50613,"-$332,057",$6.56,Trilogy Metals Inc.,Dir,2025-10-10 18:57:44,openinsider,latest_sales,D,508608,-9%,,,,,1,2025-10-14T11-58-05Z
-Lang Gregory A.,TMQ,S - Sale+OE,2025-10-09,-169181,"-$1,129,519",$6.68,Trilogy Metals Inc.,Dir,2025-10-10 18:56:39,openinsider,latest_sales,D,352000,-32%,,,,,1,2025-10-14T11-58-05Z
-Hayden William Beckwith,TMQ,S - Sale+OE,2025-10-08,-264294,"-$1,775,916",$6.72,Trilogy Metals Inc.,Dir,2025-10-10 18:55:05,openinsider,latest_sales,DM,382685,-41%,,,,,1,2025-10-14T11-58-05Z
-Rosenstein Justin,ASAN,S - Sale,2025-10-08,-1654473,"-$25,135,678",$15.19,"Asana, Inc.",Dir,2025-10-10 18:53:00,openinsider,latest_sales,M,1555925,-52%,,,,,1,2025-10-14T11-58-05Z
-Cooperatieve Gilde Healthcare IV U.A.,LVTX,S - Sale,2025-10-08,-126992,"-$197,898",$1.56,Lava Therapeutics Nv,10%,2025-10-10 18:45:57,openinsider,latest_sales,M,5294178,-2%,,,,,1,2025-10-14T11-58-05Z
-Simpson Curran,RGNX,S - Sale,2025-10-09,-20811,"-$262,635",$12.62,Regenxbio Inc.,CEO,2025-10-10 18:38:07,openinsider,latest_sales,,216162,-9%,,,,,1,2025-10-14T11-58-05Z
-Willson Brent,NEOV,S - Sale,2025-10-08,-500000,"-$5,000",$0.01,Neovolta Inc.,10%,2025-10-10 18:32:29,openinsider,latest_sales,,3550000,-12%,,,,,1,2025-10-14T11-58-05Z
-Janac K Charles,AIP,S - Sale,2025-10-08,-50000,"-$653,710",$13.07,"Arteris, Inc.","Pres, CEO, 10%",2025-10-10 18:27:56,openinsider,latest_sales,,9907082,-1%,,,,,1,2025-10-14T11-58-05Z
-Watson David Hibbert,AGX,S - Sale,2025-10-09,-5000,"-$1,382,400",$276.48,Argan Inc,"Pres, CEO",2025-10-10 18:25:22,openinsider,latest_sales,,47132,-10%,,,,,1,2025-10-14T11-58-05Z
-Huang Jen Hsun,NVDA,S - Sale,2025-10-08,-225000,"-$42,885,101",$190.60,Nvidia Corp,"Pres, CEO",2025-10-10 18:21:17,openinsider,latest_sales,M,852808603,0%,,,,,1,2025-10-14T11-58-05Z
-Garcia Ernest C. III,CVNA,S - Sale,2025-10-09,-2880,"-$1,022,938",$355.19,Carvana Co.,"CEO, 10%",2025-10-10 18:19:25,openinsider,latest_sales,,1720696,0%,,,,,1,2025-10-14T11-58-05Z
-Kua Khai Loon,BGMS,S - Sale,2025-09-12,-47251,"-$266,790",$5.65,"Bio Green Med Solution, Inc.",10%,2025-10-10 18:17:51,openinsider,latest_sales,M,338160,-12%,,,,,1,2025-10-14T11-58-05Z
-Garcia Ernest C. III,CVNA,S - Sale,2025-10-08,-10000,"-$3,656,041",$365.60,Carvana Co.,"CEO, 10%",2025-10-10 18:17:32,openinsider,latest_sales,,1723576,-1%,,,,,1,2025-10-14T11-58-05Z
-Fitters Diversified Berhad,BGMS,S - Sale,2025-10-08,-142000,"-$751,606",$5.29,"Bio Green Med Solution, Inc.",10%,2025-10-10 18:16:21,openinsider,latest_sales,,557158,-20%,,,,,1,2025-10-14T11-58-05Z
-Krzanich Brian M,CRNC,S - Sale,2025-10-09,-132075,"-$1,513,381",$11.46,Cerence Inc.,CEO,2025-10-10 18:16:09,openinsider,latest_sales,,905987,-13%,,,,,1,2025-10-14T11-58-05Z
-Gibson Christopher,RXRX,S - Sale+OE,2025-10-10,-100000,"-$604,000",$6.04,"Recursion Pharmaceuticals, Inc.",CEO,2025-10-10 18:03:11,openinsider,latest_sales,D,954229,-9%,,,,,1,2025-10-14T11-58-05Z
-"Decheng Capital China Life Sciences Usd Fund Iii, L.P.",BYSI,S - Sale,2025-10-08,-13876,"-$24,720",$1.78,Beyondspring Inc.,10%,2025-10-10 17:58:02,openinsider,latest_sales,M,4313163,0%,,,,,1,2025-10-14T11-58-05Z
-Burke James A,VST,S - Sale+OE,2025-10-08,-40961,"-$8,381,573",$204.62,Vistra Corp.,"Pres, CEO",2025-10-10 17:56:24,openinsider,latest_sales,DM,1005141,-4%,,,,,1,2025-10-14T11-58-05Z
-Reprogrammed Interchange LLC,VOR,S - Sale,2025-10-08,-124146,"-$4,116,369",$33.16,Vor Biopharma Inc.,10%,2025-10-10 17:51:47,openinsider,latest_sales,M,1374775,-8%,,,,,1,2025-10-14T11-58-05Z
-Mohajer Keyvan,SOUN,S - Sale,2025-10-08,-118654,"-$2,373,365",$20.00,"Soundhound Ai, Inc.","CEO, 10%",2025-10-10 17:50:12,openinsider,latest_sales,,2342613,-5%,,,,,1,2025-10-14T11-58-05Z
-Stonehocker Timothy,SOUN,S - Sale,2025-10-08,-70524,"-$1,410,480",$20.00,"Soundhound Ai, Inc.",CTO,2025-10-10 17:48:05,openinsider,latest_sales,,606525,-10%,,,,,1,2025-10-14T11-58-05Z
-Schwartz Richard Todd,RSI,S - Sale,2025-10-08,-193905,"-$3,586,274",$18.50,"Rush Street Interactive, Inc.",CEO,2025-10-10 17:47:01,openinsider,latest_sales,M,574147,-25%,,,,,1,2025-10-14T11-58-05Z
-Cannon-Brookes Michael,TEAM,S - Sale,2025-10-10,-7665,"-$1,117,949",$145.85,Atlassian Corp,"CEO, Co-Founder, 10%",2025-10-10 17:45:54,openinsider,latest_sales,,429240,-2%,,,,,1,2025-10-14T11-58-05Z
-Emami Majid,SOUN,S - Sale,2025-10-08,-41167,"-$823,340",$20.00,"Soundhound Ai, Inc.","VP, Engineering, 10%",2025-10-10 17:45:47,openinsider,latest_sales,,608186,-6%,,,,,1,2025-10-14T11-58-05Z
-Farquhar Scott,TEAM,S - Sale,2025-10-10,-7665,"-$1,117,949",$145.85,Atlassian Corp,"Dir, 10%",2025-10-10 17:45:36,openinsider,latest_sales,,429240,-2%,,,,,1,2025-10-14T11-58-05Z
-Kumar Neil,BBIO,S - Sale,2025-10-08,-80000,"-$4,383,442",$54.79,"Bridgebio Pharma, Inc.",CEO,2025-10-10 17:40:12,openinsider,latest_sales,M,5697223,-1%,,,,,1,2025-10-14T11-58-05Z
-Whalen Amanda,KVYO,S - Sale+OE,2025-10-10,-15000,"-$375,381",$25.03,"Klaviyo, Inc.",CFO,2025-10-10 17:36:15,openinsider,latest_sales,D,481719,-3%,,,,,1,2025-10-14T11-58-05Z
-Khattar Jack A.,SUPN,S - Sale+OE,2025-10-09,-59900,"-$3,029,336",$50.57,"Supernus Pharmaceuticals, Inc.","Pres, CEO",2025-10-10 17:33:23,openinsider,latest_sales,D,2212178,-3%,,,,,1,2025-10-14T11-58-05Z
-Nagar Yaacov,SCWO,S - Sale,2025-10-08,-1499000,"-$695,686",$0.46,374Water Inc.,10%,2025-10-10 17:27:32,openinsider,latest_sales,,34258325,-4%,,,,,1,2025-10-14T11-58-05Z
-Herriott James,EXAS,S - Sale,2025-10-09,-1500,"-$90,000",$60.00,Exact Sciences Corp,"SVP, GC, Sec",2025-10-10 17:27:10,openinsider,latest_sales,,15641,-9%,,,,,1,2025-10-14T11-58-05Z
-Wirth James F,IHT,S - Sale,2025-10-09,-12500,"-$256,250,000","$20,500.00",Innsuites Hospitality Trust,"Pres, CEO, 10%",2025-10-10 17:27:03,openinsider,latest_sales,,6181796,0%,,,,,1,2025-10-14T11-58-05Z
-Ladensohn David A,SYM,S - Sale,2025-10-09,-23000,"-$1,535,230",$66.75,Symbotic Inc.,10%,2025-10-10 17:26:13,openinsider,latest_sales,,20000,-53%,,,,,1,2025-10-14T11-58-05Z
-Doyle James Edward,EXAS,S - Sale,2025-10-09,-2000,"-$120,000",$60.00,Exact Sciences Corp,Dir,2025-10-10 17:25:29,openinsider,latest_sales,,57962,-3%,,,,,1,2025-10-14T11-58-05Z
-Raben David,BCAX,S - Sale+OE,2025-10-09,-22000,"-$405,900",$18.45,Bicara Therapeutics Inc.,Chief Medical Officer,2025-10-10 17:23:20,openinsider,latest_sales,D,35497,-38%,,,,,1,2025-10-14T11-58-05Z
-Hyep Ivan,BCAX,S - Sale+OE,2025-10-09,-6415,"-$116,931",$18.23,Bicara Therapeutics Inc.,CFO,2025-10-10 17:22:56,openinsider,latest_sales,D,145355,-4%,,,,,1,2025-10-14T11-58-05Z
-Kargieman Emiliano,SATL,S - Sale,2025-10-08,-402303,"-$1,641,615",$4.08,Satellogic Inc.,"CEO, 10%",2025-10-10 17:18:21,openinsider,latest_sales,M,1617643,-20%,,,,,1,2025-10-14T11-58-05Z
-Grae Seth,LTBR,S - Sale+OE,2025-10-10,-7616,"-$196,797",$25.84,Lightbridge Corp,"Pres, CEO",2025-10-10 17:13:51,openinsider,latest_sales,D,753316,-1%,,,,,1,2025-10-14T11-58-05Z
-Dines Daniel,PATH,S - Sale,2025-10-10,-122734,"-$2,254,881",$18.37,"Uipath, Inc.","CEO, COB, 10%",2025-10-10 17:12:56,openinsider,latest_sales,,30649521,0%,,,,,1,2025-10-14T11-58-05Z
-Rothblatt Martine A,UTHR,S - Sale+OE,2025-10-09,-8000,"-$3,574,444",$446.81,United Therapeutics Corp,"CHAIRPERSON, CEO",2025-10-10 17:03:10,openinsider,latest_sales,DM,644489,-1%,,,,,1,2025-10-14T11-58-05Z
-Dell Michael S,DELL,S - Sale,2025-10-09,-6253968,"-$1,000,053,261",$159.91,Dell Technologies Inc.,"CEO, 10%",2025-10-10 17:01:07,openinsider,latest_sales,,17538273,-26%,,,,,1,2025-10-14T11-58-05Z
-Schwartz Larissa,OKTA,S - Sale+OE,2025-10-08,-1318,"-$120,795",$91.65,"Okta, Inc.",See Remarks,2025-10-10 17:00:55,openinsider,latest_sales,D,37837,-3%,,,,,1,2025-10-14T11-58-05Z
-Lee Chan Henry,ONC,S - Sale+OE,2025-10-08,-10671,"-$3,739,108",$350.40,Beone Medicines Ltd.,"SVP, GC",2025-10-10 16:56:54,openinsider,latest_sales,D,223106,-5%,,,,,1,2025-10-14T11-58-05Z
-Grassadonia Brian,XYZ,S - Sale,2025-10-08,-35145,"-$2,811,600",$80.00,"Block, Inc.",Ecosystem Lead,2025-10-10 16:55:30,openinsider,latest_sales,,535896,-6%,,,,,1,2025-10-14T11-58-05Z
-Diez-Canseco Russell,VITL,S - Sale,2025-10-08,-9667,"-$429,098",$44.39,"Vital Farms, Inc.","Pres, CEO",2025-10-10 16:55:03,openinsider,latest_sales,,666109,-1%,,,,,1,2025-10-14T11-58-05Z
-Dale Ajmere,XYZ,S - Sale,2025-10-08,-750,"-$60,000",$80.00,"Block, Inc.",Chief Accounting Officer,2025-10-10 16:54:43,openinsider,latest_sales,,102308,-1%,,,,,1,2025-10-14T11-58-05Z
-Fleming Daniel W.,CRDO,S - Sale,2025-10-08,-112580,"-$15,558,280",$138.20,Credo Technology Group Holding Ltd,CFO,2025-10-10 16:49:39,openinsider,latest_sales,,458678,-20%,,,,,1,2025-10-14T11-58-05Z
-Brinkley Stephen C,ROST,S - Sale,2025-10-08,-6437,"-$971,794",$150.97,"Ross Stores, Inc.","Pres, OPERATIONS",2025-10-10 16:45:44,openinsider,latest_sales,,57012,-10%,,,,,1,2025-10-14T11-58-05Z
-Mushakov Andrey,LTBR,S - Sale+OE,2025-10-10,-25093,"-$628,831",$25.06,Lightbridge Corp,"EVP, Nuclear Operations",2025-10-10 16:39:53,openinsider,latest_sales,D,395699,-6%,,,,,1,2025-10-14T11-58-05Z
-"Slta V (Gp), L.L.C.",DELL,S - Sale+OE,2025-10-08,-499999,"-$80,741,800",$161.48,Dell Technologies Inc.,"Dir, 10%",2025-10-10 16:35:06,openinsider,latest_sales,D,1507758,-25%,,,,,1,2025-10-14T11-58-05Z
-Duffield David A,WDAY,S - Sale+OE,2025-10-08,-75053,"-$17,738,401",$236.35,"Workday, Inc.",10%,2025-10-10 16:31:38,openinsider,latest_sales,D,117997,-39%,,,,,1,2025-10-14T11-58-05Z
-"Bayview Legacy, LLC",AIP,S - Sale,2025-10-08,-50000,"-$653,710",$13.07,"Arteris, Inc.",10%,2025-10-10 16:30:49,openinsider,latest_sales,,9689071,-1%,,,,,1,2025-10-14T11-58-05Z
-Ault Milton C III,ALZN,S - Sale+OE,2025-10-08,-121791,"-$294,548",$2.42,"Alzamend Neuro, Inc.",Dir,2025-10-10 16:30:13,openinsider,latest_sales,DM,21232,-85%,,,,,1,2025-10-14T11-58-05Z
-Kapani Mayur,ICE,S - Sale+OE,2025-10-08,-10082,"-$1,601,862",$158.88,"Intercontinental Exchange, Inc.",CTO,2025-10-10 16:30:10,openinsider,latest_sales,D,65240,-13%,,,,,1,2025-10-14T11-58-05Z
-"Slta IV (Gp), L.L.C.",DELL,S - Sale+OE,2025-10-08,-499999,"-$80,741,800",$161.48,Dell Technologies Inc.,"Dir, 10%",2025-10-10 16:30:08,openinsider,latest_sales,D,1507758,-25%,,,,,1,2025-10-14T11-58-05Z
-Edward K. Christian Trust,SGA,S - Sale,2025-10-08,-1,-$13,$13.03,Saga Communications Inc,10%,2025-10-10 16:27:42,openinsider,latest_sales,,890569,0%,,,,,1,2025-10-14T11-58-05Z
-Danesh Fariba,AEHR,S - Sale,2025-10-09,-9000,"-$223,101",$24.79,Aehr Test Systems,Dir,2025-10-10 16:21:55,openinsider,latest_sales,,16643,-35%,,,,,1,2025-10-14T11-58-05Z
-Newhall Charles W III,SUPN,S - Sale,2025-10-09,-25000,"-$1,269,234",$50.77,"Supernus Pharmaceuticals, Inc.",Dir,2025-10-10 16:21:00,openinsider,latest_sales,,104644,-19%,,,,,1,2025-10-14T11-58-05Z
-Scadden David,AGIO,S - Sale+OE,2025-10-08,-200,"-$8,200",$41.00,"Agios Pharmaceuticals, Inc.",Dir,2025-10-10 16:18:07,openinsider,latest_sales,D,17603,-1%,,,,,1,2025-10-14T11-58-05Z
-Mulay James,CGON,S - Sale+OE,2025-10-09,-5903,"-$259,673",$43.99,"Cg Oncology, Inc.",Dir,2025-10-10 16:15:03,openinsider,latest_sales,D,0,-100%,,,,,1,2025-10-14T11-58-05Z
-Kaye Edward M. Md,STOK,S - Sale+OE,2025-10-08,-25000,"-$750,000",$30.00,"Stoke Therapeutics, Inc.",Dir,2025-10-10 16:12:24,openinsider,latest_sales,D,49124,-34%,,,,,1,2025-10-14T11-58-05Z
-Cannon-Brookes Michael,TEAM,S - Sale,2025-10-09,-7665,"-$1,138,581",$148.54,Atlassian Corp,"CEO, Co-Founder, 10%",2025-10-10 16:12:10,openinsider,latest_sales,,436905,-2%,,,,,1,2025-10-14T11-58-05Z
-Farquhar Scott,TEAM,S - Sale,2025-10-09,-7665,"-$1,138,581",$148.54,Atlassian Corp,"Dir, 10%",2025-10-10 16:11:43,openinsider,latest_sales,,436905,-2%,,,,,1,2025-10-14T11-58-05Z
-Polk Dennis,SNX,S - Sale+OE,2025-10-09,-17500,"-$2,738,784",$156.50,Td Synnex Corp,Hyve Solutions Exec,2025-10-10 16:08:20,openinsider,latest_sales,D,112777,-13%,,,,,1,2025-10-14T11-58-05Z
-Bank of America Corp /de/,NMZ,S - Sale,2025-10-09,-190,"-$2,018",$10.62,Nuveen Municipal High Income Opportunity Fund,10%,2025-10-10 16:07:42,openinsider,latest_sales,,0,-100%,,,,,1,2025-10-14T11-58-05Z
-Deutsche Telekom AG,TMUS,S - Sale,2025-10-08,-128852,"-$29,197,932",$226.60,"T-Mobile Us, Inc.","Dir, 10%",2025-10-10 16:05:22,openinsider,latest_sales,M,627975325,0%,,,,,1,2025-10-14T11-58-05Z
-Laponis Adam,TWST,S - Sale,2025-10-08,-5517,"-$176,315",$31.96,Twist Bioscience Corp,CFO,2025-10-10 16:05:09,openinsider,latest_sales,M,91525,-6%,,,,,1,2025-10-14T11-58-05Z
-Geffner Michael,IMVT,S - Sale,2025-10-08,-1272,"-$20,734",$16.30,"Immunovant, Inc.",Chief Medical Officer,2025-10-10 16:03:10,openinsider,latest_sales,,220553,-1%,,,,,1,2025-10-14T11-58-05Z
-Stout Jay S,IMVT,S - Sale,2025-10-08,-1585,"-$25,836",$16.30,"Immunovant, Inc.",CTO,2025-10-10 16:01:57,openinsider,latest_sales,,203334,-1%,,,,,1,2025-10-14T11-58-05Z
+Flores James Caldwell,SOC,S - Sale+OE,2026-04-28,-80054,"-$1,076,266",$13.44,Sable Offshore Corp.,"Pres, COO",2026-04-30 21:20:17,openinsider,latest_sales,DM,979740,-8%,,,,,1,2026-05-01T08-03-10Z
+Patrinely Gregory D.,SOC,S - Sale+OE,2026-04-28,-80054,"-$1,076,266",$13.44,Sable Offshore Corp.,"EVP, CFO",2026-04-30 21:15:29,openinsider,latest_sales,DM,562740,-12%,,,,,1,2026-05-01T08-03-10Z
+Duenner Anthony,SOC,S - Sale+OE,2026-04-28,-80055,"-$1,076,279",$13.44,Sable Offshore Corp.,See Remarks,2026-04-30 21:14:40,openinsider,latest_sales,DM,640864,-11%,,,,,1,2026-05-01T08-03-10Z
+Flores James C,SOC,S - Sale+OE,2026-04-28,-140089,"-$1,883,391",$13.44,Sable Offshore Corp.,"COB, CEO, 10%",2026-04-30 21:13:11,openinsider,latest_sales,DM,11398661,-1%,,,,,1,2026-05-01T08-03-10Z
+Freve Maria G,SYM,S - Sale,2026-04-28,-2265,"-$130,736",$57.72,Symbotic Inc.,See Remarks,2026-04-30 21:10:08,openinsider,latest_sales,,739,-75%,,,,,1,2026-05-01T08-03-10Z
+"Bain Capital Life Sciences Investors, LLC",HTFL,S - Sale,2026-04-28,-2000000,"-$58,898,336",$29.45,"Heartflow, Inc.",10%,2026-04-30 20:46:31,openinsider,latest_sales,M,8448158,-19%,,,,,1,2026-05-01T08-03-10Z
+Howard Jennie,NE,S - Sale,2026-04-30,-2486,"-$126,975",$51.08,Noble Corp Plc,"SVP, Gen. Counsel, Corp. Sec.",2026-04-30 20:43:13,openinsider,latest_sales,,15676,-14%,,,,,1,2026-05-01T08-03-10Z
+Simhambhatla Ravi,CAR,S - Sale,2026-04-30,-3469,"-$638,608",$184.09,"Avis Budget Group, Inc.","EVP, CDIO - see remarks",2026-04-30 20:18:41,openinsider,latest_sales,,13876,-20%,,,,,1,2026-05-01T08-03-10Z
+Linnen Edward P,CAR,S - Sale,2026-04-30,-9483,"-$1,728,900",$182.32,"Avis Budget Group, Inc.","EVP, CHRO",2026-04-30 20:16:14,openinsider,latest_sales,,37932,-20%,,,,,1,2026-05-01T08-03-10Z
+Control Empresarial De Capitales S.A. De C.V.,PBF,S - Sale,2026-04-29,-365000,"-$15,879,371",$43.51,Pbf Energy Inc.,"Add'l Rep. Persons-see Ex.99-1, 10%",2026-04-30 19:42:54,openinsider,latest_sales,M,18888698,-2%,,,,,1,2026-05-01T08-03-10Z
+Intrator Michael N,CRWV,S - Sale+OE,2026-04-28,-307693,"-$32,796,005",$106.59,"Coreweave, Inc.","CEO, Pres, 10%",2026-04-30 19:38:38,openinsider,latest_sales,D,4866501,-6%,,,,,1,2026-05-01T08-03-10Z
+Bendheim Jack,PAHC,S - Sale,2026-04-28,-21120,"-$1,137,593",$53.86,Phibro Animal Health Corp,"Pres, CEO, 10%",2026-04-30 19:20:46,openinsider,latest_sales,M,91600,-19%,,,,,1,2026-05-01T08-03-10Z
+Biswas Sanjit,IOT,S - Sale,2026-04-28,-263900,"-$7,671,995",$29.07,Samsara Inc.,"CHIEF EXECUTVE OFFICER, 10%",2026-04-30 19:12:27,openinsider,latest_sales,M,1416213,-16%,,,,,1,2026-05-01T08-03-10Z
+Bicket John,IOT,S - Sale,2026-04-28,-263900,"-$7,671,815",$29.07,Samsara Inc.,"See remarks, 10%",2026-04-30 19:10:35,openinsider,latest_sales,M,769989,-26%,,,,,1,2026-05-01T08-03-10Z
+Tannenbaum Michael Benjamin,FIGR,S - Sale+OE,2026-04-28,-184194,"-$6,064,355",$32.92,"Figure Technology Solutions, Inc.",CEO,2026-04-30 19:00:26,openinsider,latest_sales,DM,3193641,-5%,,,,,1,2026-05-01T08-03-10Z
+Chu Maggie,LFUS,S - Sale,2026-04-28,-1097,"-$431,789",$393.61,Littelfuse Inc /De,"SVP, CHRO",2026-04-30 18:43:41,openinsider,latest_sales,M,6001,-15%,,,,,1,2026-05-01T08-03-10Z
+Remer Eric Richard,EVCM,S - Sale,2026-04-28,-19200,"-$222,654",$11.60,Evercommerce Inc.,CEO,2026-04-30 18:41:19,openinsider,latest_sales,M,9127585,0%,,,,,1,2026-05-01T08-03-10Z
+Grech Patricia Y,QCOM,S - Sale,2026-04-30,-192,"-$33,024",$172.00,Qualcomm Inc/De,"SVP, Chief Accounting Officer",2026-04-30 18:38:45,openinsider,latest_sales,,0,-100%,,,,,1,2026-05-01T08-03-10Z
+Kelly Sara,SBUX,S - Sale,2026-04-29,-2000,"-$210,000",$105.00,Starbucks Corp,"evp, chief partner officer",2026-04-30 18:36:28,openinsider,latest_sales,,57653,-3%,,,,,1,2026-05-01T08-03-10Z
+Alvarez Divo Carlos Eduardo,EXFY,S - Sale,2026-04-28,-30728,"-$31,035",$1.01,"Expensify, Inc.",Dir,2026-04-30 18:35:14,openinsider,latest_sales,,254780,-11%,,,,,1,2026-05-01T08-03-10Z
+Patel Sanj K,KNSA,S - Sale+OE,2026-04-28,-508339,"-$26,415,228",$51.96,"Kiniksa Pharmaceuticals International, Plc","COB, CEO",2026-04-30 18:33:04,openinsider,latest_sales,DM,237763,-68%,,,,,1,2026-05-01T08-03-10Z
+Egawa Atsushi,ACN,S - Sale,2026-04-30,-4872,"-$863,044",$177.14,Accenture Plc,Co-CEO Asia Pacific,2026-04-30 18:04:56,openinsider,latest_sales,,12802,-28%,,,,,1,2026-05-01T08-03-10Z
+Mark & Robyn Jones Descendants Trust 2014,GSHD,S - Sale+OE,2026-04-28,-5486,"-$263,889",$48.10,"Goosehead Insurance, Inc.","Member of 10% owner group, 10%",2026-04-30 18:03:39,openinsider,latest_sales,DM,9400355,0%,,,,,1,2026-05-01T08-03-10Z
+Natali Chris,PYPL,S - Sale,2026-04-29,-1337,"-$66,128",$49.46,"Paypal Holdings, Inc.","SVP, Chief Accounting Officer",2026-04-30 17:56:13,openinsider,latest_sales,,1586,-46%,,,,,1,2026-05-01T08-03-10Z
+Ugwumba Chidozie,CLNN,S - Sale,2026-04-28,-19497,"-$112,779",$5.78,Clene Inc.,10%,2026-04-30 17:54:39,openinsider,latest_sales,M,277569,-7%,,,,,1,2026-05-01T08-03-10Z
+Coyne Terrance P.,RPRX,S - Sale,2026-04-28,-34791,"-$1,731,840",$49.78,Royalty Pharma Plc,"EVP, CFO",2026-04-30 17:54:06,openinsider,latest_sales,,90526,-28%,,,,,1,2026-05-01T08-03-10Z
+Deskus Archana,EWBC,S - Sale,2026-04-30,-1800,"-$225,990",$125.55,East West Bancorp Inc,Dir,2026-04-30 17:53:38,openinsider,latest_sales,,13231,-12%,,,,,1,2026-05-01T08-03-10Z
+Keller Frank,PYPL,S - Sale,2026-04-29,-10732,"-$536,205",$49.96,"Paypal Holdings, Inc.","Pres, Checkout Sol., PayPal",2026-04-30 17:52:09,openinsider,latest_sales,,41567,-21%,,,,,1,2026-05-01T08-03-10Z
+Caesar Erika R,TBBK,S - Sale,2026-04-29,-4470,"-$269,452",$60.28,"Bancorp, Inc.","EVP, GC",2026-04-30 17:46:08,openinsider,latest_sales,,32880,-12%,,,,,1,2026-05-01T08-03-10Z
+Wainwright Maria,TBBK,S - Sale,2026-04-28,-8400,"-$506,020",$60.24,"Bancorp, Inc.","EVP, CMO",2026-04-30 17:45:00,openinsider,latest_sales,,24942,-25%,,,,,1,2026-05-01T08-03-10Z
+Ehrlichman Matt,PRCH,S - Sale,2026-04-28,-115642,"-$937,903",$8.11,"Porch Group, Inc.","CEO, COB, FOUNDER, 10%",2026-04-30 17:41:09,openinsider,latest_sales,,23105623,0%,,,,,1,2026-05-01T08-03-10Z
+Tabak Shawn,PRCH,S - Sale,2026-04-28,-10454,"-$84,786",$8.11,"Porch Group, Inc.",CFO,2026-04-30 17:40:12,openinsider,latest_sales,,364230,-3%,,,,,1,2026-05-01T08-03-10Z
+Neagle Matthew,PRCH,S - Sale,2026-04-28,-59901,"-$485,821",$8.11,"Porch Group, Inc.",COO,2026-04-30 17:39:40,openinsider,latest_sales,,2361998,-2%,,,,,1,2026-05-01T08-03-10Z
+Van Houte Hans,NRIX,S - Sale+OE,2026-04-30,-2388,"-$39,749",$16.65,"Nurix Therapeutics, Inc.",CFO,2026-04-30 17:38:22,openinsider,latest_sales,D,51647,-4%,,,,,1,2026-05-01T08-03-10Z
+Ring Christine,NRIX,S - Sale+OE,2026-04-30,-3214,"-$53,498",$16.65,"Nurix Therapeutics, Inc.",GC,2026-04-30 17:37:50,openinsider,latest_sales,D,31847,-9%,,,,,1,2026-05-01T08-03-10Z
+Hansen Gwenn,NRIX,S - Sale+OE,2026-04-30,-3214,"-$53,498",$16.65,"Nurix Therapeutics, Inc.",Chief Scientific Officer,2026-04-30 17:35:55,openinsider,latest_sales,D,120399,-3%,,,,,1,2026-05-01T08-03-10Z
+Wang Chia Yuan,GGB,S - Sale+OE,2026-04-28,-76700,"-$344,383",$4.49,Gerdau S.A.,Senior management,2026-04-30 17:28:29,openinsider,latest_sales,D,93077,-45%,,,,,1,2026-05-01T08-03-10Z
+"Forager Fund, L.P.",RM,S - Sale,2026-04-28,-5017,"-$195,445",$38.96,Regional Management Corp.,10%,2026-04-30 17:22:12,openinsider,latest_sales,M,948458,-1%,,,,,1,2026-05-01T08-03-10Z
+Rhodes Jason P,DYN,S - Sale,2026-04-28,-227337,"-$4,178,516",$18.38,"Dyne Therapeutics, Inc.",Dir,2026-04-30 17:22:11,openinsider,latest_sales,,1158923,-16%,,,,,1,2026-05-01T08-03-10Z
+Brooks David R,SSB,S - Sale,2026-04-28,-14300,"-$1,406,977",$98.39,Southstate Bank Corp,Dir,2026-04-30 17:21:24,openinsider,latest_sales,A,33700,-30%,,,,,1,2026-05-01T08-03-10Z
+Uhlein Clemir,GGB,S - Sale+OE,2026-04-28,-38276,"-$172,625",$4.51,Gerdau S.A.,Senior Management,2026-04-30 17:11:19,openinsider,latest_sales,D,0,-100%,,,,,1,2026-05-01T08-03-10Z
+Narayen Shantanu,ADBE,S - Sale,2026-04-28,-75000,"-$18,265,234",$243.54,Adobe Inc.,"Chair, CEO",2026-04-30 17:09:48,openinsider,latest_sales,,359862,-17%,,,,,1,2026-05-01T08-03-10Z
+Cheong Wee Yee,PFG,S - Sale,2026-04-29,-1080,"-$109,080",$101.00,Principal Financial Group Inc,"Pres - Asia, Middle East",2026-04-30 17:03:40,openinsider,latest_sales,,91108,-1%,,,,,1,2026-05-01T08-03-10Z
+Djurasovic George,PFG,S - Sale,2026-04-28,-2572,"-$259,332",$100.83,Principal Financial Group Inc,Interim GC,2026-04-30 17:03:19,openinsider,latest_sales,M,21905,-11%,,,,,1,2026-05-01T08-03-10Z
+Getsinger Peter W,AGX,S - Sale,2026-04-29,-3000,"-$1,885,080",$628.36,Argan Inc,Dir,2026-04-30 17:00:07,openinsider,latest_sales,,6747,-31%,,,,,1,2026-05-01T08-03-10Z
+Larroque Alexander Lisa,AGX,S - Sale,2026-04-29,-350,"-$220,703",$630.58,Argan Inc,Dir,2026-04-30 17:00:05,openinsider,latest_sales,,350,-50%,,,,,1,2026-05-01T08-03-10Z
+Hoffman Edward J,RDN,S - Sale,2026-04-29,-15000,"-$555,000",$37.00,Radian Group Inc,"Sr EVP, GC",2026-04-30 16:58:20,openinsider,latest_sales,,108708,-12%,,,,,1,2026-05-01T08-03-10Z
+Metz Mauricio,GGB,S - Sale+OE,2026-04-28,-1000,"-$4,530",$4.53,Gerdau S.A.,Executive Vice President,2026-04-30 16:57:07,openinsider,latest_sales,D,41536,-2%,,,,,1,2026-05-01T08-03-10Z
+Nottenburg Richard N,APLD,S - Sale,2026-04-28,-25000,"-$832,375",$33.30,Applied Digital Corp.,Dir,2026-04-30 16:56:10,openinsider,latest_sales,M,208378,-11%,,,,,1,2026-05-01T08-03-10Z
+Bastarrica Air A. Jr.,KN,S - Sale,2026-04-30,-3623,"-$111,987",$30.91,Knowles Corp,"VP, Controller",2026-04-30 16:55:52,openinsider,latest_sales,,47569,-7%,,,,,1,2026-05-01T08-03-10Z
+Hogan Joey B,CVLG,S - Sale,2026-04-28,-14700,"-$510,928",$34.76,"Covenant Logistics Group, Inc.",Dir,2026-04-30 16:47:14,openinsider,latest_sales,,108432,-12%,,,,,1,2026-05-01T08-03-10Z
+Harris Jonathan,OWLT,S - Sale,2025-07-17,-26750,"-$276,789",$10.35,"Owlet, Inc.",Former President & CEO,2026-04-30 16:46:23,openinsider,latest_sales,M,339336,-7%,,,,,1,2026-05-01T08-03-10Z
+Downes Sean P,UVE,S - Sale,2026-04-29,-20000,"-$793,765",$39.69,"Universal Insurance Holdings, Inc.",Exec COB,2026-04-30 16:45:24,openinsider,latest_sales,,1238255,-2%,,,,,1,2026-05-01T08-03-10Z
+Drake Fred L,HBT,S - Sale,2026-04-28,-15742,"-$455,416",$28.93,"Hbt Financial, Inc.","Exec COB, 10%",2026-04-30 16:36:05,openinsider,latest_sales,,17270558,0%,,,,,1,2026-05-01T08-03-10Z
+Finkelstein David L,NLY,S - Sale,2026-04-27,-50000,"-$1,144,000",$22.88,Annaly Capital Management Inc,"CEO, Co-CIO",2026-04-30 16:35:36,openinsider,latest_sales,,783763,-6%,,,,,1,2026-05-01T08-03-10Z
+Alting Caroline,NE,S - Sale,2026-04-28,-15340,"-$809,139",$52.75,Noble Corp Plc,"SVP, Ops. Excellence, Sust",2026-04-30 16:34:42,openinsider,latest_sales,,8170,-65%,,,,,1,2026-05-01T08-03-10Z
+Ledbetter Carl,NET,S - Sale,2026-04-28,-9991,"-$2,156,573",$215.85,"Cloudflare, Inc.",Dir,2026-04-30 16:34:41,openinsider,latest_sales,,947681,-1%,,,,,1,2026-05-01T08-03-10Z
+Workman Kurt,OWLT,S - Sale,2025-03-18,-52233,"-$434,511",$8.32,"Owlet, Inc.","Pres, CEO",2026-04-30 16:33:43,openinsider,latest_sales,M,1232080,-4%,,,,,1,2026-05-01T08-03-10Z
+Klein James D.,QCRH,S - Sale,2026-04-30,-310,"-$28,210",$91.00,Qcr Holdings Inc,"Pres, CRBT",2026-04-30 16:31:02,openinsider,latest_sales,,6266,-5%,,,,,1,2026-05-01T08-03-10Z
+Crawford Amanda,OWLT,S - Sale,2024-10-17,-11705,"-$112,794",$9.64,"Owlet, Inc.",CFO,2026-04-30 16:30:58,openinsider,latest_sales,M,212800,-5%,,,,,1,2026-05-01T08-03-10Z
+Rothblatt Martine A,UTHR,S - Sale+OE,2026-04-29,-9500,"-$5,426,598",$571.22,United Therapeutics Corp,"CHAIRPERSON, CEO",2026-04-30 16:30:55,openinsider,latest_sales,D,679797,-1%,,,,,1,2026-05-01T08-03-10Z
+Kwong Connie H.,MXL,S - Sale,2026-04-29,-4118,"-$238,844",$58.00,"Maxlinear, Inc","Corporate Controller, PAO",2026-04-30 16:30:30,openinsider,latest_sales,,48947,-8%,,,,,1,2026-05-01T08-03-10Z
+Sandbrook William J,FIX,S - Sale,2026-04-29,-1500,"-$1,733",$1.16,Comfort Systems USA Inc,Dir,2026-04-30 16:30:12,openinsider,latest_sales,E,7666,-16%,,,,,1,2026-05-01T08-03-10Z
+Lefkofsky Eric P,TEM,S - Sale,2026-04-28,-166250,"-$8,500,623",$51.13,"Tempus Ai, Inc.","CEO, COB, 10%",2026-04-30 16:30:08,openinsider,latest_sales,,37834051,0%,,,,,1,2026-05-01T08-03-10Z
+Kasbar Michael J,WKC,S - Sale,2026-04-28,-847,"-$23,336",$27.55,World Kinect Corp,Exec COB,2026-04-30 16:30:07,openinsider,latest_sales,,1061950,0%,,,,,1,2026-05-01T08-03-10Z
+Cunningham Steven E,ENVA,S - Sale+OE,2026-04-28,-7852,"-$1,378,026",$175.50,"Enova International, Inc.",CEO,2026-04-30 16:30:02,openinsider,latest_sales,D,122945,-6%,,,,,1,2026-05-01T08-03-10Z
+Angelini Giovanni,WU,S - Sale,2026-04-28,-6000,"-$56,850",$9.48,Western Union Co,"Pres Europe, Africa, MEPA",2026-04-30 16:29:04,openinsider,latest_sales,,311292,-2%,,,,,1,2026-05-01T08-03-10Z
+Yunus Mohammad,TXN,S - Sale+OE,2026-04-29,-51098,"-$13,818,951",$270.44,Texas Instruments Inc,SVP,2026-04-30 16:28:35,openinsider,latest_sales,D,53908,-49%,,,,,1,2026-05-01T08-03-10Z
+Casale Mark,ESNT,S - Sale,2026-04-28,-13064,"-$849,813",$65.05,Essent Group Ltd.,"COB, CEO, Pres",2026-04-30 16:27:48,openinsider,latest_sales,,2468480,-1%,,,,,1,2026-05-01T08-03-10Z
+Gibbons Mary Lourdes,ESNT,S - Sale,2026-04-28,-4250,"-$276,293",$65.01,Essent Group Ltd.,"SVP, GC",2026-04-30 16:27:44,openinsider,latest_sales,,233336,-2%,,,,,1,2026-05-01T08-03-10Z
+Hrt Financial LP,FCHL,S - Sale,2026-04-29,-63656,"-$8,785",$0.14,Fitness Champs Holdings Ltd,10%,2026-04-30 16:26:23,openinsider,latest_sales,,420917,-13%,,,,,1,2026-05-01T08-03-10Z
+Galli Joseph S,BVFL,S - Sale+OE,2026-04-28,-6000,"-$120,752",$20.13,"Bv Financial, Inc.",Dir,2026-04-30 16:24:45,openinsider,latest_sales,D,133750,-4%,,,,,1,2026-05-01T08-03-10Z
+Catinazzo Thomas,RLAY,S - Sale,2026-04-28,-972,"-$14,376",$14.79,"Relay Therapeutics, Inc.",CFO,2026-04-30 16:22:54,openinsider,latest_sales,,212895,0%,,,,,1,2026-05-01T08-03-10Z
+Callos Andrew,CYTK,S - Sale+OE,2026-04-30,-15000,"-$948,900",$63.26,Cytokinetics Inc,"EVP, Chief Commercial Officer",2026-04-30 16:22:50,openinsider,latest_sales,D,58555,-20%,,,,,1,2026-05-01T08-03-10Z
+Rahmer Peter,RLAY,S - Sale,2026-04-28,-753,"-$11,137",$14.79,"Relay Therapeutics, Inc.",See remarks,2026-04-30 16:22:24,openinsider,latest_sales,,275857,0%,,,,,1,2026-05-01T08-03-10Z
+Baroldi Joseph,IONS,S - Sale,2026-04-28,-1626,"-$116,727",$71.79,Ionis Pharmaceuticals Inc,"EVP, Chief Business Officer",2026-04-30 16:21:24,openinsider,latest_sales,,49256,-3%,,,,,1,2026-05-01T08-03-10Z
+Bergstrom Donald A,RLAY,S - Sale,2026-04-28,-1490,"-$22,037",$14.79,"Relay Therapeutics, Inc.","Pres, R, D",2026-04-30 16:20:04,openinsider,latest_sales,,418557,0%,,,,,1,2026-05-01T08-03-10Z
+Dowling Ruth T,AMT,S - Sale,2026-04-28,-972,"-$173,092",$178.08,American Tower Corp /Ma/,"EVP, Chief Admin Ofr, GC, Sec",2026-04-30 16:16:49,openinsider,latest_sales,M,29461,-3%,,,,,1,2026-05-01T08-03-10Z
+Roper Martin,COCO,S - Sale+OE,2026-04-28,-45544,"-$2,497,495",$54.84,"Vita Coco Company, Inc.",CEO,2026-04-30 16:15:10,openinsider,latest_sales,DM,987577,-4%,,,,,1,2026-05-01T08-03-10Z
+Mata Nathan L.,BLTE,S - Sale,2026-04-29,-1000,"-$155,817",$155.82,"Belite Bio, Inc",Chief Scientific Officer,2026-04-30 16:15:05,openinsider,latest_sales,,5666,-15%,,,,,1,2026-05-01T08-03-10Z
+Thompson Reyna,SNX,S - Sale,2026-04-29,-2196,"-$490,733",$223.47,Td Synnex Corp,"Pres, North America",2026-04-30 16:13:23,openinsider,latest_sales,,13958,-14%,,,,,1,2026-05-01T08-03-10Z
+McInerney Ryan,V,S - Sale+OE,2026-04-29,-31455,"-$10,699,204",$340.14,Visa Inc.,CEO,2026-04-30 16:12:00,openinsider,latest_sales,D,280342,-10%,,,,,1,2026-05-01T08-03-10Z
+Opaleye Management Inc.,SNWV,S - Sale,2026-04-28,-70648,"-$1,274,971",$18.05,"Sanuwave Health, Inc.",10%,2026-04-30 16:10:03,openinsider,latest_sales,M,894150,-7%,,,,,1,2026-05-01T08-03-10Z
+"Cormorant Asset Management, LP",DRUG,S - Sale,2026-04-28,-109331,"-$9,785,125",$89.50,Bright Minds Biosciences Inc.,Former 10% Owner,2026-04-30 16:07:58,openinsider,latest_sales,,950000,-10%,,,,,1,2026-05-01T08-03-10Z
+Goodman Anthony Brian,MRDN,S - Sale,2026-04-23,-22000,"-$140,100",$6.37,Meridian Holdings Inc./Nv,"Former Director and CEO, 10%",2026-04-30 16:05:21,openinsider,latest_sales,M,1310332,-2%,,,,,1,2026-05-01T08-03-10Z
+Hajek Douglas J.,CASH,S - Sale,2026-04-29,-5000,"-$431,845",$86.37,"Pathward Financial, Inc.",Dir,2026-04-30 16:01:34,openinsider,latest_sales,,12281,-29%,,,,,1,2026-05-01T08-03-10Z
+Peterson Bradley J,NDAQ,S - Sale,2026-04-28,-7710,"-$700,222",$90.82,"Nasdaq, Inc.","EVP, CIO",2026-04-30 16:00:02,openinsider,latest_sales,,141035,-5%,,,,,1,2026-05-01T08-03-10Z
+Hrt Financial LP,GMEX,S - Sale,2026-04-29,-401228,"-$110,739",$0.28,Gmex Robotics Corp,10%,2026-04-30 15:29:58,openinsider,latest_sales,,0,-100%,,,,,1,2026-05-01T08-03-10Z
+Bowe Patrick E.,ANDE,S - Sale,2026-04-29,-900,"-$70,254",$78.06,"Andersons, Inc.",Dir,2026-04-30 14:43:20,openinsider,latest_sales,,113975,-1%,,,,,1,2026-05-01T08-03-10Z
+Susi Roger E.,IRMD,S - Sale,2026-04-27,-7500,"-$657,709",$87.69,Iradimed Corp,"CEO, Pres, COB, 10%",2026-04-30 14:30:37,openinsider,latest_sales,M,4420450,0%,,,,,1,2026-05-01T08-03-10Z
+Schaum Richard O,GNTX,S - Sale+OE,2026-04-30,-4815,"-$112,247",$23.31,Gentex Corp,Dir,2026-04-30 14:14:08,openinsider,latest_sales,D,81443,-6%,,,,,1,2026-05-01T08-03-10Z
+Azaria Eynav,KLTR,S - Sale,2026-04-28,-32003,"-$46,740",$1.46,Kaltura Inc,See Remarks,2026-04-30 12:48:56,openinsider,latest_sales,,2352181,-1%,,,,,1,2026-05-01T08-03-10Z
+Israeli Natan,KLTR,S - Sale,2026-04-28,-1100,"-$1,662",$1.51,Kaltura Inc,Chief Customer Officer,2026-04-30 12:48:14,openinsider,latest_sales,,2248361,0%,,,,,1,2026-05-01T08-03-10Z
+Holmes Ned S,PB,S - Sale,2026-04-29,-1100,"-$76,567",$69.61,Prosperity Bancshares Inc,Dir,2026-04-30 12:31:29,openinsider,latest_sales,,298218,0%,,,,,1,2026-05-01T08-03-10Z
+Guidry Darren E.,HBCP,S - Sale+OE,2026-04-29,-1600,"-$100,448",$62.78,"Home Bancorp, Inc.","SEVP, Chief Risk Officer",2026-04-30 12:14:40,openinsider,latest_sales,D,59695,-3%,,,,,1,2026-05-01T08-03-10Z
+Lott Ronald M.,SSSS,S - Sale,2026-04-28,-10669,"-$137,630",$12.90,Suro Capital Corp.,Dir,2026-04-30 11:58:12,openinsider,latest_sales,,18481,-37%,,,,,1,2026-05-01T08-03-10Z
+Warner Mark Andrew,SEIC,S - Sale+OE,2026-04-28,-4000,"-$364,640",$91.16,Sei Investments Co,In Remarks,2026-04-30 11:35:55,openinsider,latest_sales,D,921,-81%,,,,,1,2026-05-01T08-03-10Z
+"Saba Capital Management, L.P.",ECAT,S - Sale,2026-04-28,-174933,"-$2,564,518",$14.66,Blackrock Esg Capital Allocation Term Trust,10%,2026-04-30 10:38:23,openinsider,latest_sales,M,21160911,-1%,,,,,1,2026-05-01T08-03-10Z
+Carey Robert Michael,TAYD,S - Sale,2026-04-28,-5000,"-$283,629",$56.73,"Taylor Devices, Inc.",Dir,2026-04-30 09:28:09,openinsider,latest_sales,,7721,-39%,,,,,1,2026-05-01T08-03-10Z
+Anderson James M,FFBC,S - Sale,2026-04-29,-4263,"-$127,890",$30.00,First Financial Bancorp /Oh/,CFO,2026-04-30 09:06:23,openinsider,latest_sales,,140494,-3%,,,,,1,2026-05-01T08-03-10Z

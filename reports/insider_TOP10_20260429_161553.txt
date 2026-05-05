@@ -1,0 +1,281 @@
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS - INSIDER TRADING PATTERN DETECTION
+Generated: 2026-04-29 16:15:54
+Total Records Analyzed: 1232
+========================================================================================================================
+
+DETECTION RULES (7 pattern types):
+  [1] Transaction Filtering : Excluded awards, grants, option exercises, 10b5-1 plans
+  [2] Sector Clustering     : 3+ traders in same sector/ticker within 3 days (+5pts)
+  [3] Same-Company Cluster  : 3+ insiders from SAME company within 7 days (+10-15pts)
+  [4] Large Trade           : Volume 3x+ trader's 12-month average (+8pts)
+  [5] Perfect Timing        : ALL qualifying windows scored independently
+                              7-14d(+8pts, ≥15%)  15-30d(+5pts, ≥15%)
+                              31-60d(+4pts, ≥18%) 61-90d(+3pts, ≥20%)
+  [6] Late Filing           : 7+ days late, only counted alongside other patterns (+2pts)
+  [7] Coordinated Activity  : 5+ traders in same sector on the same day (+3pts)
+
+  Score Multipliers:
+    Pre-Event Bonus    : +15pts for trades 1-7 days BEFORE earnings/8-K
+    Role Weighting     : CEO/CFO(2.0x)  COO(1.8x)  Director(1.5x)  Officer(1.25x)
+    Pattern Multiplier : 1 pattern(1.0x)  2 patterns(1.5x)  3+ patterns(2.5x)
+    Repeat Offender    : 2nd appearance(1.5x)  3rd(2.0x)  4th+(2.5x)
+    Event Filtering    : Excludes trades within 3 days AFTER an earnings/8-K filing
+
+  Formula: Score = base_pts × pattern_mult × role_mult × repeat_mult
+
+========================================================================================================================
+TOP 10 MOST SUSPICIOUS TRADERS
+========================================================================================================================
+
+#1 - Qiu Wenbin (CEO, BZUN)
+Risk Score: 1275  [255 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • BZUN: Traded at $2.47 → Now $2.76 (+20.6%)
+Patterns Detected (18):
+  • Repeat: BZUN (12x)
+  • Recurring buys: BZUN (12 buys in 1 month, 275,100 shares)
+  • Recurring buys: BZUN (12 buys in 2 months, 275,100 shares)
+  • Recurring buys: BZUN (12 buys in 3 months, 275,100 shares)
+  • Volume spike: BZUN (bought 1d before 194% volume surge)
+  • Volume spike: BZUN (bought 3d before 194% volume surge)
+  • Volume spike: BZUN (bought 9d before 194% volume surge)
+  • Volume spike: BZUN (bought 1d before 194% volume surge)
+  • Volume spike: BZUN (bought 3d before 194% volume surge)
+  • Volume spike: BZUN (bought 9d before 194% volume surge)
+  • Volume spike: BZUN (bought 1d before 194% volume surge)
+  • Volume spike: BZUN (bought 3d before 194% volume surge)
+  • Volume spike: BZUN (bought 9d before 194% volume surge)
+  • Perfect timing: BZUN (+20.6%) x3
+  • Coordinated: 2026-04-17 (Other sector, 16 traders)
+    └─ Coordinated with: Little Harrison James (EVP, KYN), Hrt Financial LP (10%, GMEX), Badakhsh Azad Sid (See Remarks, ARXS), Allison John W (COB, CEO, HOMB), Kurtz George (Pres, CEO, CRWD), Perhamus Kevin Scott (See Remarks, ARXS), Patel Paresh (CEO, XZO), Strome Mark E (10%, ZIVO), Chernett Jorey (10%, STIM), Mohan Jitendra (CEO, ALAB), Jankowski Ryan Anthony (Chief Accounting Officer, ARXS), Thiel Frederick G (CEO, MARA), Beck Scott Arthur (Pres, CEO, 10%, GLOO), Roth Jason Aaron (See Remarks, ARXS), Sealfon Ross Bradley (See Remarks, ARXS)
+  • Coordinated: 2026-04-13 (Other sector, 9 traders)
+    └─ Coordinated with: Rossi Steven F. (CEO, Pres, WKSP), Intelligent Fanatics Capital Management LLC (10%, KLNG), Hill Elliott (Pres, CEO, NKE), Patel Paresh (CEO, XZO), Ward Tom L. (See Remarks, 10%, MNR), Wilmer Richard (Pres, CEO, CHPT), Xu Yingkai (CEO, MTEN), Huang Jack Jiajia (CEO, 10%, COE)
+  • Coordinated: 2026-04-15 (Other sector, 8 traders)
+    └─ Coordinated with: Pfeifer Andrea (CEO, ACIU), Patel Paresh (CEO, XZO), Kidambi Tridivesh (CFO, SST), Steel Partners Holdings L.P. (10%, SPRU), Sklar Ross Jeffery (CEO, 10%, STCB), Aqr Capital Management Holdings, LLC (10%, ZSPC), Williams Gregg (Dir, 10%, VANI)
+  • Coordinated: 2026-04-07 (Other sector, 7 traders)
+    └─ Coordinated with: Dakos Andrew (Pres, CEO, SWZ), Patel Paresh (CEO, XZO), Forager Fund, L.P. (10%, RPAY), Chernett Jorey (10%, STIM), Higuchi John W. (Dir, LPCN), Steel Partners Holdings L.P. (10%, SPRU)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#2 - Patel Mahesh V. (CEO, LPCN)
+Risk Score: 1065  [213 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • LPCN: Traded at $2.05 → Now $2.29 (+24.9%)
+Patterns Detected (13):
+  • Repeat: LPCN (6x)
+  • Recurring buys: LPCN (6 buys in 1 month, 150,000 shares)
+  • Recurring buys: LPCN (6 buys in 2 months, 150,000 shares)
+  • Recurring buys: LPCN (6 buys in 3 months, 150,000 shares)
+  • Volume spike: LPCN (bought 1d before 152% volume surge)
+  • Volume spike: LPCN (bought 4d before 345% volume surge)
+  • Volume spike: LPCN (bought 1d before 152% volume surge)
+  • Volume spike: LPCN (bought 4d before 345% volume surge)
+  • Volume spike: LPCN (bought 1d before 152% volume surge)
+  • Volume spike: LPCN (bought 4d before 345% volume surge)
+  • Perfect timing: LPCN (+18.6-24.9%) x6
+  • Coordinated: 2026-04-02 (Other sector, 17 traders)
+    └─ Coordinated with: Wagner Daniel Maurice (CEO, 10%, RZLV), Hrt Financial LP (10%, GMEX), Jackson W Kerry (EVP - CFO, SCVL), Bilotto Christopher J. (Pres, CEO, SVC), Hoffman Michael B (Dir, ANVS), Portnoy Adam D. (Dir, SVC), Fraiche Donna D. (Dir, SVC), Dakos Andrew (Pres, CEO, SWZ), Patel Paresh (CEO, XZO), Donley Brian E. (CFO, Treasurer, SVC), McGee Thomas W. (CFO, HMH), Jackson Jason Dale (COO, LCFY), Dyrseth Roy A. (Chief Commercial Officer, HMH), Bruno Thomas (Chief Commercial Officer, CULP), Bergsvik Eirik (CEO, HMH), Wu Junhua (Chief Strategy Officer, BZUN)
+  • Coordinated: 2026-04-06 (Other sector, 6 traders)
+    └─ Coordinated with: Bertolini Mark T (CEO, OSCR), Gill John (Dir, ALT), Patel Paresh (CEO, XZO), Higuchi John W. (Dir, LPCN), Caldwell Christopher L. (Pres, CEO, Dir of Company, Ban, CMTV)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#3 - Huang Jack Jiajia (CEO, 10%, COE)
+Risk Score: 1015  [203 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • COE: Traded at $22.30 → Now $27.99 (+18.2%)
+Patterns Detected (19):
+  • Repeat: COE (6x)
+  • Recurring buys: COE (6 buys in 1 month, 4,543,200 shares)
+  • Recurring buys: COE (6 buys in 2 months, 4,543,200 shares)
+  • Recurring buys: COE (6 buys in 3 months, 4,543,200 shares)
+  • Volume spike: COE (bought 7d before 156% volume surge)
+  • Volume spike: COE (bought 14d before 156% volume surge)
+  • Volume spike: COE (bought 1d before 214% volume surge)
+  • Volume spike: COE (bought 1d before 214% volume surge)
+  • Volume spike: COE (bought 14d before 156% volume surge)
+  • Volume spike: COE (bought 7d before 156% volume surge)
+  • Late filing: COE (7 days)
+  • Late filing: COE (9 days)
+  • Late filing: COE (18 days)
+  • Late filing: COE (18 days)
+  • Late filing: COE (9 days)
+  • Late filing: COE (7 days)
+  • Perfect timing: COE (+18.2-43.0%) x4
+  • Coordinated: 2026-04-20 (Other sector, 15 traders)
+    └─ Coordinated with: Durn Daniel (EVP, CFO, ADBE), Cross Shawn (CFO, PCRX), Vanderhook Timothy (CEO, COB, 10%, DSP), Lucas Bruce (CEO, 10%, SLDE), Okupe Oluyemi (CFO, HIMS), Hawkins Jeffrey Alan (Pres, CEO, QSI), Patel Paresh (CEO, XZO), Sehmi Harminder (CFO, BZAI), Chernett Jorey (10%, STIM), Venker Eric (Pres, Immunovant CEO, ROIV), Ullal Jayshree (CEO, Chairperson, ANET), Susi Roger E. (CEO, Pres, COB, 10%, IRMD), Steel Partners Holdings L.P. (10%, SPRU), Goetgeluk Jan Roger (CEO, VTIX)
+  • Coordinated: 2026-04-13 (Other sector, 9 traders)
+    └─ Coordinated with: Rossi Steven F. (CEO, Pres, WKSP), Intelligent Fanatics Capital Management LLC (10%, KLNG), Hill Elliott (Pres, CEO, NKE), Patel Paresh (CEO, XZO), Ward Tom L. (See Remarks, 10%, MNR), Wilmer Richard (Pres, CEO, CHPT), Xu Yingkai (CEO, MTEN), Qiu Wenbin (CEO, BZUN)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#4 - Hanson Theodore S. (CEO, EFOR)
+Risk Score: 700  [140 (base) × 2.5x (patterns) × 2.0x (role)]
+Patterns Detected (10):
+  • Sector cluster: EFOR (Other) - 12 traders on 2026-04-24
+    └─ Coordinated with: Perry Marie (EVP, CFO, EFOR), Holman Jonathan S (Dir, EFOR), Matin Arshad (Dir, EFOR), Dyer Joseph Wendell (Dir, EFOR), Iyer Sadasivam (Pres, EFOR), Painter Jennifer Hankes (SVP, GC, EFOR), Hawthorne Maria R (Dir, EFOR), Frantz Mark A. (Dir, EFOR), Obermaier Patricia L (Dir, EFOR), Callaghan Brian J. (Dir, EFOR), Lindstrom Carol (Dir, EFOR)
+  • Same-company cluster: EFOR - 13 insiders within 7 days (Role diversity: Officer, CFO, CEO)
+    └─ Coordinated with: Perry Marie (EVP, CFO), Holman Jonathan S (Dir), Matin Arshad (Dir), Dyer Joseph Wendell (Dir), Iyer Sadasivam (Pres), Painter Jennifer Hankes (SVP, GC), Hawthorne Maria R (Dir), Frantz Mark A. (Dir), Obermaier Patricia L (Dir), Callaghan Brian J. (Dir), Lindstrom Carol (Dir), Cunningham Rose (Chief Accounting Officer)
+  • Recurring buys: EFOR (4 buys in 1 month, 207,860 shares)
+  • Recurring buys: EFOR (4 buys in 2 months, 207,860 shares)
+  • Recurring buys: EFOR (4 buys in 3 months, 207,860 shares)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Coordinated: 2026-04-24 (Other sector, 41 traders)
+    └─ Coordinated with: Campanelli Joseph P (Pres, CEO, NBBK), Tabak Shawn (CFO, PRCH), Begor Mark W (CEO, EFX), Hong Zhifang (CEO, 10%, DKI), Salem Matthew A (CEO, KREF), Sprott Eric (10%, HYMC), Sell Moritz A (Dir, SWZ), Devito Michael J (Dir, NVR), Stilwell Joseph (10%, PFBX), Frantz Mark A. (Dir, EFOR), Ohsberg Ronald S. (SEVP, CFO, Treasurer, WASH), Ghoniem Ahmed (Dir, TGEN), Hrt Financial LP (10%, GMEX), Kgil Minchung (CFO, FIGR), Iyer Sadasivam (Pres, EFOR), Thawley Michael (Dir, STRA), Thompson Rebecca (Chief Accounting Officer, AAON), Ehrlichman Matt (CEO, COB, FOUNDER, 10%, PRCH), Holman Jonathan S (Dir, EFOR), Neagle Matthew (COO, PRCH), Perry Marie (EVP, CFO, EFOR), Hamann Jennifer L (EVP, CFO, UNP), Joachimczyk Paul (CFO, SON), Mattson W Patrick (Pres, COO, Secretary, KREF), Federico Peter J (Dir, Pres, CEO, CIO, AGNC), Kurtz George (Pres, CEO, CRWD), Canup Edward G (CHIEF BANKING OFFICER, CBAN), Hawthorne Maria R (Dir, EFOR), Lizardi Rafael R (SVP, CFO, TXN), Patel Paresh (CEO, XZO), Peduzzi Michael D (Pres, CEO, CCNE), Brooks Jayme L. (CFO, LMB), Vinciarelli Patrizio (COB, CEO, 10%, VICR), Flannery Matthew John (Pres, CEO, URI), Painter Jennifer Hankes (SVP, GC, EFOR), Hagler Mark Arnold (See Remarks, NBP), Dyer Joseph Wendell (Dir, EFOR), Silverman Frank B (Dir, TRST), Hisey David C (CFO, STC), Matin Arshad (Dir, EFOR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#5 - Perry Marie (EVP, CFO, EFOR)
+Risk Score: 700  [140 (base) × 2.5x (patterns) × 2.0x (role)]
+Patterns Detected (10):
+  • Sector cluster: EFOR (Other) - 12 traders on 2026-04-24
+    └─ Coordinated with: Hanson Theodore S. (CEO, EFOR), Holman Jonathan S (Dir, EFOR), Matin Arshad (Dir, EFOR), Dyer Joseph Wendell (Dir, EFOR), Iyer Sadasivam (Pres, EFOR), Painter Jennifer Hankes (SVP, GC, EFOR), Hawthorne Maria R (Dir, EFOR), Frantz Mark A. (Dir, EFOR), Obermaier Patricia L (Dir, EFOR), Callaghan Brian J. (Dir, EFOR), Lindstrom Carol (Dir, EFOR)
+  • Same-company cluster: EFOR - 13 insiders within 7 days (Role diversity: Officer, CFO, CEO)
+    └─ Coordinated with: Hanson Theodore S. (CEO), Holman Jonathan S (Dir), Matin Arshad (Dir), Dyer Joseph Wendell (Dir), Iyer Sadasivam (Pres), Painter Jennifer Hankes (SVP, GC), Hawthorne Maria R (Dir), Frantz Mark A. (Dir), Obermaier Patricia L (Dir), Callaghan Brian J. (Dir), Lindstrom Carol (Dir), Cunningham Rose (Chief Accounting Officer)
+  • Recurring buys: EFOR (4 buys in 1 month, 21,400 shares)
+  • Recurring buys: EFOR (4 buys in 2 months, 21,400 shares)
+  • Recurring buys: EFOR (4 buys in 3 months, 21,400 shares)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Volume spike: EFOR (bought 3d before 128% volume surge)
+  • Coordinated: 2026-04-24 (Other sector, 41 traders)
+    └─ Coordinated with: Campanelli Joseph P (Pres, CEO, NBBK), Tabak Shawn (CFO, PRCH), Begor Mark W (CEO, EFX), Hong Zhifang (CEO, 10%, DKI), Salem Matthew A (CEO, KREF), Sprott Eric (10%, HYMC), Sell Moritz A (Dir, SWZ), Devito Michael J (Dir, NVR), Stilwell Joseph (10%, PFBX), Frantz Mark A. (Dir, EFOR), Ohsberg Ronald S. (SEVP, CFO, Treasurer, WASH), Ghoniem Ahmed (Dir, TGEN), Hrt Financial LP (10%, GMEX), Kgil Minchung (CFO, FIGR), Iyer Sadasivam (Pres, EFOR), Thawley Michael (Dir, STRA), Thompson Rebecca (Chief Accounting Officer, AAON), Ehrlichman Matt (CEO, COB, FOUNDER, 10%, PRCH), Holman Jonathan S (Dir, EFOR), Neagle Matthew (COO, PRCH), Hamann Jennifer L (EVP, CFO, UNP), Joachimczyk Paul (CFO, SON), Mattson W Patrick (Pres, COO, Secretary, KREF), Federico Peter J (Dir, Pres, CEO, CIO, AGNC), Kurtz George (Pres, CEO, CRWD), Canup Edward G (CHIEF BANKING OFFICER, CBAN), Hawthorne Maria R (Dir, EFOR), Lizardi Rafael R (SVP, CFO, TXN), Patel Paresh (CEO, XZO), Peduzzi Michael D (Pres, CEO, CCNE), Brooks Jayme L. (CFO, LMB), Vinciarelli Patrizio (COB, CEO, 10%, VICR), Flannery Matthew John (Pres, CEO, URI), Hanson Theodore S. (CEO, EFOR), Painter Jennifer Hankes (SVP, GC, EFOR), Hagler Mark Arnold (See Remarks, NBP), Dyer Joseph Wendell (Dir, EFOR), Silverman Frank B (Dir, TRST), Hisey David C (CFO, STC), Matin Arshad (Dir, EFOR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#6 - Patel Paresh (CEO, XZO)
+Risk Score: 660  [132 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • XZO: Traded at $14.33 → Now $16.28 (+17.2%)
+Patterns Detected (24):
+  • Repeat: XZO (24x)
+  • Recurring buys: XZO (24 buys in 1 month, 50,000 shares)
+  • Recurring buys: XZO (24 buys in 2 months, 50,000 shares)
+  • Recurring buys: XZO (24 buys in 3 months, 50,000 shares)
+  • Statistical outlier: XZO (4,000 shares, 4.8σ from norm)
+  • Perfect timing: XZO (+15.1-21.2%) x4
+  • Coordinated: 2026-04-22 (Other sector, 16 traders)
+    └─ Coordinated with: Luther Sherri R (CFO, COHR), Blue & Silver Ventures, Ltd. (See Footnote (1), GAME), Panagiotidis Petros Panagiotis (CEO, TORO), Kurtz George (Pres, CEO, CRWD), Manor Sagit (CFO, NYAX), Dewan Darryll E (CEO, TSSI), Elsztain Alejandro Gustavo (Dir, CRESY), Ullal Jayshree (CEO, Chairperson, ANET), Goetgeluk Jan Roger (CEO, VTIX), Bowman Gary (CEO, 10%, BWMN), Frangou Angeliki (See Remarks, 10%, NMM), Miller Kevin D (CFO, RCMT), McDonough Claire (CFO, RIVN), Child Jason (CFO, ARM), Apel Daniel Joseph (CFO, ARWR)
+  • Coordinated: 2026-04-28 (Other sector, 38 traders)
+    └─ Coordinated with: Quart Barry D (Dir, KNSA), Kess Avrohom J. (Vice COB., GC, TRV), Gonzalez Herrera Jesus Vicente (Pres of Cemex USA, CX), Gafke Garrett (COO, MITK), Baker Paul Christopher (COO, KOPN), Mata Nathan L. (Chief Scientific Officer, BLTE), Tompkins Bonnie M (Dir, CCFN), Tien Bor-Zen (VP, TSM), Winfrey Christopher L (Pres, CEO, CHTR), Darden James Matthew (Co-COB, CEO, GL), Brooks David R (Dir, SSB), Heyman William H (Vice COB, TRV), McLaughlin Shawn Patrick (Dir, BHRB), Fox David W Jr (EVP, CFO, NTRS), Williams John B (Dir, ASB), Walker Brian C (Dir, HBNC), Iyer Sadasivam (Pres, EFOR), Sefzik Peter L (EVP, FITB), Glickman Jason M (EVP, Strategy, Growth, PCG), Lanzer David E. (GC, Secretary, REXR), Aldema Lior (EVP, Chief Business Officer, AUDC), Cunningham Rose (Chief Accounting Officer, EFOR), Caras Matthew L (Dir, BHB), Quinlan Michael T Jr (EVP, Retail Banking, CHCO), Davis Wade (Dir, CHTR), Poppe Patricia K (CEO, PCG), West Neal E (EVP, CFO, KALU), Clary Rebecca (VP, CFO, GSAT), Nair Balan (Dir, CHTR), Ponder Mark G (SEVP, Chief Admin. Officer, EFSC), Zollinger John J. IV (SEVP, Chief Banking Officer, HBCP), Baruch Niran (CFO, AUDC), Hageboeck Charles R (Pres, CEO, CHCO), Myers Colleen Elizabeth (Chief Accounting Officer, VC), Heshmatpour Amir F (Pres, 10%, NTHI), McPherson Danny R (EVP - Technology, CSO, VRSN), Agassi Andre K (10%, AASP)
+  • Coordinated: 2026-04-24 (Other sector, 41 traders)
+    └─ Coordinated with: Campanelli Joseph P (Pres, CEO, NBBK), Tabak Shawn (CFO, PRCH), Begor Mark W (CEO, EFX), Hong Zhifang (CEO, 10%, DKI), Salem Matthew A (CEO, KREF), Sprott Eric (10%, HYMC), Sell Moritz A (Dir, SWZ), Devito Michael J (Dir, NVR), Stilwell Joseph (10%, PFBX), Frantz Mark A. (Dir, EFOR), Ohsberg Ronald S. (SEVP, CFO, Treasurer, WASH), Ghoniem Ahmed (Dir, TGEN), Hrt Financial LP (10%, GMEX), Kgil Minchung (CFO, FIGR), Iyer Sadasivam (Pres, EFOR), Thawley Michael (Dir, STRA), Thompson Rebecca (Chief Accounting Officer, AAON), Ehrlichman Matt (CEO, COB, FOUNDER, 10%, PRCH), Holman Jonathan S (Dir, EFOR), Neagle Matthew (COO, PRCH), Perry Marie (EVP, CFO, EFOR), Hamann Jennifer L (EVP, CFO, UNP), Joachimczyk Paul (CFO, SON), Mattson W Patrick (Pres, COO, Secretary, KREF), Federico Peter J (Dir, Pres, CEO, CIO, AGNC), Kurtz George (Pres, CEO, CRWD), Canup Edward G (CHIEF BANKING OFFICER, CBAN), Hawthorne Maria R (Dir, EFOR), Lizardi Rafael R (SVP, CFO, TXN), Peduzzi Michael D (Pres, CEO, CCNE), Brooks Jayme L. (CFO, LMB), Vinciarelli Patrizio (COB, CEO, 10%, VICR), Flannery Matthew John (Pres, CEO, URI), Hanson Theodore S. (CEO, EFOR), Painter Jennifer Hankes (SVP, GC, EFOR), Hagler Mark Arnold (See Remarks, NBP), Dyer Joseph Wendell (Dir, EFOR), Silverman Frank B (Dir, TRST), Hisey David C (CFO, STC), Matin Arshad (Dir, EFOR)
+  • Coordinated: 2026-04-23 (Other sector, 25 traders)
+    └─ Coordinated with: Thad Trent (EVP, CFO, ON), Girao Tiago (CFO, IMVT), Wenshan Xie (COB, CEO, 10%, EJH), Shah Niraj (CEO, W), Conway Patrick Hugh (CEO, Optum, UNH), Pentwater Capital Management LP (10%, CAR), Boudreau Philip P (EVP, CFO, ABT), Neman-Ebrahim Yousha (Chief Clinical Officer, NTHI), Thompson Rebecca (Chief Accounting Officer, AAON), Stoehr David L (CFO, WTFC), Lawande Sachin (CEO, Pres, VC), Wrocklage Robert (EVP-N.A. Muncipal Utility, BMI), Hoag Erik D (CFO, TNL), Brown James Cannon (SEVP, Chief Comm'l Banking Off, WASH), Kurtz George (Pres, CEO, CRWD), Sanghi Steve (Pres, CEO, Chair of Bd, MCHP), Broadwood Partners, L.P. (10%, IMDX), Silva Gil Todd (Dir, CLIR), Zuraitis Marita (Pres, CEO, HMN), Cross Shawn (CFO, PCRX), Parekh Kevan (SVP, CFO, AAPL), Jordan Robert Chris (Dir, ISTR), Cutillo Joseph A (CEO, STRL), Heshmatpour Amir F (Pres, 10%, NTHI)
+  • Coordinated: 2026-04-27 (Other sector, 81 traders)
+    └─ Coordinated with: Azaria Eynav (See Remarks, KLTR), Raben David (Chief Medical Officer, BCAX), Strassman Hunter (CFO, STGC), Miller Ronald David (Dir, 10%, STGC), Henricsson Nina Josefin (CHRO, PSNY), Dicken Scott Fraser (Chief Commercial Officer, PSNY), Cheng Chi Fung (CTO, CRDO), Prager Paul B. (CEO, WULF), Wilcox Brett (Dir, KALU), Baig Saqib (Interim CFO, CAO, PTON), Simonsson Beatrice Ingmarie (Chief Digital Officer, PSNY), Miller Lee (10%, STGC), Barrett Russell (SEVP, COO, VLY), Handy Edward O. III (COB, CEO, WASH), Hyle Kathleen W (Dir, XE), Lindstrom Carol (Dir, EFOR), Brust John (Dir, GCBC), Garcia Laura (Chief Accounting Officer, XE), Christopher Gregory L. (COB, CEO, MLI), Reyes Jonathan (Chief Compliance Officer, STGC), Shaw Steven A (10%, MHH), Amin Tarang (CEO, ELF), Callaghan Brian J. (Dir, EFOR), Gheorghe Iulian (SVP - Adv Eng, Innovation, KALU), Dennis Padrick D (Dir, PFBX), Trecker Kristin (SVP, VC), Pinner Jeffrey Tsvi (CTO, HOOD), Somalya Saema (CLCAO, RELY), Donnan John Malcolm (EVP, CAO, GC, KALU), Adair Jason (Chief Business Officer, LQDA), Cronin Johanna (CMO, STGC), Bastarrica Air A. Jr. (VP, Controller, KN), Duchene Todd M (See remarks, CORZ), Duling Joel (Pres, TRISO-X, XE), Garten Yael (Dir, FVRR), Pettiti Gianluca (Pres, COO, TMO), Simon Andrea Helen (Dir, GGG), Robinson Joseph R (Dir, WSBC), Baker James C (Pres, KYN), Obermaier Patricia L (Dir, EFOR), O'Dowd William IV (CEO, DLPN), Boyle Dana (Chief Accounting Officer, LQDA), Hoffmann Martin (CEO, ONON), Gelfond Richard L (CEO, IMAX), Goetgeluk Jan Roger (CEO, VTIX), Agarwal Amit (Dir, DDOG), Winters Chad (VP, Chief Accounting Officer, WST), Chernick Aubrey (10%, STGC), Starks Daniel J (Dir, ABT), Bailey Vicky A (Dir, EQT), Kapito Robert (Pres, BLK), Iafigliola Carlos (See remarks, AMTB), Starovasnik Melissa A. (Dir, TWST), Byrne Susan M (Director Emerita, WHG), Samuel Olivier (Dir, NCEL), Ajemyan Arthur (SVP, CFO, RS), Miller Douglas S (Dir, APLD), Wallace Michael J Wallace (Dir, XE), Amster Joshua Daniel (Chief Revenue Officer, STGC), Revel Michel (CSO, Dir, 10%, NCEL), Forman Charles D (Dir, LVS), Schmidt James F (CFO, Treasurer, Secretary, VICR), Goel Rajeev K. (CEO, 10%, PUBM), Tal Cohen (Pres Market Platforms, NDAQ), Israeli Natan (Chief Customer Officer, KLTR), Little James (EVP Engineering, WCN), Miller Kevin D (CFO, RCMT), Rudensjo Anna Elin Margareta (GC, PSNY), Harvey Keith (Pres, CEO, KALU), Thompson Rebecca (Chief Accounting Officer, AAON), Smith Dwight Eric (Dir, PEBO), Gillis Jonathan (CAAO, PAO, MPLT), Kreitzer Anatol (Chief Discovery Officer, MPLT), Favorite Annette F (SVP, CHRO, WST), Marks Howard Edward (CEO, 10%, STGC), Peterson Adam K (10%, CRMT), Mathews Joseph (CTO, STGC), Gray James D (CFO, LW), Engstrom Jonas Hakan (COO, PSNY), Harrell James A. III (Pres Global Ind. Paper Pkg., SON)
+  • Coordinated: 2026-04-20 (Other sector, 15 traders)
+    └─ Coordinated with: Durn Daniel (EVP, CFO, ADBE), Cross Shawn (CFO, PCRX), Vanderhook Timothy (CEO, COB, 10%, DSP), Lucas Bruce (CEO, 10%, SLDE), Okupe Oluyemi (CFO, HIMS), Hawkins Jeffrey Alan (Pres, CEO, QSI), Sehmi Harminder (CFO, BZAI), Chernett Jorey (10%, STIM), Venker Eric (Pres, Immunovant CEO, ROIV), Ullal Jayshree (CEO, Chairperson, ANET), Susi Roger E. (CEO, Pres, COB, 10%, IRMD), Huang Jack Jiajia (CEO, 10%, COE), Steel Partners Holdings L.P. (10%, SPRU), Goetgeluk Jan Roger (CEO, VTIX)
+  • Coordinated: 2026-04-17 (Other sector, 16 traders)
+    └─ Coordinated with: Little Harrison James (EVP, KYN), Hrt Financial LP (10%, GMEX), Badakhsh Azad Sid (See Remarks, ARXS), Allison John W (COB, CEO, HOMB), Kurtz George (Pres, CEO, CRWD), Perhamus Kevin Scott (See Remarks, ARXS), Strome Mark E (10%, ZIVO), Chernett Jorey (10%, STIM), Mohan Jitendra (CEO, ALAB), Jankowski Ryan Anthony (Chief Accounting Officer, ARXS), Thiel Frederick G (CEO, MARA), Beck Scott Arthur (Pres, CEO, 10%, GLOO), Roth Jason Aaron (See Remarks, ARXS), Qiu Wenbin (CEO, BZUN), Sealfon Ross Bradley (See Remarks, ARXS)
+  • Coordinated: 2026-04-02 (Other sector, 17 traders)
+    └─ Coordinated with: Wagner Daniel Maurice (CEO, 10%, RZLV), Hrt Financial LP (10%, GMEX), Jackson W Kerry (EVP - CFO, SCVL), Bilotto Christopher J. (Pres, CEO, SVC), Hoffman Michael B (Dir, ANVS), Portnoy Adam D. (Dir, SVC), Fraiche Donna D. (Dir, SVC), Dakos Andrew (Pres, CEO, SWZ), Donley Brian E. (CFO, Treasurer, SVC), McGee Thomas W. (CFO, HMH), Jackson Jason Dale (COO, LCFY), Dyrseth Roy A. (Chief Commercial Officer, HMH), Bruno Thomas (Chief Commercial Officer, CULP), Patel Mahesh V. (CEO, LPCN), Bergsvik Eirik (CEO, HMH), Wu Junhua (Chief Strategy Officer, BZUN)
+  • Coordinated: 2026-04-13 (Other sector, 9 traders)
+    └─ Coordinated with: Rossi Steven F. (CEO, Pres, WKSP), Intelligent Fanatics Capital Management LLC (10%, KLNG), Hill Elliott (Pres, CEO, NKE), Ward Tom L. (See Remarks, 10%, MNR), Wilmer Richard (Pres, CEO, CHPT), Xu Yingkai (CEO, MTEN), Huang Jack Jiajia (CEO, 10%, COE), Qiu Wenbin (CEO, BZUN)
+  • Coordinated: 2026-04-15 (Other sector, 8 traders)
+    └─ Coordinated with: Pfeifer Andrea (CEO, ACIU), Kidambi Tridivesh (CFO, SST), Steel Partners Holdings L.P. (10%, SPRU), Sklar Ross Jeffery (CEO, 10%, STCB), Aqr Capital Management Holdings, LLC (10%, ZSPC), Qiu Wenbin (CEO, BZUN), Williams Gregg (Dir, 10%, VANI)
+  • Coordinated: 2026-04-16 (Other sector, 19 traders)
+    └─ Coordinated with: Cruickshank Tim (CFO, BEAT), Hand Joseph Thomas (CEO, Pres, YORW), Nelson Shawn David (CEO, LOVE), Ferrari Richard (Dir, BEAT), Paulson & Co. Inc. (10%, THM), Gelsinger Patrick P (See Remarks, GLOO), Beck Scott Arthur (Pres, CEO, 10%, GLOO), Booth Todd (CFO, AVEX), Hush Brett P (See Remarks, AVEX), Vajdic Branislav (Dir, BEAT), Gerber Charles (Trustee, DHY), Strome Mark E (10%, ZIVO), Orbimed Advisors LLC (10%, TRAW), Broadwood Partners, L.P. (10%, IMDX), Jaff Michael R (Dir, BEAT), Dakos Andrew (Pres, CEO, SWZ), Elfrink Willem (Dir, BEAT), Lazarus Energy Holdings, LLC (10%, BDCO)
+  • Coordinated: 2026-04-14 (Other sector, 6 traders)
+    └─ Coordinated with: Ault Milton C III (Dir, ALZN), Hrt Financial LP (10%, GMEX), Chernett Jorey (10%, STIM), Aslidis Anastasios (CFO, ESEA), Virtue Douglas A (EVP, VIRC)
+  • Coordinated: 2026-04-08 (Other sector, 9 traders)
+    └─ Coordinated with: Baker James C (Pres, KYN), Stark Eugene S (VP Administration, CCO, PFO, GAM), Priest Jeffrey W (Pres, CEO, GAM), Sadowski Peter T (EVP, GC, CNNE), Wu Junhua (Chief Strategy Officer, BZUN), Orn Jonsson Sigurgeir (CTO, BETR), Barry Timothy T. (CEO, SVBL), Garg Vishal (CEO, 10%, BETR)
+  • Coordinated: 2026-04-09 (Other sector, 5 traders)
+    └─ Coordinated with: Rudy Mitchell Austin (Dir, 10%, BNKK), Chernett Jorey (10%, STIM), Valentine Andre S (CFO, CNXC), Ripp Ryan (CFO, Treasurer, Secretary, FROPX)
+  • Coordinated: 2026-04-07 (Other sector, 7 traders)
+    └─ Coordinated with: Dakos Andrew (Pres, CEO, SWZ), Forager Fund, L.P. (10%, RPAY), Chernett Jorey (10%, STIM), Higuchi John W. (Dir, LPCN), Steel Partners Holdings L.P. (10%, SPRU), Qiu Wenbin (CEO, BZUN)
+  • Coordinated: 2026-04-06 (Other sector, 6 traders)
+    └─ Coordinated with: Bertolini Mark T (CEO, OSCR), Gill John (Dir, ALT), Higuchi John W. (Dir, LPCN), Patel Mahesh V. (CEO, LPCN), Caldwell Christopher L. (Pres, CEO, Dir of Company, Ban, CMTV)
+  • Coordinated: 2026-04-01 (Other sector, 10 traders)
+    └─ Coordinated with: Maestrini Andre (Pres, CCO, Interim Co-CEO, LULU), Weaver Gregory L (CFO, ALT), Tallia Parenti Grazielle (Officer, Sustainability, VALE), Wenshan Xie (COB, CEO, 10%, EJH), Durso Jerome Benedict (Pres, CEO, ALT), Arap Sobrinho Sami (EVP Legal Officer, VALE), Forager Fund, L.P. (10%, RPAY), Roney Brian J (CEO, PRHI), Yu Jeffrey (Chief Medical Officer, 10%, ONMD)
+  • Coordinated: 2026-03-31 (Other sector, 10 traders)
+    └─ Coordinated with: Winn Walter Timothy (CO-COO, EVP, SLND), John Brian (CEO, Dir, 10%, OTH), Cavallaro Frank A. (SEVP, CFO, PGC), Castillo Daniel J (EVP, GM, EES, WCC), Skaff Michael C (10%, VVOS), Lederman Seth (CEO, TNXP), Steel Partners Holdings L.P. (10%, SPRU), Teleman Dan Benjamin (CEO, NSRX), Staples William (CEO, GTLB)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#7 - Kidambi Tridivesh (CFO, SST)
+Risk Score: 620  [124 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • SST: Traded at $2.11 → Now $3.67 (+72.5%)
+Patterns Detected (8):
+  • Recurring buys: SST (3 buys in 1 month, 80,730 shares)
+  • Recurring buys: SST (3 buys in 2 months, 80,730 shares)
+  • Recurring buys: SST (3 buys in 3 months, 80,730 shares)
+  • Volume spike: SST (bought 8d before 234% volume surge)
+  • Volume spike: SST (bought 8d before 234% volume surge)
+  • Volume spike: SST (bought 8d before 234% volume surge)
+  • Perfect timing: SST (+72.5%) x3
+  • Coordinated: 2026-04-15 (Other sector, 8 traders)
+    └─ Coordinated with: Pfeifer Andrea (CEO, ACIU), Patel Paresh (CEO, XZO), Steel Partners Holdings L.P. (10%, SPRU), Sklar Ross Jeffery (CEO, 10%, STCB), Aqr Capital Management Holdings, LLC (10%, ZSPC), Qiu Wenbin (CEO, BZUN), Williams Gregg (Dir, 10%, VANI)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#8 - Wu Junhua (Chief Strategy Officer, BZUN)
+Risk Score: 615  [197 (base) × 2.5x (patterns) × 1.25x (role)]
+Trade Prices & Current Values:
+  • BZUN: Traded at $2.52 → Now $2.76 (+18.7%)
+Patterns Detected (13):
+  • Repeat: BZUN (6x)
+  • Recurring buys: BZUN (6 buys in 1 month, 154,684 shares)
+  • Recurring buys: BZUN (6 buys in 2 months, 154,684 shares)
+  • Recurring buys: BZUN (6 buys in 3 months, 154,684 shares)
+  • Volume spike: BZUN (bought 8d before 194% volume surge)
+  • Volume spike: BZUN (bought 14d before 194% volume surge)
+  • Volume spike: BZUN (bought 6d before 194% volume surge)
+  • Volume spike: BZUN (bought 6d before 194% volume surge)
+  • Volume spike: BZUN (bought 8d before 194% volume surge)
+  • Volume spike: BZUN (bought 14d before 194% volume surge)
+  • Perfect timing: BZUN (+15.3-18.7%) x4
+  • Coordinated: 2026-04-02 (Other sector, 17 traders)
+    └─ Coordinated with: Wagner Daniel Maurice (CEO, 10%, RZLV), Hrt Financial LP (10%, GMEX), Jackson W Kerry (EVP - CFO, SCVL), Bilotto Christopher J. (Pres, CEO, SVC), Hoffman Michael B (Dir, ANVS), Portnoy Adam D. (Dir, SVC), Fraiche Donna D. (Dir, SVC), Dakos Andrew (Pres, CEO, SWZ), Patel Paresh (CEO, XZO), Donley Brian E. (CFO, Treasurer, SVC), McGee Thomas W. (CFO, HMH), Jackson Jason Dale (COO, LCFY), Dyrseth Roy A. (Chief Commercial Officer, HMH), Bruno Thomas (Chief Commercial Officer, CULP), Patel Mahesh V. (CEO, LPCN), Bergsvik Eirik (CEO, HMH)
+  • Coordinated: 2026-04-08 (Other sector, 9 traders)
+    └─ Coordinated with: Baker James C (Pres, KYN), Stark Eugene S (VP Administration, CCO, PFO, GAM), Patel Paresh (CEO, XZO), Priest Jeffrey W (Pres, CEO, GAM), Sadowski Peter T (EVP, GC, CNNE), Orn Jonsson Sigurgeir (CTO, BETR), Barry Timothy T. (CEO, SVBL), Garg Vishal (CEO, 10%, BETR)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#9 - Ma Cunjun (CEO, 10%, HUIZ)
+Risk Score: 595  [119 (base) × 2.5x (patterns) × 2.0x (role)]
+Trade Prices & Current Values:
+  • HUIZ: Traded at $1.40 → Now $1.66 (+18.6%)
+Patterns Detected (10):
+  • Recurring buys: HUIZ (3 buys in 1 month, 23,526,096 shares)
+  • Recurring buys: HUIZ (3 buys in 2 months, 23,526,096 shares)
+  • Recurring buys: HUIZ (3 buys in 3 months, 23,526,096 shares)
+  • Volume spike: HUIZ (bought 1d before 457% volume surge)
+  • Volume spike: HUIZ (bought 1d before 457% volume surge)
+  • Volume spike: HUIZ (bought 1d before 457% volume surge)
+  • Late filing: HUIZ (8 days)
+  • Late filing: HUIZ (8 days)
+  • Perfect timing: HUIZ (+18.6%) x3
+  • Coordinated: 2026-03-30 (Other sector, 13 traders)
+    └─ Coordinated with: Coll Wayne M (CFO, POCI), Tillery Jack Gary Jr. (CEO, SKKY), Traut Joseph (COO, POCI), Carter Charles Edward (Chief Regional Officer: Amer., SBSW), Visionwave Holdings, Inc. (Dir, SVRE), Moulder Leon O Jr (CEO, ZBIO), Stenberg Jon (Pres, CEO, CIA), Drozdoff Leo M (Dir, LODE), Lin Shyue-Shyh (VP, TSM), Caraher Scott C. (Portfolio Manager, JQC), Henderson James P (CFO, VTS), Kennedy Douglas L (Pres, CEO, PGC)
+
+------------------------------------------------------------------------------------------------------------------------
+
+#10 - Bilotto Christopher J. (Pres, CEO, SVC)
+Risk Score: 590  [118 (base) × 2.5x (patterns) × 2.0x (role)]
+Patterns Detected (9):
+  • Sector cluster: SVC (Other) - 4 traders on 2026-04-02
+    └─ Coordinated with: Portnoy Adam D. (Dir, SVC), Donley Brian E. (CFO, Treasurer, SVC), Fraiche Donna D. (Dir, SVC)
+  • Same-company cluster: SVC - 4 insiders within 7 days (Role diversity: CFO, CEO)
+    └─ Coordinated with: Portnoy Adam D. (Dir), Donley Brian E. (CFO, Treasurer), Fraiche Donna D. (Dir)
+  • Recurring buys: SVC (3 buys in 1 month, 300,000 shares)
+  • Recurring buys: SVC (3 buys in 2 months, 300,000 shares)
+  • Recurring buys: SVC (3 buys in 3 months, 300,000 shares)
+  • Volume spike: SVC (bought 4d before 202% volume surge)
+  • Volume spike: SVC (bought 4d before 202% volume surge)
+  • Volume spike: SVC (bought 4d before 202% volume surge)
+  • Coordinated: 2026-04-02 (Other sector, 17 traders)
+    └─ Coordinated with: Wagner Daniel Maurice (CEO, 10%, RZLV), Hrt Financial LP (10%, GMEX), Jackson W Kerry (EVP - CFO, SCVL), Hoffman Michael B (Dir, ANVS), Portnoy Adam D. (Dir, SVC), Fraiche Donna D. (Dir, SVC), Dakos Andrew (Pres, CEO, SWZ), Patel Paresh (CEO, XZO), Donley Brian E. (CFO, Treasurer, SVC), McGee Thomas W. (CFO, HMH), Jackson Jason Dale (COO, LCFY), Dyrseth Roy A. (Chief Commercial Officer, HMH), Bruno Thomas (Chief Commercial Officer, CULP), Patel Mahesh V. (CEO, LPCN), Bergsvik Eirik (CEO, HMH), Wu Junhua (Chief Strategy Officer, BZUN)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+END OF TOP 10 REPORT
+========================================================================================================================

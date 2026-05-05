@@ -1,12 +1,44 @@
 trader_name,ticker,transaction_type,transaction_date,shares,value,price,company,role,filing_date,source,section,x,owned,δown,1d,1w,1m,6m,page,scraped_at
-Moulder Leon O Jr,ZBIO,P - Purchase,2025-10-07,36928,"+$769,949",$20.85,"Zenas Biopharma, Inc.",See Remarks,2025-10-09 17:24:42,openinsider,top_officer_week,,1975122,+2%,,,,,1,2025-10-14T11-58-21Z
-Clemmer James C,ANGO,P - Purchase,2025-10-09,10000,"+$111,500",$11.15,Angiodynamics Inc,"Pres, CEO",2025-10-09 21:09:24,openinsider,top_officer_week,,882529,+1%,,,,,1,2025-10-14T11-58-21Z
-Shan Helen L.,FDS,P - Purchase,2025-10-06,370,"+$101,928",$275.48,Factset Research Systems Inc,"EVP, CFO",2025-10-08 16:28:08,openinsider,top_officer_week,,9284,+4%,,,,,1,2025-10-14T11-58-21Z
-"Sprinkle, Jr. Richard C.",CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, Chief Credit Officer",2025-10-09 16:10:15,openinsider,top_officer_week,,25729,+19%,,,,,1,2025-10-14T11-58-21Z
-Metheny Philip J.,CBK,P - Purchase,2025-10-03,4166,"+$99,984",$24.00,"Commercial Bancgroup, Inc.","EVP, CFO",2025-10-09 16:14:26,openinsider,top_officer_week,,4166,New,,,,,1,2025-10-14T11-58-21Z
-Bodenstedt Matthias,MLTX,P - Purchase,2025-10-08,10870,"+$98,808",$9.09,Moonlake Immunotherapeutics,CFO,2025-10-09 09:01:51,openinsider,top_officer_week,,627536,+2%,,,,,1,2025-10-14T11-58-21Z
-Umair Muhammad,PLCE,P - Purchase,2025-10-08,7143,"+$50,001",$7.00,"Childrens Place, Inc.","Pres, INTERIM CEO",2025-10-09 16:30:15,openinsider,top_officer_week,,277667,+3%,,,,,1,2025-10-14T11-58-21Z
-Mackey Brian T,CPSH,P - Purchase,2025-10-08,16500,"+$49,500",$3.00,Cps Technologies Corp/De/,"Pres, CEO",2025-10-09 15:05:01,openinsider,top_officer_week,,36500,+83%,,,,,1,2025-10-14T11-58-21Z
-Griffith Charles Kellogg Jr,CPSH,P - Purchase,2025-10-08,4000,"+$12,000",$3.00,Cps Technologies Corp/De/,CFO,2025-10-09 13:17:50,openinsider,top_officer_week,,41792,+11%,,,,,1,2025-10-14T11-58-21Z
-O'Dowd William IV,DLPN,P - Purchase,2025-10-13,3400,"+$4,896",$1.44,"Dolphin Entertainment, Inc.",CEO,2025-10-14 08:30:01,openinsider,top_officer_week,,501129,+1%,,,,,1,2025-10-14T11-58-21Z
-O'Donnell Shannon,AUBN,P - Purchase,2025-10-08,25,+$686,$27.46,"Auburn National Bancorporation, Inc",SVP,2025-10-09 11:17:32,openinsider,top_officer_week,,1537,+2%,,,,,1,2025-10-14T11-58-21Z
+Klein Michael Stuart,CXIIU,P - Purchase,2026-04-29,350000,"+$3,500,000",$10.00,Churchill Capital Corp Xii,"See Remarks, 10%",2026-04-29 16:50:07,openinsider,top_officer_week,,350000,New,,,,,1,2026-05-01T08-03-44Z
+Hannigan Todd,IPX,P - Purchase,2026-04-28,480000,"+$2,077,784",$4.33,Iperionx Ltd,Exec COB,2026-04-29 21:51:04,openinsider,top_officer_week,DM,26562798,+2%,,,,,1,2026-05-01T08-03-44Z
+Winfrey Christopher L,CHTR,P - Purchase,2026-04-28,6936,"+$1,194,621",$172.24,"Charter Communications, Inc. /Mo/","Pres, CEO",2026-04-28 16:16:50,openinsider,top_officer_week,,225436,+3%,,,,,1,2026-05-01T08-03-44Z
+Moulder Leon O Jr,ZBIO,P - Purchase,2026-04-28,60000,"+$1,067,200",$17.79,"Zenas Biopharma, Inc.",CEO,2026-04-29 19:21:02,openinsider,top_officer_week,M,2246122,+3%,,,,,1,2026-05-01T08-03-44Z
+Hanson Theodore S.,EFOR,P - Purchase,2026-04-24,51965,"+$999,786",$19.24,Everforth Inc,CEO,2026-04-27 09:14:30,openinsider,top_officer_week,,476526,+12%,,,,,1,2026-05-01T08-03-44Z
+Brown James Cannon,WASH,P - Purchase,2026-04-23,32000,"+$997,572",$31.17,Washington Trust Bancorp Inc,"SEVP, Chief Comm'l Banking Off",2026-04-27 15:57:12,openinsider,top_officer_week,,37280,+606%,,,,,1,2026-05-01T08-03-44Z
+Hagler Mark Arnold,NBP,P - Purchase,2026-04-24,230000,"+$577,300",$2.51,Novabridge Biosciences,See Remarks,2026-04-28 16:05:04,openinsider,top_officer_week,,230000,New,,,,,1,2026-05-01T08-03-44Z
+Arima Anastasios,IPX,P - Purchase,2026-04-28,110000,"+$493,625",$4.49,Iperionx Ltd,CEO,2026-04-30 07:38:30,openinsider,top_officer_week,D,13055358,+1%,,,,,1,2026-05-01T08-03-44Z
+Salem Matthew A,KREF,P - Purchase,2026-04-24,60000,"+$362,472",$6.04,Kkr Real Estate Finance Trust Inc.,CEO,2026-04-27 16:30:42,openinsider,top_officer_week,,703075,+9%,,,,,1,2026-05-01T08-03-44Z
+Harrell James A. III,SON,P - Purchase,2026-04-27,6753,"+$340,183",$50.37,Sonoco Products Co,Pres Global Ind. Paper Pkg.,2026-04-29 13:14:14,openinsider,top_officer_week,,70026,+11%,,,,,1,2026-05-01T08-03-44Z
+Baker James C,KYN,P - Purchase,2026-04-27,25000,"+$339,250",$13.57,"Kayne Anderson Energy Infrastructure Fund, Inc.",Pres,2026-04-27 15:08:25,openinsider,top_officer_week,,1003019,+3%,,,,,1,2026-05-01T08-03-44Z
+Lee Chong Kuang,GRNQ,P - Purchase,2026-04-28,107310,"+$250,000",$2.33,Greenpro Capital Corp.,"CEO, 10%",2026-04-30 14:27:10,openinsider,top_officer_week,,2012259,+6%,,,,,1,2026-05-01T08-03-44Z
+Arduini Peter J,GEHC,P - Purchase,2026-04-30,4169,"+$249,827",$59.93,Ge Healthcare Technologies Inc.,"Pres, CEO",2026-04-30 16:20:03,openinsider,top_officer_week,,259424,+2%,,,,,1,2026-05-01T08-03-44Z
+Mattson W Patrick,KREF,P - Purchase,2026-04-24,40000,"+$241,072",$6.03,Kkr Real Estate Finance Trust Inc.,"Pres, COO, Secretary",2026-04-27 16:30:41,openinsider,top_officer_week,,500287,+9%,,,,,1,2026-05-01T08-03-44Z
+Wenshan Xie,EJH,P - Purchase,2026-04-23,192000,"+$240,000",$1.25,E-Home Household Service Holdings Ltd,"COB, CEO, 10%",2026-04-27 16:30:02,openinsider,top_officer_week,,744295,+35%,,,,,1,2026-05-01T08-03-44Z
+Boudreau Philip P,ABT,P - Purchase,2026-04-23,2200,"+$201,300",$91.50,Abbott Laboratories,"EVP, CFO",2026-04-27 17:34:47,openinsider,top_officer_week,,82648,+3%,,,,,1,2026-05-01T08-03-44Z
+Gray James D,LW,P - Purchase,2026-04-27,4556,"+$199,781",$43.85,"Lamb Weston Holdings, Inc.",CFO,2026-04-28 17:01:34,openinsider,top_officer_week,,59741,+8%,,,,,1,2026-05-01T08-03-44Z
+Chevallier Andres Campos,BWMX,P - Purchase,2026-04-28,10000,"+$168,062",$16.81,"Betterware De Mexico, S.A.P.I. De C.V",CEO,2026-04-30 16:01:12,openinsider,top_officer_week,,230000,+5%,,,,,1,2026-05-01T08-03-44Z
+Revel Michel,NCEL,P - Purchase,2026-04-27,54545,"+$149,999",$2.75,Newcelx Ltd.,"CSO, Dir, 10%",2026-04-29 16:05:15,openinsider,top_officer_week,D,957530,+6%,,,,,1,2026-05-01T08-03-44Z
+Griffin Stephen D.,ANIK,P - Purchase,2026-04-30,12200,"+$149,881",$12.29,"Anika Therapeutics, Inc.","Pres, CEO",2026-04-30 17:22:40,openinsider,top_officer_week,,36163,+51%,,,,,1,2026-05-01T08-03-44Z
+Jimenez Frank R,GEHC,P - Purchase,2026-04-30,1750,"+$105,788",$60.45,Ge Healthcare Technologies Inc.,"GC, Corporate Secretary",2026-04-30 16:21:03,openinsider,top_officer_week,,93932,+2%,,,,,1,2026-05-01T08-03-44Z
+Handy Edward O. III,WASH,P - Purchase,2026-04-27,3195,"+$100,079",$31.32,Washington Trust Bancorp Inc,"COB, CEO",2026-04-28 17:08:05,openinsider,top_officer_week,,86005,+4%,,,,,1,2026-05-01T08-03-44Z
+Perry Marie,EFOR,P - Purchase,2026-04-24,5350,"+$100,018",$18.70,Everforth Inc,"EVP, CFO",2026-04-27 16:30:02,openinsider,top_officer_week,,58328,+10%,,,,,1,2026-05-01T08-03-44Z
+Swetman Chevis,PFBX,P - Purchase,2026-04-29,2500,"+$53,750",$21.50,Peoples Financial Corp /Ms/,"CEO, Pres, 10%",2026-04-29 18:19:28,openinsider,top_officer_week,,427713,+1%,,,,,1,2026-05-01T08-03-44Z
+Painter Jennifer Hankes,EFOR,P - Purchase,2026-04-24,2500,"+$50,078",$20.03,Everforth Inc,"SVP, GC",2026-04-27 07:57:30,openinsider,top_officer_week,,76061,+3%,,,,,1,2026-05-01T08-03-44Z
+Ohsberg Ronald S.,WASH,P - Purchase,2026-04-24,1606,"+$49,786",$31.00,Washington Trust Bancorp Inc,"SEVP, CFO, Treasurer",2026-04-28 17:07:44,openinsider,top_officer_week,,29705,+6%,,,,,1,2026-05-01T08-03-44Z
+Campanelli Joseph P,NBBK,P - Purchase,2026-04-24,2500,"+$48,618",$19.45,"Nb Bancorp, Inc.","Pres, CEO",2026-04-27 14:51:58,openinsider,top_officer_week,,478937,+1%,,,,,1,2026-05-01T08-03-44Z
+Anderman Jonathan,CMPX,P - Purchase,2026-04-29,25000,"+$47,250",$1.89,"Compass Therapeutics, Inc.",GC,2026-04-30 16:00:25,openinsider,top_officer_week,A,196000,+15%,,,,,1,2026-05-01T08-03-44Z
+Doane Thomas,AVBC,P - Purchase,2026-04-28,2040,"+$43,166",$21.16,"Avidia Bancorp, Inc.",EVP- HR,2026-04-29 15:25:12,openinsider,top_officer_week,,18732,+12%,,,,,1,2026-05-01T08-03-44Z
+Canup Edward G,CBAN,P - Purchase,2026-04-24,2000,"+$39,770",$19.89,Colony Bankcorp Inc,CHIEF BANKING OFFICER,2026-04-29 16:46:22,openinsider,top_officer_week,M,39461,+5%,,,,,1,2026-05-01T08-03-44Z
+Iyer Sadasivam,EFOR,P - Purchase,2026-04-24,1725,"+$33,289",$19.30,Everforth Inc,Pres,2026-04-27 07:53:37,openinsider,top_officer_week,,60795,+3%,,,,,1,2026-05-01T08-03-44Z
+Peduzzi Michael D,CCNE,P - Purchase,2026-04-24,1000,"+$30,350",$30.35,Cnb Financial Corp/Pa,"Pres, CEO",2026-04-27 14:48:57,openinsider,top_officer_week,,58314,+2%,,,,,1,2026-05-01T08-03-44Z
+McCaffery John Martin Jr,NWFL,P - Purchase,2026-04-30,1000,"+$29,440",$29.44,Norwood Financial Corp,"EVP, CFO",2026-04-30 16:13:40,openinsider,top_officer_week,,9504,+12%,,,,,1,2026-05-01T08-03-44Z
+Lerner Neil,CMPX,P - Purchase,2026-04-29,15000,"+$28,350",$1.89,"Compass Therapeutics, Inc.",CHIEF ACCOUNTING OFFICER,2026-04-30 16:00:48,openinsider,top_officer_week,A,397500,+4%,,,,,1,2026-05-01T08-03-44Z
+Garcia Laura,XE,P - Purchase,2026-04-27,1200,"+$27,600",$23.00,"X-Energy, Inc.",Chief Accounting Officer,2026-04-29 16:16:05,openinsider,top_officer_week,,196822,+1%,,,,,1,2026-05-01T08-03-44Z
+Karmelek Nicolas,AVBC,P - Purchase,2026-04-28,1220,"+$25,327",$20.76,"Avidia Bancorp, Inc.","EVP, CRO",2026-04-30 13:33:37,openinsider,top_officer_week,,30672,+4%,,,,,1,2026-05-01T08-03-44Z
+Iyer Sadasivam,EFOR,P - Purchase,2026-04-28,1110,"+$25,164",$22.67,Everforth Inc,Pres,2026-04-28 16:05:30,openinsider,top_officer_week,,61905,+2%,,,,,1,2026-05-01T08-03-44Z
+Cunningham Rose,EFOR,P - Purchase,2026-04-28,1125,"+$25,054",$22.27,Everforth Inc,Chief Accounting Officer,2026-04-28 16:08:26,openinsider,top_officer_week,,15587,+8%,,,,,1,2026-05-01T08-03-44Z
+Jensen Barry H,AVBC,P - Purchase,2026-04-29,1000,"+$20,300",$20.30,"Avidia Bancorp, Inc.","EVP, Chief Admin Officer",2026-04-30 13:06:02,openinsider,top_officer_week,,41196,+2%,,,,,1,2026-05-01T08-03-44Z
+Iafigliola Carlos,AMTB,P - Purchase,2026-04-27,885,"+$20,177",$22.80,Amerant Bancorp Inc.,See remarks,2026-04-28 16:38:36,openinsider,top_officer_week,,21576,+4%,,,,,1,2026-05-01T08-03-44Z
+Altman Peter,BCDA,P - Purchase,2026-04-29,5000,"+$5,550",$1.11,"Biocardia, Inc.","Pres, CEO",2026-04-29 19:40:40,openinsider,top_officer_week,,280766,+2%,,,,,1,2026-05-01T08-03-44Z
+Black Wade Newton,SBMT,P - Purchase,2026-04-30,500,"+$5,375",$10.75,Silver Bow Mining Corp.,CFO,2026-04-30 14:50:54,openinsider,top_officer_week,,25000,+2%,,,,,1,2026-05-01T08-03-44Z
+O'Dowd William IV,DLPN,P - Purchase,2026-04-27,3400,"+$4,950",$1.46,"Dolphin Entertainment, Inc.",CEO,2026-04-27 16:45:53,openinsider,top_officer_week,,585881,+1%,,,,,1,2026-05-01T08-03-44Z

@@ -1,0 +1,7 @@
+pandas
+numpy
+yfinance
+python-dotenv
+questionary
+playwright
+selenium

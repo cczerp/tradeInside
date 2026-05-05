@@ -1144,8 +1144,13 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                         shares = float(wtrade['shares'])
                         price = None
                         
-                        if 'price' in wtrade and pd.notna(wtrade.get('price')) and wtrade.get('price') > 0:
-                            price = float(wtrade['price'])
+                        if 'price' in wtrade and pd.notna(wtrade.get('price')):
+                            try:
+                                p = float(wtrade['price'])
+                                if p > 0:
+                                    price = p
+                            except (ValueError, TypeError):
+                                pass
                         elif ticker in trade_price_lookup:
                             price = trade_price_lookup[ticker].get(pd.Timestamp(wtrade['transaction_date']))
                         
@@ -1203,34 +1208,17 @@ def detect_patterns(insider_df, institutional_df, prices_df):
             trader = row['trader_name']
 
             if ticker not in price_lookup:
-<<<<<<< Updated upstream
-                continue
-=======
                 return None
->>>>>>> Stashed changes
 
             ticker_prices = price_lookup[ticker]
             trade_price = ticker_prices.get(pd.Timestamp(trade_date))
             if not trade_price:
-<<<<<<< Updated upstream
-                continue
-
-            # Check event relationship once per trade (applies equally to all windows)
-            event_status, event_desc = check_event_relationship(ticker, trade_date, events_lookup)
-            if event_status == 'exclude':
-                timing_filtered += 1
-                continue
-
-            # Score ALL qualifying windows, not just the single best-gain window
-            is_bonused = False
-=======
                 return None
 
             best_window = None
             best_gain = 0
             best_score = 0
 
->>>>>>> Stashed changes
             for start_day, end_day, min_gain, score in windows:
                 check_date = trade_date + timedelta(days=end_day)
 
@@ -1240,51 +1228,6 @@ def detect_patterns(insider_df, institutional_df, prices_df):
                     if future_price:
                         break
 
-<<<<<<< Updated upstream
-                if not future_price:
-                    continue
-
-                gain = ((future_price - trade_price) / trade_price) * 100
-
-                if gain >= min_gain:
-                    final_score = score
-                    if event_status == 'bonus':
-                        final_score += 15
-                        if not is_bonused:
-                            timing_bonused += 1
-                            is_bonused = True
-
-                    patterns[trader]['patterns'].append(
-                        f"Perfect timing: {ticker} (+{gain:.1f}% in {start_day}-{end_day} days)"
-                    )
-                    patterns[trader]['base_score'] += final_score
-                    patterns[trader]['pattern_count'] += 1
-
-                    # Store trade price; keep the highest gain seen for this ticker
-                    patterns[trader]['trade_prices'][ticker] = trade_price
-                    existing = patterns[trader]['price_movements'].get(ticker, '')
-                    try:
-                        existing_pct = float(existing.replace('+', '').replace('%', '')) if existing else 0
-                    except ValueError:
-                        existing_pct = 0
-                    if gain > existing_pct:
-                        patterns[trader]['price_movements'][ticker] = f"+{gain:.1f}%"
-
-                    info = trader_info.get(trader, {'role': 'Unknown', 'company': 'Unknown'})
-                    patterns[trader]['role'] = info['role']
-                    patterns[trader]['company'] = info['company']
-
-                    if 'role' in timing_df.columns and pd.notna(row.get('role')):
-                        trader_role = row.get('role')
-                        role_mult = get_role_multiplier(trader_role)
-                        patterns[trader]['role_multiplier'] = max(patterns[trader]['role_multiplier'], role_mult)
-
-                    ticker_patterns[ticker]['patterns'].append(
-                        f"Timed trade by {trader} (+{gain:.1f}% in {start_day}-{end_day}d)"
-                    )
-                    ticker_patterns[ticker]['score'] += 3
-                    timing_count += 1
-=======
                 if future_price:
                     gain = ((future_price - trade_price) / trade_price) * 100
 
@@ -1359,7 +1302,6 @@ def detect_patterns(insider_df, institutional_df, prices_df):
             )
             ticker_patterns[ticker]['score'] += 3
             timing_count += 1
->>>>>>> Stashed changes
 
         print(f"    Found {timing_count} timing patterns ({timing_filtered} filtered, {timing_bonused} bonused for pre-event)")
     
